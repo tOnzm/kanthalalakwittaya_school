@@ -1,0 +1,405 @@
+[class*="bg__"] {
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  &:nth-child(2n) { box-shadow: inset 0 0 1em #111; }
+}
+.banner-international-programs {
+
+}
+.banner-international-programs > img {
+  width: 100%;
+}
+.banner-international-programs > .video {
+  width: 34%;
+  position: absolute;
+  left: 10%;
+  top: 210px;
+}
+.banner-international-programs > .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+}
+.banner-international-programs > .video-container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.banner-international-programs .boundless-future {
+  height: 50px;
+}
+.banner-international-programs > .box-register {
+  width: 34%;
+  position: absolute;
+  right: 10%;
+  top: 210px;
+  color: #fff;
+}
+.banner-international-programs .box-register .form-control, .single-line {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.bg__transparent {
+  background-color: transparent;
+}
+.bg__white {
+  background-color: #fff;
+}
+.header-faculty{
+  position: relative;
+  background-color: #494F5B;
+  z-index: 4000;
+}
+.header-faculty > .header-faculty-cover{
+
+}
+.header-faculty > .header-faculty-cover .header-faculty-logo {
+  margin: 100px 0;
+  text-align: center;
+}
+.header-faculty > .header-faculty-cover .header-faculty-logo img{
+  width: 50%;
+  padding: 10px 50px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+}
+.header-faculty-menu{
+  margin-top: -50px;
+}
+.header-faculty-menu .navbar{
+  margin-bottom: 0;
+}
+.footer-faculty{
+  padding: 4em 0;
+  background-color: #f5f5f5;
+}
+.footer-faculty .fdetail{
+  background-color: rgba(255, 255, 255, 0.84);
+  padding: 2em;
+  width: 63%;
+  -webkit-box-shadow: 3px 3px 5px -1px rgba(0,0,0,1);
+  -moz-box-shadow: 3px 3px 5px -1px rgba(0,0,0,1);
+  box-shadow: 3px 3px 5px -1px rgba(0,0,0,1);
+  border-radius: 2px;
+}
+.footer-faculty .fdetail .icon-social {
+  border-radius: 100px;
+  width: 30px;
+  height: 30px;
+}
+.footer-faculty .fdetail .address {
+  line-height: 1.9em;
+  padding: 14px;
+  border: #bbb dashed 1px;
+  background-color: rgba(255, 255, 255, 0.42);
+  letter-spacing: 0.023em;
+}
+.navbar-faculty .navbar-brand {
+  color: rgba(255, 255, 255, 1);
+}
+.navbar-faculty {
+  font-size: 14px;
+  background-color: rgba(26, 36, 50, 0.7);
+  border-width: 0px;
+  border-radius: 0px
+}
+.navbar-faculty .nav > li.active {
+  border: 0;
+  background-color: transparent;
+}
+.navbar-faculty .nav > li > a {
+  padding: 15px 25px;
+}
+.navbar-faculty .navbar-nav>li>a {
+  color: rgba(255, 255, 255, 1);
+  background-color: transparent;
+}
+.navbar-faculty .navbar-nav>li>a:hover,
+.navbar-faculty .navbar-nav>li>a:focus {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(26, 36, 50, 0.7);
+}
+.navbar-faculty .navbar-nav>.active>a,
+.navbar-faculty .navbar-nav>.active>a:hover,
+.navbar-faculty .navbar-nav>.active>a:focus {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(26, 36, 50, 0.7);
+}
+.navbar-faculty .navbar-toggle {
+  border-color: #1b2432;
+}
+.navbar-faculty .navbar-toggle:hover,
+.navbar-faculty .navbar-toggle:focus {
+  background-color: #1b2432;
+}
+.navbar-faculty .navbar-toggle .icon-bar {
+  background-color: #1b2432;
+}
+.navbar-faculty .navbar-toggle:hover .icon-bar,
+.navbar-faculty .navbar-toggle:focus .icon-bar {
+  background-color: #1b2432;
+}
+.navbar-faculty .dropdown-menu {
+  border-radius: 0px;
+  background-color: rgba(26, 36, 50, 0.9);
+  position: absolute;
+}
+.navbar-faculty .dropdown-menu > li > a {
+  border-radius: 0px;
+  font-size: 13px;
+  color: #fff;
+  margin: 0;
+  padding: 6px 10px;
+}
+.navbar-faculty .dropdown-menu > li:hover > a, .navbar-faculty .dropdown-menu > li:focus > a, .navbar-faculty .dropdown-menu > li:active > a {
+  background-color: rgba(0,0,0,0.3);
+}
+.navbar-faculty .container-fluid>.navbar-collapse, .navbar-faculty .container-fluid>.navbar-header, .navbar-faculty .container>.navbar-collapse, .navbar-faculty .container>.navbar-header {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 4px;
+  left: 100%;
+  margin-top: -4px;
+  margin-left: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  font-family: 'FontAwesome';
+  content: "\f105" !important;
+  float: right;
+  width: 0;
+  height: 0;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #fff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.box-detail{
+  line-height: 2em;
+  color: #6f6f6f;
+  font-size: 1.05em;
+  margin-bottom: 15px;
+  border-bottom: 1px dashed #c5c5c5;
+  padding-bottom: 1em;
+}
+.btn-view-all, .btn-view-360{
+  display: block;
+  background-color: rgba(255, 175, 0,.8);
+  margin-bottom: 10px;
+  text-align: center;
+  color: #fff;
+  padding: 5.15% 9px;
+}
+.btn-view-all:hover, .btn-view-360:hover{
+  color: #fff;
+  background-color: rgba(255, 175, 0,1);
+}
+.btn-view-all>.icon, .btn-view-360>.icon{
+  font-size: 2.5em;
+}
+.btn-view-all>.name, .btn-view-360>.name{
+  font-size: 1.2em;
+}
+.btn-register-bui {
+  color: #ffffff;
+  background-color: #111C3C;
+  border-color: #111C3C;
+}
+
+.btn-register-bui:hover,
+.btn-register-bui:focus,
+.btn-register-bui:active,
+.btn-register-bui.active,
+.open .dropdown-toggle.btn-register-bui {
+  color: #ffffff;
+  background-color: #111c3c;
+  border-color: #111C3C;
+}
+
+.btn-register-bui:active,
+.btn-register-bui.active,
+.open .dropdown-toggle.btn-register-bui {
+  background-image: none;
+}
+
+.btn-register-bui.disabled,
+.btn-register-bui[disabled],
+fieldset[disabled] .btn-register-bui,
+.btn-register-bui.disabled:hover,
+.btn-register-bui[disabled]:hover,
+fieldset[disabled] .btn-register-bui:hover,
+.btn-register-bui.disabled:focus,
+.btn-register-bui[disabled]:focus,
+fieldset[disabled] .btn-register-bui:focus,
+.btn-register-bui.disabled:active,
+.btn-register-bui[disabled]:active,
+fieldset[disabled] .btn-register-bui:active,
+.btn-register-bui.disabled.active,
+.btn-register-bui[disabled].active,
+fieldset[disabled] .btn-register-bui.active {
+  background-color: #111C3C;
+  border-color: #111C3C;
+}
+
+.btn-register-bui .badge {
+  color: #111C3C;
+  background-color: #ffffff;
+}
+@media (max-width: 1440px) {
+
+}
+@media (max-width: 1199px) {
+  .btn-view-all, .btn-view-360 {
+    padding: 7.15% 9px;
+  }
+  .banner-international-programs > .video {
+    top: 190px;
+  }
+  .banner-international-programs .boundless-future {
+    height: 45px;
+  }
+  .banner-international-programs > .box-register {
+    top: 190px;
+  }
+  .banner-international-programs > .box-register h1 {
+    font-size: 2em;
+  }
+}
+@media (max-width: 768px) {
+  .footer-faculty{
+    padding: 2em 0;
+  }
+  .footer-faculty .fdetail{
+    width: 100%;
+  }
+  .header-faculty > .header-faculty-cover .header-faculty-logo img{
+    height: auto;
+    width: 60%;
+  }
+  .banner-international-programs > .video {
+    width: 39%;
+    top: 200px;
+  }
+  .banner-international-programs .boundless-future {
+    height: 35px;
+  }
+  .banner-international-programs > .box-register {
+    top: 180px;
+    width: 38%;
+  }
+  .banner-international-programs > .box-register h1 {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 767px){
+  .header-faculty > .header-faculty-cover .header-faculty-logo {
+    margin: 30px 0;
+  }
+  .header-faculty > .header-faculty-cover .header-faculty-logo img{
+    height: auto;
+    width: 100%;
+  }
+  .navbar-faculty .navbar-header {
+    float: right;
+    width: 106%;
+    height: 50px;
+  }
+  .navbar-faculty .navbar-toggle {
+    border: 0;
+  }
+  .navbar-faculty .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+  }
+  .navbar-faculty .navbar-toggle:hover .icon-bar, .navbar-faculty .navbar-toggle:focus .icon-bar, .navbar-faculty .navbar-toggle:active .icon-bar, .navbar-faculty .navbar-toggle:visited .icon-bar {
+    background-color: #ffffff;
+  }
+  .navbar-faculty .navbar-toggle {
+    background-color: transparent;
+    margin-top: 12px;
+  }
+  .navbar-faculty .navbar-toggle:hover, .navbar-faculty .navbar-toggle:focus, .navbar-faculty .navbar-toggle:active, .navbar-faculty .navbar-toggle:visited {
+    background-color: transparent;
+  }
+  .navbar-faculty .navbar-nav .open .dropdown-menu>li>a {
+    padding: 10px 20px 10px 40px;
+  }
+  .navbar-faculty .dropdown-submenu .dropdown-menu>li>a  {
+    padding-left: 50px !important;
+  }
+  .dropdown-submenu>.dropdown-menu {
+    display: block;
+  }
+  .dropdown-submenu>a:after {
+    content: "" !important;
+  }
+  .banner-international-programs > .video {
+    width: 88%;
+    top: 170px;
+    left: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .banner-international-programs > .video .box-register {
+    width: 88%;
+    right: 0;
+    color: #fff;
+  }
+  .banner-international-programs > .video .box-register label {
+    text-align: right;
+    margin-top: 9px;
+  }
+
+}
+@media (max-width: 425px) {
+  .footer-faculty h2 {
+    font-size: 1.1em;
+  }
+  .banner-international-programs > .video .box-register h2 {
+    margin-top: 2em !important;
+  }
+}
+@media (max-width: 375px) {
+  .banner-international-programs > .video .box-register h2 {
+    margin-top: 1.2em !important;
+  }
+}
+@media (max-width: 320px) {
+  .banner-international-programs > .video {
+    top: 155px;
+  }
+  .banner-international-programs > .video .box-register h2 {
+    font-size: 1.2em;
+  }
+}
+
+/*increstive*/
+
+.img-bg-header {
+  background-image: url(../../../assets/faculty/images/international-programs/curriculum-inter.png);
+  background-size: cover;
+  background-position: center;
+}
+

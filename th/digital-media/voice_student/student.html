@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="th">
+<head>
+  <base href="https://www.bu.ac.th/">
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
+  <meta name='author' content='Bangkok University'>
+  <title>เสียงจากนักศึกษา - คณะดิจิทัลมีเดียและศิลปะภาพยนตร์ มหาวิทยาลัยกรุงเทพ</title>
+  <!-- Open Graph -->
+  <meta property='og:url' content='https://www.bu.ac.th/th/digital-media/voice_student/student'>
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='เสียงจากนักศึกษา - คณะดิจิทัลมีเดียและศิลปะภาพยนตร์ มหาวิทยาลัยกรุงเทพ'>
+  <meta property='og:description' content='Bangkok University : มหาวิทยาลัยกรุงเทพ'>
+  <meta property='og:image' content='https://www.bu.ac.th/uploads/seo/default.png'>
+  <meta property='og:site_name' content='Bangkok University'>
+  <!— Twitter —>
+  <meta name='twitter:card' content='website'>
+  <meta name='twitter:site' content='@Bangkok_BU'>
+  <meta name='twitter:creator' content='@Bangkok_BU'>
+  <meta name='twitter:title' content='เสียงจากนักศึกษา - คณะดิจิทัลมีเดียและศิลปะภาพยนตร์ มหาวิทยาลัยกรุงเทพ'>
+  <meta name='twitter:description' content='Bangkok University : มหาวิทยาลัยกรุงเทพ'>
+      <link rel="stylesheet" href="./vendors/bootstrap-3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="./vendors/font-awesome-4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="./vendors/animate/css/animate.css">
+      <link rel="stylesheet" href="./vendors/fonts/Karnvayla/stylesheet.css">
+      <link rel="stylesheet" href="./vendors/inspinia_admin-v2.7/css/plugins/ladda/ladda-themeless.min.css">
+      <link rel="stylesheet" href="./vendors/inspinia_admin-v2.7/css/plugins/sweetalert/sweetalert.css">
+      <link rel="stylesheet" href="./vendors/inspinia_admin-v2.7/css/style-main.css">
+      <link rel="stylesheet" href="./vendors/hamburger-toggle/css/style.css">
+      <link rel="stylesheet" href="./vendors/owl.carousel/owl-carousel/owl.theme.css">
+      <link rel="stylesheet" href="./vendors/owl.carousel/owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="./vendors/ionicons-2.0.1/css/ionicons.min.css">
+      <link rel="stylesheet" href="./assets/main/css/style.css">
+      <link rel="stylesheet" href="./assets/faculty/css/style.css">
+      <link rel="stylesheet" href="./assets/faculty/css/news/news.css">
+      <link rel="stylesheet" href="./assets/faculty/css/voice_student/index.css">
+      <link rel="stylesheet" href="./assets/main/css/voices-from/students.css">
+        <link rel="shortcut icon" href="favicon.ico" />
+          <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v3.2&appId=1120425418117270"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42914512-1', 'bu.ac.th');
+  ga('send', 'pageview');
+</script>
+<!-- /Google Analytics -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KBGBMXC');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body class="white-bg">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBGBMXC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div id="fb-root"></div>
+  <div id="main-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-xs-12" id="logo-bu-horizontal">
+        <a href="./">
+          <picture>
+            <source media="(min-width: 1920px)" srcset="./assets/images/logo-bu-white-horizontal.png">
+            <img src="./assets/images/logoBU_w500.png" height="70px"alt="มหาวิทยาลัยกรุงเทพ" style="width: auto;">
+          </picture>
+        </a>
+      </div>
+      <div class="col-sm-6 hidden-xs">
+        <div class="form-inline m-t-md">
+          <ul class="list-inline pull-right no-margins">
+            <li>
+              <form class="" action="./th/search" method="get" autocomplete="off">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="ค้นหา..." value="">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default no-rounds" type="submit"><i class="fa fa-search"></i></button>
+                  </span>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="header-menu-bg">
+<img class="header-menu-bg-img" src="./assets/main/images/resize-bg-header2.png" >
+</div>
+<div id="menu-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <nav class="navbar navbar-default no-margins" id="bu-bootstrap-menu">
+          <div class="container">
+            <ul class="list-inline visible-xs  pull-right list-right">
+              <li><a href="javascript:void()"; onclick="$('#collapse-main-search').toggle();" class="icon-search-small"><i class="fa fa-search"></i></a></li>
+            </ul>
+            <div class="navbar-header">
+              <a class="btn-navbar visible-xs" id="nav-icon"><i class="fa fa-bars"></i></a>
+              <a class="navbar-brand hidden-xs" href="./"><img src="./assets/main/images/icon-home.png"></a>
+            </div>
+                        <a href="http://admissiononline.bu.ac.th/" class="btn btn-apply-now btn-rounds visible-xs" target="_blank">สมัครเรียน</a>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav border-after">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">หลักสูตร</a>
+                  <div class="dropdown-menu full-width">
+                                        <div class="row menu-box">
+                      <div class="col-md-3 col-sm-3">
+                        <a href="./th/curriculum/bachelors-degree" class="box box-1"><div class="text">ปริญญาตรี</div></a>
+                      </div>
+                      <div class="col-md-3 col-sm-3">
+                        <a href="./en/curriculum/international-programs" class="box box-2"><div class="text">International Programs</div></a>
+                      </div>
+                      <div class="col-md-2 col-sm-2">
+                        <a href="./th/pre-degree" class="box box-8"><div class="text">Pre-degree</div></a>
+                      </div>
+                      <div class="col-md-2 col-sm-2">
+                        <a href="./th/curriculum/bachelors-degree/tuition-fees" class="box box-3"><div class="text">ค่าเล่าเรียน</div></a>
+                      </div>
+                      <div class="col-md-2 col-sm-2">
+                        <a href="./th/curriculum/bachelors-degree/scholarships" class="box box-4"><div class="text">ทุนการศึกษา</div></a>
+                      </div>
+                    </div>
+                    <div class="row menu-box">
+                      <div class="col-sm-3">
+                        <a href="./th/curriculum/masters-degree" class="box box-5"><div class="text">ปริญญาโท</div></a>
+                      </div>
+                      <div class="col-sm-3">
+                        <a href="./th/curriculum/doctoral-degree" class="box box-6"><div class="text">ปริญญาเอก</div></a>
+                      </div>
+                                            <div class="col-sm-3">
+                        <a href="./th/buci" class="box box-7"><div class="text">หลักสูตรนานาชาติจีน</div></a>
+                      </div>
+                      <div class="col-sm-3">
+                          <a href="./th/short-courses" class="box box-8">
+                              <div class="text">
+                                  อบรม/ประกาศนียบัตร                              </div>
+                          </a>
+                                                </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <a href="#" onclick="$('#dropdown-menu-header .collapse').collapse('hide');" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">รอบรั้วมหาวิทยาลัย</a>
+                  <div class="dropdown-menu full-width row bg-676e77" id="dropdown-menu-header">
+                    <div class="col-md-3 col-sm-6 no-padding border-right">
+                      <h3 class="m-t-md m-l-sm m-b-sm">รู้จัก ม.กรุงเทพ</h3>
+                      <ul class="list-unstyled m-b-sm">
+                                                  <li class="disabled"><a href="javascript:$('#dropdown-menu-header .collapse').collapse('hide');$('#collapseMain_00000052').collapse('toggle');" ng-click="$event.stopPropagation();">ข่าวสาร <i class="fa fa-angle-down"></i></a></li>
+                          <li class="collapse" id="collapseMain_00000052">
+                            <ul class="list-unstyled">
+                              <li><a href="th/corporate-news">&emsp;<i class="fa fa-angle-right"></i> Corporate News</a></li>
+                              <li><a href="th/bu-magazine">&emsp;<i class="fa fa-angle-right"></i> BU Story</a></li>
+                              <li><a href="th/news-clipping">&emsp;<i class="fa fa-angle-right"></i> News Clippings</a></li>
+                            </ul>
+                          </li>
+                                                <li class="disabled"><a href="javascript:$('#dropdown-menu-header .collapse').collapse('hide');$('#collapseMain_00000057').collapse('toggle');" ng-click="$event.stopPropagation();">ชีวิตนักศึกษา <i class="fa fa-angle-down"></i></a></li>
+                        <li class="collapse" id="collapseMain_00000057">
+                          <ul class="list-unstyled">
+                                                          <li><a href="th/accommodation">&emsp;<i class="fa fa-angle-right"></i> หอพักนักศึกษา</a></li>
+                                                        <li><a href="th/activities-clubs/sports">&emsp;<i class="fa fa-angle-right"></i> กีฬา/สโมสร/ชมรม</a></li>
+                            <li><a href="th/facilities">&emsp;<i class="fa fa-angle-right"></i> สิ่งอำนวยความสะดวก</a></li>
+                                                                                      <li><a href="th/service-centers">&emsp;<i class="fa fa-angle-right"></i> ศูนย์บริการ</a></li>
+                                                                                  </ul>
+                        </li>
+                        <li class="disabled"><a href="javascript:$('#dropdown-menu-header .collapse').collapse('hide');$('#collapseMain_00000139').collapse('toggle');" ng-click="$event.stopPropagation();">ศิลปวัฒนธรรม <i class="fa fa-angle-down"></i></a></li>
+                        <li class="collapse" id="collapseMain_00000139">
+                          <ul class="list-unstyled">
+                            <li><a href="http://katin3.bu.ac.th" target="_blank">&emsp;<i class="fa fa-angle-right"></i> กฐินพระราชทาน</a></li>
+                            <li><a href="http://museum.bu.ac.th" target="_blank">&emsp;<i class="fa fa-angle-right"></i> พิพิธภัณฑ์สถานเครื่องถ้วยเอเชียตะวันออกเฉียงใต้</a></li>
+                            <li><a href="https://fb.com/bangkokuniversitygallery" target="_blank">&emsp;<i class="fa fa-angle-right"></i> หอศิลป์ มหาวิทยาลัยกรุงเทพ</a></li>
+                            
+                                                      </ul>
+                        </li>
+                        <li><a href="./th/excellence-center">ศูนย์แห่งความเป็นเลิศ</a></li>
+                                                  <li><a href="./th/voices-from-students">เสียงจากนักศึกษา</a></li>
+                          <li><a href="./th/voices-from-alumni">เสียงจากรุ่นพี่</a></li>
+                                              </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 no-padding border-right">
+                      <h3 class="m-t-md m-l-sm m-b-sm">เกี่ยวกับมหาวิทยาลัย</h3>
+                      <ul class="list-unstyled m-b-sm">
+                          <li><a href="./th/about/history">ประวัติมหาวิทยาลัยกรุงเทพ</a></li>
+                                                  <li><a href="./th/about/vision-mission">วิสัยทัศน์และพันธกิจ</a></li>
+                                                <li><a href="./th/about/videos">วิดีโอแนะนำ</a></li>
+                        <li><a href="javascript:$('#dropdown-menu-header .collapse').collapse('hide');$('#collapseMain_00000077').collapse('toggle');" ng-click="$event.stopPropagation();">คณะผู้บริหาร <i class="fa fa-angle-down"></i></a></li>
+                        <li class="collapse" id="collapseMain_00000077">
+                          <ul class="list-unstyled">
+                            <li><a href="./th/council-committees">&emsp;<i class="fa fa-angle-right"></i> สภามหาวิทยาลัย</a></li>
+                            <li><a href="./th/executives">&emsp;<i class="fa fa-angle-right"></i> คณะผู้บริหาร</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="./th/partner-networks">พันธมิตร</a></li>
+                                                  <li><a href="./th/alumni">ศิษย์เก่า</a></li>
+                                                <!-- <li><a href="./th/bu-achievements">ไฮไลท์ผลงาน</a></li> -->
+                        <li><a href="./th/about/downloads">ดาวน์โหลด</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 no-padding border-right">
+                      <h3 class="m-t-md m-l-sm m-b-sm">คุณคือใคร?</h3>
+                      <ul class="list-unstyled m-b-sm">
+                        <li><a href="./th/who-are-you/student/voice_student">นักศึกษา</a></li>
+                        <li><a href="./th/who-are-you/parent">ผู้ปกครอง</a></li>
+                        <li><a href="./th/who-are-you/alumni">ศิษย์เก่า</a></li>
+                        <li><a href="http://mybu.bu.ac.th" target="_blank">บุคลากร</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 no-padding border-right">
+                      <h3 class="m-t-md m-l-sm m-b-sm">ติดต่อเรา</h3>
+                      <ul class="list-unstyled m-b-sm">
+                        <li><a href="./th/contact">ติดต่อเรา</a></li>
+                        <!-- <li><a href="./th/campus-map">แผนที่ภายในมหาวิทยาลัย</a></li> -->
+                                                  <li><a href="./th/rental-space">ติดต่อเช่าสถานที่</a></li>
+                                                <li><a href="./th/visit-bu">ติดต่อเพื่อเยี่ยมชมมหาวิทยาลัย</a></li>
+                        <li><a href=" http://hr.bu.ac.th/web/recruit/Default.aspx" target="_blank">ร่วมงานกับ BU</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://admissiononline.bu.ac.th/" class="btn btn-apply-now btn-rounds" target="_blank">สมัครเรียน</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="collapse" id="collapse-main-search">
+            <form autocomplete="off" action="./thsearch" method="get">
+              <div class="input-group">
+                <input type="text" class="form-control" name="q" placeholder="ค้นหา..." value="">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                </span>
+              </div>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<!-- End Modal -->      <div class="header-faculty">
+      <div class="header-faculty-cover">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="header-faculty-logo animated fadeIn ">
+                <a href="./th/digital-media">
+                  <img src="./uploads/faculty/logo/sQ8tFb460YARtJN-white.png" 
+                  class="" >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+                <div class="header-faculty-menu">
+      <nav class="navbar navbar-faculty ">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#navbar-collapse-faculty-2" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                      </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-faculty-2">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        สาขาวิชา  <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu multi-level">
+                                                                                                            <li class="dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    ปริญญาตรี                                </a>
+                                <ul class="dropdown-menu">
+                                                                            <li>
+                                            <a href="./th/digital-media/film">สาขาวิชาภาพยนตร์                                            </a>
+                                        </li>
+                                                                            <li>
+                                            <a href="./th/digital-media/digital-media">สาขาวิชาสื่อดิจิทัล                                            </a>
+                                        </li>
+                                                                                                        </ul>
+                            </li>
+                                            </ul>
+                </li>
+                              <li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">เกี่ยวกับคณะ <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                                                            <li>
+                                    <a href="./th/digital-media/history">
+                                        ประวัติคณะ                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./th/digital-media/vision-mission">
+                                        ปณิธานและพันธกิจ                                    </a>
+                                </li>
+                                                                      <li><a href="./th/digital-media/videos">วิดีโอแนะนำ</a></li>
+                                                              <li><a href="./th/digital-media/executives">คณะผู้บริหาร</a></li>
+                                                              <li><a href="./th/digital-media/gallery">แกลลอรี่</a></li>
+                                                              <li><a href="./th/digital-media/partner-networks">พันธมิตร</a></li>
+                                                              <li><a href="./th/digital-media/internships">การฝึกงานและสหกิจศึกษา</a></li>
+                    
+                                        
+                                                              <li><a href="./th/digital-media/alumni">ศิษย์เก่า</a></li>
+                                                                                        <li>
+                                <a href="http://ccdabangkok.com/" target="_blank" title="CCDA Training Centre">
+                                    CCDA Training Centre
+                                </a>
+                            </li>
+                                              </ul>
+                </li>
+                <li class="">
+                  <a href="./th/digital-media/tuition-fees/2564/">ค่าเล่าเรียน</a>
+                </li>
+                <!-- <li class="">
+                <a href="./th/digital-media/news">ข่าวสารและกิจกรรม</a>
+              </li> -->
+              <!-- <li><a href="./th/digital-media/activities">ปฏิทินกิจกรรม</a></li> -->
+              <li><a href="./th/who-are-you/student">สำหรับนักศึกษา</a></li>
+                          </ul>
+          </div>
+          <!-- start nav master -->
+                    <!-- end nav master -->
+        </div>
+      </nav>
+
+    </div>
+      </div>
+  <section id="body">
+	<div class="container m-b-sm">
+		<div class="row" style="margin-bottom:5px;">
+			<div class="col-xs-12">
+				<ol class="breadcrumb">
+					<li><a href="./th"><i class="fa fa-home"></i> หน้าหลัก</a></li>
+					<li><a href="./th/digital-media">คณะดิจิทัลมีเดียและศิลปะภาพยนตร์</a></li>
+					<li class="active">เสียงจากนักศึกษา</li>
+				</ol>   
+			</div>
+		</div>
+		<div class="row text-center">
+			<!-- <table class="table">
+				<tr>
+					<td width="25%"></td>
+					<td></td>
+					<td width="10%">
+						
+					</td>
+					<td width="40%"></td>
+				</tr>
+			</table> -->
+			<div class="col-xs-2 col-md-2"></div>
+			<div class="col-xs-5 col-md-4 text-right"><h1> เสียงจาก </h1></div>
+			<div class="col-xs-2 col-md-2 text-left" style="padding-right: 0px;">
+				<button class="dropdown btn btn-lg" style="margin-top: 17px;  background-color: #202353" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			      	<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: white;"> นักศึกษา<span class="caret"></span></a>
+			      	<ul class="dropdown-menu dropdown-menu-right" style="min-width: 0px; width:100px;">
+			        	<li class="dropdown-item">
+			        		<a href="./digital-media/voice_student/alumni">
+			        			รุ่นพี่		        			</a>
+		        		</li>
+			      	</ul>
+			    </button>
+				</div>
+			<div class="col-xs-3"></div>
+		</div>
+	    <ul id="waterfall"></ul>
+		<div class="row">
+	      	<div class="col-sm-12 text-center">
+	        	<button type="button" id="btn-load-more" class="ladda-button btn btn-default" data-style="zoom-in" ng-click="get_data();"><i class="fa fa-angle-double-down"></i> โหลดเพิ่ม...</button>
+	      	</div>
+	    </div>
+	</div>
+</section>
+<script>
+	let firstData = JSON.parse(atob('W3sidnNfaWQiOiI5IiwidnNfY29kZSI6IjE1MTA3MzU4MzItU1RVUEkzSTM1RyIsInZzX3Byb2ZpbGUiOiIyMDE3MTExNTE1NTAzMl9RWVhYRUdOQVY3SDFOSFdfRlZYQVdSMlFNUzlQQkRVLmpwZyIsInZzX2ZiaWQiOiIxMDAwMDE5MDk2NjUyNjkiLCJ2c19mYm5hbWUiOiJBdW0gTmF0dGFrYW5ldCIsInZzX2ZibGluayI6ImF1bXByZS5zdGQiLCJ2c19lbWFpbCI6bnVsbCwidnNfZGVncmVlIjoiMSIsInZzX2ZhY3VsdHkiOiIyIiwidnNfZGVwYXJ0bWVudCI6IjI3IiwidnNfZGVwYXJ0bWVudF9vdGhlcl90aCI6bnVsbCwidnNfZGVwYXJ0bWVudF9vdGhlcl9lbiI6bnVsbCwidnNfZGVzY3JpcHRpb25fdGgiOiJcdTBlNDBcdTBlMjNcdTBlMzJcdTBlMjFcdTBlMzJcdTBlMjdcdTBlMzFcdTBlMTlcdTBlMmFcdTBlMzhcdTBlMTRcdTBlMTdcdTBlNDlcdTBlMzJcdTBlMjIgXHUwZTIxXHUwZTMyXHUwZTQxXHUwZTIzXHUwZTA3XHUwZTQxXHUwZTBiXHUwZTA3XHUwZTE3XHUwZTMyXHUwZTA3XHUwZTQyXHUwZTA0XHUwZTQ5XHUwZTA3IFx1MGUyMVx1MGUzMVx1MGUxOVx1MGU0NFx1MGUyMVx1MGU0OFx1MGU0M1x1MGUwYVx1MGU0OFx1MGU0MVx1MGUwNFx1MGU0OFx1MGUyMVx1MGUyYlx1MGUzMlx1MGUyNVx1MGUzMVx1MGUyMlx1MGUxOFx1MGUyM1x1MGUyM1x1MGUyMVx1MGUxNFx1MGUzMiBcdTBlMjFcdTBlMzFcdTBlMTlcdTBlMDRcdTBlMzdcdTBlMmRcdTBlMWJcdTBlMjNcdTBlMzBcdTBlMTVcdTBlMzlcdTBlMmFcdTBlMzlcdTBlNDlcdTBlNDJcdTBlMjVcdTBlMDFcdTBlNDFcdTBlMmJcdTBlNDhcdTBlMDdcdTBlMDRcdTBlMjdcdTBlMzJcdTBlMjFcdTBlMWRcdTBlMzFcdTBlMTlcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMTdcdTBlMzhcdTBlMDFcdTBlMDRcdTBlMTlcdTBlMmRcdTBlMjJcdTBlMzJcdTBlMDFcdTBlMDhcdTBlMzBcdTBlNDBcdTBlMDJcdTBlNDlcdTBlMzJcdTBlNDRcdTBlMWIgXHUwZTIxXHUwZTMxXHUwZTE5XHUwZTQwXHUwZTFiXHUwZTQ3XHUwZTE5XHUwZTQwXHUwZTJiXHUwZTIxXHUwZTM3XHUwZTJkXHUwZTE5XHUwZTAxXHUwZTMxXHUwZTFhXHUwZTFiXHUwZTIzXHUwZTMwXHUwZTE1XHUwZTM5XHUwZTI3XHUwZTM0XHUwZTQwXHUwZTI4XHUwZTI5XHUwZTAyXHUwZTJkXHUwZTA3XHUwZTQyXHUwZTE0XHUwZTQwXHUwZTIzXHUwZTIxXHUwZTQ4XHUwZTJkXHUwZTE5XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTA4XHUwZTMwXHUwZTFlXHUwZTMyXHUwZTQwXHUwZTIzXHUwZTMyXHUwZTQ0XHUwZTFiXHUwZTJhXHUwZTM5XHUwZTQ4XHUwZTA0XHUwZTI3XHUwZTMyXHUwZTIxXHUwZTJhXHUwZTMzXHUwZTQwXHUwZTIzXHUwZTQ3XHUwZTA4IFx1MGU0MFx1MGUxZVx1MGUyM1x1MGUzMlx1MGUzMFx1MGUxN1x1MGUzNVx1MGU0OFx1MGUxOVx1MGUzNVx1MGU0OFx1MGUwNFx1MGUzN1x1MGUyZENyZWF0aXZlIHVuaXZlcnNpdHkgXHUwZTJhXHUwZTE2XHUwZTMyXHUwZTE5XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTA4XHUwZTMwXHUwZTE3XHUwZTMzXHUwZTQzXHUwZTJiXHUwZTQ5XHUwZTFkXHUwZTMxXHUwZTE5XHUwZTAyXHUwZTJkXHUwZTA3XHUwZTA0XHUwZTM4XHUwZTEzXHUwZTQwXHUwZTFiXHUwZTQ3XHUwZTE5XHUwZTA4XHUwZTIzXHUwZTM0XHUwZTA3IiwidnNfZGVzY3JpcHRpb25fZW4iOiJcdTBlNDBcdTBlMjNcdTBlMzJcdTBlMjFcdTBlMzJcdTBlMjdcdTBlMzFcdTBlMTlcdTBlMmFcdTBlMzhcdTBlMTRcdTBlMTdcdTBlNDlcdTBlMzJcdTBlMjIgXHUwZTIxXHUwZTMyXHUwZTQxXHUwZTIzXHUwZTA3XHUwZTQxXHUwZTBiXHUwZTA3XHUwZTE3XHUwZTMyXHUwZTA3XHUwZTQyXHUwZTA0XHUwZTQ5XHUwZTA3IFx1MGUyMVx1MGUzMVx1MGUxOVx1MGU0NFx1MGUyMVx1MGU0OFx1MGU0M1x1MGUwYVx1MGU0OFx1MGU0MVx1MGUwNFx1MGU0OFx1MGUyMVx1MGUyYlx1MGUzMlx1MGUyNVx1MGUzMVx1MGUyMlx1MGUxOFx1MGUyM1x1MGUyM1x1MGUyMVx1MGUxNFx1MGUzMiBcdTBlMjFcdTBlMzFcdTBlMTlcdTBlMDRcdTBlMzdcdTBlMmRcdTBlMWJcdTBlMjNcdTBlMzBcdTBlMTVcdTBlMzlcdTBlMmFcdTBlMzlcdTBlNDlcdTBlNDJcdTBlMjVcdTBlMDFcdTBlNDFcdTBlMmJcdTBlNDhcdTBlMDdcdTBlMDRcdTBlMjdcdTBlMzJcdTBlMjFcdTBlMWRcdTBlMzFcdTBlMTlcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMTdcdTBlMzhcdTBlMDFcdTBlMDRcdTBlMTlcdTBlMmRcdTBlMjJcdTBlMzJcdTBlMDFcdTBlMDhcdTBlMzBcdTBlNDBcdTBlMDJcdTBlNDlcdTBlMzJcdTBlNDRcdTBlMWIgXHUwZTIxXHUwZTMxXHUwZTE5XHUwZTQwXHUwZTFiXHUwZTQ3XHUwZTE5XHUwZTQwXHUwZTJiXHUwZTIxXHUwZTM3XHUwZTJkXHUwZTE5XHUwZTAxXHUwZTMxXHUwZTFhXHUwZTFiXHUwZTIzXHUwZTMwXHUwZTE1XHUwZTM5XHUwZTI3XHUwZTM0XHUwZTQwXHUwZTI4XHUwZTI5XHUwZTAyXHUwZTJkXHUwZTA3XHUwZTQyXHUwZTE0XHUwZTQwXHUwZTIzXHUwZTIxXHUwZTQ4XHUwZTJkXHUwZTE5XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTA4XHUwZTMwXHUwZTFlXHUwZTMyXHUwZTQwXHUwZTIzXHUwZTMyXHUwZTQ0XHUwZTFiXHUwZTJhXHUwZTM5XHUwZTQ4XHUwZTA0XHUwZTI3XHUwZTMyXHUwZTIxXHUwZTJhXHUwZTMzXHUwZTQwXHUwZTIzXHUwZTQ3XHUwZTA4IFx1MGU0MFx1MGUxZVx1MGUyM1x1MGUzMlx1MGUzMFx1MGUxN1x1MGUzNVx1MGU0OFx1MGUxOVx1MGUzNVx1MGU0OFx1MGUwNFx1MGUzN1x1MGUyZENyZWF0aXZlIHVuaXZlcnNpdHkgXHUwZTJhXHUwZTE2XHUwZTMyXHUwZTE5XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTA4XHUwZTMwXHUwZTE3XHUwZTMzXHUwZTQzXHUwZTJiXHUwZTQ5XHUwZTFkXHUwZTMxXHUwZTE5XHUwZTAyXHUwZTJkXHUwZTA3XHUwZTA0XHUwZTM4XHUwZTEzXHUwZTQwXHUwZTFiXHUwZTQ3XHUwZTE5XHUwZTA4XHUwZTIzXHUwZTM0XHUwZTA3IiwidnNfdHlwZSI6IjIiLCJ2c19hY3RpdmUiOiIxIiwidnNfaGlnaGxpZ2h0IjoiMSIsInZzX2NyZWF0ZSI6IjIwMTctMTEtMTUgMTU6NTA6MzEiLCJ2c191cGRhdGUiOiIyMDE3LTExLTE2IDEwOjQ1OjA3IiwiZGVwdF9uYW1lX3RoIjoiXHUwZTJhXHUwZTMyXHUwZTAyXHUwZTMyXHUwZTI3XHUwZTM0XHUwZTBhXHUwZTMyXHUwZTIwXHUwZTMyXHUwZTFlXHUwZTIyXHUwZTE5XHUwZTE1XHUwZTIzXHUwZTRjIiwiZGVwdF9uYW1lX2VuIjoiRmlsbSIsImZhY3VsdHlfbmFtZV90aCI6Ilx1MGUwNFx1MGUxM1x1MGUzMFx1MGUxNFx1MGUzNFx1MGUwOFx1MGUzNFx1MGUxN1x1MGUzMVx1MGUyNVx1MGUyMVx1MGUzNVx1MGU0MFx1MGUxNFx1MGUzNVx1MGUyMlx1MGU0MVx1MGUyNVx1MGUzMFx1MGUyOFx1MGUzNFx1MGUyNVx1MGUxYlx1MGUzMFx1MGUyMFx1MGUzMlx1MGUxZVx1MGUyMlx1MGUxOVx1MGUxNVx1MGUyM1x1MGU0YyIsImZhY3VsdHlfbmFtZV9lbiI6IlNjaG9vbCBvZiBEaWdpdGFsIE1lZGlhIGFuZCBDaW5lbWF0aWMgQXJ0cyIsImZhY3VsdHlfc2x1ZyI6ImRpZ2l0YWwtbWVkaWEifSx7InZzX2lkIjoiNSIsInZzX2NvZGUiOiIxNTEwNzM1ODMyLU1aNjM5VlZFT1IiLCJ2c19wcm9maWxlIjoiMjAxNzExMTUxNTUwMzJfM0FTUEFERjFDRkFBM0VJX003WDRYQlFYSVVHTzBMRC5qcGciLCJ2c19mYmlkIjoiMTAwMDAxNjk1NzI1MTUwIiwidnNfZmJuYW1lIjoiUGFuc2Frb3JuIEtyYW5qYXBhc2FuYW50IiwidnNfZmJsaW5rIjoicGFuc2Frb3JuLmtyYW5qYXBhc2FuYW50IiwidnNfZW1haWwiOiJQYW5zYWtvcm4ua3JhbkBidW1haWwuY29tIiwidnNfZGVncmVlIjoiMSIsInZzX2ZhY3VsdHkiOiIyIiwidnNfZGVwYXJ0bWVudCI6IjI3IiwidnNfZGVwYXJ0bWVudF9vdGhlcl90aCI6bnVsbCwidnNfZGVwYXJ0bWVudF9vdGhlcl9lbiI6bnVsbCwidnNfZGVzY3JpcHRpb25fdGgiOiJcdTBlNDBcdTBlMmJcdTBlMTVcdTBlMzhcdTBlMTdcdTBlMzVcdTBlNDhcdTBlNDBcdTBlMjVcdTBlMzdcdTBlMmRcdTBlMDFcdTBlNDBcdTBlMjNcdTBlMzVcdTBlMjJcdTBlMTlcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMTlcdTBlMzVcdTBlNDhcdTBlNDBcdTBlMWVcdTBlMjNcdTBlMzJcdTBlMzBcdTBlMTlcdTBlMmRcdTBlMDFcdTBlMDhcdTBlMzJcdTBlMDFcdTBlMjFcdTBlMzVcdTBlMGFcdTBlMzdcdTBlNDhcdTBlMmRcdTBlNDBcdTBlMmFcdTBlMzVcdTBlMjJcdTBlMDdcdTBlNDNcdTBlMTlcdTBlMTRcdTBlNDlcdTBlMzJcdTBlMTlcdTBlNDBcdTBlMDRcdTBlMjNcdTBlMzdcdTBlNDhcdTBlMmRcdTBlMDdcdTBlMjFcdTBlMzdcdTBlMmRcdTBlMDFcdTBlMzJcdTBlMjNcdTBlMmFcdTBlMmRcdTBlMTlcdTBlMTVcdTBlNDhcdTBlMzJcdTBlMDdcdTBlNDZcdTBlMDRcdTBlMjNcdTBlMWFcdTBlMDRcdTBlMzhcdTBlMTNcdTBlMjBcdTBlMzJcdTBlMWVcdTBlMTdcdTBlMzJcdTBlMDdcdTBlMDFcdTBlMzJcdTBlMjNcdTBlMmFcdTBlMmRcdTBlMTlcdTBlMDJcdTBlMmRcdTBlMDdcdTBlMDRcdTBlMjNcdTBlMzlcdTBlMTdcdTBlMzhcdTBlMDFcdTBlNDZcdTBlMTdcdTBlNDhcdTBlMzJcdTBlMTlcdTBlMmFcdTBlNDhcdTBlMjdcdTBlMTlcdTBlMTVcdTBlMzFcdTBlMjdcdTBlNDFcdTBlMjVcdTBlNDlcdTBlMjdcdTBlMTRcdTBlMzVcdTBlNDNcdTBlMDhcdTBlMjFcdTBlMzJcdTBlMDFcdTBlMTdcdTBlMzVcdTBlNDhcdTBlNDRcdTBlMTRcdTBlNDlcdTBlMjFcdTBlMzJcdTBlNDBcdTBlMjNcdTBlMzVcdTBlMjJcdTBlMTlcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMTlcdTBlMzVcdTBlNDggXHUwZTIxXHUwZTM1XHUwZTQwXHUwZTFlXHUwZTM3XHUwZTQ4XHUwZTJkXHUwZTE5XHUwZTQ2XHUwZTFlXHUwZTM1XHUwZTQ4XHUwZTQ2XHUwZTIxXHUwZTMyXHUwZTAxXHUwZTIxXHUwZTMyXHUwZTIyXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTA0XHUwZTJkXHUwZTIyXHUwZTBhXHUwZTQ4XHUwZTI3XHUwZTIyXHUwZTQwXHUwZTJiXHUwZTI1XHUwZTM3XHUwZTJkXHUwZTAxXHUwZTMxXHUwZTE5XHUwZTIxXHUwZTM1XHUwZTJkXHUwZTMwXHUwZTQ0XHUwZTIzXHUwZTQwXHUwZTIzXHUwZTMyXHUwZTA4XHUwZTMwXHUwZTBhXHUwZTQ4XHUwZTI3XHUwZTIyXHUwZTQwXHUwZTJiXHUwZTI1XHUwZTM3XHUwZTJkXHUwZTAxXHUwZTMxXHUwZTE5XHUwZTQwXHUwZTJhXHUwZTIxXHUwZTJkIFx1MGU0NFx1MGUyMVx1MGU0OFx1MGUxY1x1MGUzNFx1MGUxNFx1MGUyYlx1MGUyN1x1MGUzMVx1MGUwN1x1MGUwOFx1MGUyM1x1MGUzNFx1MGUwN1x1MGU0Nlx1MGUxN1x1MGUzNVx1MGU0OFx1MGUyMVx1MGUzMlx1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUxN1x1MGUzNVx1MGU0OCBcdTBlMjFcdTBlMmJcdTBlMzJcdTBlMjdcdTBlMzRcdTBlMTdcdTBlMjJcdTBlMzJcdTBlMjVcdTBlMzFcdTBlMjJcdTBlMDFcdTBlMjNcdTBlMzhcdTBlMDdcdTBlNDBcdTBlMTdcdTBlMWVcdTBlMmZcdTI3NjRcdTI3NjRcdTI3NjQgI0JVREMxMSIsInZzX2Rlc2NyaXB0aW9uX2VuIjoiXHUwZTQwXHUwZTJiXHUwZTE1XHUwZTM4XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTQwXHUwZTI1XHUwZTM3XHUwZTJkXHUwZTAxXHUwZTQwXHUwZTIzXHUwZTM1XHUwZTIyXHUwZTE5XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTE5XHUwZTM1XHUwZTQ4XHUwZTQwXHUwZTFlXHUwZTIzXHUwZTMyXHUwZTMwXHUwZTE5XHUwZTJkXHUwZTAxXHUwZTA4XHUwZTMyXHUwZTAxXHUwZTIxXHUwZTM1XHUwZTBhXHUwZTM3XHUwZTQ4XHUwZTJkXHUwZTQwXHUwZTJhXHUwZTM1XHUwZTIyXHUwZTA3XHUwZTQzXHUwZTE5XHUwZTE0XHUwZTQ5XHUwZTMyXHUwZTE5XHUwZTQwXHUwZTA0XHUwZTIzXHUwZTM3XHUwZTQ4XHUwZTJkXHUwZTA3XHUwZTIxXHUwZTM3XHUwZTJkXHUwZTAxXHUwZTMyXHUwZTIzXHUwZTJhXHUwZTJkXHUwZTE5XHUwZTE1XHUwZTQ4XHUwZTMyXHUwZTA3XHUwZTQ2XHUwZTA0XHUwZTIzXHUwZTFhXHUwZTA0XHUwZTM4XHUwZTEzXHUwZTIwXHUwZTMyXHUwZTFlXHUwZTE3XHUwZTMyXHUwZTA3XHUwZTAxXHUwZTMyXHUwZTIzXHUwZTJhXHUwZTJkXHUwZTE5XHUwZTAyXHUwZTJkXHUwZTA3XHUwZTA0XHUwZTIzXHUwZTM5XHUwZTE3XHUwZTM4XHUwZTAxXHUwZTQ2XHUwZTE3XHUwZTQ4XHUwZTMyXHUwZTE5XHUwZTJhXHUwZTQ4XHUwZTI3XHUwZTE5XHUwZTE1XHUwZTMxXHUwZTI3XHUwZTQxXHUwZTI1XHUwZTQ5XHUwZTI3XHUwZTE0XHUwZTM1XHUwZTQzXHUwZTA4XHUwZTIxXHUwZTMyXHUwZTAxXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTQ0XHUwZTE0XHUwZTQ5XHUwZTIxXHUwZTMyXHUwZTQwXHUwZTIzXHUwZTM1XHUwZTIyXHUwZTE5XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTE5XHUwZTM1XHUwZTQ4IFx1MGUyMVx1MGUzNVx1MGU0MFx1MGUxZVx1MGUzN1x1MGU0OFx1MGUyZFx1MGUxOVx1MGU0Nlx1MGUxZVx1MGUzNVx1MGU0OFx1MGU0Nlx1MGUyMVx1MGUzMlx1MGUwMVx1MGUyMVx1MGUzMlx1MGUyMlx1MGUxN1x1MGUzNVx1MGU0OFx1MGUwNFx1MGUyZFx1MGUyMlx1MGUwYVx1MGU0OFx1MGUyN1x1MGUyMlx1MGU0MFx1MGUyYlx1MGUyNVx1MGUzN1x1MGUyZFx1MGUwMVx1MGUzMVx1MGUxOVx1MGUyMVx1MGUzNVx1MGUyZFx1MGUzMFx1MGU0NFx1MGUyM1x1MGU0MFx1MGUyM1x1MGUzMlx1MGUwOFx1MGUzMFx1MGUwYVx1MGU0OFx1MGUyN1x1MGUyMlx1MGU0MFx1MGUyYlx1MGUyNVx1MGUzN1x1MGUyZFx1MGUwMVx1MGUzMVx1MGUxOVx1MGU0MFx1MGUyYVx1MGUyMVx1MGUyZCBcdTBlNDRcdTBlMjFcdTBlNDhcdTBlMWNcdTBlMzRcdTBlMTRcdTBlMmJcdTBlMjdcdTBlMzFcdTBlMDdcdTBlMDhcdTBlMjNcdTBlMzRcdTBlMDdcdTBlNDZcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMjFcdTBlMzJcdTBlNDBcdTBlMjNcdTBlMzVcdTBlMjJcdTBlMTlcdTBlMTdcdTBlMzVcdTBlNDggXHUwZTIxXHUwZTJiXHUwZTMyXHUwZTI3XHUwZTM0XHUwZTE3XHUwZTIyXHUwZTMyXHUwZTI1XHUwZTMxXHUwZTIyXHUwZTAxXHUwZTIzXHUwZTM4XHUwZTA3XHUwZTQwXHUwZTE3XHUwZTFlXHUwZTJmXHUyNzY0XHUyNzY0XHUyNzY0ICNCVURDMTEiLCJ2c190eXBlIjoiMiIsInZzX2FjdGl2ZSI6IjEiLCJ2c19oaWdobGlnaHQiOiIwIiwidnNfY3JlYXRlIjoiMjAxNy0xMS0xNSAxNTo1MDozMSIsInZzX3VwZGF0ZSI6IjIwMTctMTEtMTYgMTA6NDU6MDciLCJkZXB0X25hbWVfdGgiOiJcdTBlMmFcdTBlMzJcdTBlMDJcdTBlMzJcdTBlMjdcdTBlMzRcdTBlMGFcdTBlMzJcdTBlMjBcdTBlMzJcdTBlMWVcdTBlMjJcdTBlMTlcdTBlMTVcdTBlMjNcdTBlNGMiLCJkZXB0X25hbWVfZW4iOiJGaWxtIiwiZmFjdWx0eV9uYW1lX3RoIjoiXHUwZTA0XHUwZTEzXHUwZTMwXHUwZTE0XHUwZTM0XHUwZTA4XHUwZTM0XHUwZTE3XHUwZTMxXHUwZTI1XHUwZTIxXHUwZTM1XHUwZTQwXHUwZTE0XHUwZTM1XHUwZTIyXHUwZTQxXHUwZTI1XHUwZTMwXHUwZTI4XHUwZTM0XHUwZTI1XHUwZTFiXHUwZTMwXHUwZTIwXHUwZTMyXHUwZTFlXHUwZTIyXHUwZTE5XHUwZTE1XHUwZTIzXHUwZTRjIiwiZmFjdWx0eV9uYW1lX2VuIjoiU2Nob29sIG9mIERpZ2l0YWwgTWVkaWEgYW5kIENpbmVtYXRpYyBBcnRzIiwiZmFjdWx0eV9zbHVnIjoiZGlnaXRhbC1tZWRpYSJ9LHsidnNfaWQiOiIxNCIsInZzX2NvZGUiOiIxNTEwNzM1ODMyLVlVSjRXWk1XMlciLCJ2c19wcm9maWxlIjoiMjAxNzExMTUxNTUwMzJfRkVPMUlWUURaVVhCTzEyX0ZNQzJXR0JSUEZPWlNLMi5qcGciLCJ2c19mYmlkIjoiMTAwMDA5Njc5NjA2MzQ0IiwidnNfZmJuYW1lIjoiQ2h1dGl5YSBQYW5rb211dCIsInZzX2ZibGluayI6InByb2ZpbGUucGhwIiwidnNfZW1haWwiOm51bGwsInZzX2RlZ3JlZSI6IjEiLCJ2c19mYWN1bHR5IjoiMiIsInZzX2RlcGFydG1lbnQiOiIyNyIsInZzX2RlcGFydG1lbnRfb3RoZXJfdGgiOm51bGwsInZzX2RlcGFydG1lbnRfb3RoZXJfZW4iOm51bGwsInZzX2Rlc2NyaXB0aW9uX3RoIjoiXHUwZTQwXHUwZTA4XHUwZTRiXHUwZTA3XHUwZTE3XHUwZTM4XHUwZTAxXHUwZTJkXHUwZTIyXHUwZTQ4XHUwZTMyXHUwZTA3IFx1MGUxNVx1MGUzMVx1MGU0OVx1MGUwN1x1MGU0MVx1MGUxNVx1MGU0OFx1MGUyZFx1MGUzOFx1MGUxYlx1MGUwMVx1MGUyM1x1MGUxM1x1MGU0Y1x1MGUwMVx1MGUzMlx1MGUyM1x1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUwMVx1MGUzMlx1MGUyM1x1MGUyYVx1MGUyZFx1MGUxOSBcdTBlMmFcdTBlMTZcdTBlMzJcdTBlMTlcdTBlMTdcdTBlMzVcdTBlNDggXHUwZTQwXHUwZTFiXHUwZTM0XHUwZTE0XHUwZTQyXHUwZTJkXHUwZTAxXHUwZTMyXHUwZTJhIFx1MGUxN1x1MGUzMVx1MGU0OVx1MGUwN1x1MGU0MFx1MGUxNFx1MGU0N1x1MGUwMVx1MGUyMFx1MGUzMlx1MGUyMlx1MGU0M1x1MGUxOSBcdTBlNDFcdTBlMjVcdTBlMzBcdTBlNDBcdTBlMTRcdTBlNDdcdTBlMDFcdTBlMjFcdTBlMzFcdTBlMThcdTBlMjJcdTBlMjFcdTBlNDNcdTBlMmJcdTBlNDlcdTBlMjFcdTBlMzJcdTBlNDBcdTBlMWJcdTBlMzRcdTBlMTRcdTBlNDJcdTBlMjVcdTBlMDFcdTBlNDFcdTBlMmJcdTBlNDhcdTBlMDdcdTBlMDhcdTBlMzRcdTBlMTlcdTBlMTVcdTBlMTlcdTBlMzJcdTBlMDFcdTBlMzJcdTBlMjNcdTBlNDFcdTBlMjVcdTBlMzBcdTBlMDRcdTBlMjdcdTBlMzJcdTBlMjFcdTBlMmFcdTBlMjNcdTBlNDlcdTBlMzJcdTBlMDdcdTBlMmFcdTBlMjNcdTBlMjNcdTBlMDRcdTBlNGMgXHUwZTFhXHUwZTE5XHUwZTJiXHUwZTI1XHUwZTMxXHUwZTAxXHUwZTAxXHUwZTMyXHUwZTIzXHUwZTE3XHUwZTMzXHUwZTA3XHUwZTMyXHUwZTE5XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTQwXHUwZTFiXHUwZTQ3XHUwZTE5XHUwZTIxXHUwZTM3XHUwZTJkXHUwZTJkXHUwZTMyXHUwZTBhXHUwZTM1XHUwZTFlIFx1MGU0M1x1MGUyYlx1MGU0OVx1MGUyMVx1MGUzNFx1MGUxNVx1MGUyM1x1MGUyMFx1MGUzMlx1MGUxZSBcdTBlNDNcdTBlMmJcdTBlNDlcdTBlMDRcdTBlMjdcdTBlMzJcdTBlMjFcdTBlMjNcdTBlMzlcdTBlNDkgXHUwZTQzXHUwZTJiXHUwZTQ5XHUwZTA0XHUwZTMzXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTQwXHUwZTIzXHUwZTM1XHUwZTIyXHUwZTAxXHUwZTI3XHUwZTQ4XHUwZTMyXHUwZTA0XHUwZTIzXHUwZTJkXHUwZTFhXHUwZTA0XHUwZTIzXHUwZTMxXHUwZTI3XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTA0XHUwZTJkXHUwZTIyXHUwZTJhXHUwZTJkXHUwZTE5XHUwZTQzXHUwZTJiXHUwZTQ5XHUwZTQwXHUwZTIzXHUwZTMyXHUwZTQwXHUwZTE1XHUwZTM0XHUwZTFhXHUwZTQyXHUwZTE1XHUwZTQzXHUwZTE5XHUwZTBhXHUwZTM1XHUwZTI3XHUwZTM0XHUwZTE1ICdcdTBlMDFcdTBlMzJcdTBlMjNcdTBlMTdcdTBlMzNcdTBlMDdcdTBlMzJcdTBlMTknIFx1MGUwMlx1MGUyZFx1MGUwN1x1MGUwOFx1MGUyM1x1MGUzNFx1MGUwNyIsInZzX2Rlc2NyaXB0aW9uX2VuIjoiXHUwZTQwXHUwZTA4XHUwZTRiXHUwZTA3XHUwZTE3XHUwZTM4XHUwZTAxXHUwZTJkXHUwZTIyXHUwZTQ4XHUwZTMyXHUwZTA3IFx1MGUxNVx1MGUzMVx1MGU0OVx1MGUwN1x1MGU0MVx1MGUxNVx1MGU0OFx1MGUyZFx1MGUzOFx1MGUxYlx1MGUwMVx1MGUyM1x1MGUxM1x1MGU0Y1x1MGUwMVx1MGUzMlx1MGUyM1x1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUwMVx1MGUzMlx1MGUyM1x1MGUyYVx1MGUyZFx1MGUxOSBcdTBlMmFcdTBlMTZcdTBlMzJcdTBlMTlcdTBlMTdcdTBlMzVcdTBlNDggXHUwZTQwXHUwZTFiXHUwZTM0XHUwZTE0XHUwZTQyXHUwZTJkXHUwZTAxXHUwZTMyXHUwZTJhIFx1MGUxN1x1MGUzMVx1MGU0OVx1MGUwN1x1MGU0MFx1MGUxNFx1MGU0N1x1MGUwMVx1MGUyMFx1MGUzMlx1MGUyMlx1MGU0M1x1MGUxOSBcdTBlNDFcdTBlMjVcdTBlMzBcdTBlNDBcdTBlMTRcdTBlNDdcdTBlMDFcdTBlMjFcdTBlMzFcdTBlMThcdTBlMjJcdTBlMjFcdTBlNDNcdTBlMmJcdTBlNDlcdTBlMjFcdTBlMzJcdTBlNDBcdTBlMWJcdTBlMzRcdTBlMTRcdTBlNDJcdTBlMjVcdTBlMDFcdTBlNDFcdTBlMmJcdTBlNDhcdTBlMDdcdTBlMDhcdTBlMzRcdTBlMTlcdTBlMTVcdTBlMTlcdTBlMzJcdTBlMDFcdTBlMzJcdTBlMjNcdTBlNDFcdTBlMjVcdTBlMzBcdTBlMDRcdTBlMjdcdTBlMzJcdTBlMjFcdTBlMmFcdTBlMjNcdTBlNDlcdTBlMzJcdTBlMDdcdTBlMmFcdTBlMjNcdTBlMjNcdTBlMDRcdTBlNGMgXHUwZTFhXHUwZTE5XHUwZTJiXHUwZTI1XHUwZTMxXHUwZTAxXHUwZTAxXHUwZTMyXHUwZTIzXHUwZTE3XHUwZTMzXHUwZTA3XHUwZTMyXHUwZTE5XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTQwXHUwZTFiXHUwZTQ3XHUwZTE5XHUwZTIxXHUwZTM3XHUwZTJkXHUwZTJkXHUwZTMyXHUwZTBhXHUwZTM1XHUwZTFlIFx1MGU0M1x1MGUyYlx1MGU0OVx1MGUyMVx1MGUzNFx1MGUxNVx1MGUyM1x1MGUyMFx1MGUzMlx1MGUxZSBcdTBlNDNcdTBlMmJcdTBlNDlcdTBlMDRcdTBlMjdcdTBlMzJcdTBlMjFcdTBlMjNcdTBlMzlcdTBlNDkgXHUwZTQzXHUwZTJiXHUwZTQ5XHUwZTA0XHUwZTMzXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTQwXHUwZTIzXHUwZTM1XHUwZTIyXHUwZTAxXHUwZTI3XHUwZTQ4XHUwZTMyXHUwZTA0XHUwZTIzXHUwZTJkXHUwZTFhXHUwZTA0XHUwZTIzXHUwZTMxXHUwZTI3XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTA0XHUwZTJkXHUwZTIyXHUwZTJhXHUwZTJkXHUwZTE5XHUwZTQzXHUwZTJiXHUwZTQ5XHUwZTQwXHUwZTIzXHUwZTMyXHUwZTQwXHUwZTE1XHUwZTM0XHUwZTFhXHUwZTQyXHUwZTE1XHUwZTQzXHUwZTE5XHUwZTBhXHUwZTM1XHUwZTI3XHUwZTM0XHUwZTE1ICdcdTBlMDFcdTBlMzJcdTBlMjNcdTBlMTdcdTBlMzNcdTBlMDdcdTBlMzJcdTBlMTknIFx1MGUwMlx1MGUyZFx1MGUwN1x1MGUwOFx1MGUyM1x1MGUzNFx1MGUwNyIsInZzX3R5cGUiOiIyIiwidnNfYWN0aXZlIjoiMSIsInZzX2hpZ2hsaWdodCI6IjAiLCJ2c19jcmVhdGUiOiIyMDE3LTExLTE1IDE1OjUwOjMxIiwidnNfdXBkYXRlIjoiMjAxNy0xMS0xNiAxMDo0NTowNyIsImRlcHRfbmFtZV90aCI6Ilx1MGUyYVx1MGUzMlx1MGUwMlx1MGUzMlx1MGUyN1x1MGUzNFx1MGUwYVx1MGUzMlx1MGUyMFx1MGUzMlx1MGUxZVx1MGUyMlx1MGUxOVx1MGUxNVx1MGUyM1x1MGU0YyIsImRlcHRfbmFtZV9lbiI6IkZpbG0iLCJmYWN1bHR5X25hbWVfdGgiOiJcdTBlMDRcdTBlMTNcdTBlMzBcdTBlMTRcdTBlMzRcdTBlMDhcdTBlMzRcdTBlMTdcdTBlMzFcdTBlMjVcdTBlMjFcdTBlMzVcdTBlNDBcdTBlMTRcdTBlMzVcdTBlMjJcdTBlNDFcdTBlMjVcdTBlMzBcdTBlMjhcdTBlMzRcdTBlMjVcdTBlMWJcdTBlMzBcdTBlMjBcdTBlMzJcdTBlMWVcdTBlMjJcdTBlMTlcdTBlMTVcdTBlMjNcdTBlNGMiLCJmYWN1bHR5X25hbWVfZW4iOiJTY2hvb2wgb2YgRGlnaXRhbCBNZWRpYSBhbmQgQ2luZW1hdGljIEFydHMiLCJmYWN1bHR5X3NsdWciOiJkaWdpdGFsLW1lZGlhIn0seyJ2c19pZCI6IjE3IiwidnNfY29kZSI6IjE1MTA3MzU4MzItRFpWQVVUQUlDUCIsInZzX3Byb2ZpbGUiOiIyMDE3MTExNTE1NTAzMl9UR0pZMEJDT1pTVVkyTEhfUFg3TFAyUFlYWlMxQUxELmpwZyIsInZzX2ZiaWQiOiIxMDAwMDA5OTU0NzY2MTMiLCJ2c19mYm5hbWUiOiJQaGF0dHJhcG9sIEFlbmctaW0iLCJ2c19mYmxpbmsiOiJQaGF0dHJhcG9scGV0IiwidnNfZW1haWwiOm51bGwsInZzX2RlZ3JlZSI6IjEiLCJ2c19mYWN1bHR5IjoiMiIsInZzX2RlcGFydG1lbnQiOiIyNyIsInZzX2RlcGFydG1lbnRfb3RoZXJfdGgiOm51bGwsInZzX2RlcGFydG1lbnRfb3RoZXJfZW4iOm51bGwsInZzX2Rlc2NyaXB0aW9uX3RoIjoiXHUwZTFjXHUwZTIxXHUwZTI3XHUwZTQ4XHUwZTMyXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTFjXHUwZTIxXHUwZTQwXHUwZTI1XHUwZTM3XHUwZTJkXHUwZTAxXHUwZTQwXHUwZTIzXHUwZTM1XHUwZTIyXHUwZTE5XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTE5XHUwZTM1XHUwZTQ5XHUwZTAxXHUwZTQ3XHUwZTQwXHUwZTFlXHUwZTIzXHUwZTMyXHUwZTMwXHUwZTJkXHUwZTM4XHUwZTFiXHUwZTAxXHUwZTIzXHUwZTEzXHUwZTRjXHUwZTAxXHUwZTMyXHUwZTIzXHUwZTQwXHUwZTIzXHUwZTM1XHUwZTIyXHUwZTE5XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTFlXHUwZTIzXHUwZTQ5XHUwZTJkXHUwZTIxXHUwZTQxXHUwZTI1XHUwZTMwXHUwZTE3XHUwZTMxXHUwZTE5XHUwZTJhXHUwZTIxXHUwZTMxXHUwZTIyXHUwZTIxXHUwZTMyXHUwZTAxXHUwZTAxXHUwZTI3XHUwZTQ4XHUwZTMyIFx1MGU0MVx1MGUyNVx1MGU0OVx1MGUyN1x1MGUyMVx1MGUzMVx1MGUxOVx1MGUwMVx1MGU0N1x1MGU0MFx1MGUwOFx1MGU0Ylx1MGUwN1x1MGUxNVx1MGUyM1x1MGUwN1x1MGUxN1x1MGUzNVx1MGU0OFx1MGUxZVx1MGUyZFx1MGU0MFx1MGUwMlx1MGU0OVx1MGUzMlx1MGUyMVx1MGUzMlx1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUwOFx1MGUyM1x1MGUzNFx1MGUwNyBcdTBlNDBcdTBlMDhcdTBlMmRcdTBlMDRcdTBlMTNcdTBlMzJcdTBlMDhcdTBlMzJcdTBlMjNcdTBlMjJcdTBlNGNcdTBlMTdcdTBlMzVcdTBlNDhcdTBlNDBcdTBlMWVcdTBlMjNcdTBlMzVcdTBlMjJcdTBlMWFcdTBlMWVcdTBlMjNcdTBlNDlcdTBlMmRcdTBlMjFcdTBlMTdcdTBlMzFcdTBlNDlcdTBlMDdcdTBlMDRcdTBlMjdcdTBlMzJcdTBlMjFcdTBlMjNcdTBlMzlcdTBlNDkgXHUwZTA0XHUwZTI3XHUwZTMyXHUwZTIxXHUwZTJhXHUwZTMyXHUwZTIxXHUwZTMyXHUwZTIzXHUwZTE2XHUwZTIxXHUwZTMyXHUwZTJhXHUwZTJkXHUwZTE5IFx1MGUyYVx1MGUyZFx1MGUxOVx1MGU0M1x1MGUyYlx1MGU0OVx1MGUwNFx1MGUzNFx1MGUxNFx1MGUxOVx1MGUyZFx1MGUwMVx1MGUwMVx1MGUyM1x1MGUyZFx1MGUxYSBcdTBlMmFcdTBlMmRcdTBlMTlcdTBlNDNcdTBlMmJcdTBlNDlcdTBlMjFcdTBlMmRcdTBlMDdcdTBlMDFcdTBlMzJcdTBlMjNcdTBlMWFcdTBlMjNcdTBlMzRcdTBlMmJcdTBlMzJcdTBlMjNcdTBlMDhcdTBlMzFcdTBlMTRcdTBlMDFcdTBlMzJcdTBlMjMgXHUwZTQwXHUwZTFiXHUwZTQ3XHUwZTE5XHUwZTQxXHUwZTFhXHUwZTFhXHUwZTQwXHUwZTA4XHUwZTQ5XHUwZTMyXHUwZTAyXHUwZTJkXHUwZTA3XHUwZTE4XHUwZTM4XHUwZTIzXHUwZTAxXHUwZTM0XHUwZTA4IFx1MGU0MVx1MGUyNVx1MGUzMFx1MGUxN1x1MGUzNVx1MGU0OFx1MGUyYVx1MGUzM1x1MGUwNFx1MGUzMVx1MGUwZFx1MGUyZFx1MGUzMlx1MGUwOFx1MGUzMlx1MGUyM1x1MGUyMlx1MGU0Y1x1MGUyMlx1MGUzMVx1MGUwN1x1MGUyYVx1MGUyZFx1MGUxOVx1MGU0M1x1MGUyYlx1MGU0OVx1MGUwNFx1MGUzNFx1MGUxNFx1MGUyMVx1MGUyZFx1MGUwN1x1MGUyZFx1MGUxOVx1MGUzMlx1MGUwNFx1MGUxNVx1MGUwMlx1MGUyZFx1MGUwN1x1MGUxOFx1MGUzOFx1MGUyM1x1MGUwMVx1MGUzNFx1MGUwOFx1MGU0MVx1MGUyNVx1MGUzMFx1MGUwMVx1MGUzMlx1MGUyM1x1MGU0MFx1MGUwOFx1MGUyM1x1MGUzNFx1MGUwZFx1MGU0MFx1MGUxNVx1MGUzNFx1MGUxYVx1MGU0Mlx1MGUxNVx1MGUwMlx1MGUyZFx1MGUwN1x1MGUyYVx1MGUzMlx1MGUyMlx1MGUwN1x1MGUzMlx1MGUxOSBcdTBlNDFcdTBlMjVcdTBlNDlcdTBlMjdcdTBlMmRcdTBlMzVcdTBlMDFcdTBlMmRcdTBlMjJcdTBlNDhcdTBlMzJcdTBlMDdcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMWNcdTBlMjFcdTBlMGFcdTBlMmRcdTBlMWFcdTBlMDFcdTBlNDdcdTBlMDRcdTBlMzdcdTBlMmRcdTBlMDFcdTBlMzJcdTBlMjNcdTBlMTdcdTBlMzNcdTBlMDdcdTBlMzJcdTBlMTlcdTBlNDBcdTBlMWJcdTBlNDdcdTBlMTlcdTBlMDFcdTBlMjVcdTBlMzhcdTBlNDhcdTBlMjEgXHUwZTQ0XHUwZTIxXHUwZTQ4XHUwZTQ0XHUwZTE0XHUwZTQ5XHUwZTQxXHUwZTA0XHUwZTQ4XHUwZTQwXHUwZTIzXHUwZTM1XHUwZTIyXHUwZTE5XHUwZTQxXHUwZTI1XHUwZTQ5XHUwZTI3XHUwZTAxXHUwZTQ3XHUwZTAxXHUwZTI1XHUwZTMxXHUwZTFhXHUwZTFhXHUwZTQ5XHUwZTMyXHUwZTE5IFx1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGU0MFx1MGUyYVx1MGUyM1x1MGU0N1x1MGUwOFx1MGUyMlx1MGUzMVx1MGUwN1x1MGUyMVx1MGUzNSB3b3Jrc2hvcCBcdTBlMDdcdTBlMzJcdTBlMTlcdTBlMDFcdTBlMjVcdTBlMzhcdTBlNDhcdTBlMjFcdTBlNDNcdTBlMmJcdTBlNDlcdTBlNDRcdTBlMTRcdTBlNDlcdTBlMTdcdTBlMzNcdTBlMDFcdTBlMzFcdTBlMTkgXHUwZTE1XHUwZTQ5XHUwZTJkXHUwZTA3XHUwZTIxXHUwZTMyIEJyYWluc3Rvcm0gXHUwZTAxXHUwZTMxXHUwZTE5IFx1MGUyMVx1MGUzMVx1MGUxOVx1MGUxN1x1MGUzM1x1MGU0M1x1MGUyYlx1MGU0OVx1MGUxY1x1MGUyMVx1MGUwNFx1MGUzNFx1MGUxNFx1MGU0NFx1MGUxNFx1MGU0OVx1MGUyN1x1MGU0OFx1MGUzMlx1MGUxN1x1MGUzNVx1MGU0OFx1MGUxOVx1MGUzNVx1MGU0OFx1MGUyYVx1MGUyZFx1MGUxOVx1MGU0M1x1MGUyYlx1MGU0OVx1MGU0MFx1MGUyM1x1MGUzMlx1MGUxN1x1MGUzM1x1MGUwN1x1MGUzMlx1MGUxOVx1MGU0MFx1MGUxYlx1MGU0N1x1MGUxOSBUZWFtd29yayBcdTBlNDBcdTBlMWVcdTBlMjNcdTBlMzJcdTBlMzBcdTBlNDBcdTBlMjdcdTBlMjVcdTBlMzJcdTBlNDBcdTBlMjNcdTBlMzJcdTBlMDhcdTBlMWFcdTBlMmRcdTBlMmRcdTBlMDFcdTBlNDRcdTBlMWJcdTBlMTdcdTBlMzNcdTBlMDdcdTBlMzJcdTBlMTlcdTBlMDhcdTBlMjNcdTBlMzRcdTBlMDcgXHUwZTQwXHUwZTIzXHUwZTMyXHUwZTQ0XHUwZTIxXHUwZTQ4XHUwZTJhXHUwZTMyXHUwZTIxXHUwZTMyXHUwZTIzXHUwZTE2XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTA4XHUwZTMwXHUwZTE3XHUwZTMzXHUwZTA3XHUwZTMyXHUwZTE5XHUwZTQwXHUwZTFlXHUwZTM1XHUwZTIyXHUwZTA3XHUwZTA0XHUwZTE5XHUwZTQwXHUwZTE0XHUwZTM1XHUwZTIyXHUwZTI3XHUwZTQ0XHUwZTE0XHUwZTQ5IFx1MGU0MFx1MGUyM1x1MGUzMlx1MGUxNVx1MGU0OVx1MGUyZFx1MGUwN1x1MGUxN1x1MGUzM1x1MGUwN1x1MGUzMlx1MGUxOVx1MGUwMVx1MGUzMVx1MGUxYVx1MGUyZFx1MGUwN1x1MGUwNFx1MGU0Y1x1MGUwMVx1MGUyM1x1MGUyMVx1MGUzMVx1MGUxOVx1MGUxNlx1MGUzNlx1MGUwN1x1MGUwOFx1MGUzMFx1MGUyYVx1MGUzM1x1MGU0MFx1MGUyM1x1MGU0N1x1MGUwOCBcdTBlNDBcdTBlMWVcdTBlMjNcdTBlMzJcdTBlMzBcdTBlMDlcdTBlMzBcdTBlMTlcdTBlMzFcdTBlNDlcdTBlMTkgXHUwZTFjXHUwZTIxXHUwZTA0XHUwZTM0XHUwZTE0XHUwZTI3XHUwZTQ4XHUwZTMyXHUwZTFjXHUwZTIxXHUwZTQwXHUwZTI1XHUwZTM3XHUwZTJkXHUwZTAxXHUwZTQ0XHUwZTIxXHUwZTQ4XHUwZTFjXHUwZTM0XHUwZTE0IFx1MGUxY1x1MGUyMVx1MGUwNFx1MGUzNFx1MGUxNFx1MGUxNlx1MGUzOVx1MGUwMVx1MGU0MVx1MGUyNVx1MGU0OVx1MGUyN1x1MGUxN1x1MGUzNVx1MGU0OFx1MGUxY1x1MGUyMVx1MGU0MFx1MGUyNVx1MGUzN1x1MGUyZFx1MGUwMSBcdTBlMjEuXHUwZTAxXHUwZTIzXHUwZTM4XHUwZTA3XHUwZTQwXHUwZTE3XHUwZTFlIFx1MGU0MFx1MGUxZVx1MGUyM1x1MGUzMlx1MGUzMFx1MGUxN1x1MGU0OVx1MGUzMlx1MGUyMlx1MGUxN1x1MGUzNVx1MGU0OFx1MGUyYVx1MGUzOFx1MGUxNFx1MGU0MVx1MGUyNVx1MGU0OVx1MGUyNyBcdTBlMjEuXHUwZTAxXHUwZTIzXHUwZTM4XHUwZTA3XHUwZTQwXHUwZTE3XHUwZTFlXHUwZTE5XHUwZTM1XHUwZTQ5XHUwZTQxXHUwZTJiXHUwZTI1XHUwZTMwIFx1MGUxN1x1MGUzNVx1MGU0OFx1MGUwOFx1MGUzMFx1MGU0MFx1MGUwOFx1MGUzNVx1MGUyMlx1MGUyM1x1MGUzMFx1MGU0NFx1MGUxOVx1MGUwOFx1MGUzNFx1MGUxNVx1MGU0M1x1MGUwOFx1MGU0MFx1MGUyM1x1MGUzMlx1MGU0M1x1MGUyYlx1MGU0OVx1MGU0MFx1MGUxYlx1MGU0N1x1MGUxOVx1MGU0MFx1MGUyYlx1MGUyMVx1MGUzN1x1MGUyZFx1MGUxOSBcdTBlNDBcdTBlMWVcdTBlMGFcdTBlMjNcdTBlNDBcdTBlMjFcdTBlNDdcdTBlMTRcdTBlMDdcdTBlMzJcdTBlMjEgXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTE3XHUwZTE5XHUwZTE3XHUwZTMyXHUwZTE5XHUwZTQxXHUwZTI1XHUwZTMwXHUwZTQxXHUwZTAyXHUwZTQ3XHUwZTA3XHUwZTQxXHUwZTAxXHUwZTIzXHUwZTQ4XHUwZTA3XHUwZTJkXHUwZTJkXHUwZTAxXHUwZTQ0XHUwZTFiXHUwZTJhXHUwZTM5XHUwZTQ4XHUwZTJhXHUwZTMxXHUwZTA3XHUwZTA0XHUwZTIxIFx1MGUwMlx1MGUyZFx1MGUxYVx1MGUwNFx1MGUzOFx1MGUxM1x1MGUyYVx1MGUzM1x1MGUyYlx1MGUyM1x1MGUzMVx1MGUxYVx1MGUxZVx1MGUzN1x1MGU0OVx1MGUxOVx1MGUxN1x1MGUzNVx1MGU0OFx1MGU0MVx1MGUwYVx1MGUyM1x1MGU0Y1x1MGUwNFx1MGUyN1x1MGUzMlx1MGUyMVx1MGUyM1x1MGUzOVx1MGU0OVx1MGUyYVx1MGUzNlx1MGUwMVx1MGUxNVx1MGU0OFx1MGUyZFx1MGUyM1x1MGUzMVx1MGU0OFx1MGUyN1x1MGUwYVx1MGUzMVx1MGUyMlx1MGUxZVx1MGUyNFx1MGUwMVx1MGUyOVx1MGU0Y1x1MGUxOVx1MGUzMFx1MGUwNFx1MGUyM1x1MGUzMVx1MGUxYSBcdTBlNDFcdTBlMjVcdTBlMzBcdTBlMDJcdTBlMmRcdTBlMWFcdTBlMDRcdTBlMzhcdTBlMTNcdTBlMmFcdTBlMzNcdTBlMmJcdTBlMjNcdTBlMzFcdTBlMWFcdTBlMTdcdTBlMzhcdTBlMTlcdTBlNDBcdTBlMjNcdTBlMzVcdTBlMjJcdTBlMTlcdTBlMTRcdTBlMzVcdTBlMTdcdTBlMzVcdTBlNDggQlUgXHUwZTIxXHUwZTJkXHUwZTFhXHUwZTQzXHUwZTJiXHUwZTQ5XHUwZTA0XHUwZTIzXHUwZTMxXHUwZTFhI1x1MGUwMVx1MGUzMlx1MGUyM1x1MGUwOFx1MGUzMVx1MGUxNFx1MGUwMVx1MGUzMlx1MGUyM1x1MGUwMVx1MGUzMlx1MGUyM1x1MGU0Mlx1MGUyM1x1MGUwN1x1MGU0MVx1MGUyM1x1MGUyMSAjaG90ZWxCVSAjQ3JlYXRpdmVCVSAjSW5NeU1pbmQiLCJ2c19kZXNjcmlwdGlvbl9lbiI6Ilx1MGUxY1x1MGUyMVx1MGUyN1x1MGU0OFx1MGUzMlx1MGUxN1x1MGUzNVx1MGU0OFx1MGUxY1x1MGUyMVx1MGU0MFx1MGUyNVx1MGUzN1x1MGUyZFx1MGUwMVx1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUxN1x1MGUzNVx1MGU0OFx1MGUxOVx1MGUzNVx1MGU0OVx1MGUwMVx1MGU0N1x1MGU0MFx1MGUxZVx1MGUyM1x1MGUzMlx1MGUzMFx1MGUyZFx1MGUzOFx1MGUxYlx1MGUwMVx1MGUyM1x1MGUxM1x1MGU0Y1x1MGUwMVx1MGUzMlx1MGUyM1x1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUxN1x1MGUzNVx1MGU0OFx1MGUxZVx1MGUyM1x1MGU0OVx1MGUyZFx1MGUyMVx1MGU0MVx1MGUyNVx1MGUzMFx1MGUxN1x1MGUzMVx1MGUxOVx1MGUyYVx1MGUyMVx1MGUzMVx1MGUyMlx1MGUyMVx1MGUzMlx1MGUwMVx1MGUwMVx1MGUyN1x1MGU0OFx1MGUzMiBcdTBlNDFcdTBlMjVcdTBlNDlcdTBlMjdcdTBlMjFcdTBlMzFcdTBlMTlcdTBlMDFcdTBlNDdcdTBlNDBcdTBlMDhcdTBlNGJcdTBlMDdcdTBlMTVcdTBlMjNcdTBlMDdcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMWVcdTBlMmRcdTBlNDBcdTBlMDJcdTBlNDlcdTBlMzJcdTBlMjFcdTBlMzJcdTBlNDBcdTBlMjNcdTBlMzVcdTBlMjJcdTBlMTlcdTBlMDhcdTBlMjNcdTBlMzRcdTBlMDcgXHUwZTQwXHUwZTA4XHUwZTJkXHUwZTA0XHUwZTEzXHUwZTMyXHUwZTA4XHUwZTMyXHUwZTIzXHUwZTIyXHUwZTRjXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTQwXHUwZTFlXHUwZTIzXHUwZTM1XHUwZTIyXHUwZTFhXHUwZTFlXHUwZTIzXHUwZTQ5XHUwZTJkXHUwZTIxXHUwZTE3XHUwZTMxXHUwZTQ5XHUwZTA3XHUwZTA0XHUwZTI3XHUwZTMyXHUwZTIxXHUwZTIzXHUwZTM5XHUwZTQ5IFx1MGUwNFx1MGUyN1x1MGUzMlx1MGUyMVx1MGUyYVx1MGUzMlx1MGUyMVx1MGUzMlx1MGUyM1x1MGUxNlx1MGUyMVx1MGUzMlx1MGUyYVx1MGUyZFx1MGUxOSBcdTBlMmFcdTBlMmRcdTBlMTlcdTBlNDNcdTBlMmJcdTBlNDlcdTBlMDRcdTBlMzRcdTBlMTRcdTBlMTlcdTBlMmRcdTBlMDFcdTBlMDFcdTBlMjNcdTBlMmRcdTBlMWEgXHUwZTJhXHUwZTJkXHUwZTE5XHUwZTQzXHUwZTJiXHUwZTQ5XHUwZTIxXHUwZTJkXHUwZTA3XHUwZTAxXHUwZTMyXHUwZTIzXHUwZTFhXHUwZTIzXHUwZTM0XHUwZTJiXHUwZTMyXHUwZTIzXHUwZTA4XHUwZTMxXHUwZTE0XHUwZTAxXHUwZTMyXHUwZTIzIFx1MGU0MFx1MGUxYlx1MGU0N1x1MGUxOVx1MGU0MVx1MGUxYVx1MGUxYVx1MGU0MFx1MGUwOFx1MGU0OVx1MGUzMlx1MGUwMlx1MGUyZFx1MGUwN1x1MGUxOFx1MGUzOFx1MGUyM1x1MGUwMVx1MGUzNFx1MGUwOCBcdTBlNDFcdTBlMjVcdTBlMzBcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMmFcdTBlMzNcdTBlMDRcdTBlMzFcdTBlMGRcdTBlMmRcdTBlMzJcdTBlMDhcdTBlMzJcdTBlMjNcdTBlMjJcdTBlNGNcdTBlMjJcdTBlMzFcdTBlMDdcdTBlMmFcdTBlMmRcdTBlMTlcdTBlNDNcdTBlMmJcdTBlNDlcdTBlMDRcdTBlMzRcdTBlMTRcdTBlMjFcdTBlMmRcdTBlMDdcdTBlMmRcdTBlMTlcdTBlMzJcdTBlMDRcdTBlMTVcdTBlMDJcdTBlMmRcdTBlMDdcdTBlMThcdTBlMzhcdTBlMjNcdTBlMDFcdTBlMzRcdTBlMDhcdTBlNDFcdTBlMjVcdTBlMzBcdTBlMDFcdTBlMzJcdTBlMjNcdTBlNDBcdTBlMDhcdTBlMjNcdTBlMzRcdTBlMGRcdTBlNDBcdTBlMTVcdTBlMzRcdTBlMWFcdTBlNDJcdTBlMTVcdTBlMDJcdTBlMmRcdTBlMDdcdTBlMmFcdTBlMzJcdTBlMjJcdTBlMDdcdTBlMzJcdTBlMTkgXHUwZTQxXHUwZTI1XHUwZTQ5XHUwZTI3XHUwZTJkXHUwZTM1XHUwZTAxXHUwZTJkXHUwZTIyXHUwZTQ4XHUwZTMyXHUwZTA3XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTFjXHUwZTIxXHUwZTBhXHUwZTJkXHUwZTFhXHUwZTAxXHUwZTQ3XHUwZTA0XHUwZTM3XHUwZTJkXHUwZTAxXHUwZTMyXHUwZTIzXHUwZTE3XHUwZTMzXHUwZTA3XHUwZTMyXHUwZTE5XHUwZTQwXHUwZTFiXHUwZTQ3XHUwZTE5XHUwZTAxXHUwZTI1XHUwZTM4XHUwZTQ4XHUwZTIxIFx1MGU0NFx1MGUyMVx1MGU0OFx1MGU0NFx1MGUxNFx1MGU0OVx1MGU0MVx1MGUwNFx1MGU0OFx1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGU0MVx1MGUyNVx1MGU0OVx1MGUyN1x1MGUwMVx1MGU0N1x1MGUwMVx1MGUyNVx1MGUzMVx1MGUxYVx1MGUxYVx1MGU0OVx1MGUzMlx1MGUxOSBcdTBlNDBcdTBlMjNcdTBlMzVcdTBlMjJcdTBlMTlcdTBlNDBcdTBlMmFcdTBlMjNcdTBlNDdcdTBlMDhcdTBlMjJcdTBlMzFcdTBlMDdcdTBlMjFcdTBlMzUgd29ya3Nob3AgXHUwZTA3XHUwZTMyXHUwZTE5XHUwZTAxXHUwZTI1XHUwZTM4XHUwZTQ4XHUwZTIxXHUwZTQzXHUwZTJiXHUwZTQ5XHUwZTQ0XHUwZTE0XHUwZTQ5XHUwZTE3XHUwZTMzXHUwZTAxXHUwZTMxXHUwZTE5IFx1MGUxNVx1MGU0OVx1MGUyZFx1MGUwN1x1MGUyMVx1MGUzMiBCcmFpbnN0b3JtIFx1MGUwMVx1MGUzMVx1MGUxOSBcdTBlMjFcdTBlMzFcdTBlMTlcdTBlMTdcdTBlMzNcdTBlNDNcdTBlMmJcdTBlNDlcdTBlMWNcdTBlMjFcdTBlMDRcdTBlMzRcdTBlMTRcdTBlNDRcdTBlMTRcdTBlNDlcdTBlMjdcdTBlNDhcdTBlMzJcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMTlcdTBlMzVcdTBlNDhcdTBlMmFcdTBlMmRcdTBlMTlcdTBlNDNcdTBlMmJcdTBlNDlcdTBlNDBcdTBlMjNcdTBlMzJcdTBlMTdcdTBlMzNcdTBlMDdcdTBlMzJcdTBlMTlcdTBlNDBcdTBlMWJcdTBlNDdcdTBlMTkgVGVhbXdvcmsgXHUwZTQwXHUwZTFlXHUwZTIzXHUwZTMyXHUwZTMwXHUwZTQwXHUwZTI3XHUwZTI1XHUwZTMyXHUwZTQwXHUwZTIzXHUwZTMyXHUwZTA4XHUwZTFhXHUwZTJkXHUwZTJkXHUwZTAxXHUwZTQ0XHUwZTFiXHUwZTE3XHUwZTMzXHUwZTA3XHUwZTMyXHUwZTE5XHUwZTA4XHUwZTIzXHUwZTM0XHUwZTA3IFx1MGU0MFx1MGUyM1x1MGUzMlx1MGU0NFx1MGUyMVx1MGU0OFx1MGUyYVx1MGUzMlx1MGUyMVx1MGUzMlx1MGUyM1x1MGUxNlx1MGUxN1x1MGUzNVx1MGU0OFx1MGUwOFx1MGUzMFx1MGUxN1x1MGUzM1x1MGUwN1x1MGUzMlx1MGUxOVx1MGU0MFx1MGUxZVx1MGUzNVx1MGUyMlx1MGUwN1x1MGUwNFx1MGUxOVx1MGU0MFx1MGUxNFx1MGUzNVx1MGUyMlx1MGUyN1x1MGU0NFx1MGUxNFx1MGU0OSBcdTBlNDBcdTBlMjNcdTBlMzJcdTBlMTVcdTBlNDlcdTBlMmRcdTBlMDdcdTBlMTdcdTBlMzNcdTBlMDdcdTBlMzJcdTBlMTlcdTBlMDFcdTBlMzFcdTBlMWFcdTBlMmRcdTBlMDdcdTBlMDRcdTBlNGNcdTBlMDFcdTBlMjNcdTBlMjFcdTBlMzFcdTBlMTlcdTBlMTZcdTBlMzZcdTBlMDdcdTBlMDhcdTBlMzBcdTBlMmFcdTBlMzNcdTBlNDBcdTBlMjNcdTBlNDdcdTBlMDggXHUwZTQwXHUwZTFlXHUwZTIzXHUwZTMyXHUwZTMwXHUwZTA5XHUwZTMwXHUwZTE5XHUwZTMxXHUwZTQ5XHUwZTE5IFx1MGUxY1x1MGUyMVx1MGUwNFx1MGUzNFx1MGUxNFx1MGUyN1x1MGU0OFx1MGUzMlx1MGUxY1x1MGUyMVx1MGU0MFx1MGUyNVx1MGUzN1x1MGUyZFx1MGUwMVx1MGU0NFx1MGUyMVx1MGU0OFx1MGUxY1x1MGUzNFx1MGUxNCBcdTBlMWNcdTBlMjFcdTBlMDRcdTBlMzRcdTBlMTRcdTBlMTZcdTBlMzlcdTBlMDFcdTBlNDFcdTBlMjVcdTBlNDlcdTBlMjdcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMWNcdTBlMjFcdTBlNDBcdTBlMjVcdTBlMzdcdTBlMmRcdTBlMDEgXHUwZTIxLlx1MGUwMVx1MGUyM1x1MGUzOFx1MGUwN1x1MGU0MFx1MGUxN1x1MGUxZSBcdTBlNDBcdTBlMWVcdTBlMjNcdTBlMzJcdTBlMzBcdTBlMTdcdTBlNDlcdTBlMzJcdTBlMjJcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMmFcdTBlMzhcdTBlMTRcdTBlNDFcdTBlMjVcdTBlNDlcdTBlMjcgXHUwZTIxLlx1MGUwMVx1MGUyM1x1MGUzOFx1MGUwN1x1MGU0MFx1MGUxN1x1MGUxZVx1MGUxOVx1MGUzNVx1MGU0OVx1MGU0MVx1MGUyYlx1MGUyNVx1MGUzMCBcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMDhcdTBlMzBcdTBlNDBcdTBlMDhcdTBlMzVcdTBlMjJcdTBlMjNcdTBlMzBcdTBlNDRcdTBlMTlcdTBlMDhcdTBlMzRcdTBlMTVcdTBlNDNcdTBlMDhcdTBlNDBcdTBlMjNcdTBlMzJcdTBlNDNcdTBlMmJcdTBlNDlcdTBlNDBcdTBlMWJcdTBlNDdcdTBlMTlcdTBlNDBcdTBlMmJcdTBlMjFcdTBlMzdcdTBlMmRcdTBlMTkgXHUwZTQwXHUwZTFlXHUwZTBhXHUwZTIzXHUwZTQwXHUwZTIxXHUwZTQ3XHUwZTE0XHUwZTA3XHUwZTMyXHUwZTIxIFx1MGUxN1x1MGUzNVx1MGU0OFx1MGUxN1x1MGUxOVx1MGUxN1x1MGUzMlx1MGUxOVx1MGU0MVx1MGUyNVx1MGUzMFx1MGU0MVx1MGUwMlx1MGU0N1x1MGUwN1x1MGU0MVx1MGUwMVx1MGUyM1x1MGU0OFx1MGUwN1x1MGUyZFx1MGUyZFx1MGUwMVx1MGU0NFx1MGUxYlx1MGUyYVx1MGUzOVx1MGU0OFx1MGUyYVx1MGUzMVx1MGUwN1x1MGUwNFx1MGUyMSBcdTBlMDJcdTBlMmRcdTBlMWFcdTBlMDRcdTBlMzhcdTBlMTNcdTBlMmFcdTBlMzNcdTBlMmJcdTBlMjNcdTBlMzFcdTBlMWFcdTBlMWVcdTBlMzdcdTBlNDlcdTBlMTlcdTBlMTdcdTBlMzVcdTBlNDhcdTBlNDFcdTBlMGFcdTBlMjNcdTBlNGNcdTBlMDRcdTBlMjdcdTBlMzJcdTBlMjFcdTBlMjNcdTBlMzlcdTBlNDlcdTBlMmFcdTBlMzZcdTBlMDFcdTBlMTVcdTBlNDhcdTBlMmRcdTBlMjNcdTBlMzFcdTBlNDhcdTBlMjdcdTBlMGFcdTBlMzFcdTBlMjJcdTBlMWVcdTBlMjRcdTBlMDFcdTBlMjlcdTBlNGNcdTBlMTlcdTBlMzBcdTBlMDRcdTBlMjNcdTBlMzFcdTBlMWEgXHUwZTQxXHUwZTI1XHUwZTMwXHUwZTAyXHUwZTJkXHUwZTFhXHUwZTA0XHUwZTM4XHUwZTEzXHUwZTJhXHUwZTMzXHUwZTJiXHUwZTIzXHUwZTMxXHUwZTFhXHUwZTE3XHUwZTM4XHUwZTE5XHUwZTQwXHUwZTIzXHUwZTM1XHUwZTIyXHUwZTE5XHUwZTE0XHUwZTM1XHUwZTE3XHUwZTM1XHUwZTQ4IEJVIFx1MGUyMVx1MGUyZFx1MGUxYVx1MGU0M1x1MGUyYlx1MGU0OVx1MGUwNFx1MGUyM1x1MGUzMVx1MGUxYSNcdTBlMDFcdTBlMzJcdTBlMjNcdTBlMDhcdTBlMzFcdTBlMTRcdTBlMDFcdTBlMzJcdTBlMjNcdTBlMDFcdTBlMzJcdTBlMjNcdTBlNDJcdTBlMjNcdTBlMDdcdTBlNDFcdTBlMjNcdTBlMjEgI2hvdGVsQlUgI0NyZWF0aXZlQlUgI0luTXlNaW5kIiwidnNfdHlwZSI6IjIiLCJ2c19hY3RpdmUiOiIxIiwidnNfaGlnaGxpZ2h0IjoiMCIsInZzX2NyZWF0ZSI6IjIwMTctMTEtMTUgMTU6NTA6MzEiLCJ2c191cGRhdGUiOiIyMDE3LTExLTE2IDEwOjQ1OjA3IiwiZGVwdF9uYW1lX3RoIjoiXHUwZTJhXHUwZTMyXHUwZTAyXHUwZTMyXHUwZTI3XHUwZTM0XHUwZTBhXHUwZTMyXHUwZTIwXHUwZTMyXHUwZTFlXHUwZTIyXHUwZTE5XHUwZTE1XHUwZTIzXHUwZTRjIiwiZGVwdF9uYW1lX2VuIjoiRmlsbSIsImZhY3VsdHlfbmFtZV90aCI6Ilx1MGUwNFx1MGUxM1x1MGUzMFx1MGUxNFx1MGUzNFx1MGUwOFx1MGUzNFx1MGUxN1x1MGUzMVx1MGUyNVx1MGUyMVx1MGUzNVx1MGU0MFx1MGUxNFx1MGUzNVx1MGUyMlx1MGU0MVx1MGUyNVx1MGUzMFx1MGUyOFx1MGUzNFx1MGUyNVx1MGUxYlx1MGUzMFx1MGUyMFx1MGUzMlx1MGUxZVx1MGUyMlx1MGUxOVx1MGUxNVx1MGUyM1x1MGU0YyIsImZhY3VsdHlfbmFtZV9lbiI6IlNjaG9vbCBvZiBEaWdpdGFsIE1lZGlhIGFuZCBDaW5lbWF0aWMgQXJ0cyIsImZhY3VsdHlfc2x1ZyI6ImRpZ2l0YWwtbWVkaWEifSx7InZzX2lkIjoiMjIiLCJ2c19jb2RlIjoiMTUxMDczNTgzMy0wTUZTTTZQS1VVIiwidnNfcHJvZmlsZSI6IjIwMTcxMTE1MTU1MDMzX0IzWlNWRFBRV1c3WjYwMl9JVEZaT0owQVlUVzVKSFouanBnIiwidnNfZmJpZCI6IjEwMDAwMTAwMDQwMDMxMCIsInZzX2ZibmFtZSI6IktpaW1JY2UgUGFubmFwYWsiLCJ2c19mYmxpbmsiOiJLaW1pY2V0dnhxIiwidnNfZW1haWwiOm51bGwsInZzX2RlZ3JlZSI6IjEiLCJ2c19mYWN1bHR5IjoiMiIsInZzX2RlcGFydG1lbnQiOiIyNyIsInZzX2RlcGFydG1lbnRfb3RoZXJfdGgiOm51bGwsInZzX2RlcGFydG1lbnRfb3RoZXJfZW4iOm51bGwsInZzX2Rlc2NyaXB0aW9uX3RoIjoiXHUwZTQwXHUwZTA4XHUwZTRiXHUwZTA3XHUwZTIyXHUwZTMxXHUwZTA3XHUwZTQ0XHUwZTA3IFx1MGUwMVx1MGU0N1x1MGUwNFx1MGUwN1x1MGUwOFx1MGUzMFx1MGUxYVx1MGUyZFx1MGUwMVx1MGU0MFx1MGUwOFx1MGU0Ylx1MGUwN1x1MGUxNVx1MGUzMVx1MGU0OVx1MGUwN1x1MGU0MVx1MGUxNVx1MGU0OFx1MGUxNVx1MGUzNlx1MGUwMVx1MGU0MFx1MGUxZVx1MGUwYVx1MGUyM1x1MGUyYlx1MGUxOVx1MGU0OVx1MGUzMlx1MGUyMVx1MGUyZFx1MGU0MVx1MGUyNVx1MGU0OVx1MGUyN1x1MGUyNVx1MGU0OFx1MGUzMCBcdTBlNDNcdTBlMDRcdTBlMjNcdTBlNDBcdTBlMmJcdTBlNDdcdTBlMTlcdTBlMDFcdTBlNDdcdTBlMDhcdTBlMzNcdTBlNDRcdTBlMTRcdTBlNDlcdTBlMjdcdTBlNDhcdTBlMzJcdTBlMDRcdTBlMzdcdTBlMmQgXHUwZTIxLlx1MGUwMVx1MGUyM1x1MGUzOFx1MGUwN1x1MGU0MFx1MGUxN1x1MGUxZSBcdTBlNDBcdTBlMDJcdTBlNDlcdTBlMzJcdTBlMjFcdTBlMzJcdTBlMDFcdTBlNDdcdTBlNDRcdTBlMTRcdTBlNDlcdTBlNDBcdTBlMDhcdTBlMmRcdTBlMDFcdTBlMzFcdTBlMWFcdTBlMmJcdTBlNDlcdTBlMmRcdTBlMDdcdTBlNDBcdTBlMjNcdTBlMzVcdTBlMjJcdTBlMTlcdTBlMTRcdTBlMzUgXHUwZTQ2IFx1MGU0MVx1MGUyZFx1MGUyM1x1MGU0Y1x1MGU0MFx1MGUyMlx1MGU0N1x1MGUxOSBcdTBlNDYgXHUwZTIxXHUwZTM1XHUwZTA0XHUwZTI3XHUwZTMyXHUwZTIxXHUwZTJhXHUwZTMwXHUwZTE0XHUwZTI3XHUwZTAxXHUwZTJhXHUwZTFhXHUwZTMyXHUwZTIyXHUwZTE3XHUwZTM4XHUwZTAxXHUwZTJkXHUwZTIyXHUwZTQ4XHUwZTMyXHUwZTA3IFx1MGUyMVx1MGUzNVx1MGUxN1x1MGUzMVx1MGU0OVx1MGUwN1x1MGUyM1x1MGUxNlx1MGUyM1x1MGUzMlx1MGUwNyBcdTBlMjNcdTBlMTZcdTBlMWFcdTBlMzFcdTBlMmFcdTBlNDRcdTBlMjdcdTBlNDlcdTBlMDRcdTBlMmRcdTBlMjJcdTBlMWFcdTBlMjNcdTBlMzRcdTBlMDFcdTBlMzJcdTBlMjMgXHUwZTJkXHUwZTM4XHUwZTFiXHUwZTAxXHUwZTIzXHUwZTEzXHUwZTRjXHUwZTAxXHUwZTMyXHUwZTIzXHUwZTQwXHUwZTIzXHUwZTM1XHUwZTIyXHUwZTE5XHUwZTAxXHUwZTQ3XHUwZTE3XHUwZTMxXHUwZTE5XHUwZTJhXHUwZTIxXHUwZTMxXHUwZTIyXHUwZTE3XHUwZTM4XHUwZTAxXHUwZTJkXHUwZTIyXHUwZTQ4XHUwZTMyXHUwZTA3IFx1MGU0MFx1MGUwYVx1MGU0OFx1MGUxOSBcdTBlMDRcdTBlMmRcdTBlMjFcdTBlMWVcdTBlMzRcdTBlMjdcdTBlNDBcdTBlMTVcdTBlMmRcdTBlMjNcdTBlNGNcdTBlMTdcdTBlMzVcdTBlNDhcdTBlNDNcdTBlMGFcdTBlNDlcdTBlNDFcdTBlMjFcdTBlMDRcdTBlNDBcdTBlMDFcdTBlMzdcdTBlMmRcdTBlMWFcdTBlMTdcdTBlMzhcdTBlMDFcdTBlMmJcdTBlNDlcdTBlMmRcdTBlMDcgXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTE1XHUwZTM2XHUwZTAxXHUwZTAxXHUwZTMyXHUwZTIzXHUwZTFhXHUwZTM0XHUwZTE5XHUwZTAxXHUwZTQ3XHUwZTIxXHUwZTM1XHUwZTQwXHUwZTA0XHUwZTIzXHUwZTM3XHUwZTQ4XHUwZTJkXHUwZTA3XHUwZTFhXHUwZTM0XHUwZTE5XHUwZTA4XHUwZTMzXHUwZTI1XHUwZTJkXHUwZTA3XHUwZTQ0XHUwZTI3XHUwZTQ5XHUwZTQzXHUwZTJiXHUwZTQ5XHUwZTE5XHUwZTMxXHUwZTAxXHUwZTI4XHUwZTM2XHUwZTAxXHUwZTI5XHUwZTMyXHUwZTQ0XHUwZTE0XHUwZTQ5XHUwZTQwXHUwZTIzXHUwZTM1XHUwZTIyXHUwZTE5XHUwZTIzXHUwZTM5XHUwZTQ5XHUwZTQzXHUwZTE5XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTQwXHUwZTE3XHUwZTM1XHUwZTIyXHUwZTFhXHUwZTQwXHUwZTE3XHUwZTQ4XHUwZTMyXHUwZTAyXHUwZTJkXHUwZTA3XHUwZTA4XHUwZTIzXHUwZTM0XHUwZTA3IFx1MGUyYlx1MGU0OVx1MGUyZFx1MGUwN1x1MGUwNFx1MGUyM1x1MGUzMVx1MGUyN1x1MGUwMVx1MGU0N1x1MGU0MFx1MGUwOFx1MGU0Ylx1MGUwN1x1MGU0MFx1MGUyYlx1MGUyMVx1MGUzN1x1MGUyZFx1MGUxOVx1MGUwNFx1MGUyM1x1MGUzMVx1MGUyN1x1MGUwMlx1MGUyZFx1MGUwN1x1MGU0Mlx1MGUyM1x1MGUwN1x1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUyYlx1MGUyNVx1MGUzMlx1MGUyMlx1MGUxNFx1MGUzMlx1MGUyNyBcdTBlMTVcdTBlMzZcdTBlMDFcdTBlMWZcdTBlMzRcdTBlMjVcdTBlNGNcdTBlMjFcdTBlMDFcdTBlNDdcdTBlMjFcdTBlMzVcdTBlMmRcdTBlMzhcdTBlMWJcdTBlMDFcdTBlMjNcdTBlMTNcdTBlNGNcdTBlMTZcdTBlNDhcdTBlMzJcdTBlMjJcdTBlMmJcdTBlMTlcdTBlMzFcdTBlMDdcdTBlMDRcdTBlMjNcdTBlMWFcdTBlMDRcdTBlMjNcdTBlMzFcdTBlMTkgXHUwZTI1XHUwZTQ4XHUwZTMyXHUwZTJhXHUwZTM4XHUwZTE0XHUwZTQ0XHUwZTE0XHUwZTQ5XHUwZTE3XHUwZTMzXHUwZTJiXHUwZTQ5XHUwZTJkXHUwZTA3XHUwZTJhXHUwZTMzXHUwZTJiXHUwZTIzXHUwZTMxXHUwZTFhXHUwZTE3XHUwZTMzXHUwZTAxXHUwZTMyXHUwZTIzXHUwZTRjXHUwZTE1XHUwZTM5XHUwZTE5XHUwZTQxXHUwZTI1XHUwZTMwXHUwZTQwXHUwZTAxXHUwZTIxXHUwZTJhXHUwZTRjXHUwZTIxXHUwZTMyXHUwZTQzXHUwZTJiXHUwZTIxXHUwZTQ4XHUwZTE0XHUwZTQ5XHUwZTI3XHUwZTIyIFx1MGUxN1x1MGUzNVx1MGU0OFx1MGUwYVx1MGUyZFx1MGUxYVx1MGUxN1x1MGUzNVx1MGU0OFx1MGUyYVx1MGUzOFx1MGUxNFx1MGUxN1x1MGUzNVx1MGU0OFx1MGUxNVx1MGUzMVx1MGUyN1x1MGU0MFx1MGUyZFx1MGUwN1x1MGU0NFx1MGUxNFx1MGU0OVx1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUwMVx1MGU0N1x1MGUwNFx1MGUwN1x1MGU0MFx1MGUxYlx1MGU0N1x1MGUxOVx1MGUyYlx1MGU0OVx1MGUyZFx1MGUwN1x1MGUyZFx1MGUzMVx1MGUxNFx1MGU0MFx1MGUyYVx1MGUzNVx1MGUyMlx1MGUwNyBcdTBlMTdcdTBlMzNcdTBlNDJcdTBlMWZcdTBlNDBcdTBlMjVcdTBlNDggXHUwZTJkXHUwZTMxXHUwZTE0XHUwZTQwXHUwZTJhXHUwZTM1XHUwZTIyXHUwZTA3XHUwZTE1XHUwZTQ4XHUwZTMyXHUwZTA3IFx1MGU0NiBcdTBlNDRcdTBlMTRcdTBlNDlcdTBlNDBcdTBlMTdcdTBlMzVcdTBlMjJcdTBlMWFcdTBlNDBcdTBlMTdcdTBlNDhcdTBlMzJcdTBlMmJcdTBlNDlcdTBlMmRcdTBlMDdcdTBlMmRcdTBlMzFcdTBlMTRcdTBlMDJcdTBlMmRcdTBlMDdcdTBlMDRcdTBlNDhcdTBlMzJcdTBlMjJcdTBlNDBcdTBlMWVcdTBlMjVcdTBlMDdcdTBlMDhcdTBlMjNcdTBlMzRcdTBlMDcgXHUwZTQ2IFx1MGUxOVx1MGUyZFx1MGUwMVx1MGUwOFx1MGUzMlx1MGUwMVx1MGUxOVx1MGUzMVx1MGU0OVx1MGUxOSBcdTBlMWFcdTBlMjNcdTBlMjNcdTBlMjJcdTBlMzJcdTBlMDFcdTBlMzJcdTBlMjhcdTBlNDJcdTBlMTRcdTBlMjJcdTBlMjNcdTBlMjdcdTBlMjFcdTBlMDJcdTBlMmRcdTBlMDdcdTBlMjFcdTBlMmRcdTBlMDFcdTBlNDdcdTBlMTRcdTBlMzUgXHUwZTIxXHUwZTM1XHUwZTE1XHUwZTQ5XHUwZTE5XHUwZTQ0XHUwZTIxXHUwZTQ5XHUwZTQwXHUwZTIyXHUwZTJkXHUwZTMwXHUwZTIxXHUwZTMyXHUwZTAxXHUwZTQwXHUwZTI3XHUwZTQ4XHUwZTJkXHUwZTJkXHUwZTJkIFx1MGUxZVx1MGUzOVx1MGUxNFx1MGUxNlx1MGUzNlx1MGUwN1x1MGUyYlx1MGUyZFx1MGUyYVx1MGUyMVx1MGUzOFx1MGUxNFx1MGUwMVx1MGU0N1x1MGUyMVx1MGUzNVx1MGUwNFx1MGUyN1x1MGUzMlx1MGUyMVx1MGU0M1x1MGUyYlx1MGUwZFx1MGU0OFx1MGUyYlx1MGUyM1x1MGUzOVx1MGUyYlx1MGUyM1x1MGUzMlx1MGUxOVx1MGU0OFx1MGUzMlx1MGU0MFx1MGUwMlx1MGU0OVx1MGUzMlx1MGU0NFx1MGUxYlx1MGUxN1x1MGUzM1x1MGUwN1x1MGUzMlx1MGUxOSBcdTBlMmRcdTBlNDhcdTBlMzJcdTBlMTlcdTBlMmJcdTBlMTlcdTBlMzFcdTBlMDdcdTBlMmFcdTBlMzdcdTBlMmQgXHUwZTJiXHUwZTIzXHUwZTM3XHUwZTJkXHUwZTA0XHUwZTM4XHUwZTIyXHUwZTA3XHUwZTMyXHUwZTE5XHUwZTIxXHUwZTMyXHUwZTAxXHUwZTQ2XHUwZTQ2IFx1MGUyNVx1MGU0OFx1MGUzMlx1MGUyYVx1MGUzOFx1MGUxNFx1MGU0MFx1MGUxZVx1MGUzNFx1MGU0OFx1MGUwN1x1MGUyYVx1MGUyM1x1MGU0OVx1MGUzMlx1MGUwN1x1MGUyYlx1MGU0OVx1MGUyZFx1MGUwN1x1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUyZFx1MGUzMVx1MGUwOFx1MGUwOVx1MGUyM1x1MGUzNFx1MGUyMlx1MGUzMFx1MGUxNFx1MGU0OVx1MGUyN1x1MGUyMlx1MGUxOVx1MGUzMCBcdTBlMmJcdTBlNDlcdTBlMmRcdTBlMDdcdTBlMTlcdTBlNDhcdTBlMzJcdTBlNDBcdTBlMjNcdTBlMzVcdTBlMjJcdTBlMTlcdTBlMmFcdTBlMzhcdTBlMTRcdTBlNDZcdTBlMTdcdTBlMzFcdTBlMTlcdTBlMmFcdTBlMjFcdTBlMzFcdTBlMjJcdTBlMmFcdTBlMzhcdTBlMTRcdTBlNDYgXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTJhXHUwZTMzXHUwZTA0XHUwZTMxXHUwZTBkXHUwZTQ0XHUwZTFiXHUwZTAxXHUwZTI3XHUwZTQ4XHUwZTMyXHUwZTE5XHUwZTMxXHUwZTQ5XHUwZTE5XHUwZTA0XHUwZTM3XHUwZTJkXHUwZTE2XHUwZTM2XHUwZTA3XHUwZTQwXHUwZTFiXHUwZTQ3XHUwZTE5XHUwZTIxXHUwZTJiXHUwZTMyXHUwZTI1XHUwZTMxXHUwZTIyXHUwZTQwXHUwZTJkXHUwZTAxXHUwZTBhXHUwZTE5IFx1MGU0MVx1MGUxNVx1MGU0OFx1MGUwNFx1MGUzOFx1MGUxM1x1MGUyMFx1MGUzMlx1MGUxZVx1MGUxNFx1MGU0OVx1MGUzMlx1MGUxOVx1MGUwMVx1MGUzMlx1MGUyM1x1MGUyOFx1MGUzNlx1MGUwMVx1MGUyOVx1MGUzMlx1MGUwMVx1MGU0N1x1MGU0NFx1MGUyMVx1MGU0OFx1MGU0NFx1MGUxNFx1MGU0OVx1MGUxNFx1MGU0OVx1MGUyZFx1MGUyMlx1MGU0NFx1MGUxYlx1MGUwMVx1MGUyN1x1MGU0OFx1MGUzMlx1MGUyM1x1MGUzMVx1MGUxMFx1MGUxYVx1MGUzMlx1MGUyNVx1MGU0MFx1MGUyNVx1MGUyMiBcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMTlcdTBlMzVcdTBlNDhcdTBlMmFcdTBlMzRcdTBlNDhcdTBlMDdcdTBlMTdcdTBlMzVcdTBlNDhcdTBlNDNcdTBlMmJcdTBlNDlcdTBlMjFcdTBlMzJcdTBlMDFcdTBlMDFcdTBlMjdcdTBlNDhcdTBlMzJcdTBlMDFcdTBlMzJcdTBlMjNcdTBlMjhcdTBlMzZcdTBlMDFcdTBlMjlcdTBlMzJcdTBlMDRcdTBlMzdcdTBlMmRcdTBlMDFcdTBlMzJcdTBlMjNcdTBlNDRcdTBlMTRcdTBlNDlcdTBlMjVcdTBlMDdcdTBlMjFcdTBlMzdcdTBlMmRcdTBlMTdcdTBlMzNcdTBlMDhcdTBlMjNcdTBlMzRcdTBlMDcgXHUwZTIxXHUwZTM1XHUwZTJkXHUwZTM0XHUwZTJhXHUwZTIzXHUwZTMwXHUwZTQzXHUwZTJiXHUwZTQ5XHUwZTQwXHUwZTIzXHUwZTMyXHUwZTQ0XHUwZTE0XHUwZTQ5XHUwZTE3XHUwZTMzIFx1MGUyYVx1MGUyZFx1MGUxOVx1MGU0M1x1MGUyYlx1MGU0OVx1MGU0MFx1MGUyM1x1MGUzMlx1MGUwMVx1MGUyNVx1MGU0OVx1MGUzMlx1MGUwNFx1MGUzNFx1MGUxNFx1MGUwMVx1MGUyNVx1MGU0OVx1MGUzMlx1MGUwMVx1MGUyNVx1MGU0OVx1MGUzMlx1MGU0MVx1MGUyYVx1MGUxNFx1MGUwN1x1MGUyZFx1MGUyZFx1MGUwMSBcdTBlMmRcdTBlMzVcdTBlMDFcdTBlMmRcdTBlMjJcdTBlNDhcdTBlMzJcdTBlMDdcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMTlcdTBlMzVcdTBlNDhcdTBlMjFcdTBlMzVcdTBlMTdcdTBlMzhcdTBlMTlcdTBlMjFcdTBlMzJcdTBlMDFcdTBlMjFcdTBlMzJcdTBlMjJcdTBlMTdcdTBlMzVcdTBlNDhcdTBlNDFcdTBlMDhcdTBlMDFcdTBlNDNcdTBlMmJcdTBlNDlcdTBlMmFcdTBlMzNcdTBlMmJcdTBlMjNcdTBlMzFcdTBlMWFcdTBlMDRcdTBlMTlcdTBlMTdcdTBlMzVcdTBlNDhcdTBlNDBcdTBlMjNcdTBlMzVcdTBlMjJcdTBlMTlcdTBlNDBcdTBlMDFcdTBlNDhcdTBlMDdcdTBlNDBcdTBlMjNcdTBlMzVcdTBlMjJcdTBlMTlcdTBlMTRcdTBlMzUgXHUwZTIxXHUwZTM1XHUwZTA0XHUwZTI3XHUwZTMyXHUwZTIxXHUwZTJhXHUwZTMyXHUwZTIxXHUwZTMyXHUwZTIzXHUwZTE2IFx1MGU0MVx1MGUwOFx1MGUwMVx1MGUxN1x1MGUzOFx1MGUxOVx1MGUyN1x1MGUxOVx1MGU0NFx1MGUxYlx1MGUwNFx1MGU0OFx1MGUzMCBcdTBlMjFcdTBlMzVcdTBlMmJcdTBlMjVcdTBlMzJcdTBlMjJcdTBlNDFcdTBlMDJcdTBlMTlcdTBlMDdcdTBlMTdcdTBlMzhcdTBlMTlcdTBlNDNcdTBlMmJcdTBlNDlcdTBlNDBcdTBlMjVcdTBlMzdcdTBlMmRcdTBlMDFcdTBlMmFcdTBlMjNcdTBlMjNcdTBlMDRcdTBlNGMgXHUwZTQxXHUwZTI1XHUwZTMwXHUwZTIyXHUwZTM0XHUwZTQ4XHUwZTA3XHUwZTQ0XHUwZTFiXHUwZTAxXHUwZTI3XHUwZTQ4XHUwZTMyXHUwZTE5XHUwZTMxXHUwZTQ5XHUwZTE5IFx1MGUyZFx1MGUzMlx1MGUwOFx1MGUzMlx1MGUyM1x1MGUyMlx1MGU0Y1x1MGUxN1x1MGUzNVx1MGU0OFx1MGUyMVx1MGUzMlx1MGUyYVx1MGUyZFx1MGUxOVx1MGUwMVx1MGU0N1x1MGU0NFx1MGUyMVx1MGU0OFx1MGU0M1x1MGUwYVx1MGU0OFx1MGUxOFx1MGUyM1x1MGUyM1x1MGUyMVx1MGUxNFx1MGUzMiBcdTBlMjFcdTBlMzVcdTBlMDRcdTBlMjdcdTBlMzJcdTBlMjFcdTBlNDBcdTBlMDFcdTBlNDhcdTBlMDdcdTBlMDhcdTBlMjNcdTBlMzRcdTBlMDcgXHUwZTQ2IFx1MGU0MFx1MGUxYlx1MGU0N1x1MGUxOVx1MGUwNFx1MGUxOVx1MGUxN1x1MGUzNVx1MGU0OFx1MGUyMVx1MGUzNVx1MGUwYVx1MGUzN1x1MGU0OFx1MGUyZFx1MGU0MFx1MGUyYVx1MGUzNVx1MGUyMlx1MGUwN1x1MGUyM1x1MGUzMFx1MGUxNFx1MGUzMVx1MGUxYVx1MGUxYlx1MGUyM1x1MGUzMFx1MGU0MFx1MGUxN1x1MGUyOFx1MGU0M1x1MGUxOVx1MGUxNFx1MGU0OVx1MGUzMlx1MGUxOVx1MGUxNVx1MGU0OFx1MGUzMlx1MGUwN1x1MGU0Nlx1MGUxNFx1MGU0OVx1MGUyN1x1MGUyMlx1MGUwYlx1MGU0OVx1MGUzMyBcdTBlMjJcdTBlMzFcdTBlMDdcdTBlMjFcdTBlMzVcdTBlMmRcdTBlMzVcdTBlMDFcdTBlMmJcdTBlMjVcdTBlMzJcdTBlMjJcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMjJcdTBlMzFcdTBlMDdcdTBlMWFcdTBlMmRcdTBlMDFcdTBlNDRcdTBlMjFcdTBlNDhcdTBlMmJcdTBlMjFcdTBlMTQgXHUwZTQwXHUwZTJkXHUwZTMyXHUwZTQwXHUwZTFiXHUwZTQ3XHUwZTE5XHUwZTI3XHUwZTQ4XHUwZTMyXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTE5XHUwZTM1XHUwZTQ4XHUwZTE2XHUwZTM3XHUwZTJkXHUwZTQwXHUwZTFiXHUwZTQ3XHUwZTE5XHUwZTIxXHUwZTJiXHUwZTMyXHUwZTI1XHUwZTMxXHUwZTIyXHUwZTJkXHUwZTMxXHUwZTE5XHUwZTE0XHUwZTMxXHUwZTFhXHUwZTE1XHUwZTQ5XHUwZTE5XHUwZTQ2XHUwZTAyXHUwZTJkXHUwZTA3XHUwZTQwXHUwZTIxXHUwZTM3XHUwZTJkXHUwZTA3XHUwZTQ0XHUwZTE3XHUwZTIyXHUwZTJkXHUwZTM1XHUwZTAxXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTE5XHUwZTM2XHUwZTA3XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTIxXHUwZTM1XHUwZTA0XHUwZTM4XHUwZTEzXHUwZTIwXHUwZTMyXHUwZTFlIiwidnNfZGVzY3JpcHRpb25fZW4iOiJcdTBlNDBcdTBlMDhcdTBlNGJcdTBlMDdcdTBlMjJcdTBlMzFcdTBlMDdcdTBlNDRcdTBlMDcgXHUwZTAxXHUwZTQ3XHUwZTA0XHUwZTA3XHUwZTA4XHUwZTMwXHUwZTFhXHUwZTJkXHUwZTAxXHUwZTQwXHUwZTA4XHUwZTRiXHUwZTA3XHUwZTE1XHUwZTMxXHUwZTQ5XHUwZTA3XHUwZTQxXHUwZTE1XHUwZTQ4XHUwZTE1XHUwZTM2XHUwZTAxXHUwZTQwXHUwZTFlXHUwZTBhXHUwZTIzXHUwZTJiXHUwZTE5XHUwZTQ5XHUwZTMyXHUwZTIxXHUwZTJkXHUwZTQxXHUwZTI1XHUwZTQ5XHUwZTI3XHUwZTI1XHUwZTQ4XHUwZTMwIFx1MGU0M1x1MGUwNFx1MGUyM1x1MGU0MFx1MGUyYlx1MGU0N1x1MGUxOVx1MGUwMVx1MGU0N1x1MGUwOFx1MGUzM1x1MGU0NFx1MGUxNFx1MGU0OVx1MGUyN1x1MGU0OFx1MGUzMlx1MGUwNFx1MGUzN1x1MGUyZCBcdTBlMjEuXHUwZTAxXHUwZTIzXHUwZTM4XHUwZTA3XHUwZTQwXHUwZTE3XHUwZTFlIFx1MGU0MFx1MGUwMlx1MGU0OVx1MGUzMlx1MGUyMVx1MGUzMlx1MGUwMVx1MGU0N1x1MGU0NFx1MGUxNFx1MGU0OVx1MGU0MFx1MGUwOFx1MGUyZFx1MGUwMVx1MGUzMVx1MGUxYVx1MGUyYlx1MGU0OVx1MGUyZFx1MGUwN1x1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUxNFx1MGUzNSBcdTBlNDYgXHUwZTQxXHUwZTJkXHUwZTIzXHUwZTRjXHUwZTQwXHUwZTIyXHUwZTQ3XHUwZTE5IFx1MGU0NiBcdTBlMjFcdTBlMzVcdTBlMDRcdTBlMjdcdTBlMzJcdTBlMjFcdTBlMmFcdTBlMzBcdTBlMTRcdTBlMjdcdTBlMDFcdTBlMmFcdTBlMWFcdTBlMzJcdTBlMjJcdTBlMTdcdTBlMzhcdTBlMDFcdTBlMmRcdTBlMjJcdTBlNDhcdTBlMzJcdTBlMDcgXHUwZTIxXHUwZTM1XHUwZTE3XHUwZTMxXHUwZTQ5XHUwZTA3XHUwZTIzXHUwZTE2XHUwZTIzXHUwZTMyXHUwZTA3IFx1MGUyM1x1MGUxNlx1MGUxYVx1MGUzMVx1MGUyYVx1MGU0NFx1MGUyN1x1MGU0OVx1MGUwNFx1MGUyZFx1MGUyMlx1MGUxYVx1MGUyM1x1MGUzNFx1MGUwMVx1MGUzMlx1MGUyMyBcdTBlMmRcdTBlMzhcdTBlMWJcdTBlMDFcdTBlMjNcdTBlMTNcdTBlNGNcdTBlMDFcdTBlMzJcdTBlMjNcdTBlNDBcdTBlMjNcdTBlMzVcdTBlMjJcdTBlMTlcdTBlMDFcdTBlNDdcdTBlMTdcdTBlMzFcdTBlMTlcdTBlMmFcdTBlMjFcdTBlMzFcdTBlMjJcdTBlMTdcdTBlMzhcdTBlMDFcdTBlMmRcdTBlMjJcdTBlNDhcdTBlMzJcdTBlMDcgXHUwZTQwXHUwZTBhXHUwZTQ4XHUwZTE5IFx1MGUwNFx1MGUyZFx1MGUyMVx1MGUxZVx1MGUzNFx1MGUyN1x1MGU0MFx1MGUxNVx1MGUyZFx1MGUyM1x1MGU0Y1x1MGUxN1x1MGUzNVx1MGU0OFx1MGU0M1x1MGUwYVx1MGU0OVx1MGU0MVx1MGUyMVx1MGUwNFx1MGU0MFx1MGUwMVx1MGUzN1x1MGUyZFx1MGUxYVx1MGUxN1x1MGUzOFx1MGUwMVx1MGUyYlx1MGU0OVx1MGUyZFx1MGUwNyBcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMTVcdTBlMzZcdTBlMDFcdTBlMDFcdTBlMzJcdTBlMjNcdTBlMWFcdTBlMzRcdTBlMTlcdTBlMDFcdTBlNDdcdTBlMjFcdTBlMzVcdTBlNDBcdTBlMDRcdTBlMjNcdTBlMzdcdTBlNDhcdTBlMmRcdTBlMDdcdTBlMWFcdTBlMzRcdTBlMTlcdTBlMDhcdTBlMzNcdTBlMjVcdTBlMmRcdTBlMDdcdTBlNDRcdTBlMjdcdTBlNDlcdTBlNDNcdTBlMmJcdTBlNDlcdTBlMTlcdTBlMzFcdTBlMDFcdTBlMjhcdTBlMzZcdTBlMDFcdTBlMjlcdTBlMzJcdTBlNDRcdTBlMTRcdTBlNDlcdTBlNDBcdTBlMjNcdTBlMzVcdTBlMjJcdTBlMTlcdTBlMjNcdTBlMzlcdTBlNDlcdTBlNDNcdTBlMTlcdTBlMTdcdTBlMzVcdTBlNDhcdTBlNDBcdTBlMTdcdTBlMzVcdTBlMjJcdTBlMWFcdTBlNDBcdTBlMTdcdTBlNDhcdTBlMzJcdTBlMDJcdTBlMmRcdTBlMDdcdTBlMDhcdTBlMjNcdTBlMzRcdTBlMDcgXHUwZTJiXHUwZTQ5XHUwZTJkXHUwZTA3XHUwZTA0XHUwZTIzXHUwZTMxXHUwZTI3XHUwZTAxXHUwZTQ3XHUwZTQwXHUwZTA4XHUwZTRiXHUwZTA3XHUwZTQwXHUwZTJiXHUwZTIxXHUwZTM3XHUwZTJkXHUwZTE5XHUwZTA0XHUwZTIzXHUwZTMxXHUwZTI3XHUwZTAyXHUwZTJkXHUwZTA3XHUwZTQyXHUwZTIzXHUwZTA3XHUwZTQwXHUwZTIzXHUwZTM1XHUwZTIyXHUwZTE5XHUwZTJiXHUwZTI1XHUwZTMyXHUwZTIyXHUwZTE0XHUwZTMyXHUwZTI3IFx1MGUxNVx1MGUzNlx1MGUwMVx1MGUxZlx1MGUzNFx1MGUyNVx1MGU0Y1x1MGUyMVx1MGUwMVx1MGU0N1x1MGUyMVx1MGUzNVx1MGUyZFx1MGUzOFx1MGUxYlx1MGUwMVx1MGUyM1x1MGUxM1x1MGU0Y1x1MGUxNlx1MGU0OFx1MGUzMlx1MGUyMlx1MGUyYlx1MGUxOVx1MGUzMVx1MGUwN1x1MGUwNFx1MGUyM1x1MGUxYVx1MGUwNFx1MGUyM1x1MGUzMVx1MGUxOSBcdTBlMjVcdTBlNDhcdTBlMzJcdTBlMmFcdTBlMzhcdTBlMTRcdTBlNDRcdTBlMTRcdTBlNDlcdTBlMTdcdTBlMzNcdTBlMmJcdTBlNDlcdTBlMmRcdTBlMDdcdTBlMmFcdTBlMzNcdTBlMmJcdTBlMjNcdTBlMzFcdTBlMWFcdTBlMTdcdTBlMzNcdTBlMDFcdTBlMzJcdTBlMjNcdTBlNGNcdTBlMTVcdTBlMzlcdTBlMTlcdTBlNDFcdTBlMjVcdTBlMzBcdTBlNDBcdTBlMDFcdTBlMjFcdTBlMmFcdTBlNGNcdTBlMjFcdTBlMzJcdTBlNDNcdTBlMmJcdTBlMjFcdTBlNDhcdTBlMTRcdTBlNDlcdTBlMjdcdTBlMjIgXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTBhXHUwZTJkXHUwZTFhXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTJhXHUwZTM4XHUwZTE0XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTE1XHUwZTMxXHUwZTI3XHUwZTQwXHUwZTJkXHUwZTA3XHUwZTQ0XHUwZTE0XHUwZTQ5XHUwZTQwXHUwZTIzXHUwZTM1XHUwZTIyXHUwZTE5XHUwZTAxXHUwZTQ3XHUwZTA0XHUwZTA3XHUwZTQwXHUwZTFiXHUwZTQ3XHUwZTE5XHUwZTJiXHUwZTQ5XHUwZTJkXHUwZTA3XHUwZTJkXHUwZTMxXHUwZTE0XHUwZTQwXHUwZTJhXHUwZTM1XHUwZTIyXHUwZTA3IFx1MGUxN1x1MGUzM1x1MGU0Mlx1MGUxZlx1MGU0MFx1MGUyNVx1MGU0OCBcdTBlMmRcdTBlMzFcdTBlMTRcdTBlNDBcdTBlMmFcdTBlMzVcdTBlMjJcdTBlMDdcdTBlMTVcdTBlNDhcdTBlMzJcdTBlMDcgXHUwZTQ2IFx1MGU0NFx1MGUxNFx1MGU0OVx1MGU0MFx1MGUxN1x1MGUzNVx1MGUyMlx1MGUxYVx1MGU0MFx1MGUxN1x1MGU0OFx1MGUzMlx1MGUyYlx1MGU0OVx1MGUyZFx1MGUwN1x1MGUyZFx1MGUzMVx1MGUxNFx1MGUwMlx1MGUyZFx1MGUwN1x1MGUwNFx1MGU0OFx1MGUzMlx1MGUyMlx1MGU0MFx1MGUxZVx1MGUyNVx1MGUwN1x1MGUwOFx1MGUyM1x1MGUzNFx1MGUwNyBcdTBlNDYgXHUwZTE5XHUwZTJkXHUwZTAxXHUwZTA4XHUwZTMyXHUwZTAxXHUwZTE5XHUwZTMxXHUwZTQ5XHUwZTE5IFx1MGUxYVx1MGUyM1x1MGUyM1x1MGUyMlx1MGUzMlx1MGUwMVx1MGUzMlx1MGUyOFx1MGU0Mlx1MGUxNFx1MGUyMlx1MGUyM1x1MGUyN1x1MGUyMVx1MGUwMlx1MGUyZFx1MGUwN1x1MGUyMVx1MGUyZFx1MGUwMVx1MGU0N1x1MGUxNFx1MGUzNSBcdTBlMjFcdTBlMzVcdTBlMTVcdTBlNDlcdTBlMTlcdTBlNDRcdTBlMjFcdTBlNDlcdTBlNDBcdTBlMjJcdTBlMmRcdTBlMzBcdTBlMjFcdTBlMzJcdTBlMDFcdTBlNDBcdTBlMjdcdTBlNDhcdTBlMmRcdTBlMmRcdTBlMmQgXHUwZTFlXHUwZTM5XHUwZTE0XHUwZTE2XHUwZTM2XHUwZTA3XHUwZTJiXHUwZTJkXHUwZTJhXHUwZTIxXHUwZTM4XHUwZTE0XHUwZTAxXHUwZTQ3XHUwZTIxXHUwZTM1XHUwZTA0XHUwZTI3XHUwZTMyXHUwZTIxXHUwZTQzXHUwZTJiXHUwZTBkXHUwZTQ4XHUwZTJiXHUwZTIzXHUwZTM5XHUwZTJiXHUwZTIzXHUwZTMyXHUwZTE5XHUwZTQ4XHUwZTMyXHUwZTQwXHUwZTAyXHUwZTQ5XHUwZTMyXHUwZTQ0XHUwZTFiXHUwZTE3XHUwZTMzXHUwZTA3XHUwZTMyXHUwZTE5IFx1MGUyZFx1MGU0OFx1MGUzMlx1MGUxOVx1MGUyYlx1MGUxOVx1MGUzMVx1MGUwN1x1MGUyYVx1MGUzN1x1MGUyZCBcdTBlMmJcdTBlMjNcdTBlMzdcdTBlMmRcdTBlMDRcdTBlMzhcdTBlMjJcdTBlMDdcdTBlMzJcdTBlMTlcdTBlMjFcdTBlMzJcdTBlMDFcdTBlNDZcdTBlNDYgXHUwZTI1XHUwZTQ4XHUwZTMyXHUwZTJhXHUwZTM4XHUwZTE0XHUwZTQwXHUwZTFlXHUwZTM0XHUwZTQ4XHUwZTA3XHUwZTJhXHUwZTIzXHUwZTQ5XHUwZTMyXHUwZTA3XHUwZTJiXHUwZTQ5XHUwZTJkXHUwZTA3XHUwZTQwXHUwZTIzXHUwZTM1XHUwZTIyXHUwZTE5XHUwZTJkXHUwZTMxXHUwZTA4XHUwZTA5XHUwZTIzXHUwZTM0XHUwZTIyXHUwZTMwXHUwZTE0XHUwZTQ5XHUwZTI3XHUwZTIyXHUwZTE5XHUwZTMwIFx1MGUyYlx1MGU0OVx1MGUyZFx1MGUwN1x1MGUxOVx1MGU0OFx1MGUzMlx1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUyYVx1MGUzOFx1MGUxNFx1MGU0Nlx1MGUxN1x1MGUzMVx1MGUxOVx1MGUyYVx1MGUyMVx1MGUzMVx1MGUyMlx1MGUyYVx1MGUzOFx1MGUxNFx1MGU0NiBcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMmFcdTBlMzNcdTBlMDRcdTBlMzFcdTBlMGRcdTBlNDRcdTBlMWJcdTBlMDFcdTBlMjdcdTBlNDhcdTBlMzJcdTBlMTlcdTBlMzFcdTBlNDlcdTBlMTlcdTBlMDRcdTBlMzdcdTBlMmRcdTBlMTZcdTBlMzZcdTBlMDdcdTBlNDBcdTBlMWJcdTBlNDdcdTBlMTlcdTBlMjFcdTBlMmJcdTBlMzJcdTBlMjVcdTBlMzFcdTBlMjJcdTBlNDBcdTBlMmRcdTBlMDFcdTBlMGFcdTBlMTkgXHUwZTQxXHUwZTE1XHUwZTQ4XHUwZTA0XHUwZTM4XHUwZTEzXHUwZTIwXHUwZTMyXHUwZTFlXHUwZTE0XHUwZTQ5XHUwZTMyXHUwZTE5XHUwZTAxXHUwZTMyXHUwZTIzXHUwZTI4XHUwZTM2XHUwZTAxXHUwZTI5XHUwZTMyXHUwZTAxXHUwZTQ3XHUwZTQ0XHUwZTIxXHUwZTQ4XHUwZTQ0XHUwZTE0XHUwZTQ5XHUwZTE0XHUwZTQ5XHUwZTJkXHUwZTIyXHUwZTQ0XHUwZTFiXHUwZTAxXHUwZTI3XHUwZTQ4XHUwZTMyXHUwZTIzXHUwZTMxXHUwZTEwXHUwZTFhXHUwZTMyXHUwZTI1XHUwZTQwXHUwZTI1XHUwZTIyIFx1MGUxN1x1MGUzNVx1MGU0OFx1MGUxOVx1MGUzNVx1MGU0OFx1MGUyYVx1MGUzNFx1MGU0OFx1MGUwN1x1MGUxN1x1MGUzNVx1MGU0OFx1MGU0M1x1MGUyYlx1MGU0OVx1MGUyMVx1MGUzMlx1MGUwMVx1MGUwMVx1MGUyN1x1MGU0OFx1MGUzMlx1MGUwMVx1MGUzMlx1MGUyM1x1MGUyOFx1MGUzNlx1MGUwMVx1MGUyOVx1MGUzMlx1MGUwNFx1MGUzN1x1MGUyZFx1MGUwMVx1MGUzMlx1MGUyM1x1MGU0NFx1MGUxNFx1MGU0OVx1MGUyNVx1MGUwN1x1MGUyMVx1MGUzN1x1MGUyZFx1MGUxN1x1MGUzM1x1MGUwOFx1MGUyM1x1MGUzNFx1MGUwNyBcdTBlMjFcdTBlMzVcdTBlMmRcdTBlMzRcdTBlMmFcdTBlMjNcdTBlMzBcdTBlNDNcdTBlMmJcdTBlNDlcdTBlNDBcdTBlMjNcdTBlMzJcdTBlNDRcdTBlMTRcdTBlNDlcdTBlMTdcdTBlMzMgXHUwZTJhXHUwZTJkXHUwZTE5XHUwZTQzXHUwZTJiXHUwZTQ5XHUwZTQwXHUwZTIzXHUwZTMyXHUwZTAxXHUwZTI1XHUwZTQ5XHUwZTMyXHUwZTA0XHUwZTM0XHUwZTE0XHUwZTAxXHUwZTI1XHUwZTQ5XHUwZTMyXHUwZTAxXHUwZTI1XHUwZTQ5XHUwZTMyXHUwZTQxXHUwZTJhXHUwZTE0XHUwZTA3XHUwZTJkXHUwZTJkXHUwZTAxIFx1MGUyZFx1MGUzNVx1MGUwMVx1MGUyZFx1MGUyMlx1MGU0OFx1MGUzMlx1MGUwN1x1MGUxN1x1MGUzNVx1MGU0OFx1MGUxOVx1MGUzNVx1MGU0OFx1MGUyMVx1MGUzNVx1MGUxN1x1MGUzOFx1MGUxOVx1MGUyMVx1MGUzMlx1MGUwMVx1MGUyMVx1MGUzMlx1MGUyMlx1MGUxN1x1MGUzNVx1MGU0OFx1MGU0MVx1MGUwOFx1MGUwMVx1MGU0M1x1MGUyYlx1MGU0OVx1MGUyYVx1MGUzM1x1MGUyYlx1MGUyM1x1MGUzMVx1MGUxYVx1MGUwNFx1MGUxOVx1MGUxN1x1MGUzNVx1MGU0OFx1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGU0MFx1MGUwMVx1MGU0OFx1MGUwN1x1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUxNFx1MGUzNSBcdTBlMjFcdTBlMzVcdTBlMDRcdTBlMjdcdTBlMzJcdTBlMjFcdTBlMmFcdTBlMzJcdTBlMjFcdTBlMzJcdTBlMjNcdTBlMTYgXHUwZTQxXHUwZTA4XHUwZTAxXHUwZTE3XHUwZTM4XHUwZTE5XHUwZTI3XHUwZTE5XHUwZTQ0XHUwZTFiXHUwZTA0XHUwZTQ4XHUwZTMwIFx1MGUyMVx1MGUzNVx1MGUyYlx1MGUyNVx1MGUzMlx1MGUyMlx1MGU0MVx1MGUwMlx1MGUxOVx1MGUwN1x1MGUxN1x1MGUzOFx1MGUxOVx1MGU0M1x1MGUyYlx1MGU0OVx1MGU0MFx1MGUyNVx1MGUzN1x1MGUyZFx1MGUwMVx1MGUyYVx1MGUyM1x1MGUyM1x1MGUwNFx1MGU0YyBcdTBlNDFcdTBlMjVcdTBlMzBcdTBlMjJcdTBlMzRcdTBlNDhcdTBlMDdcdTBlNDRcdTBlMWJcdTBlMDFcdTBlMjdcdTBlNDhcdTBlMzJcdTBlMTlcdTBlMzFcdTBlNDlcdTBlMTkgXHUwZTJkXHUwZTMyXHUwZTA4XHUwZTMyXHUwZTIzXHUwZTIyXHUwZTRjXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTIxXHUwZTMyXHUwZTJhXHUwZTJkXHUwZTE5XHUwZTAxXHUwZTQ3XHUwZTQ0XHUwZTIxXHUwZTQ4XHUwZTQzXHUwZTBhXHUwZTQ4XHUwZTE4XHUwZTIzXHUwZTIzXHUwZTIxXHUwZTE0XHUwZTMyIFx1MGUyMVx1MGUzNVx1MGUwNFx1MGUyN1x1MGUzMlx1MGUyMVx1MGU0MFx1MGUwMVx1MGU0OFx1MGUwN1x1MGUwOFx1MGUyM1x1MGUzNFx1MGUwNyBcdTBlNDYgXHUwZTQwXHUwZTFiXHUwZTQ3XHUwZTE5XHUwZTA0XHUwZTE5XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTIxXHUwZTM1XHUwZTBhXHUwZTM3XHUwZTQ4XHUwZTJkXHUwZTQwXHUwZTJhXHUwZTM1XHUwZTIyXHUwZTA3XHUwZTIzXHUwZTMwXHUwZTE0XHUwZTMxXHUwZTFhXHUwZTFiXHUwZTIzXHUwZTMwXHUwZTQwXHUwZTE3XHUwZTI4XHUwZTQzXHUwZTE5XHUwZTE0XHUwZTQ5XHUwZTMyXHUwZTE5XHUwZTE1XHUwZTQ4XHUwZTMyXHUwZTA3XHUwZTQ2XHUwZTE0XHUwZTQ5XHUwZTI3XHUwZTIyXHUwZTBiXHUwZTQ5XHUwZTMzIFx1MGUyMlx1MGUzMVx1MGUwN1x1MGUyMVx1MGUzNVx1MGUyZFx1MGUzNVx1MGUwMVx1MGUyYlx1MGUyNVx1MGUzMlx1MGUyMlx1MGUxN1x1MGUzNVx1MGU0OFx1MGUyMlx1MGUzMVx1MGUwN1x1MGUxYVx1MGUyZFx1MGUwMVx1MGU0NFx1MGUyMVx1MGU0OFx1MGUyYlx1MGUyMVx1MGUxNCBcdTBlNDBcdTBlMmRcdTBlMzJcdTBlNDBcdTBlMWJcdTBlNDdcdTBlMTlcdTBlMjdcdTBlNDhcdTBlMzJcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMTlcdTBlMzVcdTBlNDhcdTBlMTZcdTBlMzdcdTBlMmRcdTBlNDBcdTBlMWJcdTBlNDdcdTBlMTlcdTBlMjFcdTBlMmJcdTBlMzJcdTBlMjVcdTBlMzFcdTBlMjJcdTBlMmRcdTBlMzFcdTBlMTlcdTBlMTRcdTBlMzFcdTBlMWFcdTBlMTVcdTBlNDlcdTBlMTlcdTBlNDZcdTBlMDJcdTBlMmRcdTBlMDdcdTBlNDBcdTBlMjFcdTBlMzdcdTBlMmRcdTBlMDdcdTBlNDRcdTBlMTdcdTBlMjJcdTBlMmRcdTBlMzVcdTBlMDFcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMTlcdTBlMzZcdTBlMDdcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMjFcdTBlMzVcdTBlMDRcdTBlMzhcdTBlMTNcdTBlMjBcdTBlMzJcdTBlMWUiLCJ2c190eXBlIjoiMiIsInZzX2FjdGl2ZSI6IjEiLCJ2c19oaWdobGlnaHQiOiIwIiwidnNfY3JlYXRlIjoiMjAxNy0xMS0xNSAxNTo1MDozMSIsInZzX3VwZGF0ZSI6IjIwMTctMTEtMTYgMTA6NDU6MDciLCJkZXB0X25hbWVfdGgiOiJcdTBlMmFcdTBlMzJcdTBlMDJcdTBlMzJcdTBlMjdcdTBlMzRcdTBlMGFcdTBlMzJcdTBlMjBcdTBlMzJcdTBlMWVcdTBlMjJcdTBlMTlcdTBlMTVcdTBlMjNcdTBlNGMiLCJkZXB0X25hbWVfZW4iOiJGaWxtIiwiZmFjdWx0eV9uYW1lX3RoIjoiXHUwZTA0XHUwZTEzXHUwZTMwXHUwZTE0XHUwZTM0XHUwZTA4XHUwZTM0XHUwZTE3XHUwZTMxXHUwZTI1XHUwZTIxXHUwZTM1XHUwZTQwXHUwZTE0XHUwZTM1XHUwZTIyXHUwZTQxXHUwZTI1XHUwZTMwXHUwZTI4XHUwZTM0XHUwZTI1XHUwZTFiXHUwZTMwXHUwZTIwXHUwZTMyXHUwZTFlXHUwZTIyXHUwZTE5XHUwZTE1XHUwZTIzXHUwZTRjIiwiZmFjdWx0eV9uYW1lX2VuIjoiU2Nob29sIG9mIERpZ2l0YWwgTWVkaWEgYW5kIENpbmVtYXRpYyBBcnRzIiwiZmFjdWx0eV9zbHVnIjoiZGlnaXRhbC1tZWRpYSJ9LHsidnNfaWQiOiIyNiIsInZzX2NvZGUiOiIxNTEwNzM1ODMzLVBQRjZQTFdCVjYiLCJ2c19wcm9maWxlIjoiMjAxNzExMTUxNTUwMzNfRkJOQU5LWExaSkJJOUpOX01TVVdZWkxYRlNOQU9aVy5qcGciLCJ2c19mYmlkIjoiMTg0MDY0NDQyMjg1MjgyNiIsInZzX2ZibmFtZSI6IkNoYW5hcGF0IENob21rbGluIiwidnNfZmJsaW5rIjoiMTg0MDY0NDQyMjg1MjgyNiIsInZzX2VtYWlsIjoic2t5cGhvdG9nYW1lQGdtYWlsLmNvbSIsInZzX2RlZ3JlZSI6IjEiLCJ2c19mYWN1bHR5IjoiMiIsInZzX2RlcGFydG1lbnQiOiIyNyIsInZzX2RlcGFydG1lbnRfb3RoZXJfdGgiOm51bGwsInZzX2RlcGFydG1lbnRfb3RoZXJfZW4iOm51bGwsInZzX2Rlc2NyaXB0aW9uX3RoIjoiXHUwZTA0XHUwZTI3XHUwZTMyXHUwZTIxXHUwZTQwXHUwZTA4XHUwZTRiXHUwZTA3XHUwZTE1XHUwZTQ5XHUwZTJkXHUwZTA3XHUwZTE1XHUwZTIzXHUwZTA3XHUwZTIxXHUwZTMyXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTE5XHUwZTM1XHUwZTQ4XHUwZTQwXHUwZTI1XHUwZTIyIGNvbm5lY3Rpb24gXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTQzXHUwZTA0XHUwZTIzXHUwZTI3XHUwZTQ4XHUwZTMyXHUwZTQxXHUwZTE5XHUwZTQ4XHUwZTAxXHUwZTQ3XHUwZTQxXHUwZTFlXHUwZTQ5IFx1MGUyMS5cdTBlMDFcdTBlMjNcdTBlMzhcdTBlMDdcdTBlNDBcdTBlMTdcdTBlMWUgXHUwZTA4XHUwZTMwXHUwZTIxXHUwZTM1XHUwZTJhXHUwZTE2XHUwZTMyXHUwZTFhXHUwZTMxXHUwZTE5XHUwZTJhXHUwZTMxXHUwZTAxXHUwZTAxXHUwZTM1XHUwZTQ4XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTQzXHUwZTE5XHUwZTFiXHUwZTIzXHUwZTMwXHUwZTQwXHUwZTE3XHUwZTI4XHUwZTQ0XHUwZTE3XHUwZTIyIFx1MGUxN1x1MGUzNVx1MGU0OCBjb25uZWN0aW9uIFx1MGUwMVx1MGUzMVx1MGUxYVx1MGUyMFx1MGUzMlx1MGUyMlx1MGUxOVx1MGUyZFx1MGUwMVx1MGU0MFx1MGUyM1x1MGUzN1x1MGU0OFx1MGUyZFx1MGUwN1x1MGUwOFx1MGUxYVx1MGU0NFx1MGUxYlx1MGUyMVx1MGUzNVx1MGUwN1x1MGUzMlx1MGUxOVx1MGUxN1x1MGUzM1x1MGU0MVx1MGUxOVx1MGU0OFx1MGUxOVx1MGUyZFx1MGUxOSAxMDAlIFx1MGUyN1x1MGUzNFx1MGUwYVx1MGUzMiBcdTBlMDFcdTBlMzJcdTBlMjNcdTBlNDBcdTBlMjNcdTBlMzVcdTBlMjJcdTBlMTlcdTBlMDFcdTBlMzJcdTBlMjNcdTBlMmFcdTBlMmRcdTBlMTkgXHUwZTQwXHUwZTIzXHUwZTM1XHUwZTIyXHUwZTAxXHUwZTI3XHUwZTQ4XHUwZTMyXHUwZTQyXHUwZTA0XHUwZTE1XHUwZTIzXHUwZTA4XHUwZTMwXHUwZTE3XHUwZTMxXHUwZTE5XHUwZTJhXHUwZTIxXHUwZTMxXHUwZTIyIFx1MGUxZVx1MGUyM1x1MGU0OVx1MGUyZFx1MGUyMVx1MGUyM1x1MGUzMVx1MGUxYVx1MGUyMVx1MGUzN1x1MGUyZFx1MGUxN1x1MGUzOFx1MGUwMVx1MGUyYVx1MGUxNlx1MGUzMlx1MGUxOVx1MGUwMVx1MGUzMlx1MGUyM1x1MGUxM1x1MGU0YyBcdTBlMmJcdTBlNDlcdTBlMmRcdTBlMDdcdTBlNDBcdTBlMjNcdTBlMzVcdTBlMjJcdTBlMTlcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMjFcdTBlMzVcdTBlMmRcdTBlMzhcdTBlMWJcdTBlMDFcdTBlMjNcdTBlMTNcdTBlNGNcdTBlMDRcdTBlMjNcdTBlMWEgXHUwZTFlXHUwZTIzXHUwZTQ5XHUwZTJkXHUwZTIxXHUwZTQzXHUwZTJiXHUwZTQ5IFx1MGUxOVx1MGUyOC4gXHUwZTQ0XHUwZTE0XHUwZTQ5XHUwZTQzXHUwZTBhXHUwZTQ5XHUwZTAxXHUwZTMxXHUwZTE5XHUwZTE3XHUwZTM4XHUwZTE0XHUwZTA0XHUwZTE5IFx1MGUwNFx1MGUyN1x1MGUzMlx1MGUyMVx1MGUxZVx1MGUyM1x1MGU0OVx1MGUyZFx1MGUyMSBcdTBlMDRcdTBlMjdcdTBlMzJcdTBlMjFcdTBlNDBcdTBlMjNcdTBlMzRcdTBlNDhcdTBlMTQgXHUwZTE1XHUwZTQ5XHUwZTJkXHUwZTA3XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTE5XHUwZTM1XHUwZTQ4IiwidnNfZGVzY3JpcHRpb25fZW4iOiJcdTBlMDRcdTBlMjdcdTBlMzJcdTBlMjFcdTBlNDBcdTBlMDhcdTBlNGJcdTBlMDdcdTBlMTVcdTBlNDlcdTBlMmRcdTBlMDdcdTBlMTVcdTBlMjNcdTBlMDdcdTBlMjFcdTBlMzJcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMTlcdTBlMzVcdTBlNDhcdTBlNDBcdTBlMjVcdTBlMjIgY29ubmVjdGlvbiBcdTBlMTdcdTBlMzVcdTBlNDhcdTBlNDNcdTBlMDRcdTBlMjNcdTBlMjdcdTBlNDhcdTBlMzJcdTBlNDFcdTBlMTlcdTBlNDhcdTBlMDFcdTBlNDdcdTBlNDFcdTBlMWVcdTBlNDkgXHUwZTIxLlx1MGUwMVx1MGUyM1x1MGUzOFx1MGUwN1x1MGU0MFx1MGUxN1x1MGUxZSBcdTBlMDhcdTBlMzBcdTBlMjFcdTBlMzVcdTBlMmFcdTBlMTZcdTBlMzJcdTBlMWFcdTBlMzFcdTBlMTlcdTBlMmFcdTBlMzFcdTBlMDFcdTBlMDFcdTBlMzVcdTBlNDhcdTBlMTdcdTBlMzVcdTBlNDhcdTBlNDNcdTBlMTlcdTBlMWJcdTBlMjNcdTBlMzBcdTBlNDBcdTBlMTdcdTBlMjhcdTBlNDRcdTBlMTdcdTBlMjIgXHUwZTE3XHUwZTM1XHUwZTQ4IGNvbm5lY3Rpb24gXHUwZTAxXHUwZTMxXHUwZTFhXHUwZTIwXHUwZTMyXHUwZTIyXHUwZTE5XHUwZTJkXHUwZTAxXHUwZTQwXHUwZTIzXHUwZTM3XHUwZTQ4XHUwZTJkXHUwZTA3XHUwZTA4XHUwZTFhXHUwZTQ0XHUwZTFiXHUwZTIxXHUwZTM1XHUwZTA3XHUwZTMyXHUwZTE5XHUwZTE3XHUwZTMzXHUwZTQxXHUwZTE5XHUwZTQ4XHUwZTE5XHUwZTJkXHUwZTE5IDEwMCUgXHUwZTI3XHUwZTM0XHUwZTBhXHUwZTMyIFx1MGUwMVx1MGUzMlx1MGUyM1x1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUwMVx1MGUzMlx1MGUyM1x1MGUyYVx1MGUyZFx1MGUxOSBcdTBlNDBcdTBlMjNcdTBlMzVcdTBlMjJcdTBlMDFcdTBlMjdcdTBlNDhcdTBlMzJcdTBlNDJcdTBlMDRcdTBlMTVcdTBlMjNcdTBlMDhcdTBlMzBcdTBlMTdcdTBlMzFcdTBlMTlcdTBlMmFcdTBlMjFcdTBlMzFcdTBlMjIgXHUwZTFlXHUwZTIzXHUwZTQ5XHUwZTJkXHUwZTIxXHUwZTIzXHUwZTMxXHUwZTFhXHUwZTIxXHUwZTM3XHUwZTJkXHUwZTE3XHUwZTM4XHUwZTAxXHUwZTJhXHUwZTE2XHUwZTMyXHUwZTE5XHUwZTAxXHUwZTMyXHUwZTIzXHUwZTEzXHUwZTRjIFx1MGUyYlx1MGU0OVx1MGUyZFx1MGUwN1x1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUxN1x1MGUzNVx1MGU0OFx1MGUyMVx1MGUzNVx1MGUyZFx1MGUzOFx1MGUxYlx1MGUwMVx1MGUyM1x1MGUxM1x1MGU0Y1x1MGUwNFx1MGUyM1x1MGUxYSBcdTBlMWVcdTBlMjNcdTBlNDlcdTBlMmRcdTBlMjFcdTBlNDNcdTBlMmJcdTBlNDkgXHUwZTE5XHUwZTI4LiBcdTBlNDRcdTBlMTRcdTBlNDlcdTBlNDNcdTBlMGFcdTBlNDlcdTBlMDFcdTBlMzFcdTBlMTlcdTBlMTdcdTBlMzhcdTBlMTRcdTBlMDRcdTBlMTkgXHUwZTA0XHUwZTI3XHUwZTMyXHUwZTIxXHUwZTFlXHUwZTIzXHUwZTQ5XHUwZTJkXHUwZTIxIFx1MGUwNFx1MGUyN1x1MGUzMlx1MGUyMVx1MGU0MFx1MGUyM1x1MGUzNFx1MGU0OFx1MGUxNCBcdTBlMTVcdTBlNDlcdTBlMmRcdTBlMDdcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMTlcdTBlMzVcdTBlNDgiLCJ2c190eXBlIjoiMiIsInZzX2FjdGl2ZSI6IjEiLCJ2c19oaWdobGlnaHQiOiIwIiwidnNfY3JlYXRlIjoiMjAxNy0xMS0xNSAxNTo1MDozMSIsInZzX3VwZGF0ZSI6IjIwMTctMTEtMTYgMTA6NDU6MDciLCJkZXB0X25hbWVfdGgiOiJcdTBlMmFcdTBlMzJcdTBlMDJcdTBlMzJcdTBlMjdcdTBlMzRcdTBlMGFcdTBlMzJcdTBlMjBcdTBlMzJcdTBlMWVcdTBlMjJcdTBlMTlcdTBlMTVcdTBlMjNcdTBlNGMiLCJkZXB0X25hbWVfZW4iOiJGaWxtIiwiZmFjdWx0eV9uYW1lX3RoIjoiXHUwZTA0XHUwZTEzXHUwZTMwXHUwZTE0XHUwZTM0XHUwZTA4XHUwZTM0XHUwZTE3XHUwZTMxXHUwZTI1XHUwZTIxXHUwZTM1XHUwZTQwXHUwZTE0XHUwZTM1XHUwZTIyXHUwZTQxXHUwZTI1XHUwZTMwXHUwZTI4XHUwZTM0XHUwZTI1XHUwZTFiXHUwZTMwXHUwZTIwXHUwZTMyXHUwZTFlXHUwZTIyXHUwZTE5XHUwZTE1XHUwZTIzXHUwZTRjIiwiZmFjdWx0eV9uYW1lX2VuIjoiU2Nob29sIG9mIERpZ2l0YWwgTWVkaWEgYW5kIENpbmVtYXRpYyBBcnRzIiwiZmFjdWx0eV9zbHVnIjoiZGlnaXRhbC1tZWRpYSJ9LHsidnNfaWQiOiIyOCIsInZzX2NvZGUiOiIxNTEwNzM1ODMzLTBQVVZGR09IVUMiLCJ2c19wcm9maWxlIjoiMjAxNzExMTUxNTUwMzNfUjhaQkpCT1JOMFlYN0xOXzY2OUpGQ0o0SFBKWUUxVC5qcGciLCJ2c19mYmlkIjoiMjc1ODMyMzY2MTk0MzA0IiwidnNfZmJuYW1lIjoiUHByaW1tIEthd2lzYXJhIiwidnNfZmJsaW5rIjoiMjc1ODMyMzY2MTk0MzA0IiwidnNfZW1haWwiOiJwcmlta2F3aXNhcmEubkBnbWFpbC5jb20iLCJ2c19kZWdyZWUiOiIxIiwidnNfZmFjdWx0eSI6IjIiLCJ2c19kZXBhcnRtZW50IjoiMjciLCJ2c19kZXBhcnRtZW50X290aGVyX3RoIjpudWxsLCJ2c19kZXBhcnRtZW50X290aGVyX2VuIjpudWxsLCJ2c19kZXNjcmlwdGlvbl90aCI6Ilx1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUxZlx1MGUzNFx1MGUyNVx1MGU0Y1x1MGUyMVx1MGUxN1x1MGUzNVx1MGU0OFx1MGU0NFx1MGUyYlx1MGUxOVx1MGUwMVx1MGU0N1x1MGU0NFx1MGUyMVx1MGU0OFx1MGUwNFx1MGUzOVx1MGUyNVx1MGU0MFx1MGUxN1x1MGU0OFx1MGUzMlx1MGUxN1x1MGUzNVx1MGU0OFx1MGUyMS5cdTBlMDFcdTBlMjNcdTBlMzhcdTBlMDdcdTBlNDBcdTBlMTdcdTBlMWUgXHUwZTFhXHUwZTJkXHUwZTAxXHUwZTQwXHUwZTI1XHUwZTIyXHUwZTI3XHUwZTQ4XHUwZTMyXHUwZTA0XHUwZTIzXHUwZTFhXHUwZTQwXHUwZTA0XHUwZTIzXHUwZTM3XHUwZTQ4XHUwZTJkXHUwZTA3IFx1MGUyYlx1MGUyNVx1MGUzMVx1MGUwMVx1MGUyYVx1MGUzOVx1MGUxNVx1MGUyM1x1MGUwMVx1MGUzMlx1MGUyM1x1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUwMVx1MGUzMlx1MGUyM1x1MGUyYVx1MGUyZFx1MGUxOVx1MGUxN1x1MGUzNVx1MGU0OFx1MGUxN1x1MGUzMVx1MGUxOVx1MGUyYVx1MGUyMVx1MGUzMVx1MGUyMlx1MGU0MFx1MGUyYlx1MGUyMVx1MGUzMlx1MGUzMFx1MGUwMVx1MGUzMVx1MGUxYVx1MGUyN1x1MGUzMVx1MGUyMlx1MGUyM1x1MGUzOFx1MGU0OFx1MGUxOVx1MGUyMlx1MGUzOFx1MGUwNFx1MGUxOVx1MGUzNVx1MGU0OSBcdTBlMmRcdTBlMzhcdTBlMWJcdTBlMDFcdTBlMjNcdTBlMTNcdTBlNGNcdTBlMDFcdTBlMzJcdTBlMjNcdTBlNDBcdTBlMjNcdTBlMzVcdTBlMjJcdTBlMTlcdTBlMDFcdTBlMzJcdTBlMjNcdTBlMmFcdTBlMmRcdTBlMTlcdTBlNDBcdTBlMDhcdTBlNGJcdTBlMDdcdTBlNDYgXHUwZTJiXHUwZTQ5XHUwZTJkXHUwZTA3XHUwZTJhXHUwZTE1XHUwZTM5XHUwZTE0XHUwZTM0XHUwZTQyXHUwZTJkXHUwZTQwXHUwZTE3XHUwZTQ4XHUwZTQ2IFx1MGUyZFx1MGUyMlx1MGUzMlx1MGUwMVx1MGUwOFx1MGUzMFx1MGUxNlx1MGU0OFx1MGUzMlx1MGUyMlx1MGUxN1x1MGUzM1x1MGUyZFx1MGUyMlx1MGUzMlx1MGUwMVx1MGUwOFx1MGUzMFx1MGUxNVx1MGUzMVx1MGUxNFx1MGUxNVx1MGU0OFx1MGUyZFx1MGU0MVx1MGUxYVx1MGUxYVx1MGU0NFx1MGUyYlx1MGUxOVx1MGU0NFx1MGUxNFx1MGU0OVx1MGUyYlx1MGUyMVx1MGUxNCBcdTBlMTlcdTBlMmRcdTBlMDFcdTBlMDhcdTBlMzJcdTBlMDFcdTBlMTlcdTBlMzVcdTBlNDlcdTBlMWFcdTBlMmRcdTBlMDFcdTBlNDBcdTBlMjVcdTBlMjJcdTBlMjdcdTBlNDhcdTBlMzJcdTBlNDBcdTBlMTRcdTBlNDdcdTBlMTRcdTBlMDhcdTBlMjNcdTBlMzRcdTBlMDcgXHUwZTQzXHUwZTE5XHUwZTJiXHUwZTE5XHUwZTMxXHUwZTA3XHUwZTQzXHUwZTE5XHUwZTQyXHUwZTA2XHUwZTI5XHUwZTEzXHUwZTMyXHUwZTQzXHUwZTE5XHUwZTBiXHUwZTM1XHUwZTIzXHUwZTM1XHUwZTQ4XHUwZTIyXHUwZTRjXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTQwXHUwZTJiXHUwZTQ3XHUwZTE5XHUwZTQyXHUwZTI1XHUwZTQwXHUwZTA0XHUwZTBhXHUwZTMxXHUwZTQ4XHUwZTE5XHUwZTJhXHUwZTI3XHUwZTIyXHUwZTQ2XHUwZTAxXHUwZTQ3XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTIxLlx1MGU0MFx1MGUyM1x1MGUzMlx1MGUxN1x1MGUzMVx1MGU0OVx1MGUwN1x1MGUxOVx1MGUzMVx1MGU0OVx1MGUxOVx1MGUyZFx1MGUyMlx1MGUzMlx1MGUwMVx1MGUyM1x1MGUzOFx1MGU0OVx1MGUxNVx1MGU0OVx1MGUyZFx1MGUwN1x1MGUyMVx1MGUzMlx1MGUxNFx1MGUzOVx1MGU0MFx1MGUyZFx1MGUwNyIsInZzX2Rlc2NyaXB0aW9uX2VuIjoiXHUwZTQwXHUwZTIzXHUwZTM1XHUwZTIyXHUwZTE5XHUwZTFmXHUwZTM0XHUwZTI1XHUwZTRjXHUwZTIxXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTQ0XHUwZTJiXHUwZTE5XHUwZTAxXHUwZTQ3XHUwZTQ0XHUwZTIxXHUwZTQ4XHUwZTA0XHUwZTM5XHUwZTI1XHUwZTQwXHUwZTE3XHUwZTQ4XHUwZTMyXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTIxLlx1MGUwMVx1MGUyM1x1MGUzOFx1MGUwN1x1MGU0MFx1MGUxN1x1MGUxZSBcdTBlMWFcdTBlMmRcdTBlMDFcdTBlNDBcdTBlMjVcdTBlMjJcdTBlMjdcdTBlNDhcdTBlMzJcdTBlMDRcdTBlMjNcdTBlMWFcdTBlNDBcdTBlMDRcdTBlMjNcdTBlMzdcdTBlNDhcdTBlMmRcdTBlMDcgXHUwZTJiXHUwZTI1XHUwZTMxXHUwZTAxXHUwZTJhXHUwZTM5XHUwZTE1XHUwZTIzXHUwZTAxXHUwZTMyXHUwZTIzXHUwZTQwXHUwZTIzXHUwZTM1XHUwZTIyXHUwZTE5XHUwZTAxXHUwZTMyXHUwZTIzXHUwZTJhXHUwZTJkXHUwZTE5XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTE3XHUwZTMxXHUwZTE5XHUwZTJhXHUwZTIxXHUwZTMxXHUwZTIyXHUwZTQwXHUwZTJiXHUwZTIxXHUwZTMyXHUwZTMwXHUwZTAxXHUwZTMxXHUwZTFhXHUwZTI3XHUwZTMxXHUwZTIyXHUwZTIzXHUwZTM4XHUwZTQ4XHUwZTE5XHUwZTIyXHUwZTM4XHUwZTA0XHUwZTE5XHUwZTM1XHUwZTQ5IFx1MGUyZFx1MGUzOFx1MGUxYlx1MGUwMVx1MGUyM1x1MGUxM1x1MGU0Y1x1MGUwMVx1MGUzMlx1MGUyM1x1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUwMVx1MGUzMlx1MGUyM1x1MGUyYVx1MGUyZFx1MGUxOVx1MGU0MFx1MGUwOFx1MGU0Ylx1MGUwN1x1MGU0NiBcdTBlMmJcdTBlNDlcdTBlMmRcdTBlMDdcdTBlMmFcdTBlMTVcdTBlMzlcdTBlMTRcdTBlMzRcdTBlNDJcdTBlMmRcdTBlNDBcdTBlMTdcdTBlNDhcdTBlNDYgXHUwZTJkXHUwZTIyXHUwZTMyXHUwZTAxXHUwZTA4XHUwZTMwXHUwZTE2XHUwZTQ4XHUwZTMyXHUwZTIyXHUwZTE3XHUwZTMzXHUwZTJkXHUwZTIyXHUwZTMyXHUwZTAxXHUwZTA4XHUwZTMwXHUwZTE1XHUwZTMxXHUwZTE0XHUwZTE1XHUwZTQ4XHUwZTJkXHUwZTQxXHUwZTFhXHUwZTFhXHUwZTQ0XHUwZTJiXHUwZTE5XHUwZTQ0XHUwZTE0XHUwZTQ5XHUwZTJiXHUwZTIxXHUwZTE0IFx1MGUxOVx1MGUyZFx1MGUwMVx1MGUwOFx1MGUzMlx1MGUwMVx1MGUxOVx1MGUzNVx1MGU0OVx1MGUxYVx1MGUyZFx1MGUwMVx1MGU0MFx1MGUyNVx1MGUyMlx1MGUyN1x1MGU0OFx1MGUzMlx1MGU0MFx1MGUxNFx1MGU0N1x1MGUxNFx1MGUwOFx1MGUyM1x1MGUzNFx1MGUwNyBcdTBlNDNcdTBlMTlcdTBlMmJcdTBlMTlcdTBlMzFcdTBlMDdcdTBlNDNcdTBlMTlcdTBlNDJcdTBlMDZcdTBlMjlcdTBlMTNcdTBlMzJcdTBlNDNcdTBlMTlcdTBlMGJcdTBlMzVcdTBlMjNcdTBlMzVcdTBlNDhcdTBlMjJcdTBlNGNcdTBlMTdcdTBlMzVcdTBlNDhcdTBlNDBcdTBlMmJcdTBlNDdcdTBlMTlcdTBlNDJcdTBlMjVcdTBlNDBcdTBlMDRcdTBlMGFcdTBlMzFcdTBlNDhcdTBlMTlcdTBlMmFcdTBlMjdcdTBlMjJcdTBlNDZcdTBlMDFcdTBlNDdcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMjEuXHUwZTQwXHUwZTIzXHUwZTMyXHUwZTE3XHUwZTMxXHUwZTQ5XHUwZTA3XHUwZTE5XHUwZTMxXHUwZTQ5XHUwZTE5XHUwZTJkXHUwZTIyXHUwZTMyXHUwZTAxXHUwZTIzXHUwZTM4XHUwZTQ5XHUwZTE1XHUwZTQ5XHUwZTJkXHUwZTA3XHUwZTIxXHUwZTMyXHUwZTE0XHUwZTM5XHUwZTQwXHUwZTJkXHUwZTA3IiwidnNfdHlwZSI6IjIiLCJ2c19hY3RpdmUiOiIxIiwidnNfaGlnaGxpZ2h0IjoiMCIsInZzX2NyZWF0ZSI6IjIwMTctMTEtMTUgMTU6NTA6MzEiLCJ2c191cGRhdGUiOiIyMDE3LTExLTE2IDEwOjQ1OjA3IiwiZGVwdF9uYW1lX3RoIjoiXHUwZTJhXHUwZTMyXHUwZTAyXHUwZTMyXHUwZTI3XHUwZTM0XHUwZTBhXHUwZTMyXHUwZTIwXHUwZTMyXHUwZTFlXHUwZTIyXHUwZTE5XHUwZTE1XHUwZTIzXHUwZTRjIiwiZGVwdF9uYW1lX2VuIjoiRmlsbSIsImZhY3VsdHlfbmFtZV90aCI6Ilx1MGUwNFx1MGUxM1x1MGUzMFx1MGUxNFx1MGUzNFx1MGUwOFx1MGUzNFx1MGUxN1x1MGUzMVx1MGUyNVx1MGUyMVx1MGUzNVx1MGU0MFx1MGUxNFx1MGUzNVx1MGUyMlx1MGU0MVx1MGUyNVx1MGUzMFx1MGUyOFx1MGUzNFx1MGUyNVx1MGUxYlx1MGUzMFx1MGUyMFx1MGUzMlx1MGUxZVx1MGUyMlx1MGUxOVx1MGUxNVx1MGUyM1x1MGU0YyIsImZhY3VsdHlfbmFtZV9lbiI6IlNjaG9vbCBvZiBEaWdpdGFsIE1lZGlhIGFuZCBDaW5lbWF0aWMgQXJ0cyIsImZhY3VsdHlfc2x1ZyI6ImRpZ2l0YWwtbWVkaWEifSx7InZzX2lkIjoiMzYiLCJ2c19jb2RlIjoiMTUxMDczNTgzMy1BUlhFWkRYTjYwIiwidnNfcHJvZmlsZSI6IjIwMTcxMTE1MTU1MDMzX0I5RDhRR0dLQ0FYQUVOOV9QSjVKNERUV0I3Vk9GSlYuanBnIiwidnNfZmJpZCI6IjEzMzM4NTYwODAwMTQyMzciLCJ2c19mYm5hbWUiOiJQYW5zYWtvcm4gS3JhbmphcGFzYW5hbnQiLCJ2c19mYmxpbmsiOiIxMzMzODU2MDgwMDE0MjM3IiwidnNfZW1haWwiOiJwZXRjaGFyYXRwYXRwcHVAaG90bWFpbC5jb20iLCJ2c19kZWdyZWUiOiIxIiwidnNfZmFjdWx0eSI6IjIiLCJ2c19kZXBhcnRtZW50IjoiMjciLCJ2c19kZXBhcnRtZW50X290aGVyX3RoIjpudWxsLCJ2c19kZXBhcnRtZW50X290aGVyX2VuIjpudWxsLCJ2c19kZXNjcmlwdGlvbl90aCI6Ilx1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUxN1x1MGUzNVx1MGU0OFx1MGU0NFx1MGUyYlx1MGUxOVx1MGUwMVx1MGU0N1x1MGUyYVx1MGUzOVx1MGU0OSBcdTBlMjEuXHUwZTAxXHUwZTIzXHUwZTM4XHUwZTA3XHUwZTQwXHUwZTE3XHUwZTFlXHUwZTQ0XHUwZTIxXHUwZTQ4XHUwZTQ0XHUwZTE0XHUwZTQ5IFx1MGU0MFx1MGUwOFx1MGU0Ylx1MGUwN1x1MGUxN1x1MGUzOFx1MGUwMVx1MGU0Nlx1MGUxNFx1MGU0OVx1MGUzMlx1MGUxOVx1MGU0MFx1MGUwOFx1MGU0Ylx1MGUwN1x1MGUxN1x1MGUzMVx1MGU0OVx1MGUwN1x1MGUxNFx1MGU0OVx1MGUzMlx1MGUxOVx1MGUwMVx1MGUzMlx1MGUyM1x1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUwMVx1MGUzMlx1MGUyM1x1MGUyYVx1MGUyZFx1MGUxOVx1MGU0MFx1MGUwNFx1MGUyM1x1MGUzN1x1MGU0OFx1MGUyZFx1MGUwN1x1MGUyMVx1MGUzN1x1MGUyZFx1MGUxN1x1MGUzMVx1MGUxOVx1MGUyYVx1MGUyMVx1MGUzMVx1MGUwNFx1MGUyNVx1MGU0OVx1MGUzM1x1MGU0Mlx1MGUyNVx1MGUwMVx1MGU0NFx1MGUxNFx1MGU0OVx1MGUwOFx1MGUzMVx1MGUxYVx1MGUwMVx1MGUyNVx1MGU0OVx1MGUyZFx1MGUwN1x1MGUxNVx1MGUzMVx1MGUyN1x1MGU0MFx1MGUxYlx1MGU0N1x1MGUxOVx1MGU0MVx1MGUyYVx1MGUxOVx1MGUwMVx1MGU0N1x1MGUxN1x1MGUzNVx1MGU0OFx1MGUxOVx1MGUzNVx1MGU0OFx1MGUyNVx1MGU0OFx1MGUzMCBcdTBlMDRcdTBlMjNcdTBlMzlcdTBlMmFcdTBlMmRcdTBlMTlcdTBlMDFcdTBlNDdcdTBlMDRcdTBlMjdcdTBlMzJcdTBlMjFcdTBlMjNcdTBlMzlcdTBlNDlcdTBlNDFcdTBlMTlcdTBlNDhcdTBlMTkgXHUwZTIxXHUwZTMyXHUwZTAxXHUwZTFiXHUwZTIzXHUwZTMwXHUwZTJhXHUwZTFhXHUwZTAxXHUwZTMyXHUwZTIzXHUwZTEzXHUwZTRjXHUwZTQzXHUwZTE5XHUwZTJhXHUwZTJkXHUwZTE5XHUwZTQwXHUwZTFiXHUwZTQ3XHUwZTE5XHUwZTAxXHUwZTMxXHUwZTE5XHUwZTQwXHUwZTJkXHUwZTA3XHUwZTJhXHUwZTM4XHUwZTE0IFx1MGU0MFx1MGUwOFx1MGU0Ylx1MGUwN1x1MGUxN1x1MGUzNVx1MGU0OFx1MGUyYVx1MGUzOFx1MGUxNFx1MGUwNFx1MGUzN1x1MGUyZFx1MGUyMVx1MGUzNFx1MGUxNVx1MGUyM1x1MGUwOFx1MGUzMlx1MGUwMVx1MGU0MFx1MGUxZVx1MGUzN1x1MGU0OFx1MGUyZFx1MGUxOVx1MGU0Nlx1MGUxN1x1MGUzNVx1MGU0OFx1MGUwNFx1MGU0OFx1MGUyZFx1MGUyMlx1MGUyZFx1MGUyMlx1MGUzOVx1MGU0OFx1MGUwMlx1MGU0OVx1MGUzMlx1MGUwN1x1MGU0Nlx1MGU0MFx1MGUyM1x1MGUzMlx1MGUwYVx1MGU0OFx1MGUyN1x1MGUyMlx1MGUwMVx1MGUzMVx1MGUxOVx1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOSBcdTBlNDRcdTBlMjFcdTBlNDhcdTBlMjFcdTBlMzVcdTBlMTdcdTBlMzVcdTBlNDhcdTBlNDRcdTBlMmJcdTBlMTlcdTBlNDBcdTBlMjVcdTBlMzRcdTBlMjhcdTBlMjVcdTBlNDlcdTBlMzNcdTBlMjFcdTBlMzJcdTBlMDFcdTBlNDBcdTBlMTdcdTBlNDhcdTBlMzIgXHUwZTIxLlx1MGUwMVx1MGUyM1x1MGUzOFx1MGUwN1x1MGU0MFx1MGUxN1x1MGUxZVx1MGUyZlx1MGUyZFx1MGUzNVx1MGUwMVx1MGU0MVx1MGUyNVx1MGU0OVx1MGUyNyBcdTI2NjFcdTI2NjFcdTI2NjFcdTI2NjFcdTI2NjEiLCJ2c19kZXNjcmlwdGlvbl9lbiI6Ilx1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUxN1x1MGUzNVx1MGU0OFx1MGU0NFx1MGUyYlx1MGUxOVx1MGUwMVx1MGU0N1x1MGUyYVx1MGUzOVx1MGU0OSBcdTBlMjEuXHUwZTAxXHUwZTIzXHUwZTM4XHUwZTA3XHUwZTQwXHUwZTE3XHUwZTFlXHUwZTQ0XHUwZTIxXHUwZTQ4XHUwZTQ0XHUwZTE0XHUwZTQ5IFx1MGU0MFx1MGUwOFx1MGU0Ylx1MGUwN1x1MGUxN1x1MGUzOFx1MGUwMVx1MGU0Nlx1MGUxNFx1MGU0OVx1MGUzMlx1MGUxOVx1MGU0MFx1MGUwOFx1MGU0Ylx1MGUwN1x1MGUxN1x1MGUzMVx1MGU0OVx1MGUwN1x1MGUxNFx1MGU0OVx1MGUzMlx1MGUxOVx1MGUwMVx1MGUzMlx1MGUyM1x1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUwMVx1MGUzMlx1MGUyM1x1MGUyYVx1MGUyZFx1MGUxOVx1MGU0MFx1MGUwNFx1MGUyM1x1MGUzN1x1MGU0OFx1MGUyZFx1MGUwN1x1MGUyMVx1MGUzN1x1MGUyZFx1MGUxN1x1MGUzMVx1MGUxOVx1MGUyYVx1MGUyMVx1MGUzMVx1MGUwNFx1MGUyNVx1MGU0OVx1MGUzM1x1MGU0Mlx1MGUyNVx1MGUwMVx1MGU0NFx1MGUxNFx1MGU0OVx1MGUwOFx1MGUzMVx1MGUxYVx1MGUwMVx1MGUyNVx1MGU0OVx1MGUyZFx1MGUwN1x1MGUxNVx1MGUzMVx1MGUyN1x1MGU0MFx1MGUxYlx1MGU0N1x1MGUxOVx1MGU0MVx1MGUyYVx1MGUxOVx1MGUwMVx1MGU0N1x1MGUxN1x1MGUzNVx1MGU0OFx1MGUxOVx1MGUzNVx1MGU0OFx1MGUyNVx1MGU0OFx1MGUzMCBcdTBlMDRcdTBlMjNcdTBlMzlcdTBlMmFcdTBlMmRcdTBlMTlcdTBlMDFcdTBlNDdcdTBlMDRcdTBlMjdcdTBlMzJcdTBlMjFcdTBlMjNcdTBlMzlcdTBlNDlcdTBlNDFcdTBlMTlcdTBlNDhcdTBlMTkgXHUwZTIxXHUwZTMyXHUwZTAxXHUwZTFiXHUwZTIzXHUwZTMwXHUwZTJhXHUwZTFhXHUwZTAxXHUwZTMyXHUwZTIzXHUwZTEzXHUwZTRjXHUwZTQzXHUwZTE5XHUwZTJhXHUwZTJkXHUwZTE5XHUwZTQwXHUwZTFiXHUwZTQ3XHUwZTE5XHUwZTAxXHUwZTMxXHUwZTE5XHUwZTQwXHUwZTJkXHUwZTA3XHUwZTJhXHUwZTM4XHUwZTE0IFx1MGU0MFx1MGUwOFx1MGU0Ylx1MGUwN1x1MGUxN1x1MGUzNVx1MGU0OFx1MGUyYVx1MGUzOFx1MGUxNFx1MGUwNFx1MGUzN1x1MGUyZFx1MGUyMVx1MGUzNFx1MGUxNVx1MGUyM1x1MGUwOFx1MGUzMlx1MGUwMVx1MGU0MFx1MGUxZVx1MGUzN1x1MGU0OFx1MGUyZFx1MGUxOVx1MGU0Nlx1MGUxN1x1MGUzNVx1MGU0OFx1MGUwNFx1MGU0OFx1MGUyZFx1MGUyMlx1MGUyZFx1MGUyMlx1MGUzOVx1MGU0OFx1MGUwMlx1MGU0OVx1MGUzMlx1MGUwN1x1MGU0Nlx1MGU0MFx1MGUyM1x1MGUzMlx1MGUwYVx1MGU0OFx1MGUyN1x1MGUyMlx1MGUwMVx1MGUzMVx1MGUxOVx1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOSBcdTBlNDRcdTBlMjFcdTBlNDhcdTBlMjFcdTBlMzVcdTBlMTdcdTBlMzVcdTBlNDhcdTBlNDRcdTBlMmJcdTBlMTlcdTBlNDBcdTBlMjVcdTBlMzRcdTBlMjhcdTBlMjVcdTBlNDlcdTBlMzNcdTBlMjFcdTBlMzJcdTBlMDFcdTBlNDBcdTBlMTdcdTBlNDhcdTBlMzIgXHUwZTIxLlx1MGUwMVx1MGUyM1x1MGUzOFx1MGUwN1x1MGU0MFx1MGUxN1x1MGUxZVx1MGUyZlx1MGUyZFx1MGUzNVx1MGUwMVx1MGU0MVx1MGUyNVx1MGU0OVx1MGUyNyBcdTI2NjFcdTI2NjFcdTI2NjFcdTI2NjFcdTI2NjEiLCJ2c190eXBlIjoiMiIsInZzX2FjdGl2ZSI6IjEiLCJ2c19oaWdobGlnaHQiOiIwIiwidnNfY3JlYXRlIjoiMjAxNy0xMS0xNSAxNTo1MDozMSIsInZzX3VwZGF0ZSI6IjIwMTctMTEtMTYgMTA6NDU6MDciLCJkZXB0X25hbWVfdGgiOiJcdTBlMmFcdTBlMzJcdTBlMDJcdTBlMzJcdTBlMjdcdTBlMzRcdTBlMGFcdTBlMzJcdTBlMjBcdTBlMzJcdTBlMWVcdTBlMjJcdTBlMTlcdTBlMTVcdTBlMjNcdTBlNGMiLCJkZXB0X25hbWVfZW4iOiJGaWxtIiwiZmFjdWx0eV9uYW1lX3RoIjoiXHUwZTA0XHUwZTEzXHUwZTMwXHUwZTE0XHUwZTM0XHUwZTA4XHUwZTM0XHUwZTE3XHUwZTMxXHUwZTI1XHUwZTIxXHUwZTM1XHUwZTQwXHUwZTE0XHUwZTM1XHUwZTIyXHUwZTQxXHUwZTI1XHUwZTMwXHUwZTI4XHUwZTM0XHUwZTI1XHUwZTFiXHUwZTMwXHUwZTIwXHUwZTMyXHUwZTFlXHUwZTIyXHUwZTE5XHUwZTE1XHUwZTIzXHUwZTRjIiwiZmFjdWx0eV9uYW1lX2VuIjoiU2Nob29sIG9mIERpZ2l0YWwgTWVkaWEgYW5kIENpbmVtYXRpYyBBcnRzIiwiZmFjdWx0eV9zbHVnIjoiZGlnaXRhbC1tZWRpYSJ9LHsidnNfaWQiOiI0MSIsInZzX2NvZGUiOiIxNTEwNzM1ODMzLThIN0tZRFM1RzMiLCJ2c19wcm9maWxlIjoiMjAxNzExMTUxNTUwMzNfREEwVFVVUkE1TVdPQjdKX0lSV0lVVFFNMEJLRTNRVS5qcGciLCJ2c19mYmlkIjoiODg3MTc5OTQ0NzU1MDg1IiwidnNfZmJuYW1lIjoiU2FyYW55dSBBcnVud2FyYXNpbGEiLCJ2c19mYmxpbmsiOiI4ODcxNzk5NDQ3NTUwODUiLCJ2c19lbWFpbCI6InJld19rdWI1QGhvdG1haWwuY29tIiwidnNfZGVncmVlIjoiMSIsInZzX2ZhY3VsdHkiOiIyIiwidnNfZGVwYXJ0bWVudCI6IjI3IiwidnNfZGVwYXJ0bWVudF9vdGhlcl90aCI6bnVsbCwidnNfZGVwYXJ0bWVudF9vdGhlcl9lbiI6bnVsbCwidnNfZGVzY3JpcHRpb25fdGgiOiJcdTBlMGFcdTBlMzdcdTBlNDhcdTBlMmQgXHUwZTI4XHUwZTIzXHUwZTMxXHUwZTEzXHUwZTIyXHUwZTM5IFx1MGUyZFx1MGUyM1x1MGUzOFx1MGUxM1x1MGUyN1x1MGUyM1x1MGUyOFx1MGUzNFx1MGUyNVx1MGUzMiAoXHUwZTIzXHUwZTM0XHUwZTI3KSBcIiBcdTBlNDBcdTBlMjNcdTBlMzVcdTBlMjJcdTBlMTlcdTBlMWZcdTBlMzRcdTBlMjVcdTBlNGNcdTBlMjEgXCJcdTBlMTdcdTBlMzVcdTBlNDggXHUwZTIxLlx1MGUwMVx1MGUyM1x1MGUzOFx1MGUwN1x1MGU0MFx1MGUxN1x1MGUxZSBcIlx1MGU0Mlx1MGUyYVx1MGUxNFwiIFx1MGUwOFx1MGUzNVx1MGUxYVx1MGU0NFx1MGUxNFx1MGU0OSBcdTBlNDRcdTBlMjFcdTBlNDhcdTBlMmJcdTBlMjVcdTBlNDhcdTBlMmQgXHUwZTQ0XHUwZTIxXHUwZTQ4XHUwZTIzXHUwZTI3XHUwZTIyIFx1MGUyMVx1MGUzNVx1MGU0MFx1MGU0MFx1MGUxNVx1MGU0OFx1MGU0M1x1MGUwOFx1MGU0NFx1MGUyMVx1MGU0OFx1MGU0NFx1MGUxNFx1MGU0OVx1MGU0Mlx1MGUyMVx1MGU0OSBcdTBlMjEuXHUwZTAxXHUwZTIzXHUwZTM4XHUwZTA3XHUwZTQwXHUwZTE3XHUwZTFlIFx1MGU0M1x1MGUyYlx1MGU0OVx1MGUyZFx1MGUzMFx1MGU0NFx1MGUyM1x1MGUyYlx1MGUyNVx1MGUzMlx1MGUyMlx1MGUyZFx1MGUyMlx1MGU0OFx1MGUzMlx1MGUwNyBcdTBlNDBcdTBlMWVcdTBlMzdcdTBlNDhcdTBlMmRcdTBlMTkgXHUwZTFlXHUwZTM1XHUwZTQ4IFx1MGUxOVx1MGU0OVx1MGUyZFx1MGUwNyBcdTBlMjFcdTBlMzRcdTBlMTVcdTBlMjNcdTBlMjBcdTBlMzJcdTBlMWVcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMTRcdTBlMzUgXHUwZTQwXHUwZTQwXHUwZTI1XHUwZTMwIFx1MGUxN1x1MGUzNVx1MGU0OFx1MGUyYVx1MGUzM1x1MGUwNFx1MGUzMVx1MGUwZCBcdTBlMDRcdTBlMzhcdTBlMTNcdTBlMjBcdTBlMzJcdTBlMWVcdTBlMDRcdTBlMjdcdTBlMzJcdTBlMjFcdTBlMjNcdTBlMzlcdTBlNDlcdTBlNDBcdTBlNDBcdTBlMTlcdTBlNDhcdTBlMTkgXHUwZTQwXHUwZTQwXHUwZTE5XHUwZTQ4XHUwZTE5XHUwZTJkXHUwZTE5IFx1MGUyM1x1MGUzMVx1MGUwMVx1MGU0MFx1MGUxZVx1MGUzN1x1MGU0OFx1MGUyZFx1MGUxOVx1MGUxOVx1MGUzMCBcdTBlMDFcdTBlMGVcdTBlMWEjMTUgXHUwZTQxXHUwZTI1XHUwZTMwXHUwZTQwXHUwZTFlXHUwZTM3XHUwZTQ4XHUwZTJkXHUwZTE5XHUwZTQ2XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTIzXHUwZTM5XHUwZTQ5XHUwZTA4XHUwZTMxXHUwZTAxIFx1MGU0NFx1MGUyMVx1MGU0OFx1MGUyZFx1MGUyMlx1MGUzMlx1MGUwMVx1MGU0M1x1MGUyYlx1MGU0OVx1MGUyNVx1MGUzN1x1MGUyMSBcdTBlMDhcdTBlMzhcdTBlNGFcdTBlMWJcdTBlNDYiLCJ2c19kZXNjcmlwdGlvbl9lbiI6Ilx1MGUwYVx1MGUzN1x1MGU0OFx1MGUyZCBcdTBlMjhcdTBlMjNcdTBlMzFcdTBlMTNcdTBlMjJcdTBlMzkgXHUwZTJkXHUwZTIzXHUwZTM4XHUwZTEzXHUwZTI3XHUwZTIzXHUwZTI4XHUwZTM0XHUwZTI1XHUwZTMyIChcdTBlMjNcdTBlMzRcdTBlMjcpIFwiIFx1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUxZlx1MGUzNFx1MGUyNVx1MGU0Y1x1MGUyMSBcIlx1MGUxN1x1MGUzNVx1MGU0OCBcdTBlMjEuXHUwZTAxXHUwZTIzXHUwZTM4XHUwZTA3XHUwZTQwXHUwZTE3XHUwZTFlIFwiXHUwZTQyXHUwZTJhXHUwZTE0XCIgXHUwZTA4XHUwZTM1XHUwZTFhXHUwZTQ0XHUwZTE0XHUwZTQ5IFx1MGU0NFx1MGUyMVx1MGU0OFx1MGUyYlx1MGUyNVx1MGU0OFx1MGUyZCBcdTBlNDRcdTBlMjFcdTBlNDhcdTBlMjNcdTBlMjdcdTBlMjIgXHUwZTIxXHUwZTM1XHUwZTQwXHUwZTQwXHUwZTE1XHUwZTQ4XHUwZTQzXHUwZTA4XHUwZTQ0XHUwZTIxXHUwZTQ4XHUwZTQ0XHUwZTE0XHUwZTQ5XHUwZTQyXHUwZTIxXHUwZTQ5IFx1MGUyMS5cdTBlMDFcdTBlMjNcdTBlMzhcdTBlMDdcdTBlNDBcdTBlMTdcdTBlMWUgXHUwZTQzXHUwZTJiXHUwZTQ5XHUwZTJkXHUwZTMwXHUwZTQ0XHUwZTIzXHUwZTJiXHUwZTI1XHUwZTMyXHUwZTIyXHUwZTJkXHUwZTIyXHUwZTQ4XHUwZTMyXHUwZTA3IFx1MGU0MFx1MGUxZVx1MGUzN1x1MGU0OFx1MGUyZFx1MGUxOSBcdTBlMWVcdTBlMzVcdTBlNDggXHUwZTE5XHUwZTQ5XHUwZTJkXHUwZTA3IFx1MGUyMVx1MGUzNFx1MGUxNVx1MGUyM1x1MGUyMFx1MGUzMlx1MGUxZVx1MGUxN1x1MGUzNVx1MGU0OFx1MGUxNFx1MGUzNSBcdTBlNDBcdTBlNDBcdTBlMjVcdTBlMzAgXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTJhXHUwZTMzXHUwZTA0XHUwZTMxXHUwZTBkIFx1MGUwNFx1MGUzOFx1MGUxM1x1MGUyMFx1MGUzMlx1MGUxZVx1MGUwNFx1MGUyN1x1MGUzMlx1MGUyMVx1MGUyM1x1MGUzOVx1MGU0OVx1MGU0MFx1MGU0MFx1MGUxOVx1MGU0OFx1MGUxOSBcdTBlNDBcdTBlNDBcdTBlMTlcdTBlNDhcdTBlMTlcdTBlMmRcdTBlMTkgXHUwZTIzXHUwZTMxXHUwZTAxXHUwZTQwXHUwZTFlXHUwZTM3XHUwZTQ4XHUwZTJkXHUwZTE5XHUwZTE5XHUwZTMwIFx1MGUwMVx1MGUwZVx1MGUxYSMxNSBcdTBlNDFcdTBlMjVcdTBlMzBcdTBlNDBcdTBlMWVcdTBlMzdcdTBlNDhcdTBlMmRcdTBlMTlcdTBlNDZcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMjNcdTBlMzlcdTBlNDlcdTBlMDhcdTBlMzFcdTBlMDEgXHUwZTQ0XHUwZTIxXHUwZTQ4XHUwZTJkXHUwZTIyXHUwZTMyXHUwZTAxXHUwZTQzXHUwZTJiXHUwZTQ5XHUwZTI1XHUwZTM3XHUwZTIxIFx1MGUwOFx1MGUzOFx1MGU0YVx1MGUxYlx1MGU0NiIsInZzX3R5cGUiOiIyIiwidnNfYWN0aXZlIjoiMSIsInZzX2hpZ2hsaWdodCI6IjAiLCJ2c19jcmVhdGUiOiIyMDE3LTExLTE1IDE1OjUwOjMxIiwidnNfdXBkYXRlIjoiMjAxNy0xMS0xNiAxMDo0NTowNyIsImRlcHRfbmFtZV90aCI6Ilx1MGUyYVx1MGUzMlx1MGUwMlx1MGUzMlx1MGUyN1x1MGUzNFx1MGUwYVx1MGUzMlx1MGUyMFx1MGUzMlx1MGUxZVx1MGUyMlx1MGUxOVx1MGUxNVx1MGUyM1x1MGU0YyIsImRlcHRfbmFtZV9lbiI6IkZpbG0iLCJmYWN1bHR5X25hbWVfdGgiOiJcdTBlMDRcdTBlMTNcdTBlMzBcdTBlMTRcdTBlMzRcdTBlMDhcdTBlMzRcdTBlMTdcdTBlMzFcdTBlMjVcdTBlMjFcdTBlMzVcdTBlNDBcdTBlMTRcdTBlMzVcdTBlMjJcdTBlNDFcdTBlMjVcdTBlMzBcdTBlMjhcdTBlMzRcdTBlMjVcdTBlMWJcdTBlMzBcdTBlMjBcdTBlMzJcdTBlMWVcdTBlMjJcdTBlMTlcdTBlMTVcdTBlMjNcdTBlNGMiLCJmYWN1bHR5X25hbWVfZW4iOiJTY2hvb2wgb2YgRGlnaXRhbCBNZWRpYSBhbmQgQ2luZW1hdGljIEFydHMiLCJmYWN1bHR5X3NsdWciOiJkaWdpdGFsLW1lZGlhIn0seyJ2c19pZCI6IjY3IiwidnNfY29kZSI6IjE1MTA3MzU4MzQtU1lIUzBZQVhFViIsInZzX3Byb2ZpbGUiOiIyMDE3MTExNTE1NTAzNF81Q0tGUUVRRk5QTldMTVVfSUlIR1BYOU9QMU9OQ0xCLmpwZyIsInZzX2ZiaWQiOiIxMzMxMTczMzIzNjE0NDYxIiwidnNfZmJuYW1lIjoiQWVra2FyYXQgQWVtc2FuZyIsInZzX2ZibGluayI6Im1pbmRBZWtrYXJhdCIsInZzX2VtYWlsIjoibWluZHphMDAxQGhvdG1haWwuY29tIiwidnNfZGVncmVlIjoiMSIsInZzX2ZhY3VsdHkiOiIyIiwidnNfZGVwYXJ0bWVudCI6IjI3IiwidnNfZGVwYXJ0bWVudF9vdGhlcl90aCI6bnVsbCwidnNfZGVwYXJ0bWVudF9vdGhlcl9lbiI6bnVsbCwidnNfZGVzY3JpcHRpb25fdGgiOiJcdTBlNDBcdTBlMDhcdTBlNGJcdTBlMDcgXHUwZTQzXHUwZTE5XHUwZTQwXHUwZTIzXHUwZTM3XHUwZTQ4XHUwZTJkXHUwZTA3XHUwZTAxXHUwZTMyXHUwZTIzXHUwZTI4XHUwZTM2XHUwZTAxXHUwZTI5XHUwZTMyXHUwZTAxXHUwZTMyXHUwZTIzXHUwZTQwXHUwZTIzXHUwZTM1XHUwZTIyXHUwZTE5XHUwZTIzXHUwZTM5XHUwZTQ5XHUwZTA0XHUwZTI3XHUwZTMyXHUwZTIxXHUwZTA0XHUwZTM0XHUwZTE0XHUwZTJhXHUwZTIzXHUwZTQ5XHUwZTMyXHUwZTA3XHUwZTJhXHUwZTIzXHUwZTIzXHUwZTA0XHUwZTQxXHUwZTI1XHUwZTQ5XHUwZTI3XHUwZTE5XHUwZTMzXHUwZTQ0XHUwZTFiXHUwZTQzXHUwZTBhXHUwZTQ5XHUwZTQ0XHUwZTE0XHUwZTQ5XHUwZTA4XHUwZTIzXHUwZTM0XHUwZTA3IFx1MGUxN1x1MGUzMVx1MGU0OVx1MGUwN1x1MGUyZFx1MGUzOFx1MGUxYlx1MGUwMVx1MGUyM1x1MGUwNFx1MGU0Y1x1MGUxN1x1MGUzNVx1MGU0OFx1MGUwNFx1MGUyM1x1MGUxYVx1MGUwNFx1MGUyM1x1MGUzMVx1MGUxOVx1MGU0MVx1MGUyNVx1MGUzMFx1MGUxYlx1MGUyM1x1MGUzMFx1MGUyYVx1MGUxYVx1MGUwMVx1MGUzMlx1MGUyM1x1MGUxM1x1MGU0Y1x1MGUxN1x1MGUzNVx1MGU0OFx1MGU0NFx1MGUxNFx1MGU0OVx1MGUwOFx1MGUzMlx1MGUwMVx1MGUyM1x1MGUzOFx1MGU0OFx1MGUxOVx1MGUxZVx1MGUzNVx1MGU0OCBcdTBlMmFcdTBlMzFcdTBlMDdcdTBlMDRcdTBlMjFcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMTRcdTBlMzUgIFx1MGUyMVx1MGUzMlx1MGU0MFx1MGUyYlx1MGUyZFx1MGUzMFx1MGU0MFx1MGUwOFx1MGU0Ylx1MGUwN1x1MGUwOFx1MGUyM1x1MGUzNFx1MGUwN1x1MGU0Nlx1MGUxOVx1MGUzMFx1MGU0NFx1MGUyMVx1MGU0OFx1MGU0NFx1MGUxNFx1MGU0OVx1MGU0Mlx1MGUyMVx1MGU0OSIsInZzX2Rlc2NyaXB0aW9uX2VuIjoiXHUwZTQwXHUwZTA4XHUwZTRiXHUwZTA3IFx1MGU0M1x1MGUxOVx1MGU0MFx1MGUyM1x1MGUzN1x1MGU0OFx1MGUyZFx1MGUwN1x1MGUwMVx1MGUzMlx1MGUyM1x1MGUyOFx1MGUzNlx1MGUwMVx1MGUyOVx1MGUzMlx1MGUwMVx1MGUzMlx1MGUyM1x1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUyM1x1MGUzOVx1MGU0OVx1MGUwNFx1MGUyN1x1MGUzMlx1MGUyMVx1MGUwNFx1MGUzNFx1MGUxNFx1MGUyYVx1MGUyM1x1MGU0OVx1MGUzMlx1MGUwN1x1MGUyYVx1MGUyM1x1MGUyM1x1MGUwNFx1MGU0MVx1MGUyNVx1MGU0OVx1MGUyN1x1MGUxOVx1MGUzM1x1MGU0NFx1MGUxYlx1MGU0M1x1MGUwYVx1MGU0OVx1MGU0NFx1MGUxNFx1MGU0OVx1MGUwOFx1MGUyM1x1MGUzNFx1MGUwNyBcdTBlMTdcdTBlMzFcdTBlNDlcdTBlMDdcdTBlMmRcdTBlMzhcdTBlMWJcdTBlMDFcdTBlMjNcdTBlMDRcdTBlNGNcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMDRcdTBlMjNcdTBlMWFcdTBlMDRcdTBlMjNcdTBlMzFcdTBlMTlcdTBlNDFcdTBlMjVcdTBlMzBcdTBlMWJcdTBlMjNcdTBlMzBcdTBlMmFcdTBlMWFcdTBlMDFcdTBlMzJcdTBlMjNcdTBlMTNcdTBlNGNcdTBlMTdcdTBlMzVcdTBlNDhcdTBlNDRcdTBlMTRcdTBlNDlcdTBlMDhcdTBlMzJcdTBlMDFcdTBlMjNcdTBlMzhcdTBlNDhcdTBlMTlcdTBlMWVcdTBlMzVcdTBlNDggXHUwZTJhXHUwZTMxXHUwZTA3XHUwZTA0XHUwZTIxXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTE0XHUwZTM1ICBcdTBlMjFcdTBlMzJcdTBlNDBcdTBlMmJcdTBlMmRcdTBlMzBcdTBlNDBcdTBlMDhcdTBlNGJcdTBlMDdcdTBlMDhcdTBlMjNcdTBlMzRcdTBlMDdcdTBlNDZcdTBlMTlcdTBlMzBcdTBlNDRcdTBlMjFcdTBlNDhcdTBlNDRcdTBlMTRcdTBlNDlcdTBlNDJcdTBlMjFcdTBlNDkiLCJ2c190eXBlIjoiMiIsInZzX2FjdGl2ZSI6IjEiLCJ2c19oaWdobGlnaHQiOiIwIiwidnNfY3JlYXRlIjoiMjAxNy0xMS0xNSAxNTo1MDozMSIsInZzX3VwZGF0ZSI6IjIwMTctMTEtMTYgMTA6NDU6MDciLCJkZXB0X25hbWVfdGgiOiJcdTBlMmFcdTBlMzJcdTBlMDJcdTBlMzJcdTBlMjdcdTBlMzRcdTBlMGFcdTBlMzJcdTBlMjBcdTBlMzJcdTBlMWVcdTBlMjJcdTBlMTlcdTBlMTVcdTBlMjNcdTBlNGMiLCJkZXB0X25hbWVfZW4iOiJGaWxtIiwiZmFjdWx0eV9uYW1lX3RoIjoiXHUwZTA0XHUwZTEzXHUwZTMwXHUwZTE0XHUwZTM0XHUwZTA4XHUwZTM0XHUwZTE3XHUwZTMxXHUwZTI1XHUwZTIxXHUwZTM1XHUwZTQwXHUwZTE0XHUwZTM1XHUwZTIyXHUwZTQxXHUwZTI1XHUwZTMwXHUwZTI4XHUwZTM0XHUwZTI1XHUwZTFiXHUwZTMwXHUwZTIwXHUwZTMyXHUwZTFlXHUwZTIyXHUwZTE5XHUwZTE1XHUwZTIzXHUwZTRjIiwiZmFjdWx0eV9uYW1lX2VuIjoiU2Nob29sIG9mIERpZ2l0YWwgTWVkaWEgYW5kIENpbmVtYXRpYyBBcnRzIiwiZmFjdWx0eV9zbHVnIjoiZGlnaXRhbC1tZWRpYSJ9XQ=='));
+	let testingData = '$2y$10$eWcfofNb/2m1mSzYE2yvBeh7puw15hRAq3Zp7gU7Lm8e82VlXsZTe';
+</script>
+            <script type="text/javascript">
+  var background_header = "./uploads/faculty/banner/20170918211455_9lXYe2QlOYl6Pvj_A5WmbsUwBFNH7al.jpg";
+  var background_footer = "./uploads/faculty/contact/20170915150659_OELiTtYCWBfKmIX_YkvEowmqEfIysGM.jpg";
+  </script>
+  <footer>
+    <div class="footer-link">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="logo-bu-footer">
+              <img src="./assets/main/images/bu-logo-footer.png" alt="มหาวิทยาลัยกรุงเทพ">
+            </div>
+          </div>
+        </div>
+        <div class="row visible-md visible-lg">
+  <div class="col-lg-3 col-lg-offset-0 col-md-2 col-md-offset-1">
+    <h3 class="m-b-md">เกี่ยวกับมหาวิทยาลัย</h3>
+    <ul class="list-unstyled">
+      <li><a href="./th/about">เกี่ยวกับมหาวิทยาลัย</a></li>
+      <li><a href="http://katin3.bu.ac.th/" target="_blank">กฐินพระราชทาน</a></li>
+      <li><a href="http://bangkokpoll.bu.ac.th/" target="_blank">กรุงเทพโพลล์</a></li>
+      <li><a href="http://ebook.bu.ac.th/" target="_blank">E-Book@BU</a></li>
+      <li><a href="http://dspace.bu.ac.th/" target="_blank">งานวิจัย</a></li>
+    </ul>
+  </div>
+  <div class="col-lg-3 col-md-2">
+    <h3 class="m-b-md">ติดต่อเรา</h3>
+    <ul class="list-unstyled">
+      <li><a href="./th/contact">ติดต่อเรา</a></li>
+      <li><a href="./th/campus-map">แผนที่ภายในมหาวิทยาลัย</a></li>
+      <li><a href="./th/rental-space">ติดต่อเช่าสถานที่</a></li>
+      <li><a href="./th/visit-bu">ติดต่อเพื่อเยี่ยมชมมหาวิทยาลัย</a></li>
+      <li><a href=" http://hr.bu.ac.th/web/recruit/Default.aspx" target="_blank">ร่วมงานกับ BU</a></li>
+    </ul>
+  </div>
+  <div class="col-lg-3 col-md-2">
+    <h3 class="m-b-md">ลิงก์ด่วน</h3>
+    <ul class="list-unstyled">
+      <li><a href="./th/curriculum/bachelors-degree/tuition-fees">ค่าเล่าเรียน</a></li>
+      <li><a href="./th/curriculum/bachelors-degree/scholarships">ทุนการศึกษา</a></li>
+      <li><a href="./th/academic-calendar">ปฏิทินการศึกษา</a></li>
+      <li><a href="./th/who-are-you/student/std/bachelor">นักศึกษาปัจจุบัน</a></li>
+      <li><a href="./th/cookies">นโยบายเกี่ยวกับการใช้งานคุกกี้</a></li>
+      <li><a href="./th/privacypolicy">การคุ้มครองข้อมูลส่วนบุคคล</a></li>
+      <li><a href="./th/generalnotice">ประกาศแจ้งเรื่องการคุ้มครองข้อมูลส่วนบุคคลกรณีทั่วไป (General Data Privacy Notice)</a></li>
+      <!-- <li><a href="./th/curriculum">คณะ</a></li> -->
+    </ul>
+  </div>
+  <div class="col-lg-3 col-md-5" ng-controller="news-letter" ng-init="init();">
+    <h3 class="m-b-md">รับข่าวสารจากเรา</h3>
+    <!-- <form class="form-inline m-b-md" autocomplete="off" ng-submit="action_insert_newsletter();">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="อีเมลของคุณ" ng-model="f_newsletter.email">
+      </div>
+      <button type="submit" class="btn btn-gray no-rounds ladda-button btn-insert-newsletter" data-style="zoom-in">ส่งข้อมูล</button>
+    </form> -->
+    <ul class="list-inline">
+      <li><a href="https://facebook.com/bangkokuniversity" target="_blank"><img src="./assets/main/images/logo-facebook.png" alt="Facebook" class="icon-social"></a></li>
+      <li><a href="https://youtube.com/BangkokUniversity" target="_blank"><img src="./assets/main/images/logo-youtube.gif" alt="Youtube" class="icon-social"></a></li>
+      <li><a href="https://twitter.com/Bangkok_BU" target="_blank"><img src="./assets/main/images/logo-twitter.gif" alt="Twitter" class="icon-social"></a></li>
+      <li><a href="https://www.instagram.com/bangkok_bu" target="_blank"><img src="./assets/main/images/logo-instagram.gif" alt="Instagram" class="icon-social"></a></li>
+    </ul>
+  </div>
+</div>
+<div class="row visible-xs visible-sm">
+  <!-- <div class="col-xs-12 text-center" ng-controller="news-letter" ng-init="init();">
+    <form class="form-inline m-b-md" autocomplete="off" ng-submit="action_insert_newsletter();">
+      <div class="form-group">
+        <label for="" class="text-white">รับข่าวสารจากเรา</label>
+        <div class="input-group">
+          <input type="text" class="form-control text-dark" placeholder="อีเมลของคุณ" ng-model="f_newsletter.email">
+          <span class="input-group-btn">
+            <button type="submit" class="btn btn-gray no-rounds ladda-button btn-insert-newsletter" data-style="zoom-in">ส่งข้อมูล</button>
+          </span>
+        </div>
+      </div>
+    </form>
+  </div> -->
+  <div class="col-xs-12">
+    <div class="ibox ibox-transparent no-margins">
+      <div class="ibox-title no-padding">
+        <h5>เมนูลัด</h5>
+        <div class="ibox-tools">
+          <a class="collapse-link">
+            <i class="fa fa-chevron-up"></i>
+          </a>
+        </div>
+      </div>
+      <div class="ibox-content">
+        <div class="panel-group" id="menu-footer">
+          <div class="panel panel-transparent">
+            <div class="panel-heading">
+              <h5 class="panel-title">
+                <a data-toggle="collapse" data-parent="#menu-footer" href="#collapseOne" aria-expanded="false" class="">เกี่ยวกับมหาวิทยาลัย<i class="fa fa-plus pull-right"></i></a>
+              </h5>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" aria-expanded="false">
+              <div class="panel-body">
+                <ul class="list-unstyled no-margins">
+                  <li><a href="./th/about">เกี่ยวกับมหาวิทยาลัย</a></li>
+                  <li><a href="http://katin3.bu.ac.th/" target="_blank">กฐินพระราชทาน</a></li>
+                  <li><a href="http://bangkokpoll.bu.ac.th/" target="_blank">กรุงเทพโพลล์</a></li>
+                  <li><a href="http://ebook.bu.ac.th/" target="_blank">E-Book@BU</a></li>
+                  <li><a href="http://dspace.bu.ac.th/" target="_blank">งานวิจัย</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-transparent">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#menu-footer" href="#collapseTwo" class="collapsed" aria-expanded="false">ติดต่อเรา<i class="fa fa-plus pull-right"></i></a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body">
+                <ul class="list-unstyled no-margins">
+                  <li><a href="./th/contact">ติดต่อเรา</a></li>
+                  <li><a href="./th/campus-map">แผนที่ภายในมหาวิทยาลัย</a></li>
+                  <li><a href="./th/rental-space">ติดต่อเช่าสถานที่</a></li>
+                  <li><a href="./th/visit-bu">ติดต่อเพื่อเยี่ยมชมมหาวิทยาลัย</a></li>
+                  <li><a href=" http://hr.bu.ac.th/web/recruit/Default.aspx" target="_blank">ร่วมงานกับ BU</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-transparent">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#menu-footer" href="#collapseThree" class="collapsed" aria-expanded="false">ลิงก์ด่วน<i class="fa fa-plus pull-right"></i></a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body">
+                <ul class="list-unstyled no-margins">
+                  <li><a href="./th/curriculum/bachelors-degree/tuition-fees">ค่าเล่าเรียน</a></li>
+                  <li><a href="./th/curriculum/bachelors-degree/scholarships">ทุนการศึกษา</a></li>
+                  <li><a href="./th/academic-calendar">ปฏิทินการศึกษา</a></li>
+                  <li><a href="./th/who-are-you/student/std/bachelor">นักศึกษาปัจจุบัน</a></li>
+                  <li><a href="./th/cookies">นโยบายเกี่ยวกับการใช้งานคุกกี้</a></li>
+                  <li><a href="./th/privacypolicy">การคุ้มครองข้อมูลส่วนบุคคล</a></li>
+                  <li><a href="./th/generalnotice">ประกาศแจ้งเรื่องการคุ้มครองข้อมูลส่วนบุคคลกรณีทั่วไป (General Data Privacy Notice)</a></li>
+                  <!-- <li><a href="./th/curriculum">คณะ</a></li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-transparent">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#menu-footer" href="#collapseFour" class="collapsed" aria-expanded="false">ติดตามเราได้ที่<i class="fa fa-plus pull-right"></i></a>
+              </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body">
+                <ul class="list-inline">
+                  <li><a href="https://facebook.com/bangkokuniversity" target="_blank"><img src="./assets/main/images/logo-facebook.png" alt="Facebook" class="icon-social"></a></li>
+                  <li><a href="https://youtube.com/BangkokUniversity" target="_blank"><img src="./assets/main/images/logo-youtube.gif" alt="Youtube" class="icon-social"></a></li>
+                  <li><a href="https://twitter.com/Bangkok_BU" target="_blank"><img src="./assets/main/images/logo-twitter.gif" alt="Twitter" class="icon-social"></a></li>
+                  <li><a href="https://www.instagram.com/bangkok_bu" target="_blank"><img src="./assets/main/images/logo-instagram.gif" alt="Instagram" class="icon-social"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <span>Copyright © 1962 - 2021 Bangkok University. All Rights Reserved.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<style>@media only screen and (max-width: 767px) {#menu-header{max-height: 50px; overflow-y:hidden; }}</style>
+<div id="overlay-menu">
+  <ul class="list-inline pull-right list-close-overlay-menu">
+    <li><a href="javascript:void(0);" class="close-overlay-menu"><i class="fa fa-times"></i> ปิด</a></li>
+  </ul>
+  <div class="panel-group text-center" id="menu-nav">
+    <div class="panel panel-transparent m-b-md">
+      <div class="panel-heading">
+        <h5 class="panel-title">
+          <a href="./th">หน้าหลัก</a>
+        </h5>
+      </div>
+    </div>
+    <div class="panel panel-transparent m-b-md">
+      <div class="panel-heading">
+        <h5 class="panel-title">
+          <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavOne" aria-expanded="true" class="">หลักสูตร</a>
+        </h5>
+      </div>
+      <div id="menuNavOne" class="panel-collapse collapse in" aria-expanded="true">
+        <div class="panel-body">
+                    <ul class="list-unstyled no-margins">
+            <li><a href="./th/curriculum/bachelors-degree">ปริญญาตรี</a></li>
+            <li><a href="./th/curriculum/masters-degree">ปริญญาโท</a></li>
+            <li><a href="./th/curriculum/doctoral-degree">ปริญญาเอก</a></li>
+            <li><a href="./en/curriculum/international-programs">International Programs</a></li>
+            <li><a href="./th/pre-degree">Pre-Degree</a></li>
+            <!-- <li><a href="./th/curriculum/certificate">อบรม/ประกาศนียบัตร</a></li> -->
+            <li><a href="./th/curriculum/bachelors-degree/tuition-fees">ค่าเล่าเรียน</a></li>
+            <li><a href="./th/curriculum/bachelors-degree/scholarships">ทุนการศึกษา</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Know BU -->
+    <div class="panel panel-transparent">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavKnowBu" class="collapsed" aria-expanded="false">รอบรั้วมหาวิทยาลัย</a>
+        </h4>
+      </div>
+      <div id="menuNavKnowBu" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">
+          <ul class="list-unstyled no-margins">
+            <li><a href="th/corporate-news">Corporate News</a></li>
+            <li><a href="th/bu-magazine">BU Story</a></li>
+            <!-- <li><a href="th/news-clipping">News Clippings</a></li> -->
+            <li><a href="th/accommodation">หอพักนักศึกษา</a></li>
+            <li><a href="th/activities-clubs/sports">กีฬา/สโมสร/ชมรม</a></li>
+            <li><a href="th/facilities">สิ่งอำนวยความสะดวก</a></li>
+                        <li><a href="th/service-centers">ศูนย์บริการ</a></li>
+            <li><a href="http://katin3.bu.ac.th" target="_blank">กฐินพระราชทาน</a></li>
+            <li><a href="http://museum.bu.ac.th" target="_blank">พิพิธภัณฑ์สถานเครื่องถ้วยเอเชียตะวันออกเฉียงใต้</a></li>
+            <li><a href="https://fb.com/bangkokuniversitygallery" target="_blank">หอศิลป์ มหาวิทยาลัยกรุงเทพ</a></li>
+                          <li><a href="./th/voices-from-students">เสียงจากนักศึกษา</a></li>
+              <li><a href="./th/voices-from-alumni">เสียงจากรุ่นพี่</a></li>
+                      </ul>
+        </div>
+      </div>
+    </div>
+    <!-- About Us -->
+    <div class="panel panel-transparent">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavAboutUs" class="collapsed" aria-expanded="false">เกี่ยวกับมหาวิทยาลัย</a>
+        </h4>
+      </div>
+      <div id="menuNavAboutUs" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">
+          <ul class="list-unstyled no-margins">
+            <li><a href="./th/about/history">ประวัติมหาวิทยาลัยกรุงเทพ</a></li>
+            <li><a href="./th/about/vision-mission">วิสัยทัศน์และพันธกิจ</a></li>
+            <li><a href="./th/about/videos">วิดีโอแนะนำ</a></li>
+            <li><a href="./th/council-committees">สภามหาวิทยาลัย</a></li>
+            <li><a href="./th/executives">คณะผู้บริหาร</a></li>
+            <li><a href="./th/partner-networks">พันธมิตร</a></li>
+            <li><a href="./th/alumni">ศิษย์เก่า</a></li>
+            <!-- <li><a href="./th/bu-achievements">ไฮไลท์ผลงาน</a></li> -->
+            <li><a href="./th/about/downloads">ดาวน์โหลด</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Who are you -->
+    <div class="panel panel-transparent">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavWhoAre" class="collapsed" aria-expanded="false">คุณคือใคร?</a>
+        </h4>
+      </div>
+      <div id="menuNavWhoAre" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">
+          <ul class="list-unstyled no-margins">
+            <li><a href="./th/who-are-you/student">นักศึกษา</a></li>
+            <li><a href="./th/who-are-you/parent">ผู้ปกครอง</a></li>
+            <li><a href="./th/who-are-you/alumni">ศิษย์เก่า</a></li>
+            <li><a href="http://mybu.bu.ac.th" target="_blank">บุคลากร</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div class="panel panel-transparent">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavContact" class="collapsed" aria-expanded="false">ติดต่อเรา</a>
+        </h4>
+      </div>
+      <div id="menuNavContact" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">
+          <ul class="list-unstyled no-margins">
+            <li><a href="./th/contact">ติดต่อเรา</a></li>
+            <li><a href="./th/campus-map">แผนที่ภายในมหาวิทยาลัย</a></li>
+            <li><a href="./th/rental-space">ติดต่อเช่าสถานที่</a></li>
+            <li><a href="./th/visit-bu">ติดต่อเพื่อเยี่ยมชมมหาวิทยาลัย</a></li>
+            <li><a href=" http://hr.bu.ac.th/web/recruit/Default.aspx" target="_blank">ร่วมงานกับ BU</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<script type="text/javascript">var language = 'th';</script>
+  <script src="./vendors/jquery/jquery-2.2.4.min.js" charset="utf-8"></script>
+  <script src="./vendors/bigbag/1.3/plugins/jquery-ui/jquery-ui.js" charset="utf-8"></script>
+  <script src="./vendors/bootstrap-3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="./vendors/angular-1.5.0/angular.min.js" charset="utf-8"></script>
+  <script src="./vendors/angular-1.5.0/angular-sanitize.min.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/ladda/spin.min.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/ladda/ladda.min.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/ladda/ladda.jquery.min.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/sweetalert/sweetalert.min.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/jasny/jasny-bootstrap.min.js" charset="utf-8"></script>
+  <script src="./vendors/backstretch/jquery.backstretch.js" charset="utf-8"></script>
+  <script src="./vendors/grid-a-licious/jquery.grid-a-licious.min.js" charset="utf-8"></script>
+  <script src="./vendors/sticky-kit/jquery.sticky-kit.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/inspinia-main.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/pace/pace.min.js" charset="utf-8"></script>
+  <script src="./vendors/hamburger-toggle/js/script.min.js" charset="utf-8"></script>
+  <script src="./vendors/owl.carousel/owl-carousel/owl.carousel.min.js" charset="utf-8"></script>
+  <script src="./assets/main/js/app.js" charset="utf-8"></script>
+  <script src="./assets/faculty/js/faculty.js" charset="utf-8"></script>
+  <script src="./vendors/pinterest-style-responsive/newWaterfall.js" charset="utf-8"></script>
+  <script src="./assets/faculty/js/voice_student/index.js" charset="utf-8"></script>
+</body>
+</html>

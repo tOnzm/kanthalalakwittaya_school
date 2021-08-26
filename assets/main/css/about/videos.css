@@ -1,0 +1,75 @@
+.padding-top-topic {
+    padding-top: 30px;
+}
+
+.no-margin-bottom {
+    margin-bottom: 0px;
+}
+
+.resize-image-with-container {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.padding-right-shareImg {
+    padding-right: 7px;
+}
+
+.astext {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+.padding-top-container {
+    padding-top: 45px;
+}
+
+.no-padding {
+    padding: 0px 0px 0px 0px;
+}
+
+.no-margin {
+    margin: 0px 0px 0px 0px;
+}
+
+.no-padding-left {
+    padding-left: 0px;
+}
+
+.no-padding-right {
+    padding-right: 0px;
+}
+
+.padding-left-right {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+
+.padding-between-content {
+    padding-top: 10px;
+}
+
+.padding-line-content {
+    padding-top: 25px;
+}
+
+.padding-bottom-container {
+    padding-bottom: 110px;
+}
+
+.move-category {
+    padding-right: 30px;
+}
+
+.border-color-combobox {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.text-line{
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: nowrap;
+}

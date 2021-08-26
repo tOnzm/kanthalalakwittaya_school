@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="th">
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
+  <meta name='author' content='Kanthalalakwittaya School'>
+
+  <title>โรงเรียนกันทรลักษ์วิทยา</title>
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="./vendors/bootstrap-3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./vendors/animate/css/animate.css">
+  <link rel="stylesheet" href="./vendors/fonts/Karnvayla/stylesheet.css">
+  <link rel="stylesheet" href="./vendors/inspinia_admin-v2.7/css/plugins/ladda/ladda-themeless.min.css">
+  <link rel="stylesheet" href="./vendors/inspinia_admin-v2.7/css/plugins/sweetalert/sweetalert.css">
+  <link rel="stylesheet" href="./vendors/inspinia_admin-v2.7/css/style-main.css">
+  <link rel="stylesheet" href="./vendors/hamburger-toggle/css/style.css">
+  <link rel="stylesheet" href="./vendors/owl.carousel/owl-carousel/owl.theme.css">
+  <link rel="stylesheet" href="./vendors/owl.carousel/owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="./vendors/ionicons-2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="./assets/main/css/style.css">
+  <link rel="stylesheet" href="./assets/main/css/home.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="./vendors/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+  <!-- CSS Link end -->
+  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+  <!-- โลโก้บนแถบบาร์ -->
+  <link rel="shortcut icon" href="favicon.ico" />
+  <!-- โลโก้บนแถบบาร์จบ -->
+
+  <!-- สไลด์ -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+</head>
+
+<body>
+
+  <!-- โลโก้บน -->
+  <div id="main-header">
+    <div class="wrapper container">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12" id="logo-bu-horizontal">
+          <a href="./">
+            <img src="./assets/images/resize-logoKLW-horizontal.png" alt="โรงเรียนกันทรลักษ์วิทยา">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- เมนู -->
+  <div id="menu-header">
+    <div class=" wrapper container">
+      <div class="row">
+        <div class="col-xs-12">
+          <nav class="navbar navbar-default no-margins" id="bu-bootstrap-menu">
+            <div class="wrapper container">
+
+              <!-- ปุ่ม home -->
+              <div class="navbar-header">
+                <a class="btn-navbar visible-xs" id="nav-icon"><i class="fa fa-bars"></i></a>
+                <a class="navbar-brand hidden-xs" href="./"><i class="fa fa-home"></i></a>
+              </div>
+              <!-- สมัครเรียน -->
+              <a href="http://admissiononline.bu.ac.th/" class="btn btn-apply-now btn-rounds visible-xs"
+                target="_blank">สมัครเรียน</a>
+              <!-- จบสมัครเรียน -->
+              <!-- เมนู -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav border-after">
+
+                  <!-- เกี่ยวกับโรงเรียน -->
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                      aria-expanded="false">เกี่ยวกับโรงเรียน</a>
+                    <div class="dropdown-menu full-width">
+                      <!-- บรรทัดที่ 1 -->
+                      <div class="row menu-box">
+                        <div class="col-md-6 col-sm-6">
+                          <a href="./th/curriculum/bachelors-degree" class="box box-15">
+                            <div class="text">ข้อมูลทั่วไป</div>
+                          </a>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                          <a href="/history.html" class="box box-16">
+                            <div class="text">วิสัยทัศน์และพันธกิจ</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- ทำเนียบบุคลากร -->
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                      aria-expanded="false">ทำเนียบบุคลากร</a>
+                    <div class="dropdown-menu full-width">
+                      <!-- บรรทัดที่ 1 -->
+                      <div class="row menu-box">
+                        <div class="col-md-3 col-sm-3">
+                          <a href="/council-committees.html" class="box box-1">
+                            <div class="text">ฝ่ายบริหาร</div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                          <a href="./en/curriculum/international-programs" class="box box-2">
+                            <div class="text">กลุ่มสาระภาษาไทย</div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                          <a href="./th/curriculum/bachelors-degree" class="box box-3">
+                            <div class="text">กลุ่มสาระคณิตศาสตร์</div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                          <a href="./en/curriculum/international-programs" class="box box-4">
+                            <div class="text">กลุ่มสาระวิทยาศาสตร์</div>
+                          </a>
+                        </div>
+                      </div>
+                      <!-- บรรทัดที่2 -->
+                      <div class="row menu-box">
+                        <div class="col-sm-3">
+                          <a href="./th/curriculum/masters-degree" class="box box-5">
+                            <div class="text">กลุ่มสาระเทคโนโลยี</div>
+                          </a>
+                        </div>
+                        <div class="col-sm-3">
+                          <a href="./th/curriculum/doctoral-degree" class="box box-6">
+                            <div class="text">กลุ่มสาระสังคมศึกษา</div>
+                          </a>
+                        </div>
+                        <div class="col-sm-3">
+                          <a href="./th/buci" class="box box-7">
+                            <div class="text">กลุ่มสาระสุขศึกษาและพลศึกษา</div>
+                          </a>
+                        </div>
+                        <div class="col-sm-3">
+                          <a href="./th/short-courses" class="box box-8">
+                            <div class="text">กลุ่มสาระศิลปะ</div>
+                          </a>
+                        </div>
+                      </div>
+                      <!-- บรรทัดที่3 -->
+                      <div class="row menu-box">
+                        <div class="col-sm-3">
+                          <a href="./th/curriculum/masters-degree" class="box box-9">
+                            <div class="text">กลุ่มสาระการงานอาชีพ</div>
+                          </a>
+                        </div>
+                        <div class="col-sm-3">
+                          <a href="./th/curriculum/doctoral-degree" class="box box-10">
+                            <div class="text">กลุ่มสาระภาษาต่างประเทศ</div>
+                          </a>
+                        </div>
+                        <div class="col-sm-3">
+                          <a href="./th/buci" class="box box-11">
+                            <div class="text">งานแนะแนว</div>
+                          </a>
+                        </div>
+                        <div class="col-sm-3">
+                          <a href="./th/short-courses" class="box box-12">
+                            <div class="text">ลูกจ้างประจำ </div>
+                          </a>
+                        </div>
+                      </div>
+                      <!-- บรรทัดที่4 -->
+                      <div class="row menu-box">
+                        <div class="col-sm-6">
+                          <a href="./th/curriculum/masters-degree" class="box box-13">
+                            <div class="text">เจ้าหน้าที่สำนักงาน</div>
+                          </a>
+                        </div>
+                        <div class="col-sm-6">
+                          <a href="./th/curriculum/doctoral-degree" class="box box-14">
+                            <div class="text">ลูกจ้างชั่วคราว</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- สำหรับนักเรียน -->
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                      aria-expanded="false">สำหรับนักเรียน</a>
+                    <div class="dropdown-menu full-width">
+                      <!-- บรรทัดที่ 1 -->
+                      <div class="row menu-box">
+                        <div class="col-md-4 col-sm-4">
+                          <a href="./th/curriculum/bachelors-degree" class="box box-17">
+                            <div class="text">ข้อมูลทั่วไป</div>
+                          </a>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                          <a href="./en/curriculum/international-programs" class="box box-18">
+                            <div class="text">ตรวจสอบเกรด</div>
+                          </a>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                          <a href="./th/curriculum/bachelors-degree" class="box box-19">
+                            <div class="text">ตารางเรียน</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- หลักสูตร -->
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                      aria-expanded="false">หลักสูตร</a>
+                    <div class="dropdown-menu full-width">
+                      <!-- บรรทัดที่ 1 -->
+                      <div class="row menu-box">
+                        <div class="col-md-3 col-sm-3">
+                          <a href="/images/room/003.jpg" class="box box-20">
+                            <div class="text">ห้องเรียน SMART</div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                          <a href="/images/room/004.jpg" class="box box-21">
+                            <div class="text">ห้องเรียน MST</div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                          <a href="/images/room/005.jpg" class="box box-22">
+                            <div class="text">ห้องเรียนนิติศาสตร์-รัฐศาสตร์</div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                          <a href="/images/room/006.jpg" class="box box-23">
+                            <div class="text">ห้องเรียนกีฬาและวิทยาศาสตร์การกีฬา</div>
+                          </a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </li>
+                </ul>
+                <!-- สมัครเรียน -->
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="http://admissiononline.bu.ac.th/" class="btn btn-apply-now btn-rounds"
+                      target="_blank">สมัครเรียน</a></li>
+                </ul>
+                <!-- จบสมัครเรียน -->
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ภาพสไลด์ และ ล็อกอิน -->
+  <section id="body">
+    <div id="index" ng-controller="index" ng-init="init();">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-8">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <a href="#" target="_blank"><img src="./images/News/1.jpg" alt="0" style="width:100%;"></a>
+                </div>
+
+                <div class="item">
+                  <a href="http://ez.eduzones.com/test/" target="_blank"><img src="./images/News/2.jpg" alt="1"
+                      style="width:100%;"></a>
+                </div>
+
+                <div class="item">
+                  <a href="https://www.dltv.ac.th/" target="_blank"> <img src="./images/News/3.jpg" alt="2"
+                      style="width:100%;">
+                  </a>
+                </div>
+
+                <div class="item">
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScp-BOIwK9PhL_hvwU34Yp5dSr7RxRM7pcjJX77RY8ROLEQwA/viewform"
+                    target="_blank"> <img src="./images/News/4.jpg" alt="3" style="width:100%;"></a>
+                </div>
+              </div>
+
+              <!-- ตัวควบคุมซ้าย ขวา -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-12 col-lg-4">
+            <div class="row">
+              <div class="login col-md-12 col-sm-12 col-xs-12">
+                <div class="box-yellow-big">
+                  <div class="text-center">
+                    <h2>เข้าสู่ระบบ </h2>
+                    <div class="panel-body">
+                      <form accept-charset="UTF-8" role="form">
+                        <fieldset>
+                          <div class="form-group">
+                            <input class="form-control" placeholder="เลขประจำตัวนักเรียน" name="email" type="text">
+                          </div>
+                          <div class="form-group">
+                            <input class="form-control" placeholder="รหัสบัตรประชาชน 13 หลัก" name="password"
+                              type="password" value="">
+                          </div>
+                          <input class="btn btn-lg btn-success btn-block" type="submit" value="LOG IN">
+                        </fieldset>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <a href="./th/curriculum/bachelors-degree/tuition-fees" class="box-yellow-small">
+                  <div class="icon">
+                    <i class="fa fa-credit-card"></i>
+                  </div>
+                  <div class="name">
+                    ค่าเล่าเรียน </div>
+                </a>
+                <a href="#" class="box-yellow-small">
+                  <div class="icon">
+                    <i class="fa fa-coins"></i>
+                  </div>
+                  <div class="name">
+                    ทุนการศึกษา </div>
+                </a>
+                <a href="#" class="box-yellow-small">
+                  <div class="icon">
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                  <div class="name">
+                    ปฏิทินการศึกษา </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      ิ<br><br><br>
+
+      <!-- ข่าวอัพเดท กิจกรรม -->
+      <div class="container">
+        <div class="row">
+          <!-- จดหมายข่าว -->
+          <div class="col-sm-6">
+            <div class="box-news">
+              <div class="header">
+                <a href="http://www.klws.ac.th/webklws/html/newsletter.html" class="pull-right view-all">ดูทั้งหมด <span
+                    class="icon"><i class="fa fa-chevron-right fa-1x"></i></span></a>
+                <h1><img src="/favicon.ico" alt="" width="10%" height="10%"> จดหมายข่าว</h1>
+              </div>
+              <div class="profile">
+                <a href="http://www.klws.ac.th/webklws/img/newsletter/64%2008%2002.png" class="image"><img
+                    src="/images/News/news1.jpg" /></a>
+                <a href="http://www.klws.ac.th/webklws/img/newsletter/64%2008%2002.png" class="name"><span
+                    class="text">ฉบับที่ ๕/๒๕๖๔ ประจำเดือน สิงหาคม
+                    พ.ศ.๒๕๖๔</span> <span class="pull-right icon"><i class="fa fa-chevron-right fa-1x"></i></span></a>
+                <p class="description">ก.ล.ว. นำนักเรียนเข้าแข่งขันวาดภาพจินตนาการทางวิทยาศาสตร์
+                  ในงานสัปดาห์วันวิทยาศาสตร์แห่งชาติ มรภ.บุรีรัมย์</p>
+              </div>
+            </div>
+          </div>
+          <!-- ภาพกิจกรรม -->
+          <div class="col-sm-6">
+            <div class="box-news">
+              <div class="header">
+                <a href="http://www.klws.ac.th/webklws/html/album/album02.html" class="pull-right view-all">ดูทั้งหมด
+                  <span class="icon"><i class="fa fa-chevron-right fa-1x"></i></span></a>
+                <h1><img src="/favicon.ico" alt="" width="10%" height="10%"> ภาพกิจกรรม</h1>
+              </div>
+              <div class="profile">
+                <a href="http://www.klws.ac.th/webklws/img/64%20%E0%B8%A3%E0%B9%88%E0%B8%A7%E0%B8%A1%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%A2%E0%B8%B4%E0%B8%99%E0%B8%94%E0%B8%B5%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%84%E0%B8%94%E0%B9%89/index.html"
+                  class="image"><img src="/images/News/news 2.jpg" /></a>
+                <a href="http://www.klws.ac.th/webklws/img/64%20%E0%B8%A3%E0%B9%88%E0%B8%A7%E0%B8%A1%E0%B9%81%E0%B8%AA%E0%B8%94%E0%B8%87%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%A2%E0%B8%B4%E0%B8%99%E0%B8%94%E0%B8%B5%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%84%E0%B8%94%E0%B9%89/index.html"
+                  class="name"><span class="text">รวมแสดงความยินดีกับนักเรียนระดับชั้นมัธยมศึกษาปีที่ 6</span> <span
+                    class="pull-right icon"><i class="fa fa-chevron-right fa-1x"></i></span></a>
+                <p class="description">รวมแสดงความยินดีกับนักเรียนระดับชั้นมัธยมศึกษาปีที่ 6
+                  ที่สามารถสอบเข้าศึกษาต่อในระดับอุดมศึกษาได้</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- จบข่าวอัพเดท กิจกรรม -->
+    </div>
+  </section>
+
+  <!-- ส่วนรองท้าย -->
+  <section class="footer-four-box">
+    <div class="container">
+      <div class="row">
+        <!-- สภานักเรียน -->
+        <div class="col-xs-6 col-sm-3 ">
+          <div class="item">
+            <a href="https://www.facebook.com/KLWStudentCouncil/" target="_blank">
+              <img class="footer1" src="/images/footer-four-box/footer-four-box-01.jpg" />
+              <div class="box-dark">สภานักเรียน</div>
+            </a>
+          </div>
+        </div>
+        <!-- สารวัตร -->
+        <div class="col-xs-6 col-sm-3">
+          <div class="item">
+            <a href="https://www.facebook.com/snrklw/">
+              <img class="footer2" src="/images/footer-four-box/footer-four-box-02.jpg" />
+              <div class="box-dark">สารวัตรนักเรียน</div>
+            </a>
+          </div>
+        </div>
+        <!-- to be -->
+        <div class="col-xs-6 col-sm-3">
+          <div class="item">
+            <a href="https://shorturl.at/eDE27">
+              <img class="footer3" src="/images/footer-four-box/footer-four-box-03.jpg" />
+              <div class="box-dark">TO NE NUMBER 1</div>
+            </a>
+          </div>
+        </div>
+        <!-- โสต -->
+        <div class="col-xs-6 col-sm-3">
+          <div class="item">
+            <a href="https://www.facebook.com/KLWgallery/" target="_blank">
+              <img class="footer4" src="/images/footer-four-box/footer-four-box-04.jpg" />
+              <div class="box-dark">โสตทัศนศึกษา</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ส่วนรองท้าย -->
+
+  <!-- ส่วนล่าง -->
+  <footer>
+    <div class="footer-link">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="logo-klw-footer">
+              <img src="./assets/main/images/bu-logo-footer.png" alt="โรงเรียนกันทรลักษ์วิทยา">
+            </div>
+          </div>
+        </div>
+        <div class="row visible-md visible-lg">
+          <!-- เกี่ยวกับโรงเรียน -->
+          <div class="col-lg-3 col-lg-offset-0 col-md-2 col-md-offset-1">
+            <h3 class="m-b-md">เกี่ยวกับโรงเรียน</h3>
+            <ul class="list-unstyled">
+              <li><a href="#" target="_blank">โครงสร้างการบริหาร</a></li>
+              <li><a href="#" target="_blank">วิสัยทัศน์และพันธกิจ</a></li>
+            </ul>
+          </div>
+          <!-- ลิงก์ด่วน -->
+          <div class="col-lg-3 col-md-2">
+            <h3 class="m-b-md">ลิงก์ด่วน</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">ค่าเล่าเรียน</a></li>
+              <li><a href="#">ทุนการศึกษา</a></li>
+              <li><a href="#">ปฏิทินการศึกษา</a></li>
+              <li><a href="#">สมัครเรียน</a></li>
+              <li><a href="#">ตรวจสอบเกรด</a></li>
+            </ul>
+          </div>
+          <!-- ติดตอ่เรา -->
+          <div class="col-lg-3 col-md-2">
+            <h3 class="m-b-md">ติดต่อเรา</h3>
+            <ul class="list-unstyled">
+              <li><a>045-661-617</a></li>
+              <li><a>045-661-618</a></li>
+              <li><a>045-661-420</a></li>
+            </ul>
+          </div>
+          <!-- โซเชียลมีเดีย -->
+          <div class="col-lg-3 col-md-5" ng-controller="news-letter" ng-init="init();">
+            <h3 class="m-b-md">โซเชียลมีเดีย</h3>
+            <ul class="list-inline">
+              <li><a href="https://www.facebook.com/klwsthadsun" target="_blank"><img
+                    src="/images/social/logo-facebook.png" alt="Facebook" class="icon-social"></a>
+              </li>
+              <li><a href="#" target="_blank"><img src="/images/social/logo-instagram.gif" alt="Youtube"
+                    class="icon-social"></a></li>
+              <li><a href="#" target="_blank"><img src="/images/social/logo-twitter.gif" alt="Twitter"
+                    class="icon-social"></a></li>
+              <li><a href="#" target="_blank"><img src="/images/social/logo-youtube.gif" alt="Instagram"
+                    class="icon-social"></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- เมนูย่อ -->
+        <div class="row visible-xs visible-sm">
+          <div class="col-xs-12">
+            <div class="ibox ibox-transparent no-margins">
+              <div class="ibox-title no-padding">
+                <h5>เมนูลัด</h5>
+                <div class="ibox-tools">
+                  <a class="collapse-link">
+                    <i class="fa fa-chevron-up"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="ibox-content">
+                <div class="panel-group" id="menu-footer">
+                  <!-- เกี่ยวกับโรงเรียน -->
+                  <div class="panel panel-transparent">
+                    <div class="panel-heading">
+                      <h5 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#menu-footer" href="#collapseOne" aria-expanded="false"
+                          class="">เกี่ยวกับโรงเรียน<i class="fa fa-plus pull-right"></i></a>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" aria-expanded="false">
+                      <div class="panel-body">
+                        <ul class="list-unstyled no-margins">
+                          <li><a href="http://katin3.bu.ac.th/" target="_blank">โครงสร้างการบริหาร</a></li>
+                          <li><a href="http://bangkokpoll.bu.ac.th/" target="_blank">วิสัยทัศน์และพันธกิจ</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ติดต่อเรา -->
+                  <div class="panel panel-transparent">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#menu-footer" href="#collapseTwo" class="collapsed"
+                          aria-expanded="false">ติดต่อเรา<i class="fa fa-plus pull-right"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                      <div class="panel-body">
+                        <ul class="list-unstyled no-margins">
+                          <li><a>045-661-617</a></li>
+                          <li><a>045-661-618</a></li>
+                          <li><a>045-661-420</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ลิงก์ด่วน -->
+                  <div class="panel panel-transparent">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#menu-footer" href="#collapseThree" class="collapsed"
+                          aria-expanded="false">ลิงก์ด่วน<i class="fa fa-plus pull-right"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                      <div class="panel-body">
+                        <ul class="list-unstyled no-margins">
+                          <li><a href="#">ค่าเล่าเรียน</a></li>
+                          <li><a href="#">ทุนการศึกษา</a></li>
+                          <li><a href="#">ปฏิทินการศึกษา</a></li>
+                          <li><a href="#">สมัครเรียน</a></li>
+                          <li><a href="#">ตรวจสอบเกรด</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- โซเชียลมีเดีย -->
+                  <div class="panel panel-transparent">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#menu-footer" href="#collapseFour" class="collapsed"
+                          aria-expanded="false">โซเชียลมีเดีย<i class="fa fa-plus pull-right"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                      <div class="panel-body">
+                        <ul class="list-inline">
+                          <li><a href="https://www.facebook.com/klwsthadsun" target="_blank"><img
+                                src="/images/social/logo-facebook.png" alt="Facebook" class="icon-social"></a>
+                          </li>
+                          <li><a href="#" target="_blank"><img src="/images/social/logo-instagram.gif" alt="Youtube"
+                                class="icon-social"></a></li>
+                          <li><a href="#" target="_blank"><img src="/images/social/logo-twitter.gif" alt="Twitter"
+                                class="icon-social"></a></li>
+                          <li><a href="#" target="_blank"><img src="/images/social/logo-youtube.gif" alt="Instagram"
+                                class="icon-social"></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- จบล่างสุด footer end -->
+    <!-- copyright -->
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <span>Thammarat Noongoen</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- เมนูเล็ก -->
+  <div id="overlay-menu">
+    <ul class="list-inline pull-right list-close-overlay-menu">
+      <li><a href="javascript:void(0);" class="close-overlay-menu"><i class="fa fa-times"></i> ปิด</a></li>
+    </ul>
+    <div class="panel-group text-center" id="menu-nav">
+      <div class="panel panel-transparent m-b-md">
+        <div class="panel-heading">
+          <h5 class="panel-title">
+            <a href="./th">หน้าหลัก</a>
+          </h5>
+        </div>
+      </div>
+      <div class="panel panel-transparent m-b-md">
+        <div class="panel-heading">
+          <h5 class="panel-title">
+            <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavOne" aria-expanded="true"
+              class="">หลักสูตร</a>
+          </h5>
+        </div>
+        <div id="menuNavOne" class="panel-collapse collapse in" aria-expanded="true">
+          <div class="panel-body">
+            <ul class="list-unstyled no-margins">
+              <li><a href="./th/curriculum/bachelors-degree">ปริญญาตรี</a></li>
+              <li><a href="./th/curriculum/masters-degree">ปริญญาโท</a></li>
+              <li><a href="./th/curriculum/doctoral-degree">ปริญญาเอก</a></li>
+              <li><a href="./en/curriculum/international-programs">International Programs</a></li>
+              <li><a href="./th/pre-degree">Pre-Degree</a></li>
+              <!-- <li><a href="./th/curriculum/certificate">อบรม/ประกาศนียบัตร</a></li> -->
+              <li><a href="./th/curriculum/bachelors-degree/tuition-fees">ค่าเล่าเรียน</a></li>
+              <li><a href="./th/curriculum/bachelors-degree/scholarships">ทุนการศึกษา</a></li>
+              <li><a href="https://www.bu.ac.th/th/short-courses">อบรม/ประกาศนียบัตร</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Know BU -->
+      <div class="panel panel-transparent">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavKnowBu" class="collapsed"
+              aria-expanded="false">รอบรั้วมหาวิทยาลัย</a>
+          </h4>
+        </div>
+        <div id="menuNavKnowBu" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+          <div class="panel-body">
+            <ul class="list-unstyled no-margins">
+              <li><a href="th/corporate-news">Corporate News</a></li>
+              <li><a href="th/bu-magazine">BU Story</a></li>
+              <!-- <li><a href="th/news-clipping">News Clippings</a></li> -->
+              <li><a href="th/accommodation">หอพักนักศึกษา</a></li>
+              <li><a href="th/activities-clubs/sports">กีฬา/สโมสร/ชมรม</a></li>
+              <li><a href="th/facilities">สิ่งอำนวยความสะดวก</a></li>
+              <li><a href="th/service-centers">ศูนย์บริการ</a></li>
+              <li><a href="http://katin3.bu.ac.th" target="_blank">กฐินพระราชทาน</a></li>
+              <li><a href="http://museum.bu.ac.th" target="_blank">พิพิธภัณฑ์สถานเครื่องถ้วยเอเชียตะวันออกเฉียงใต้</a>
+              </li>
+              <li><a href="https://fb.com/bangkokuniversitygallery" target="_blank">หอศิลป์ มหาวิทยาลัยกรุงเทพ</a></li>
+              <li><a href="./th/voices-from-students">เสียงจากนักศึกษา</a></li>
+              <li><a href="./th/voices-from-alumni">เสียงจากรุ่นพี่</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- About Us -->
+      <div class="panel panel-transparent">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavAboutUs" class="collapsed"
+              aria-expanded="false">เกี่ยวกับมหาวิทยาลัย</a>
+          </h4>
+        </div>
+        <div id="menuNavAboutUs" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+          <div class="panel-body">
+            <ul class="list-unstyled no-margins">
+              <li><a href="./th/about/history">ประวัติมหาวิทยาลัยกรุงเทพ</a></li>
+              <li><a href="./th/about/vision-mission">วิสัยทัศน์และพันธกิจ</a></li>
+              <li><a href="./th/about/videos">วิดีโอแนะนำ</a></li>
+              <li><a href="./th/council-committees">สภามหาวิทยาลัย</a></li>
+              <li><a href="./th/executives">คณะผู้บริหาร</a></li>
+              <li><a href="./th/partner-networks">พันธมิตร</a></li>
+              <li><a href="./th/alumni">ศิษย์เก่า</a></li>
+              <!-- <li><a href="./th/bu-achievements">ไฮไลท์ผลงาน</a></li> -->
+              <li><a href="./th/about/downloads">ดาวน์โหลด</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Who are you -->
+      <div class="panel panel-transparent">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavWhoAre" class="collapsed"
+              aria-expanded="false">คุณคือใคร?</a>
+          </h4>
+        </div>
+        <div id="menuNavWhoAre" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+          <div class="panel-body">
+            <ul class="list-unstyled no-margins">
+              <li><a href="./th/who-are-you/student">นักศึกษา</a></li>
+              <li><a href="./th/who-are-you/parent">ผู้ปกครอง</a></li>
+              <li><a href="./th/who-are-you/alumni">ศิษย์เก่า</a></li>
+              <li><a href="http://mybu.bu.ac.th" target="_blank">บุคลากร</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Contact -->
+      <div class="panel panel-transparent">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavContact" class="collapsed"
+              aria-expanded="false">ติดต่อเรา</a>
+          </h4>
+        </div>
+        <div id="menuNavContact" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+          <div class="panel-body">
+            <ul class="list-unstyled no-margins">
+              <li><a href="./th/contact">ติดต่อเรา</a></li>
+              <li><a href="./th/campus-map">แผนที่ภายในมหาวิทยาลัย</a></li>
+              <li><a href="./th/rental-space">ติดต่อเช่าสถานที่</a></li>
+              <li><a href="./th/visit-bu">ติดต่อเพื่อเยี่ยมชมมหาวิทยาลัย</a></li>
+              <li><a href=" http://hr.bu.ac.th/web/recruit/Default.aspx" target="_blank">ร่วมงานกับ BU</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- จบเมนูเล็ก -->
+
+
+
+  <!-- script -->
+  <style>
+    @media only screen and (max-width: 767px) {
+      #menu-header {
+        max-height: 50px;
+        overflow-y: hidden;
+      }
+    }
+  </style>
+  <script type="text/javascript">var language = 'th';</script>
+  <script src="./vendors/jquery/jquery-2.2.4.min.js" charset="utf-8"></script>
+  <script src="./vendors/bigbag/1.3/plugins/jquery-ui/jquery-ui.js" charset="utf-8"></script>
+  <script src="./vendors/bootstrap-3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="./vendors/angular-1.5.0/angular.min.js" charset="utf-8"></script>
+  <script src="./vendors/angular-1.5.0/angular-sanitize.min.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/ladda/spin.min.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/ladda/ladda.min.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/ladda/ladda.jquery.min.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/sweetalert/sweetalert.min.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/jasny/jasny-bootstrap.min.js" charset="utf-8"></script>
+  <script src="./vendors/backstretch/jquery.backstretch.js" charset="utf-8"></script>
+  <script src="./vendors/grid-a-licious/jquery.grid-a-licious.min.js" charset="utf-8"></script>
+  <script src="./vendors/sticky-kit/jquery.sticky-kit.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/inspinia-main.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/pace/pace.min.js" charset="utf-8"></script>
+  <script src="./vendors/hamburger-toggle/js/script.min.js" charset="utf-8"></script>
+  <script src="./vendors/owl.carousel/owl-carousel/owl.carousel.min.js" charset="utf-8"></script>
+  <script src="./assets/main/js/app.js" charset="utf-8"></script>
+  <script src="./assets/main/js/home/index.js" charset="utf-8"></script>
+
+  <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+
+
+
+  <!-- <script src="?v=" charset="utf-8"></script> -->
+  <script>
+    (function (d, s, id) {
+      let js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v3.3&autoLogAppEvents=1&appId=1120425418117270";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+
+</body>
+
+</html>

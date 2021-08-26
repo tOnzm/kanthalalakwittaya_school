@@ -1,0 +1,135 @@
+$(document).ready(function() {
+    if (window.location.hash == '#inter') {
+        let interDiv = document.getElementById("interDiv");
+        setTimeout(function() {
+            interDiv.scrollIntoView();
+            //your code to be executed after 1 second
+        }, 1000);
+    }
+});
+let textYear = {
+        "year1" : 'ปี 1',
+        "year2" : 'ปี 2',
+        "year3" : 'ปี 3',
+        "year4" : 'ปี 4',
+        "year5" : 'ปี 5',
+        'semester1_1' : 'เทอม 1/1',
+        'semester1_2' : 'เทอม 1/2',
+        'semester1' : 'เทอม 1',
+        'semester2' : 'เทอม 2',
+        'summer': 'ภาคฤดูร้อน'
+    };
+if(language == 'en'){
+    textYear = {
+        "year1" : 'Year 1',
+        "year2" : 'Year 2',
+        "year3" : 'Year 3',
+        "year4" : 'Year 4',
+        "year5" : 'Year 5',
+        'semester1_1' : 'Semester 1/1',
+        'semester1_2' : 'Semester 1/2',
+        'semester1' : 'Semester 1',
+        'semester2' : 'Semester 2',
+        'summer': 'Summer'
+    };
+}
+let typeInter = {
+    'type': 'inter',
+    'value': {
+        '1_1': 0,
+        '1_2': 0,
+        '2_1': 0,
+        '2_2': 0,
+        '3_1': 0,
+        '3_2': 0,
+        '4_1': 0,
+        '4_2': 0,
+    },
+}
+
+let typeFac = {
+    'type': 'fac',
+    'value': {
+        '1_1_1': 0,
+        '1_1_2': 0,
+    },
+}
+
+$('i.icon-search').on('click', function() {
+    let data = {}
+    data['tuition_fee'] = JSON.parse(atob($(this).data('tuition_fee')))
+    data['dept_id'] = atob($(this).data('dept_code'))
+    data['fac_id'] = atob($(this).data('fac_code'))
+    data['curr_title'] = $(this).data('curr_title')
+    data['another_title'] = $(this).data('another_title')
+    data['fac_curr_title'] = $(this).data('fac_curr_title')
+    data['scholarship'] = $(this).data('scholarship')
+
+    try {
+        data['discount_info'] = JSON.parse(atob($(this).data('discount_info')))
+    } catch (e) {
+        data['discount_info'] = data['fac_id'] != 13 ? typeFac : typeInter
+    }
+    data['discount_info'] = data['fac_id'] != 13 ? typeFac : typeInter
+    // console.log(data)
+    $('#tuitionFeeModalLabel').html(data.fac_curr_title)
+    $('#tuitionFeeTableModal').html(generateTuitionFeeTable(data))
+})
+function generateTuitionFeeTable(data) {
+
+    let html = '';
+    let semester1 = '';
+    let year5 = ''
+    // console.log(data['discount_info']['value'])
+    if (data['fac_id'] == 13) {
+        html = setInterTuitionFeeTableModal(data);
+    } else if (data['fac_id'] != 13) {
+        html = setFacTuitionFeeTableModal(data);
+    }
+    return html;
+}
+
+function setInterTuitionFeeTableModal(data) {
+
+    let year1_1 = (Number(data.tuition_fee.year_1.semester_1) + Number(data.tuition_fee.year_1.semester_0)) != 0 ? data.discount_info.value['1_1'] ? `${Number(((Number(data.tuition_fee.year_1.semester_1) + Number(data.tuition_fee.year_1.semester_0)) - Number(data.discount_info.value['1_1']))).toLocaleString()} &nbsp;<small style="text-decoration: line-through;" class="text-muted">${(Number(data.tuition_fee.year_1.semester_1) + Number(data.tuition_fee.year_1.semester_0)).toLocaleString()}</small>` : (Number(data.tuition_fee.year_1.semester_1) + Number(data.tuition_fee.year_1.semester_0)).toLocaleString() : '<i class="fa fa-minus"></i>';
+    let year1_2 = data.tuition_fee.year_1.semester_2 != 0 ? data.discount_info.value['1_2'] ? `${Number((data.tuition_fee.year_1.semester_2 - data.discount_info.value['1_2'])).toLocaleString()} &nbsp;<small style="text-decoration: line-through;" class="text-muted">${Number(data.tuition_fee.year_1.semester_2).toLocaleString()}</small>` : Number(data.tuition_fee.year_1.semester_2).toLocaleString() : '<i class="fa fa-minus"></i>';
+    let year2_1 = data.tuition_fee.year_2.semester_1 != 0 ? data.discount_info.value['2_1'] ? `${Number((data.tuition_fee.year_2.semester_1 - data.discount_info.value['2_1'])).toLocaleString()} &nbsp;<small style="text-decoration: line-through;" class="text-muted">${Number(data.tuition_fee.year_2.semester_1).toLocaleString()}</small>` : Number(data.tuition_fee.year_2.semester_1).toLocaleString() : '<i class="fa fa-minus"></i>';
+    let year2_2 = data.tuition_fee.year_2.semester_2 != 0 ? data.discount_info.value['2_2'] ? `${Number((data.tuition_fee.year_2.semester_2 - data.discount_info.value['2_2'])).toLocaleString()} &nbsp;<small style="text-decoration: line-through;" class="text-muted">${Number(data.tuition_fee.year_2.semester_2).toLocaleString()}</small>` : Number(data.tuition_fee.year_2.semester_2).toLocaleString() : '<i class="fa fa-minus"></i>';
+    let year3_1 = data.tuition_fee.year_3.semester_1 != 0 ? data.discount_info.value['3_1'] ? `${Number((data.tuition_fee.year_3.semester_1 - data.discount_info.value['3_1'])).toLocaleString()} &nbsp;<small style="text-decoration: line-through;" class="text-muted">${Number(data.tuition_fee.year_3.semester_1).toLocaleString()}</small>` : Number(data.tuition_fee.year_3.semester_1).toLocaleString() : '<i class="fa fa-minus"></i>';
+    let year3_2 = data.tuition_fee.year_3.semester_2 != 0 ? data.discount_info.value['3_2'] ? `${Number((data.tuition_fee.year_3.semester_2 - data.discount_info.value['3_2'])).toLocaleString()} &nbsp;<small style="text-decoration: line-through;" class="text-muted">${Number(data.tuition_fee.year_3.semester_2).toLocaleString()}</small>` : Number(data.tuition_fee.year_3.semester_2).toLocaleString() : '<i class="fa fa-minus"></i>';
+    let year4_1 = data.tuition_fee.year_4.semester_1 != 0 ? data.discount_info.value['4_1'] ? `${Number((data.tuition_fee.year_4.semester_1 - data.discount_info.value['4_1'])).toLocaleString()} &nbsp;<small style="text-decoration: line-through;" class="text-muted">${Number(data.tuition_fee.year_4.semester_1).toLocaleString()}</small>` : Number(data.tuition_fee.year_4.semester_1).toLocaleString() : '<i class="fa fa-minus"></i>';
+    let year4_2 = data.tuition_fee.year_4.semester_2 != 0 ? data.discount_info.value['4_2'] ? `${Number((data.tuition_fee.year_4.semester_2 - data.discount_info.value['4_2'])).toLocaleString()} &nbsp;<small style="text-decoration: line-through;" class="text-muted">${Number(data.tuition_fee.year_4.semester_2).toLocaleString()}</small>` : Number(data.tuition_fee.year_4.semester_2).toLocaleString() : '<i class="fa fa-minus"></i>';
+    return `<div class="ibox-content no-padding body"> <table class="table  no-margins modal-search"> <thead class="bg-muted"> <tr style="background-color : rgba(27, 36, 50, 1);"> <th class="text-center" colspan="3" style="color: white"> ${data.curr_title} <br> <h6>(${data.another_title})</h6> </th> </tr> </thead> <tbody> <tr> <td colspan="2" class="active text-center">${textYear.year1}</td> </tr> <tr> <td class="text-center col-xs-4 small" width="50%">${textYear.semester1}</td> <td class="text-center" width="50%"> ${year1_1} </td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.semester2}</td> <td class="text-center"> ${year1_2} </td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.summer}</td> <td class="text-center"> ${Number(data.tuition_fee.year_1.semester_3) != 0 ? (Number(data.tuition_fee.year_1.semester_3)).toLocaleString() : '<i class="fa fa-minus"></i>'} </td> </tr> <tr> <td colspan="2" class="active text-center"> ${textYear.year2} </td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.semester1}</td> <td class="text-center"> ${year2_1} </td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.semester2}</td> <td class="text-center"> ${year2_2} </td> </tr> <td class="text-center col-xs-4 small">${textYear.summer}</td> <td class="text-center"> ${Number(data.tuition_fee.year_2.semester_3) != 0 ? Number(data.tuition_fee.year_2.semester_3).toLocaleString() : '<i class="fa fa-minus"></i>'} </td> <tr> </tr> <tr> <td colspan="2" class="active text-center">${textYear.year3}</td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.semester1}</td> <td class="text-center"> ${year3_1} </td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.semester2}</td> <td class="text-center"> ${year3_2} </td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.summer}</td> <td class="text-center"> ${Number(data.tuition_fee.year_3.semester_3) != 0 ? Number(data.tuition_fee.year_3.semester_3).toLocaleString() : '<i class="fa fa-minus"></i>'} </td> </tr> <tr> <td colspan="2" class="active text-center"> ${textYear.year4} </td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.semester1}</td> <td class="text-center"> ${year4_1} </td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.semester2}</td> <td class="text-center"> ${year4_2} </td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.summer}</td> <td class="text-center"> ${Number(data.tuition_fee.year_4.semester_3) != 0 ? Number(data.tuition_fee.year_4.semester_3).toLocaleString() : '<i class="fa fa-minus"></i>'} </td> </tr> </tbody> </table> </div>`;
+    // return ` <div class="ibox-content no-padding body"> <table class="table  no-margins modal-search"> <thead class="bg-muted"> <tr style="background-color : rgba(27, 36, 50, 1);"> <th class="text-center" colspan="3" style="color: white"> ${data.curr_title} <br> <h6>(${data.another_title})</h6> </th> </tr> </thead> <tbody> <tr> <td colspan="2" class="active text-center">ปี 1</td> </tr> <tr> <td class="text-center col-xs-4 small" width="50%">เทอม 1</td> <td class="text-center" width="50%"> ${data['discount_info']['value']['1_1'] ? ((Number(data.tuition_fee.year_1.semester_1) + Number(data.tuition_fee.year_1.semester_0)) - data['discount_info']['value']['1_1']).toLocaleString() + "&nbsp;<small style='text-decoration: line-through;' class='text-muted'>" + (Number(data.tuition_fee.year_1.semester_1) + Number(data.tuition_fee.year_1.semester_0)).toLocaleString() + "</small>" : (Number(data.tuition_fee.year_1.semester_1) + Number(data.tuition_fee.year_1.semester_0)).toLocaleString() } </td> </tr> <tr> <td class="text-center col-xs-4 small">เทอม 2</td> <td class="text-center"> ${data['discount_info']['value']['1_2'] ? (Number(data.tuition_fee.year_1.semester_2) - data['discount_info']['value']['1_2']).toLocaleString() + "&nbsp;<small style='text-decoration: line-through;' class='text-muted'>" + Number(data.tuition_fee.year_1.semester_2).toLocaleString() + "</small>" : Number(data.tuition_fee.year_1.semester_2).toLocaleString()} </td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.summer}</td> <td class="text-center"> ${Number(data.tuition_fee.year_1.semester_3) != 0 ? Number(data.tuition_fee.year_1.semester_3) : '<i class="fa fa-minus"></i>'} </td> </tr> <tr> <td colspan="2" class="active text-center"> ปี 2 </td> </tr> <tr> <td class="text-center col-xs-4 small">เทอม 1</td> <td class="text-center"> ${data['discount_info']['value']['2_1'] ? (Number(data.tuition_fee.year_2.semester_1) - data['discount_info']['value']['2_1']).toLocaleString() + "&nbsp;<small style='text-decoration: line-through;' class='text-muted'>" + Number(data.tuition_fee.year_2.semester_1).toLocaleString() + "</small>" : Number(data.tuition_fee.year_2.semester_1).toLocaleString()} </td> </tr> <tr> <td class="text-center col-xs-4 small">เทอม 2</td> <td class="text-center"> ${data['discount_info']['value']['2_2'] ? (Number(data.tuition_fee.year_2.semester_2) - data['discount_info']['value']['2_2']).toLocaleString() + "&nbsp;<small style='text-decoration: line-through;' class='text-muted'>" + Number(data.tuition_fee.year_2.semester_2).toLocaleString() + "</small>" : Number(data.tuition_fee.year_2.semester_2).toLocaleString()} </td> </tr> <td class="text-center col-xs-4 small">${textYear.summer}</td> <td class="text-center"> ${Number(data.tuition_fee.year_2.semester_3) != 0 ? Number(data.tuition_fee.year_2.semester_3) : '<i class="fa fa-minus"></i>'} </td> <tr> </tr> <tr> <td colspan="2" class="active text-center">ปี 3</td> </tr> <tr> <td class="text-center col-xs-4 small">เทอม 1</td> <td class="text-center"> ${data['discount_info']['value']['3_1'] ? (Number(data.tuition_fee.year_3.semester_1) - data['discount_info']['value']['3_1']).toLocaleString() + "&nbsp;<small style='text-decoration: line-through;' class='text-muted'>" + Number(data.tuition_fee.year_3.semester_1).toLocaleString() + "</small>" : Number(data.tuition_fee.year_3.semester_1).toLocaleString()} </td> </tr> <tr> <td class="text-center col-xs-4 small">เทอม 2</td> <td class="text-center"> ${data['discount_info']['value']['3_2'] ? (Number(data.tuition_fee.year_3.semester_2) - data['discount_info']['value']['3_2']).toLocaleString() + "&nbsp;<small style='text-decoration: line-through;' class='text-muted'>" + Number(data.tuition_fee.year_3.semester_2).toLocaleString() + "</small>" : Number(data.tuition_fee.year_3.semester_2).toLocaleString()} </td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.summer}</td> <td class="text-center"> ${Number(data.tuition_fee.year_3.semester_3) != 0 ? Number(data.tuition_fee.year_3.semester_3) : '<i class="fa fa-minus"></i>'} </td> </tr> <tr> <td colspan="2" class="active text-center"> ปี 4 </td> </tr> <tr> <td class="text-center col-xs-4 small">เทอม 1</td> <td class="text-center"> ${data['discount_info']['value']['4_1'] ? (Number(data.tuition_fee.year_4.semester_1) - data['discount_info']['value']['4_1']).toLocaleString() + "&nbsp;<small style='text-decoration: line-through;' class='text-muted'>" + Number(data.tuition_fee.year_4.semester_1).toLocaleString() + "</small>" : Number(data.tuition_fee.year_4.semester_1).toLocaleString()} </td> </tr> <tr> <td class="text-center col-xs-4 small">เทอม 2</td> <td class="text-center"> ${data['discount_info']['value']['4_2'] ? (Number(data.tuition_fee.year_4.semester_2) - data['discount_info']['value']['4_2']).toLocaleString() + "&nbsp;<small style='text-decoration: line-through;' class='text-muted'>" + Number(data.tuition_fee.year_4.semester_2).toLocaleString() + "</small>" : Number(data.tuition_fee.year_4.semester_2).toLocaleString()} </td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.summer}</td> <td class="text-center"> ${Number(data.tuition_fee.year_4.semester_3) != 0 ? Number(data.tuition_fee.year_4.semester_3) : '<i class="fa fa-minus"></i>'} </td> </tr> </tbody> </table> </div> `;
+}
+
+function setFacTuitionFeeTableModal(data) {
+    let objectKey = Object.keys(data['tuition_fee'])
+    let semester1 = '';
+    let year5 = '';
+
+    if (data.scholarship == 1) {
+        let amountSemester1_1 = data.tuition_fee.year_1.semester_0 != '0' ? Number(data.tuition_fee.year_1.semester_0).toLocaleString() : '<i class="fa fa-minus"></i>';
+        let amountSemester1 = data.tuition_fee.year_1.semester_1 != '0' ? Number(data.tuition_fee.year_1.semester_1).toLocaleString() : '<i class="fa fa-minus"></i>';
+        semester1 = `<tr> <td class="text-center col-xs-4 small" width="50%">${textYear.semester1_1}</td> <td class="text-center" width="50%"> ${data.discount_info['value']['1_1_1'] ? (Number(data.tuition_fee.year_1.semester_0) - Number(data.discount_info['value']['1_1_1'])).toLocaleString() + "&nbsp; <small style='text-decoration: line-through;' class='text-muted'>" + Number(data.tuition_fee.year_1.semester_0).toLocaleString() + "</small>" : amountSemester1_1} </td> </tr> <tr> <td class="text-center col-xs-4 small" width="50%">${textYear.semester1_2}</td> <td class="text-center" width="50%"> ${data.discount_info['value']['1_1_2'] ? (Number(data.tuition_fee.year_1.semester_1) - Number(data.discount_info['value']['1_1_2'])).toLocaleString() + "&nbsp; <small style='text-decoration: line-through;' class='text-muted'>" + Number(data.tuition_fee.year_1.semester_1).toLocaleString() + "</small>" : amountSemester1} </td> </tr>`;
+    } else {
+        let year1_1 = (Number(data.tuition_fee.year_1.semester_1) + Number(data.tuition_fee.year_1.semester_0)) != 0 ? (Number(data.tuition_fee.year_1.semester_1) + Number(data.tuition_fee.year_1.semester_0)).toLocaleString() : '<i class="fa fa-minus"></i>';
+        semester1 = `<tr> <td class="text-center col-xs-4 small" width="50%">${textYear.semester1}</td> <td class="text-center" width="50%"> ${year1_1} </td> </tr>`;
+    }
+
+    if (objectKey.length == 7) {
+        let amount5_1 = data.tuition_fee.year_5.semester_1 != 0 ? Number(data.tuition_fee.year_5.semester_1).toLocaleString() : '<i className="fa fa-minus"></i>';
+        let amount5_2 = data.tuition_fee.year_5.semester_2 != 0 ? Number(data.tuition_fee.year_5.semester_2).toLocaleString() : '<i className="fa fa-minus"></i>';
+        year5 = `<tr> <td colspan="2" class="active text-center"> ${textYear.year5}</td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.semester1}</td> <td class="text-center"> ${amount5_1} </td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.semester2}</td> <td class="text-center"> ${amount5_2} </td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.summer}</td> <td class="text-center"> ${Number(data.tuition_fee.year_5.semester_3) != 0 ? Number(data.tuition_fee.year_4.semester_3).toLocaleString() : '<i class="fa fa-minus"></i>'} </td> </tr>`
+    }
+
+    let year1_2 = data.tuition_fee.year_1.semester_2 != 0 ? Number(data.tuition_fee.year_1.semester_2).toLocaleString() : '<i class="fa fa-minus"></i>';
+    let year2_1 = data.tuition_fee.year_2.semester_1 != 0 ? Number(data.tuition_fee.year_2.semester_1).toLocaleString() : '<i class="fa fa-minus"></i>';
+    let year2_2 = data.tuition_fee.year_2.semester_2 != 0 ? Number(data.tuition_fee.year_2.semester_2).toLocaleString() : '<i class="fa fa-minus"></i>';
+    let year3_1 = data.tuition_fee.year_3.semester_1 != 0 ? Number(data.tuition_fee.year_3.semester_1).toLocaleString() : '<i class="fa fa-minus"></i>';
+    let year3_2 = data.tuition_fee.year_3.semester_2 != 0 ? Number(data.tuition_fee.year_3.semester_2).toLocaleString() : '<i class="fa fa-minus"></i>';
+    let year4_1 = data.tuition_fee.year_4.semester_1 != 0 ? Number(data.tuition_fee.year_4.semester_1).toLocaleString() : '<i class="fa fa-minus"></i>';
+    let year4_2 = data.tuition_fee.year_4.semester_2 != 0 ? Number(data.tuition_fee.year_4.semester_2).toLocaleString() : '<i class="fa fa-minus"></i>';
+
+    return `<div class="ibox-content no-padding body"> <table class="table  no-margins modal-search"> <thead class="bg-muted"> <tr style="background-color : rgba(27, 36, 50, 1);"> <th class="text-center" colspan="3" style="color: white"> ${data.curr_title} <br> <h6>(${data.another_title})</h6> </th> </tr> </thead> <tbody> <tr> <td colspan="2" class="active text-center">${textYear.year1}</td> </tr> ${semester1} <tr> <td class="text-center col-xs-4 small">${textYear.semester2}</td> <td class="text-center"> ${year1_2} </td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.summer}</td> <td class="text-center"> ${Number(data.tuition_fee.year_1.semester_3) != 0 ? Number(data.tuition_fee.year_1.semester_3).toLocaleString() : '<i class="fa fa-minus"></i>'} </td> </tr> <tr> <td colspan="2" class="active text-center"> ${textYear.year2} </td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.semester1}</td> <td class="text-center"> ${year2_1} </td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.semester2}</td> <td class="text-center"> ${year2_2} </td> </tr> <td class="text-center col-xs-4 small">${textYear.summer}</td> <td class="text-center"> ${Number(data.tuition_fee.year_2.semester_3) != 0 ? Number(data.tuition_fee.year_2.semester_3).toLocaleString() : '<i class="fa fa-minus"></i>'} </td> <tr> </tr> <tr> <td colspan="2" class="active text-center">${textYear.year3}</td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.semester1}</td> <td class="text-center"> ${year3_1} </td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.semester2}</td> <td class="text-center"> ${year3_2} </td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.summer}</td> <td class="text-center"> ${Number(data.tuition_fee.year_3.semester_3) != 0 ? Number(data.tuition_fee.year_3.semester_3).toLocaleString() : '<i class="fa fa-minus"></i>'} </td> </tr> <tr> <td colspan="2" class="active text-center"> ${textYear.year4} </td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.semester1}</td> <td class="text-center"> ${year4_1} </td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.semester2}</td> <td class="text-center"> ${year4_2} </td> </tr> <tr> <td class="text-center col-xs-4 small">${textYear.summer}</td> <td class="text-center"> ${Number(data.tuition_fee.year_4.semester_3) != 0 ? Number(data.tuition_fee.year_4.semester_3).toLocaleString() : '<i class="fa fa-minus"></i>'} </td> </tr> ${year5} </tbody> </table> </div>`;
+}

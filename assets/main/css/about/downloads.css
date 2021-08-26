@@ -1,0 +1,73 @@
+.box-ebook {
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+.box-ebook > a > img {
+  width : 100%;
+  border-radius: 2px;
+  border : #e7eaec solid 1px;
+}
+.box-ebook > a > .name {
+  padding: 7px;
+  text-align: center;
+}
+.box-font {
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+.box-font > a > img {
+  width : 100%;
+  border-radius: 2px;
+  border : #e7eaec solid 1px;
+}
+.box-font > a > .name {
+  padding: 7px;
+  text-align: center;
+}
+.box-logo-university{
+  margin-bottom: 15px;
+  text-align: left;
+}
+.box-logo-university > a  > img{
+  width: 100%;
+  border : #e7eaec solid 1px;
+  border-radius: 2px;
+}
+.box-logo-university > a  > .name{
+  padding: 10px 5px;
+}
+.list-group > .list-group-item{
+  border-radius: 0;
+}
+.list-group > .list-group-item.active , .list-group > .list-group-item:hover.active {
+  border-color: #494f5b;
+}
+.list-group > .list-group-item.active > a, .list-group > .list-group-item:hover.active > a{
+  background-color: #494f5b;
+  color : #fff !important;
+}
+.list-group >.list-group-item {
+  display: inherit;
+  padding: 0;
+}
+.list-group >.list-group-item > a {
+  display: block;
+  padding: 10px 15px;
+}
+.list-group >.list-group-item:hover > a, .list-group-item:focus > a, .list-group-item:active > a, .list-group-item:visited > a {
+  color : #494f5b;
+}
+.box-logo-schools img.preview{
+  width: 100%;
+  border-radius: 2px;
+  border : #e7eaec solid 1px;
+  margin-bottom: 15px;
+}
+.link-right{
+  margin-top: -25px;
+}
+@media (max-width: 991px) {
+  .list-group >.list-group-item > a {
+    font-size: 0.9em;
+  }
+} 

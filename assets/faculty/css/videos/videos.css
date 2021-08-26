@@ -1,0 +1,9 @@
+a:hover .ibox .product-name, a:focus .ibox .product-name, a:active .ibox .product-name{
+  color: #29b294;
+}
+.product-name {
+  height: 40px;
+}
+.product-imitation {
+  padding: 100px 0;
+}

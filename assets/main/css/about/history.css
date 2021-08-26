@@ -1,0 +1,52 @@
+.box-detail-history{
+  line-height: 2em;
+}
+.timeline-bu-section{
+  margin-top: 15px;
+  margin-left: 0px;
+  background: rgba(205,207,209,0.7);
+  padding-top: 50px;
+}
+.timeline-title{ margin-left:0px; margin-bottom:70px; font-size:50px; font-weight:700; color:#000; text-align:center;}
+.timeline-title span{ display:block;border-bottom:5px solid #3be8b0; width:135px; margin:0 auto;}
+.bu-timeline-body{height:665px;}
+#history-nav-section{height:545px; overflow:hidden; position:relative;}
+#history-nav-section .mCSB_inside > .mCSB_container{ margin-right:0 !important;}
+.history-nav.nav-tabs{ border:none;}
+.history-nav.nav-tabs .nav-link{border-radius:0; padding:0px 25px; text-align:right; margin-left:0; margin-right:0; margin-bottom:0; border:none; font-size:20px; line-height:60px; font-weight:400; background:rgba(0,0,0,1); color:#FFF;}
+.history-nav.nav-tabs .nav-link:hover{ color:#FFF; background:rgba(20,28,39,0.7);}
+.history-nav.nav-stacked .nav-item + .nav-item{ margin:0;}
+.history-nav.nav-tabs .nav-item{ margin-bottom:-2px;}
+.history-nav.nav-stacked .nav-link div{ display:inline-block; width:175px; text-align:center; position:relative;}
+.history-nav.nav-stacked span.tabs-line{ display:block; width:175px; height:2px; background:#494f5b; position:absolute; left:0; bottom:-2px;}
+.history-nav.nav-stacked span.tabs-line.line-top{ bottom:auto; top:2px;}
+.history-nav.nav-tabs .active .nav-link{ font-size:26px; font-weight:700; background:rgba(27,36,50,0.8); color:#FFF; }
+.history-nav.nav-tabs .active .nav-link{ outline: none;border:none;}
+.history-nav.nav-tabs .active .nav-link span.tabs-line, .history-nav.nav-tabs .nav-link:hover span.tabs-line{ background:none;}
+
+.tab-scroll-arrow-up{padding:0px 25px; text-align:right; background:rgba(0,0,0,1); color:#FFF;}
+.tab-scroll-arrow-up a{ height:60px; display:inline-block; width:175px; text-align:center; position:relative; line-height:60px; font-weight:400; cursor:pointer;font-size:56px; color:#808080; }
+.tab-scroll-arrow-up a span.tabs-line{ display:block; width:175px; height:2px; background:rgba(27,36,50,0.6); position:absolute; left:0; bottom:-2px;}
+
+.tab-scroll-arrow-down{padding:0px 25px; text-align:right; background:rgba(0,0,0,1); color:#FFF; position:relative;}
+.tab-scroll-arrow-down a{ height:60px; display:inline-block; width:175px; text-align:center; position:relative; line-height:60px; font-weight:400; cursor:pointer; font-size:56px; color:#808080;}
+.tab-scroll-arrow-down a span.tabs-line{ display:block; width:175px; height:2px; background:#494f5b; position:absolute; left:0; bottom:-2px;}
+
+.timelineImg{ width:100%; height:665px;}
+.historyImg{ width:236px; height:236px;}
+.history-body{ width:266px; top:0; bottom:0; background:rgba(73,79,91,0.75); position:absolute; padding:25px 15px; padding-top:35px; color:#FFF;}
+.history-content-text{margin-bottom: 30px; max-height: 350px; overflow: auto; line-height: 1.6em;}
+
+@media (max-width:991px){
+  .bu-timeline-body .col-xs-4{ width:24%;}
+  .bu-timeline-body .col-xs-8{ width:76%;}
+  .history-nav.nav-tabs .nav-link{ padding:0; text-align:left;}
+  .history-nav.nav-stacked .nav-link div{ width:95%; max-width:160px;}
+  .history-nav.nav-stacked span.tabs-line{width:95%; max-width:160px;}
+  .tab-scroll-arrow-up, .tab-scroll-arrow-down{ padding:0; text-align:left;}
+  .tab-scroll-arrow-up div, .tab-scroll-arrow-down div{width:95%; max-width:160px;}
+}
+@media (max-width:543px){
+  .history-body{ width:250px;}
+  .historyImg{ width:220px; height:220px;}
+}

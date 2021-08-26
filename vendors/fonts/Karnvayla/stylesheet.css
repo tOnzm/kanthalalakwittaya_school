@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'karnvaylabold';
+    src: url('karnvaylabold-webfont.eot');
+    src: url('karnvaylabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('karnvaylabold-webfont.woff2') format('woff2'),
+         url('karnvaylabold-webfont.woff') format('woff'),
+         url('karnvaylabold-webfont.ttf') format('truetype'),
+         url('karnvaylabold-webfont.svg#karnvaylabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'karnvaylalight';
+    src: url('karnvaylalight-webfont.eot');
+    src: url('karnvaylalight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('karnvaylalight-webfont.woff2') format('woff2'),
+         url('karnvaylalight-webfont.woff') format('woff'),
+         url('karnvaylalight-webfont.ttf') format('truetype'),
+         url('karnvaylalight-webfont.svg#karnvaylalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'karnvaylaregular';
+    src: url('karnvaylaregular-webfont.eot');
+    src: url('karnvaylaregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('karnvaylaregular-webfont.woff2') format('woff2'),
+         url('karnvaylaregular-webfont.woff') format('woff'),
+         url('karnvaylaregular-webfont.ttf') format('truetype'),
+         url('karnvaylaregular-webfont.svg#karnvaylaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

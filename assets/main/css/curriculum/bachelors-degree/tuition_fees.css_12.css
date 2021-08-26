@@ -1,0 +1,250 @@
+l.btn-couse-type {
+    background: rgba(128, 128, 128, 0.7);
+    color: rgba(255, 255, 255, 1);
+    border-width: 0px;
+}
+
+.btn-couse-type:hover {
+    background: rgba(51, 51, 51, 1);
+    border-color: rgba(173, 173, 173, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn-couse-type.active,
+.btn-couse-type:active,
+.btn-couse-type:focus {
+    background: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn-course-1 {
+    background: rgba(92, 175, 163, 0.5);
+    color: rgba(255, 255, 255, 1);
+    border-width: 0px;
+}
+
+.btn-course-1:hover {
+    background: rgba(92, 175, 163, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn-course-1.active,
+.btn-course-1:active,
+.btn-course-1:focus {
+    background: rgba(92, 175, 163, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn-course-2 {
+    background: rgba(255, 194, 88, 0.5);
+    color: rgba(255, 255, 255, 1);
+    border-width: 0px;
+}
+
+.btn-course-2:hover {
+    background: rgba(255, 194, 88, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn-course-2.active,
+.btn-course-2:active,
+.btn-course-2:focus {
+    background: rgba(255, 194, 88, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn-course-3 {
+    background: rgba(106, 111, 228, 0.5);
+    color: rgba(255, 255, 255, 1);
+    border-width: 0px;
+}
+
+.btn-course-3:hover {
+    background: rgba(106, 111, 228, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.btn-course-3.active,
+.btn-course-3:active,
+.btn-course-3:focus {
+    background: rgba(106, 111, 228, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.table>thead>tr>th,
+.table>tbody>tr>th,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>tbody>tr>td,
+.table>tfoot>tr>td {
+    vertical-align: middle;
+}
+
+thead.tuition-fees>tr>th {
+    background-color: rgba(27, 36, 50, 1);
+    color: #fff;
+}
+
+.text-have-loan {
+    color: green;
+    font-size: 1.4em;
+}
+
+.bg-faculty-header {
+    background-color: #888;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.12em;
+}
+
+.bg-faculty-header.small {
+    padding: 8px;
+}
+
+.bg-faculty-header a {
+    color: #fff;
+}
+
+.title-banner-quota {
+    background-image: url(../../../../../uploads/bachelors_banner/bg_banner_quotar.jpg);
+    padding: 1em;
+    background-size: 100% 100%;
+    background-position: center;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.title-banner-next-step {
+    background-image: url(../../../../../uploads/bachelors_banner/bg_banner_next_step.jpg);
+    padding: 1em;
+    background-size: 100% 100%;
+    background-position: center;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.title-banner-global-gen {
+    background-image: url(../../../../../uploads/bachelors_banner/bg_global_gen.jpg);
+    padding: 1em;
+    background-size: 100% 100%;
+    background-position: center;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.title-banner-best-choice {
+    background-image: url(../../../../../uploads/bachelors_banner/bg_banner_best_choice.jpg?1);
+    padding: 1em;
+    background-size: 100% 100%;
+    background-position: center;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.logo-banner {
+    position: absolute;
+    top: 17px;
+    left: 36px;
+}
+
+.banner-text-black {
+    color: black!important;
+}
+
+.icon-search {
+    background-color: #fdae2a;
+    color: white;
+    font-size: 10px;
+    line-height: 1.6;
+    border-radius: 40px;
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+}
+
+.icon-search:hover {
+    /*color: #676a6c;*/
+    background-color: #e09100;
+    cursor: pointer;
+}
+
+
+
+.modal-content {
+    border-radius: 0px;
+}
+
+.modal-header {
+    background-color: rgba(27, 36, 50, 1);
+    color: #fff;
+}
+
+.modal-header .close {
+    color: #fff;
+    text-shadow: 0 1px 0 #000;
+    filter: alpha(opacity=80);
+    opacity: .8;
+}
+
+.modal-body .ibox-content {
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+}
+
+.modal-body .ibox-content.header {
+    border-top: 1px solid #e7e7e7;
+    border-left: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.modal-body .ibox-content.body {
+    border: unset;
+}
+
+.modal-search td,
+.modal-search th {
+    border: 1px solid #e7e7e7;
+}
+
+@media (max-width: 991px) {
+    .title-banner-header {
+        font-size: 24px;
+    }
+
+    .title-banner-price {
+        margin-top: 3px;
+        font-size: 12px;
+    }
+
+    .logo-banner .img {
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 660px) {
+
+    .logo-banner {
+        top: 12px;
+        left: 28px;
+    }
+
+    .logo-banner .img {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .logo-banner {
+        top: 6px;
+        left: 27px;
+    }
+
+    .logo-banner .img {
+        width: 30%;
+    }
+
+}

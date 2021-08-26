@@ -1,0 +1,429 @@
+.box-yellow-big {
+  width: 98.3%;
+  height: 250px;
+  margin-bottom: 5px;
+  background: #4dc4ff;
+  color: #fff;
+  padding: 15px;
+}
+.box-yellow-big a {
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.box-yellow-big h2{
+  color: #fff;
+  font-family: "Sriracha";
+  font-weight: bolder;
+  font-size: 35px;
+  margin-top: 2px;
+}
+.box-yellow-big a:hover,
+.box-yellow-big a:focus {
+  color: rgba(255, 175, 0, 1);
+}
+.box-yellow-big > .box-choice {
+  padding: 30px 20px;
+  font-size: 1.2em;
+}
+.box-yellow-small {
+  background-color: #ffc44d;
+  width: 31.9%;
+  float: left;
+  margin-right: 5px;
+  padding: 13px;
+  height: 112px;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.box-yellow-small:hover,
+.box-yellow-small:focus,
+.box-yellow-small:active {
+  background: rgba(255, 175, 0, 1);
+}
+.box-yellow-small > .name {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.box-yellow-small > .icon {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 3px;
+}
+/* owl-carousel */
+#owl-carousel-banner {
+  background-color: #ffffff9f;
+  background-size: cover;
+  padding: 10px;
+}
+.owl-carousel {
+  margin-bottom: 15px;
+}
+.owl-carousel .item .background {
+  height: 367px;
+  text-align: center;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+  font-size: 7em;
+  background: none;
+  color: rgba(65, 69, 77, 0);
+  opacity: 0;
+}
+.owl-theme .owl-controls .owl-buttons div.owl-prev {
+  position: absolute;
+  left: 0;
+  top: 28%;
+}
+.owl-theme .owl-controls .owl-buttons div.owl-next {
+  position: absolute;
+  right: 0;
+  top: 28%;
+}
+/* Box News */
+.box-news {
+  margin-bottom: 15px;
+}
+.box-news > .header {
+  color: #222;
+  font-family: "karnvaylabold";
+  border-bottom: #4dc4ff solid 5px;
+  margin-bottom: 15px;
+}
+.box-news > .header > a.view-all {
+  color: #a2a2a2;
+  margin-top: 14px;
+  font-family: "karnvaylaregular";
+}
+.box-news > .header > a.view-all > .icon {
+  color: #ffaf00;
+}
+.box-news > .header > h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+.box-news > .profile > a.image > img {
+  width: 100%;
+  border: #ccc solid 1px;
+}
+.box-news > .profile > a.name {
+  color: #000;
+  background: #ffc44d;
+  display: block;
+  padding: 8px 15px;
+  font-size: 1.4em;
+  position: absolute;
+  height: 40px;
+  margin-top: -40px;
+  width: 94.8%;
+  font-weight: bold;
+}
+
+.box-news > .profile > a.name:hover {
+  background: #4dc4ff;
+  color: #222;
+}
+.box-news > .profile > a.name > .icon {
+  color: #000000;
+}
+.box-news > .profile > a.name > .text {
+  width: 97%;
+  display: block;
+  height: 25px;
+  overflow: hidden;
+  float: left;
+}
+.box-news > .profile > .description {
+  background: #000;
+  padding: 7px;
+  line-height: 1.8em;
+  color: #c1c1c1;
+  font-family: "karnvaylalight";
+  height: 79px;
+  overflow: hidden;
+}
+.box-news > .profile > .description > a {
+  color: #fcc145;
+}
+.box-news > .profile > .description > a:hover {
+  color: #ffaf00;
+}
+/* Box Gallery */
+.box-gallery {
+  margin-bottom: 15px;
+}
+.box-gallery > .header > h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #222;
+  font-family: "karnvaylabold";
+}
+.box-gallery > .body .item > img {
+  width: 100%;
+  margin-right: 10px;
+}
+#owl-carousel-gallery .item {
+  margin-right: 10px;
+}
+#owl-carousel-gallery .owl-controls {
+  position: absolute;
+  top: 9%;
+  width: 100%;
+  font-size: 0.8em;
+}
+.btn-view-all,
+.btn-view-360 {
+  display: block;
+  background-color: rgba(255, 175, 0, 0.8);
+  margin-bottom: 10px;
+  text-align: center;
+  color: #fff;
+  padding: 5.15% 9px;
+}
+.btn-view-all:hover,
+.btn-view-360:hover {
+  color: #fff;
+  background-color: rgba(255, 175, 0, 1);
+}
+.btn-view-all > .icon,
+.btn-view-360 > .icon {
+  font-size: 2.5em;
+}
+.btn-view-all > .name,
+.btn-view-360 > .name {
+  font-size: 1.2em;
+}
+.box-button-course-1 {
+  display: none;
+}
+.list-alumni-groups {
+  margin-bottom: 20px;
+}
+.list-alumni-groups > li > a {
+  display: block;
+  padding: 12px 30px;
+  border-radius: 1px;
+  font-size: 1.1em;
+}
+.list-alumni-groups > li > a:focus,
+.list-alumni-groups > li > a:active,
+.list-alumni-groups > li > a:hover {
+  background-color: #b5b5b5;
+  color: #fff;
+}
+.list-alumni-groups > li.active > a {
+  background-color: #b5b5b5;
+  color: #fff;
+}
+@media (max-width: 1199px) {
+  .box-yellow-big h2{
+    color: rgb(0, 0, 0);
+    font-family: "Sriracha";
+    font-weight: bolder;
+    font-size: 35px;
+    margin-top: 2px;
+  }
+  .box-yellow-small > .name {
+    font-size: 1.5em;
+  }
+  .box-yellow-small {
+    margin-left: 8px;
+  }
+
+  .btn-view-all,
+  .btn-view-360 {
+    padding: 7.5% 9px;
+  }
+  .owl-carousel .item .background {
+    height: 262px;
+  }
+  .box-yellow-big {
+    height: 262px;
+    margin: 1%;
+  }
+  .box-button-course-1 {
+    display: block;
+  }
+  .box-button-course-2 {
+    display: none;
+  }
+  .owl-theme .owl-controls .owl-buttons div.owl-prev,
+  .owl-theme .owl-controls .owl-buttons div.owl-next {
+    top: 18%;
+  }
+  .box-news > .profile > a.name > .text {
+    width: 90%;
+  }
+  .box-news > .profile > a.name {
+    width: 93.8%;
+  }
+}
+@media (max-width: 991px) {
+  .box-yellow-big {
+    padding-bottom: 32%;
+  }
+  .box-yellow-big > .box-choice {
+    padding: 0px 17px;
+    font-size: 1em;
+  }
+  .box-yellow-small {
+    height: 150px;
+    padding-top: 6%;
+    margin-right: 0;
+  }
+  .box-yellow-small > .icon {
+    font-size: 3em;
+  }
+  .owl-carousel {
+    width: 99%;
+  }
+  .owl-carousel .item .background {
+    height: 340px;
+  }
+
+  #owl-carousel-gallery {
+    width: 101.2%;
+  }
+  #owl-carousel-gallery .owl-controls {
+    top: 18%;
+  }
+  .box-news > .profile > a.name > .text {
+    width: 90%;
+  }
+  .box-news > .profile > a.name {
+    width: 91.8%;
+    font-size: 1.2em;
+    line-height: 1.8em;
+  }
+}
+@media (max-width: 768px) {
+  .owl-carousel .item .background .img {
+    height: 340px;
+    background-size: cover;
+  }
+  .owl-carousel .item .img {
+    height: 340px;
+    background-size: cover;
+  }
+}
+@media (max-width: 767px) {
+  .box-yellow-big {
+    width: 98.3%;
+    height: 255px;
+    padding: 15px;
+  }
+  .box-yellow-big > .box-choice {
+    padding: 30px;
+    font-size: 1.2em;
+  }
+  .box-yellow-small {
+    height: 120px;
+    padding-top: 5%;
+  }
+  .owl-carousel {
+    width: 98.3%;
+  }
+  #owl-carousel-gallery {
+    width: 102%;
+    margin-left: 0px;
+  }
+  .box-news > .profile > .description {
+    max-height: none;
+  }
+}
+
+@media (max-width: 587px) {
+  .box-yellow-small {
+    margin: 2px;
+    font-size: 0.8em;
+  }
+  .footer-box {
+    margin: 0;
+  }
+}
+@media (max-width: 425px) {
+  .box-yellow-big {
+    height: 230px;
+    padding: 2%;
+  }
+  .box-yellow-small {
+    font-size: 1rem;
+  }
+  .owl-carousel .item .background {
+    height: 190px;
+  }
+  .owl-theme .owl-controls .owl-buttons div {
+    font-size: 4em;
+  }
+  .owl-theme .owl-controls {
+    top: 25%;
+  }
+  .box-news > .header > h1 {
+    font-size: 2em;
+  }
+  #owl-carousel-gallery .owl-controls {
+    top: 30%;
+    font-size: 1.4em;
+  }
+}
+@media (max-width: 375px) {
+  .box-yellow-big {
+    padding: 1px;
+    height: 250px;
+  }
+  .box-yellow-big > .box-choice {
+    padding: 10px 30px;
+    font-size: 1em;
+  }
+  .box-yellow-small {
+    padding-top: 5%;
+    padding-bottom: 7%;
+  }
+  .box-yellow-small {
+    width: 31.8%;
+    height: 110px;
+    padding-top: 5%;
+  }
+  .box-yellow-small > .icon {
+    font-size: 2em;
+  }
+  .box-yellow-small > .name {
+    font-size: 1em;
+  }
+}
+@media (max-width: 320px) {
+  .box-yellow-big {
+    height: 230px;
+    padding: 5px;
+  }
+  .box-yellow-big > .box-choice {
+    padding: 10px;
+  }
+  .box-yellow-small {
+    padding-top: 5%;
+    padding-bottom: 7%;
+  }
+  .box-yellow-small {
+    width: 31.5%;
+    height: 90px;
+  }
+  .box-yellow-small > .icon {
+    font-size: 1.5em;
+  }
+  .box-yellow-small > .name {
+    font-size: 0.9em;
+  }
+  .owl-theme .owl-controls {
+    top: 20%;
+  }
+  .owl-carousel .item .background {
+    height: 175px;
+  }
+}

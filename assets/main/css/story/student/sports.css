@@ -1,0 +1,143 @@
+.card-item {
+  width: 200px !important;
+  height: 200px ;
+}
+.item-a {
+  flex: 1 1 auto;
+  
+}
+
+
+.item-b {
+  flex: 1 1 auto;
+}
+
+.owl-carousel .img-responsive {
+  margin: 0 auto;
+}
+
+
+.owl-prev i, .owl-next i {
+  transform : scale(1,1.5); 
+  color: #ccc;
+  font-size: 4.8em;
+  font-weight: 200;
+}
+
+.carousel-container {
+  display: flex;
+}
+
+.carousel-container .sport {
+  flex: 1 1 0;
+}
+.sport-flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-yellow {
+  color: #f1bb41;
+}
+
+.text-grey {
+  font-size: 2em;
+  color: grey;
+}
+.sport-header {
+  font-size: 19px;
+  color: #383838;
+}
+.sport-main-header {
+  color: #494f5b;
+}
+.sport-detail{
+  color: #676e77;
+}
+
+.sport-header.alumni {
+  font-size: 34px;
+}
+@media only screen and (min-width: 300px){
+  .owl-prev {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 25%;
+    margin-left: -5px;
+    display: block!IMPORTANT;
+    border:0px solid black;
+  }
+  
+  .owl-next {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 25%;
+    right: -0px;
+    display: block!IMPORTANT;
+    border:0px solid black;
+  }
+ 
+  
+}
+@media only screen and (min-width: 765px){
+  .owl-prev {
+    margin-left: -40px;
+  }
+  
+  .owl-next {
+    right: -35px;
+  }
+}
+
+@media only screen and (min-width: 990px){
+  .owl-prev {
+    margin-left: -10px;
+  }
+  
+  .owl-next {
+    right: -5px;
+  }
+  .sport-grid-container {
+      display: grid;
+      grid-template-columns: 10px 990px 1fr;
+  }
+  .owl-carousel.sport {
+    width: 500px;
+  }
+  .pos1{
+    grid-column: 2/3;
+  }
+  .sport-flex-container{
+    height: 256px;
+  }
+}
+
+
+@media only screen and (min-width: 1100px){
+  .sport-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1050px 1fr;
+  }
+  .pos1{
+    grid-column: 2/3;
+  }
+  .sport-flex-container {
+    height: 312px;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .sport-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1200px 1fr;
+  }
+  .pos1{
+    grid-column: 2/3;
+  }
+  .sport-flex-container {
+    height: 312px;
+  }
+}

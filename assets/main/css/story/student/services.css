@@ -1,0 +1,123 @@
+@media only screen and (min-width: 300px){
+  .service-grid-container {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-gap: 0px 60px;
+  }
+
+  .service-slot-1, .service-slot-2, .service-slot-3 {
+    grid-column: 1/2;
+  }
+}
+@media only screen and (min-width: 768px){
+  .service-grid-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .service-slot-1 {
+    flex: 1 0 0;
+    margin-right: 15px;
+  }
+  .service-slot-2 {
+    flex: 1 0 0;
+    margin-left: 15px;
+    margin-right: 15px;
+
+  }
+  .service-slot-3 {
+    flex: 1 0 0;
+    margin-left: 15px;
+  }
+}
+@media only screen and (min-width: 1000px){
+  .service-grid-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .service-slot-1 {
+    flex: 1 0 0;
+    margin-right: 20px;
+
+  }
+  .service-slot-2 {
+    flex: 1 0 0;
+    margin-left: 20px;
+
+    margin-right: 20px;
+
+  }
+  .service-slot-3 {
+    flex: 1 0 0;
+    margin-left: 20px;
+
+  }
+}
+@media only screen and (min-width: 1200px){
+  .service-grid-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .service-slot-1 {
+    flex: 1 0 0;
+    margin-right: 20px;
+  }
+  .service-slot-2 {
+    flex: 1 0 0;
+    margin-left: 20px;
+    margin-right: 20px;
+
+  }
+  .service-slot-3 {
+    flex: 1 0 0;
+    margin-left: 20px;
+  }
+}
+.service-header {
+  font-weight: 700;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+}
+.service-box {
+  position: relative;
+  display: block;
+  width: 100%;
+  background-color: #BBBBBB;
+  margin: 15px 0;
+  padding: 10px 15px;
+  padding-top: 15px;
+  color: white;
+  font-weight: 400;
+  font-size: 1.06em;
+  border-radius: 3px;
+}
+
+.service-slot-1,.service-slot-2,.service-slot-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.item {
+  margin: 10px 0;
+  flex: 0 0 0;
+  word-wrap: break-word;
+}
+a.service-box:hover {
+  color: white;
+  background-color: grey;
+}
+a.service-box:link {
+  color: white;
+}
+a.service-box:visited {
+  color: white;
+}
+.service-logo{
+  border-radius: 3px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-color: #fff;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}

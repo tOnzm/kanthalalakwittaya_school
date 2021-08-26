@@ -1,0 +1,78 @@
+.list-alumni-groups {
+  margin-bottom: 20px;
+}
+.list-alumni-groups > li > a{
+  display: block;
+  padding: 12px 30px;
+  border-radius: 1px;
+  font-size: 1.1em;
+}
+.list-alumni-groups > li > a:focus, .list-alumni-groups > li > a:active, .list-alumni-groups > li > a:hover{
+  background-color: #b5b5b5;
+  color: #fff;
+}
+.list-alumni-groups > li.active > a{
+  background-color: #b5b5b5;
+  color: #fff;
+}
+.box-alumni{
+  height: 200px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.box-alumni.gray{
+  background-color: #2b2b2b;
+}
+.box-alumni.yellow{
+  background-color: #f1b839;
+}
+.box-alumni .profile{
+  width: 50%;
+  height: 100%;
+}
+.box-alumni .detail{
+  width: 50%;
+  height: 200px;
+  overflow: hidden;
+  padding: 1.4em;
+  padding-top: 2em;
+}
+.box-alumni .detail > .name{
+  font-size: 1.3em;
+  margin-bottom: 6px;
+}
+.box-alumni .detail > .position{
+  font-family: 'karnvaylalight';
+  margin-bottom: 3px;
+}
+.box-alumni .detail > .occupation{
+  font-family: 'karnvaylalight';
+  line-height: 1.6em;
+  color: #a7a7a7;
+}
+.box-alumni.yellow .detail > .occupation{
+  color: #eaeaea;
+}
+.box-alumni .profile.pull-right{
+  margin-right: -1px;
+}
+.box-alumni .profile.pull-left > .arrow-profile{
+  font-size: 8em;
+  float: right;
+  right: -12px;
+  top: 26%;
+  position: absolute;
+}
+.box-alumni .profile.pull-right > .arrow-profile{
+  font-size: 8em;
+  float: left;
+  left: -12px;
+  top: 26%;
+  position: absolute;
+}
+.arrow-profile.gray{
+  color: #2b2b2b;
+}
+.arrow-profile.yellow{
+  color: #f1b839;
+}

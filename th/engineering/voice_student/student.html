@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="th">
+<head>
+  <base href="https://www.bu.ac.th/">
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
+  <meta name='author' content='Bangkok University'>
+  <title>เสียงจากนักศึกษา - คณะวิศวกรรมศาสตร์ มหาวิทยาลัยกรุงเทพ</title>
+  <!-- Open Graph -->
+  <meta property='og:url' content='https://www.bu.ac.th/th/engineering/voice_student/student'>
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='เสียงจากนักศึกษา - คณะวิศวกรรมศาสตร์ มหาวิทยาลัยกรุงเทพ'>
+  <meta property='og:description' content='Bangkok University : มหาวิทยาลัยกรุงเทพ'>
+  <meta property='og:image' content='https://www.bu.ac.th/uploads/seo/default.png'>
+  <meta property='og:site_name' content='Bangkok University'>
+  <!— Twitter —>
+  <meta name='twitter:card' content='website'>
+  <meta name='twitter:site' content='@Bangkok_BU'>
+  <meta name='twitter:creator' content='@Bangkok_BU'>
+  <meta name='twitter:title' content='เสียงจากนักศึกษา - คณะวิศวกรรมศาสตร์ มหาวิทยาลัยกรุงเทพ'>
+  <meta name='twitter:description' content='Bangkok University : มหาวิทยาลัยกรุงเทพ'>
+      <link rel="stylesheet" href="./vendors/bootstrap-3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="./vendors/font-awesome-4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="./vendors/animate/css/animate.css">
+      <link rel="stylesheet" href="./vendors/fonts/Karnvayla/stylesheet.css">
+      <link rel="stylesheet" href="./vendors/inspinia_admin-v2.7/css/plugins/ladda/ladda-themeless.min.css">
+      <link rel="stylesheet" href="./vendors/inspinia_admin-v2.7/css/plugins/sweetalert/sweetalert.css">
+      <link rel="stylesheet" href="./vendors/inspinia_admin-v2.7/css/style-main.css">
+      <link rel="stylesheet" href="./vendors/hamburger-toggle/css/style.css">
+      <link rel="stylesheet" href="./vendors/owl.carousel/owl-carousel/owl.theme.css">
+      <link rel="stylesheet" href="./vendors/owl.carousel/owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="./vendors/ionicons-2.0.1/css/ionicons.min.css">
+      <link rel="stylesheet" href="./assets/main/css/style.css">
+      <link rel="stylesheet" href="./assets/faculty/css/style.css">
+      <link rel="stylesheet" href="./assets/faculty/css/news/news.css">
+      <link rel="stylesheet" href="./assets/faculty/css/voice_student/index.css">
+      <link rel="stylesheet" href="./assets/main/css/voices-from/students.css">
+        <link rel="shortcut icon" href="favicon.ico" />
+          <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v3.2&appId=1120425418117270"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42914512-1', 'bu.ac.th');
+  ga('send', 'pageview');
+</script>
+<!-- /Google Analytics -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KBGBMXC');</script>
+<!-- End Google Tag Manager -->
+</head>
+<body class="white-bg">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBGBMXC"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div id="fb-root"></div>
+  <div id="main-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-xs-12" id="logo-bu-horizontal">
+        <a href="./">
+          <picture>
+            <source media="(min-width: 1920px)" srcset="./assets/images/logo-bu-white-horizontal.png">
+            <img src="./assets/images/logoBU_w500.png" height="70px"alt="มหาวิทยาลัยกรุงเทพ" style="width: auto;">
+          </picture>
+        </a>
+      </div>
+      <div class="col-sm-6 hidden-xs">
+        <div class="form-inline m-t-md">
+          <ul class="list-inline pull-right no-margins">
+            <li>
+              <form class="" action="./th/search" method="get" autocomplete="off">
+                <div class="input-group">
+                  <input type="text" class="form-control" name="q" placeholder="ค้นหา..." value="">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default no-rounds" type="submit"><i class="fa fa-search"></i></button>
+                  </span>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="header-menu-bg">
+<img class="header-menu-bg-img" src="./assets/main/images/resize-bg-header2.png" >
+</div>
+<div id="menu-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <nav class="navbar navbar-default no-margins" id="bu-bootstrap-menu">
+          <div class="container">
+            <ul class="list-inline visible-xs  pull-right list-right">
+              <li><a href="javascript:void()"; onclick="$('#collapse-main-search').toggle();" class="icon-search-small"><i class="fa fa-search"></i></a></li>
+            </ul>
+            <div class="navbar-header">
+              <a class="btn-navbar visible-xs" id="nav-icon"><i class="fa fa-bars"></i></a>
+              <a class="navbar-brand hidden-xs" href="./"><img src="./assets/main/images/icon-home.png"></a>
+            </div>
+                        <a href="http://admissiononline.bu.ac.th/" class="btn btn-apply-now btn-rounds visible-xs" target="_blank">สมัครเรียน</a>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav border-after">
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">หลักสูตร</a>
+                  <div class="dropdown-menu full-width">
+                                        <div class="row menu-box">
+                      <div class="col-md-3 col-sm-3">
+                        <a href="./th/curriculum/bachelors-degree" class="box box-1"><div class="text">ปริญญาตรี</div></a>
+                      </div>
+                      <div class="col-md-3 col-sm-3">
+                        <a href="./en/curriculum/international-programs" class="box box-2"><div class="text">International Programs</div></a>
+                      </div>
+                      <div class="col-md-2 col-sm-2">
+                        <a href="./th/pre-degree" class="box box-8"><div class="text">Pre-degree</div></a>
+                      </div>
+                      <div class="col-md-2 col-sm-2">
+                        <a href="./th/curriculum/bachelors-degree/tuition-fees" class="box box-3"><div class="text">ค่าเล่าเรียน</div></a>
+                      </div>
+                      <div class="col-md-2 col-sm-2">
+                        <a href="./th/curriculum/bachelors-degree/scholarships" class="box box-4"><div class="text">ทุนการศึกษา</div></a>
+                      </div>
+                    </div>
+                    <div class="row menu-box">
+                      <div class="col-sm-3">
+                        <a href="./th/curriculum/masters-degree" class="box box-5"><div class="text">ปริญญาโท</div></a>
+                      </div>
+                      <div class="col-sm-3">
+                        <a href="./th/curriculum/doctoral-degree" class="box box-6"><div class="text">ปริญญาเอก</div></a>
+                      </div>
+                                            <div class="col-sm-3">
+                        <a href="./th/buci" class="box box-7"><div class="text">หลักสูตรนานาชาติจีน</div></a>
+                      </div>
+                      <div class="col-sm-3">
+                          <a href="./th/short-courses" class="box box-8">
+                              <div class="text">
+                                  อบรม/ประกาศนียบัตร                              </div>
+                          </a>
+                                                </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <a href="#" onclick="$('#dropdown-menu-header .collapse').collapse('hide');" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">รอบรั้วมหาวิทยาลัย</a>
+                  <div class="dropdown-menu full-width row bg-676e77" id="dropdown-menu-header">
+                    <div class="col-md-3 col-sm-6 no-padding border-right">
+                      <h3 class="m-t-md m-l-sm m-b-sm">รู้จัก ม.กรุงเทพ</h3>
+                      <ul class="list-unstyled m-b-sm">
+                                                  <li class="disabled"><a href="javascript:$('#dropdown-menu-header .collapse').collapse('hide');$('#collapseMain_00000052').collapse('toggle');" ng-click="$event.stopPropagation();">ข่าวสาร <i class="fa fa-angle-down"></i></a></li>
+                          <li class="collapse" id="collapseMain_00000052">
+                            <ul class="list-unstyled">
+                              <li><a href="th/corporate-news">&emsp;<i class="fa fa-angle-right"></i> Corporate News</a></li>
+                              <li><a href="th/bu-magazine">&emsp;<i class="fa fa-angle-right"></i> BU Story</a></li>
+                              <li><a href="th/news-clipping">&emsp;<i class="fa fa-angle-right"></i> News Clippings</a></li>
+                            </ul>
+                          </li>
+                                                <li class="disabled"><a href="javascript:$('#dropdown-menu-header .collapse').collapse('hide');$('#collapseMain_00000057').collapse('toggle');" ng-click="$event.stopPropagation();">ชีวิตนักศึกษา <i class="fa fa-angle-down"></i></a></li>
+                        <li class="collapse" id="collapseMain_00000057">
+                          <ul class="list-unstyled">
+                                                          <li><a href="th/accommodation">&emsp;<i class="fa fa-angle-right"></i> หอพักนักศึกษา</a></li>
+                                                        <li><a href="th/activities-clubs/sports">&emsp;<i class="fa fa-angle-right"></i> กีฬา/สโมสร/ชมรม</a></li>
+                            <li><a href="th/facilities">&emsp;<i class="fa fa-angle-right"></i> สิ่งอำนวยความสะดวก</a></li>
+                                                                                      <li><a href="th/service-centers">&emsp;<i class="fa fa-angle-right"></i> ศูนย์บริการ</a></li>
+                                                                                  </ul>
+                        </li>
+                        <li class="disabled"><a href="javascript:$('#dropdown-menu-header .collapse').collapse('hide');$('#collapseMain_00000139').collapse('toggle');" ng-click="$event.stopPropagation();">ศิลปวัฒนธรรม <i class="fa fa-angle-down"></i></a></li>
+                        <li class="collapse" id="collapseMain_00000139">
+                          <ul class="list-unstyled">
+                            <li><a href="http://katin3.bu.ac.th" target="_blank">&emsp;<i class="fa fa-angle-right"></i> กฐินพระราชทาน</a></li>
+                            <li><a href="http://museum.bu.ac.th" target="_blank">&emsp;<i class="fa fa-angle-right"></i> พิพิธภัณฑ์สถานเครื่องถ้วยเอเชียตะวันออกเฉียงใต้</a></li>
+                            <li><a href="https://fb.com/bangkokuniversitygallery" target="_blank">&emsp;<i class="fa fa-angle-right"></i> หอศิลป์ มหาวิทยาลัยกรุงเทพ</a></li>
+                            
+                                                      </ul>
+                        </li>
+                        <li><a href="./th/excellence-center">ศูนย์แห่งความเป็นเลิศ</a></li>
+                                                  <li><a href="./th/voices-from-students">เสียงจากนักศึกษา</a></li>
+                          <li><a href="./th/voices-from-alumni">เสียงจากรุ่นพี่</a></li>
+                                              </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 no-padding border-right">
+                      <h3 class="m-t-md m-l-sm m-b-sm">เกี่ยวกับมหาวิทยาลัย</h3>
+                      <ul class="list-unstyled m-b-sm">
+                          <li><a href="./th/about/history">ประวัติมหาวิทยาลัยกรุงเทพ</a></li>
+                                                  <li><a href="./th/about/vision-mission">วิสัยทัศน์และพันธกิจ</a></li>
+                                                <li><a href="./th/about/videos">วิดีโอแนะนำ</a></li>
+                        <li><a href="javascript:$('#dropdown-menu-header .collapse').collapse('hide');$('#collapseMain_00000077').collapse('toggle');" ng-click="$event.stopPropagation();">คณะผู้บริหาร <i class="fa fa-angle-down"></i></a></li>
+                        <li class="collapse" id="collapseMain_00000077">
+                          <ul class="list-unstyled">
+                            <li><a href="./th/council-committees">&emsp;<i class="fa fa-angle-right"></i> สภามหาวิทยาลัย</a></li>
+                            <li><a href="./th/executives">&emsp;<i class="fa fa-angle-right"></i> คณะผู้บริหาร</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="./th/partner-networks">พันธมิตร</a></li>
+                                                  <li><a href="./th/alumni">ศิษย์เก่า</a></li>
+                                                <!-- <li><a href="./th/bu-achievements">ไฮไลท์ผลงาน</a></li> -->
+                        <li><a href="./th/about/downloads">ดาวน์โหลด</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 no-padding border-right">
+                      <h3 class="m-t-md m-l-sm m-b-sm">คุณคือใคร?</h3>
+                      <ul class="list-unstyled m-b-sm">
+                        <li><a href="./th/who-are-you/student/voice_student">นักศึกษา</a></li>
+                        <li><a href="./th/who-are-you/parent">ผู้ปกครอง</a></li>
+                        <li><a href="./th/who-are-you/alumni">ศิษย์เก่า</a></li>
+                        <li><a href="http://mybu.bu.ac.th" target="_blank">บุคลากร</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 no-padding border-right">
+                      <h3 class="m-t-md m-l-sm m-b-sm">ติดต่อเรา</h3>
+                      <ul class="list-unstyled m-b-sm">
+                        <li><a href="./th/contact">ติดต่อเรา</a></li>
+                        <!-- <li><a href="./th/campus-map">แผนที่ภายในมหาวิทยาลัย</a></li> -->
+                                                  <li><a href="./th/rental-space">ติดต่อเช่าสถานที่</a></li>
+                                                <li><a href="./th/visit-bu">ติดต่อเพื่อเยี่ยมชมมหาวิทยาลัย</a></li>
+                        <li><a href=" http://hr.bu.ac.th/web/recruit/Default.aspx" target="_blank">ร่วมงานกับ BU</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://admissiononline.bu.ac.th/" class="btn btn-apply-now btn-rounds" target="_blank">สมัครเรียน</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="collapse" id="collapse-main-search">
+            <form autocomplete="off" action="./thsearch" method="get">
+              <div class="input-group">
+                <input type="text" class="form-control" name="q" placeholder="ค้นหา..." value="">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                </span>
+              </div>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<!-- End Modal -->      <div class="header-faculty">
+      <div class="header-faculty-cover">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="header-faculty-logo animated fadeIn ">
+                <a href="./th/engineering">
+                  <img src="./uploads/faculty/logo/d3P254mUF7qByPO-white.png" 
+                  class="" >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+                <div class="header-faculty-menu">
+      <nav class="navbar navbar-faculty ">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#navbar-collapse-faculty-9" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+                      </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-faculty-9">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        สาขาวิชา  <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu multi-level">
+                                                                                                            <li class="dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    ปริญญาตรี                                </a>
+                                <ul class="dropdown-menu">
+                                                                            <li>
+                                            <a href="./th/engineering/computer-and-robotics">สาขาวิชาวิศวกรรมคอมพิวเตอร์และหุ่นยนต์                                            </a>
+                                        </li>
+                                                                            <li>
+                                            <a href="./th/engineering/ai-engineering-datascience">สาขาวิชาวิศวกรรมปัญญาประดิษฐ์และวิทยาการข้อมูล                                            </a>
+                                        </li>
+                                                                            <li>
+                                            <a href="./th/engineering/multimedia-and-entertainment">สาขาวิชาวิศวกรรมมัลติมีเดียและเอ็นเตอร์เทนเมนต์                                            </a>
+                                        </li>
+                                                                            <li>
+                                            <a href="./th/engineering/electrical">สาขาวิชาวิศวกรรมไฟฟ้า                                            </a>
+                                        </li>
+                                                                                                        </ul>
+                            </li>
+                                                                                                            <li class="dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    ปริญญาโท                                </a>
+                                <ul class="dropdown-menu">
+                                                                                                                                                        <li><a href="./en/international-programs/master-of-engineering-in-electrical-computer-engineering">Master of Engineering in Electrical & Computer Engineering (International Program)</a></li>
+                                                                    </ul>
+                            </li>
+                                                                                                            <li class="dropdown-submenu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    ปริญญาเอก                                </a>
+                                <ul class="dropdown-menu">
+                                                                                                                                                        <li><a href="./en/international-programs/d-electrical-electrical-computer-engineering">D.Eng. in Electrical and Computer Engineering (International Program)</a></li>
+                                                                    </ul>
+                            </li>
+                                            </ul>
+                </li>
+                              <li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">เกี่ยวกับคณะ <i class="fa fa-angle-down"></i></a>
+                        <ul class="dropdown-menu">
+                                                            <li>
+                                    <a href="./th/engineering/history">
+                                        ประวัติคณะ                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./th/engineering/vision-mission">
+                                        ปณิธานและพันธกิจ                                    </a>
+                                </li>
+                                                                      <li><a href="./th/engineering/videos">วิดีโอแนะนำ</a></li>
+                                                              <li><a href="./th/engineering/executives">คณะผู้บริหาร</a></li>
+                                                              <li><a href="./th/engineering/gallery">แกลลอรี่</a></li>
+                                                              <li><a href="./th/engineering/partner-networks">พันธมิตร</a></li>
+                                                              <li><a href="./th/engineering/internships">การฝึกงานและสหกิจศึกษา</a></li>
+                    
+                                                <li>
+                                <a href="./th/engineering/download">
+                                    ดาวน์โหลด                                </a>
+                            </li>
+                                                
+                                                              <li><a href="./th/engineering/alumni">ศิษย์เก่า</a></li>
+                                                                              </ul>
+                </li>
+                <li class="">
+                  <a href="./th/engineering/tuition-fees/2564/">ค่าเล่าเรียน</a>
+                </li>
+                <!-- <li class="">
+                <a href="./th/engineering/news">ข่าวสารและกิจกรรม</a>
+              </li> -->
+              <!-- <li><a href="./th/engineering/activities">ปฏิทินกิจกรรม</a></li> -->
+              <li><a href="./th/who-are-you/student">สำหรับนักศึกษา</a></li>
+                                    <li>
+                          <a href="./th/engineering/young-ai-robotics">
+                              โครงการ Young Ai Robotics                          </a>
+                      </li>
+                                  </ul>
+          </div>
+          <!-- start nav master -->
+                    <!-- end nav master -->
+        </div>
+      </nav>
+
+    </div>
+      </div>
+  <section id="body">
+	<div class="container m-b-sm">
+		<div class="row" style="margin-bottom:5px;">
+			<div class="col-xs-12">
+				<ol class="breadcrumb">
+					<li><a href="./th"><i class="fa fa-home"></i> หน้าหลัก</a></li>
+					<li><a href="./th/engineering">คณะวิศวกรรมศาสตร์</a></li>
+					<li class="active">เสียงจากนักศึกษา</li>
+				</ol>   
+			</div>
+		</div>
+		<div class="row text-center">
+			<!-- <table class="table">
+				<tr>
+					<td width="25%"></td>
+					<td></td>
+					<td width="10%">
+						
+					</td>
+					<td width="40%"></td>
+				</tr>
+			</table> -->
+			<div class="col-xs-2 col-md-2"></div>
+			<div class="col-xs-5 col-md-4 text-right"><h1> เสียงจาก </h1></div>
+			<div class="col-xs-2 col-md-2 text-left" style="padding-right: 0px;">
+				<button class="dropdown btn btn-lg" style="margin-top: 17px;  background-color: #202353" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			      	<a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: white;"> นักศึกษา<span class="caret"></span></a>
+			      	<ul class="dropdown-menu dropdown-menu-right" style="min-width: 0px; width:100px;">
+			        	<li class="dropdown-item">
+			        		<a href="./engineering/voice_student/alumni">
+			        			รุ่นพี่		        			</a>
+		        		</li>
+			      	</ul>
+			    </button>
+				</div>
+			<div class="col-xs-3"></div>
+		</div>
+	    <ul id="waterfall"></ul>
+		<div class="row">
+	      	<div class="col-sm-12 text-center">
+	        	<button type="button" id="btn-load-more" class="ladda-button btn btn-default" data-style="zoom-in" ng-click="get_data();"><i class="fa fa-angle-double-down"></i> โหลดเพิ่ม...</button>
+	      	</div>
+	    </div>
+	</div>
+</section>
+<script>
+	let firstData = JSON.parse(atob('W3sidnNfaWQiOiI3IiwidnNfY29kZSI6IjE1MTA3MzU4MzItR1dVUUhJVEY0VCIsInZzX3Byb2ZpbGUiOiIyMDE3MTExNTE1NTAzMl9JTzVCR0E4TlU2R1FWWUxfVlRFMlI4Sk5DOTVMM0tRLmpwZyIsInZzX2ZiaWQiOiIxMDAwMDExODc2NzYyNjUiLCJ2c19mYm5hbWUiOiJCbGFuayBTdXJhc2FrIiwidnNfZmJsaW5rIjoiYnJhbmsuc3VyYXNhayIsInZzX2VtYWlsIjpudWxsLCJ2c19kZWdyZWUiOiIxIiwidnNfZmFjdWx0eSI6IjkiLCJ2c19kZXBhcnRtZW50IjoiMTciLCJ2c19kZXBhcnRtZW50X290aGVyX3RoIjpudWxsLCJ2c19kZXBhcnRtZW50X290aGVyX2VuIjpudWxsLCJ2c19kZXNjcmlwdGlvbl90aCI6Ilx1MGUxYVx1MGUzOFx1MGUwNFx1MGUwNFx1MGUyNVx1MGUzMlx1MGUwMVx1MGUyM1x1MGUyMVx1MGUzNVx1MGUxYlx1MGUyM1x1MGUzMFx1MGUyYVx1MGUzNFx1MGUxN1x1MGUxOFx1MGUzNFx1MGUyMFx1MGUzMlx1MGUxZSBcdTBlNDBcdTBlMjNcdTBlMzVcdTBlMjJcdTBlMTlcdTBlMjNcdTBlMzlcdTBlNDlcdTBlMDhcdTBlMzRcdTBlMDdcdTBlMDhcdTBlMzJcdTBlMDFcdTBlMmRcdTBlMzhcdTBlMWJcdTBlMDFcdTBlMjNcdTBlMTNcdTBlNGNcdTBlMDhcdTBlMzRcdTBlMDcgXHUwZTIxXHUwZTM1XHUwZTJkXHUwZTM0XHUwZTJhXHUwZTIzXHUwZTIwXHUwZTMyXHUwZTFlXHUwZTQzXHUwZTE5XHUwZTAxXHUwZTMyXHUwZTIzXHUwZTQwXHUwZTIzXHUwZTM1XHUwZTIyXHUwZTE5XHUwZTIzXHUwZTM5XHUwZTQ5IFx1MGUxYVx1MGUyM1x1MGUyM1x1MGUyMlx1MGUzMlx1MGUwMVx1MGUzMlx1MGUyOFx1MGUxNFx1MGUzNSBcdTBlMTVcdTBlMzZcdTBlMDFcdTBlMTVcdTBlNDhcdTBlMzJcdTBlMDdcdTBlNDZcdTBlMmFcdTBlMjdcdTBlMjJcdTBlMmJcdTBlMjNcdTBlMzkgXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTJhXHUwZTMzXHUwZTA0XHUwZTMxXHUwZTBkXHUwZTFjXHUwZTM5XHUwZTQ5XHUwZTBhXHUwZTMyXHUwZTIyXHUwZTJiXHUwZTI1XHUwZTQ4XHUwZTJkIDU1NTUiLCJ2c19kZXNjcmlwdGlvbl9lbiI6Ilx1MGUxYVx1MGUzOFx1MGUwNFx1MGUwNFx1MGUyNVx1MGUzMlx1MGUwMVx1MGUyM1x1MGUyMVx1MGUzNVx1MGUxYlx1MGUyM1x1MGUzMFx1MGUyYVx1MGUzNFx1MGUxN1x1MGUxOFx1MGUzNFx1MGUyMFx1MGUzMlx1MGUxZSBcdTBlNDBcdTBlMjNcdTBlMzVcdTBlMjJcdTBlMTlcdTBlMjNcdTBlMzlcdTBlNDlcdTBlMDhcdTBlMzRcdTBlMDdcdTBlMDhcdTBlMzJcdTBlMDFcdTBlMmRcdTBlMzhcdTBlMWJcdTBlMDFcdTBlMjNcdTBlMTNcdTBlNGNcdTBlMDhcdTBlMzRcdTBlMDcgXHUwZTIxXHUwZTM1XHUwZTJkXHUwZTM0XHUwZTJhXHUwZTIzXHUwZTIwXHUwZTMyXHUwZTFlXHUwZTQzXHUwZTE5XHUwZTAxXHUwZTMyXHUwZTIzXHUwZTQwXHUwZTIzXHUwZTM1XHUwZTIyXHUwZTE5XHUwZTIzXHUwZTM5XHUwZTQ5IFx1MGUxYVx1MGUyM1x1MGUyM1x1MGUyMlx1MGUzMlx1MGUwMVx1MGUzMlx1MGUyOFx1MGUxNFx1MGUzNSBcdTBlMTVcdTBlMzZcdTBlMDFcdTBlMTVcdTBlNDhcdTBlMzJcdTBlMDdcdTBlNDZcdTBlMmFcdTBlMjdcdTBlMjJcdTBlMmJcdTBlMjNcdTBlMzkgXHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTJhXHUwZTMzXHUwZTA0XHUwZTMxXHUwZTBkXHUwZTFjXHUwZTM5XHUwZTQ5XHUwZTBhXHUwZTMyXHUwZTIyXHUwZTJiXHUwZTI1XHUwZTQ4XHUwZTJkIDU1NTUiLCJ2c190eXBlIjoiMiIsInZzX2FjdGl2ZSI6IjEiLCJ2c19oaWdobGlnaHQiOiIxIiwidnNfY3JlYXRlIjoiMjAxNy0xMS0xNSAxNTo1MDozMSIsInZzX3VwZGF0ZSI6IjIwMTctMTEtMTYgMTA6NDU6MDciLCJkZXB0X25hbWVfdGgiOiJcdTBlMmFcdTBlMzJcdTBlMDJcdTBlMzJcdTBlMjdcdTBlMzRcdTBlMGFcdTBlMzJcdTBlMjdcdTBlMzRcdTBlMjhcdTBlMjdcdTBlMDFcdTBlMjNcdTBlMjNcdTBlMjFcdTBlMDRcdTBlMmRcdTBlMjFcdTBlMWVcdTBlMzRcdTBlMjdcdTBlNDBcdTBlMTVcdTBlMmRcdTBlMjNcdTBlNGNcdTBlNDFcdTBlMjVcdTBlMzBcdTBlMmJcdTBlMzhcdTBlNDhcdTBlMTlcdTBlMjJcdTBlMTlcdTBlMTVcdTBlNGMiLCJkZXB0X25hbWVfZW4iOiJDb21wdXRlciBhbmQgUm9ib3RpY3MgRW5naW5lZXJpbmciLCJmYWN1bHR5X25hbWVfdGgiOiJcdTBlMDRcdTBlMTNcdTBlMzBcdTBlMjdcdTBlMzRcdTBlMjhcdTBlMjdcdTBlMDFcdTBlMjNcdTBlMjNcdTBlMjFcdTBlMjhcdTBlMzJcdTBlMmFcdTBlMTVcdTBlMjNcdTBlNGMiLCJmYWN1bHR5X25hbWVfZW4iOiJTY2hvb2wgb2YgRW5naW5lZXJpbmciLCJmYWN1bHR5X3NsdWciOiJlbmdpbmVlcmluZyJ9LHsidnNfaWQiOiIxMSIsInZzX2NvZGUiOiIxNTEwNzM1ODMyLVoyN0NWUExGQ0kiLCJ2c19wcm9maWxlIjoiMjAxNzExMTUxNTUwMzJfUFdHQ0dRU0FBVUhGTjJNXzVZQzNVSkRXUlFTUkI3My5qcGciLCJ2c19mYmlkIjoiMTAwMDAxMjI0NTkzMzA1IiwidnNfZmJuYW1lIjoiUGFzaW4gS3Vtb3JuIiwidnNfZmJsaW5rIjoiaWhlcmVwaCIsInZzX2VtYWlsIjpudWxsLCJ2c19kZWdyZWUiOiIxIiwidnNfZmFjdWx0eSI6IjkiLCJ2c19kZXBhcnRtZW50IjoiMTgiLCJ2c19kZXBhcnRtZW50X290aGVyX3RoIjpudWxsLCJ2c19kZXBhcnRtZW50X290aGVyX2VuIjpudWxsLCJ2c19kZXNjcmlwdGlvbl90aCI6Ilx1MGUyYlx1MGUyNVx1MGUzMVx1MGUwMVx1MGUyYVx1MGUzOVx1MGUxNVx1MGUyM1x1MGUxNFx1MGUzNSBcdTBlNDBcdTBlMTlcdTBlNDlcdTBlMTlcdTBlMmFcdTBlMmRcdTBlMTlcdTBlNDNcdTBlMmJcdTBlNDlcdTBlNDBcdTBlMTRcdTBlNDdcdTBlMDFcdTBlNDBcdTBlMDJcdTBlNDlcdTBlMzJcdTBlNDNcdTBlMDhcdTBlMTRcdTBlNDlcdTBlMjdcdTBlMjJcdTBlMTVcdTBlMzFcdTBlMjdcdTBlNDBcdTBlMmRcdTBlMDcgXHUwZTQwXHUwZTIzXHUwZTM1XHUwZTIyXHUwZTE5XHUwZTJhXHUwZTE5XHUwZTM4XHUwZTAxXHUwZTQxXHUwZTE1XHUwZTQ4XHUwZTQxXHUwZTI1XHUwZTMwXHUwZTQ0XHUwZTIxXHUwZTQ4XHUwZTQwXHUwZTA0XHUwZTIzXHUwZTM1XHUwZTIyXHUwZTE0XHUwZTQxXHUwZTE1XHUwZTQ4XHUwZTIzXHUwZTMxXHUwZTFhXHUwZTA0XHUwZTI3XHUwZTMyXHUwZTIxXHUwZTIzXHUwZTM5XHUwZTQ5XHUwZTQwXHUwZTE5XHUwZTQ5XHUwZTE5XHUwZTQ2IFx1MGU0MVx1MGUyNVx1MGUzMFx1MGUxN1x1MGUzNVx1MGU0OFx1MGUyYVx1MGUzM1x1MGUwNFx1MGUzMVx1MGUwZCBcdTBlMmRcdTBlMzJcdTBlMmJcdTBlMzJcdTBlMjNcdTBlMTVcdTBlMzJcdTBlNDBcdTBlMTRcdTBlNDdcdTBlMTRcdTBlMjFcdTBlMzJcdTBlMDFcdTBlNDYgXHUwZTQ0XHUwZTIxXHUwZTQ4XHUwZTQ0XHUwZTE0XHUwZTQ5XHUwZTQyXHUwZTIxXHUwZTQ5IFx1MGUxZVx1MGUzOVx1MGUxNFx1MGUwOFx1MGUyM1x1MGUzNFx1MGUwN1x1MGU0NiBcdTBlNDRcdTBlMjFcdTBlNDhcdTBlNDBcdTBlMGFcdTBlMzdcdTBlNDhcdTBlMmRcdTBlMTVcdTBlNDlcdTBlMmRcdTBlMDdcdTBlMjFcdTBlMzJcdTBlMWVcdTBlMzRcdTBlMmFcdTBlMzlcdTBlMDhcdTBlMTlcdTBlNGMgXHUwZTQxXHUwZTE1XHUwZTQ4XHUwZTIzXHUwZTMwXHUwZTI3XHUwZTMxXHUwZTA3XHUwZTA4XHUwZTMwXHUwZTE1XHUwZTM0XHUwZTE0XHUwZTQzXHUwZTA4XHUwZTA4XHUwZTE5XHUwZTQ0XHUwZTIxXHUwZTQ4XHUwZTJkXHUwZTIyXHUwZTMyXHUwZTAxXHUwZTQ0XHUwZTFiXHUwZTQ0XHUwZTJiXHUwZTE5XHUwZTE1XHUwZTQ4XHUwZTJkIiwidnNfZGVzY3JpcHRpb25fZW4iOiJcdTBlMmJcdTBlMjVcdTBlMzFcdTBlMDFcdTBlMmFcdTBlMzlcdTBlMTVcdTBlMjNcdTBlMTRcdTBlMzUgXHUwZTQwXHUwZTE5XHUwZTQ5XHUwZTE5XHUwZTJhXHUwZTJkXHUwZTE5XHUwZTQzXHUwZTJiXHUwZTQ5XHUwZTQwXHUwZTE0XHUwZTQ3XHUwZTAxXHUwZTQwXHUwZTAyXHUwZTQ5XHUwZTMyXHUwZTQzXHUwZTA4XHUwZTE0XHUwZTQ5XHUwZTI3XHUwZTIyXHUwZTE1XHUwZTMxXHUwZTI3XHUwZTQwXHUwZTJkXHUwZTA3IFx1MGU0MFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxOVx1MGUyYVx1MGUxOVx1MGUzOFx1MGUwMVx1MGU0MVx1MGUxNVx1MGU0OFx1MGU0MVx1MGUyNVx1MGUzMFx1MGU0NFx1MGUyMVx1MGU0OFx1MGU0MFx1MGUwNFx1MGUyM1x1MGUzNVx1MGUyMlx1MGUxNFx1MGU0MVx1MGUxNVx1MGU0OFx1MGUyM1x1MGUzMVx1MGUxYVx1MGUwNFx1MGUyN1x1MGUzMlx1MGUyMVx1MGUyM1x1MGUzOVx1MGU0OVx1MGU0MFx1MGUxOVx1MGU0OVx1MGUxOVx1MGU0NiBcdTBlNDFcdTBlMjVcdTBlMzBcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMmFcdTBlMzNcdTBlMDRcdTBlMzFcdTBlMGQgXHUwZTJkXHUwZTMyXHUwZTJiXHUwZTMyXHUwZTIzXHUwZTE1XHUwZTMyXHUwZTQwXHUwZTE0XHUwZTQ3XHUwZTE0XHUwZTIxXHUwZTMyXHUwZTAxXHUwZTQ2IFx1MGU0NFx1MGUyMVx1MGU0OFx1MGU0NFx1MGUxNFx1MGU0OVx1MGU0Mlx1MGUyMVx1MGU0OSBcdTBlMWVcdTBlMzlcdTBlMTRcdTBlMDhcdTBlMjNcdTBlMzRcdTBlMDdcdTBlNDYgXHUwZTQ0XHUwZTIxXHUwZTQ4XHUwZTQwXHUwZTBhXHUwZTM3XHUwZTQ4XHUwZTJkXHUwZTE1XHUwZTQ5XHUwZTJkXHUwZTA3XHUwZTIxXHUwZTMyXHUwZTFlXHUwZTM0XHUwZTJhXHUwZTM5XHUwZTA4XHUwZTE5XHUwZTRjIFx1MGU0MVx1MGUxNVx1MGU0OFx1MGUyM1x1MGUzMFx1MGUyN1x1MGUzMVx1MGUwN1x1MGUwOFx1MGUzMFx1MGUxNVx1MGUzNFx1MGUxNFx1MGU0M1x1MGUwOFx1MGUwOFx1MGUxOVx1MGU0NFx1MGUyMVx1MGU0OFx1MGUyZFx1MGUyMlx1MGUzMlx1MGUwMVx1MGU0NFx1MGUxYlx1MGU0NFx1MGUyYlx1MGUxOVx1MGUxNVx1MGU0OFx1MGUyZCIsInZzX3R5cGUiOiIyIiwidnNfYWN0aXZlIjoiMSIsInZzX2hpZ2hsaWdodCI6IjAiLCJ2c19jcmVhdGUiOiIyMDE3LTExLTE1IDE1OjUwOjMxIiwidnNfdXBkYXRlIjoiMjAxNy0xMS0xNiAxMDo0NTowNyIsImRlcHRfbmFtZV90aCI6Ilx1MGUyYVx1MGUzMlx1MGUwMlx1MGUzMlx1MGUyN1x1MGUzNFx1MGUwYVx1MGUzMlx1MGUyN1x1MGUzNFx1MGUyOFx1MGUyN1x1MGUwMVx1MGUyM1x1MGUyM1x1MGUyMVx1MGUyMVx1MGUzMVx1MGUyNVx1MGUxNVx1MGUzNFx1MGUyMVx1MGUzNVx1MGU0MFx1MGUxNFx1MGUzNVx1MGUyMlx1MGU0MVx1MGUyNVx1MGUzMFx1MGU0MFx1MGUyZFx1MGU0N1x1MGUxOVx1MGU0MFx1MGUxNVx1MGUyZFx1MGUyM1x1MGU0Y1x1MGU0MFx1MGUxN1x1MGUxOVx1MGU0MFx1MGUyMVx1MGUxOVx1MGUxNVx1MGU0YyIsImRlcHRfbmFtZV9lbiI6Ik11bHRpbWVkaWEgYW5kIEVudGVydGFpbm1lbnQgRW5naW5lZXJpbmciLCJmYWN1bHR5X25hbWVfdGgiOiJcdTBlMDRcdTBlMTNcdTBlMzBcdTBlMjdcdTBlMzRcdTBlMjhcdTBlMjdcdTBlMDFcdTBlMjNcdTBlMjNcdTBlMjFcdTBlMjhcdTBlMzJcdTBlMmFcdTBlMTVcdTBlMjNcdTBlNGMiLCJmYWN1bHR5X25hbWVfZW4iOiJTY2hvb2wgb2YgRW5naW5lZXJpbmciLCJmYWN1bHR5X3NsdWciOiJlbmdpbmVlcmluZyJ9LHsidnNfaWQiOiI3OCIsInZzX2NvZGUiOiIxNTEwNzM1ODM0LU5LRE1BVVlZWU8iLCJ2c19wcm9maWxlIjoiMjAxNzExMTUxNTUwMzRfWlpJWUxDRUVKV1dTNlRKX0czRFlEWE1PQThZNTdYNC5qcGciLCJ2c19mYmlkIjoiMS45NzYwMkUrMTUiLCJ2c19mYm5hbWUiOiJOYSBLc24iLCJ2c19mYmxpbmsiOiIxLjk3NjAyRSsxNSIsInZzX2VtYWlsIjoibmEta3NuMDlAaG90bWFpbC5jb20iLCJ2c19kZWdyZWUiOiIxIiwidnNfZmFjdWx0eSI6IjkiLCJ2c19kZXBhcnRtZW50IjoiMTciLCJ2c19kZXBhcnRtZW50X290aGVyX3RoIjpudWxsLCJ2c19kZXBhcnRtZW50X290aGVyX2VuIjpudWxsLCJ2c19kZXNjcmlwdGlvbl90aCI6Ilx1MGUwYVx1MGUyZFx1MGUxYVx1MGUxYVx1MGUyM1x1MGUyM1x1MGUyMlx1MGUzMlx1MGUwMVx1MGUzMlx1MGUyOFx1MGUxNFx1MGUzOVx1MGUyYVx1MGUxYVx1MGUzMlx1MGUyMlx1MGUxNVx1MGUzMlx1MGUxOVx1MGUzMVx1MGU0OVx1MGUwN1x1MGU0MFx1MGUyNVx1MGU0OFx1MGUxOVx1MGUxNVx1MGUyM1x1MGUwN1x1MGU0NFx1MGUyYlx1MGUxOVx1MGUwMVx1MGU0N1x1MGU0NFx1MGUyMVx1MGU0OFx1MGU0MFx1MGUxYVx1MGUzN1x1MGU0OFx1MGUyZF5fX19eIiwidnNfZGVzY3JpcHRpb25fZW4iOiJcdTBlMGFcdTBlMmRcdTBlMWFcdTBlMWFcdTBlMjNcdTBlMjNcdTBlMjJcdTBlMzJcdTBlMDFcdTBlMzJcdTBlMjhcdTBlMTRcdTBlMzlcdTBlMmFcdTBlMWFcdTBlMzJcdTBlMjJcdTBlMTVcdTBlMzJcdTBlMTlcdTBlMzFcdTBlNDlcdTBlMDdcdTBlNDBcdTBlMjVcdTBlNDhcdTBlMTlcdTBlMTVcdTBlMjNcdTBlMDdcdTBlNDRcdTBlMmJcdTBlMTlcdTBlMDFcdTBlNDdcdTBlNDRcdTBlMjFcdTBlNDhcdTBlNDBcdTBlMWFcdTBlMzdcdTBlNDhcdTBlMmReX19fXiIsInZzX3R5cGUiOiIyIiwidnNfYWN0aXZlIjoiMSIsInZzX2hpZ2hsaWdodCI6IjAiLCJ2c19jcmVhdGUiOiIyMDE3LTExLTE1IDE1OjUwOjMxIiwidnNfdXBkYXRlIjoiMjAxNy0xMS0xNiAxMDo0NTowNyIsImRlcHRfbmFtZV90aCI6Ilx1MGUyYVx1MGUzMlx1MGUwMlx1MGUzMlx1MGUyN1x1MGUzNFx1MGUwYVx1MGUzMlx1MGUyN1x1MGUzNFx1MGUyOFx1MGUyN1x1MGUwMVx1MGUyM1x1MGUyM1x1MGUyMVx1MGUwNFx1MGUyZFx1MGUyMVx1MGUxZVx1MGUzNFx1MGUyN1x1MGU0MFx1MGUxNVx1MGUyZFx1MGUyM1x1MGU0Y1x1MGU0MVx1MGUyNVx1MGUzMFx1MGUyYlx1MGUzOFx1MGU0OFx1MGUxOVx1MGUyMlx1MGUxOVx1MGUxNVx1MGU0YyIsImRlcHRfbmFtZV9lbiI6IkNvbXB1dGVyIGFuZCBSb2JvdGljcyBFbmdpbmVlcmluZyIsImZhY3VsdHlfbmFtZV90aCI6Ilx1MGUwNFx1MGUxM1x1MGUzMFx1MGUyN1x1MGUzNFx1MGUyOFx1MGUyN1x1MGUwMVx1MGUyM1x1MGUyM1x1MGUyMVx1MGUyOFx1MGUzMlx1MGUyYVx1MGUxNVx1MGUyM1x1MGU0YyIsImZhY3VsdHlfbmFtZV9lbiI6IlNjaG9vbCBvZiBFbmdpbmVlcmluZyIsImZhY3VsdHlfc2x1ZyI6ImVuZ2luZWVyaW5nIn0seyJ2c19pZCI6IjE1MyIsInZzX2NvZGUiOiIxNTEwNzM1ODM2LUhCNjFJNkRFTFoiLCJ2c19wcm9maWxlIjoiMjAxNzExMTUxNTUwMzZfU1JDQkJTR09DVFNFWDdLX1RJSDdRQVBDR1FLTTRZSS5qcGciLCJ2c19mYmlkIjoiMjMxNzc0ODAwNjM2OTc5IiwidnNfZmJuYW1lIjoiRmFobHVuIEthbnN1bidsdW5uIiwidnNfZmJsaW5rIjoiMjMxNzc0ODAwNjM2OTc5IiwidnNfZW1haWwiOiJub25nbm9uMTIzMTk5OEBnbWFpbC5jb20iLCJ2c19kZWdyZWUiOiIxIiwidnNfZmFjdWx0eSI6IjkiLCJ2c19kZXBhcnRtZW50IjoiMTYiLCJ2c19kZXBhcnRtZW50X290aGVyX3RoIjpudWxsLCJ2c19kZXBhcnRtZW50X290aGVyX2VuIjpudWxsLCJ2c19kZXNjcmlwdGlvbl90aCI6Ilx1MGUxZlx1MGU0OVx1MGUzMlx1MGUyNVx1MGUzMVx1MGU0OFx1MGUxOSIsInZzX2Rlc2NyaXB0aW9uX2VuIjoiXHUwZTFmXHUwZTQ5XHUwZTMyXHUwZTI1XHUwZTMxXHUwZTQ4XHUwZTE5IiwidnNfdHlwZSI6IjIiLCJ2c19hY3RpdmUiOiIxIiwidnNfaGlnaGxpZ2h0IjoiMCIsInZzX2NyZWF0ZSI6IjIwMTctMTEtMTUgMTU6NTA6MzEiLCJ2c191cGRhdGUiOiIyMDE3LTExLTE2IDEwOjQ1OjA3IiwiZGVwdF9uYW1lX3RoIjoiXHUwZTJhXHUwZTMyXHUwZTAyXHUwZTMyXHUwZTI3XHUwZTM0XHUwZTBhXHUwZTMyXHUwZTI3XHUwZTM0XHUwZTI4XHUwZTI3XHUwZTAxXHUwZTIzXHUwZTIzXHUwZTIxXHUwZTQ0XHUwZTFmXHUwZTFmXHUwZTQ5XHUwZTMyIiwiZGVwdF9uYW1lX2VuIjoiRWxlY3RyaWNhbCBFbmdpbmVlcmluZyIsImZhY3VsdHlfbmFtZV90aCI6Ilx1MGUwNFx1MGUxM1x1MGUzMFx1MGUyN1x1MGUzNFx1MGUyOFx1MGUyN1x1MGUwMVx1MGUyM1x1MGUyM1x1MGUyMVx1MGUyOFx1MGUzMlx1MGUyYVx1MGUxNVx1MGUyM1x1MGU0YyIsImZhY3VsdHlfbmFtZV9lbiI6IlNjaG9vbCBvZiBFbmdpbmVlcmluZyIsImZhY3VsdHlfc2x1ZyI6ImVuZ2luZWVyaW5nIn0seyJ2c19pZCI6IjE5NiIsInZzX2NvZGUiOiIxNTEwNzM1ODM2LUdZNVFBS0NMVjUiLCJ2c19wcm9maWxlIjoiMjAxNzExMTUxNTUwMzZfWVhCT01LTTJCWE1INVNXX0ZFS1dPR0ROTURYV0dKUy5qcGciLCJ2c19mYmlkIjpudWxsLCJ2c19mYm5hbWUiOiJUaXJheXV0aCBTb29udGhvcmFudW4iLCJ2c19mYmxpbmsiOiJtdGlyYXl1dGgxOTk5IiwidnNfZW1haWwiOiJ0aXJheXV0aC5zb29uQGJ1bWFpbC5uZXQiLCJ2c19kZWdyZWUiOiIxIiwidnNfZmFjdWx0eSI6IjkiLCJ2c19kZXBhcnRtZW50IjoiMTgiLCJ2c19kZXBhcnRtZW50X290aGVyX3RoIjpudWxsLCJ2c19kZXBhcnRtZW50X290aGVyX2VuIjpudWxsLCJ2c19kZXNjcmlwdGlvbl90aCI6Ilx1MGUxN1x1MGUzNVx1MGU0OFx1MGUyN1x1MGUzNFx1MGUyOFx1MGUyN1x1MGUzMFx1MGU0MFx1MGUwNFx1MGU0OVx1MGUzMlx1MGUyMVx1MGUzNVx1MGUwNFx1MGUyN1x1MGUzMlx1MGUyMVx1MGU0MFx1MGUxYlx1MGU0N1x1MGUxOVx1MGUwMVx1MGUzMVx1MGUxOVx1MGU0MFx1MGUyZFx1MGUwN1x1MGUyYVx1MGUzOVx1MGUwNyBcdTBlMmRcdTBlMzJcdTBlMDhcdTBlMzJcdTBlMjNcdTBlMjJcdTBlNGNcdTBlNDBcdTBlMWJcdTBlNDdcdTBlMTlcdTBlMDRcdTBlMTlcdTBlNDBcdTBlMWJcdTBlMzRcdTBlMTRcdTBlMDFcdTBlMjdcdTBlNDlcdTBlMzJcdTBlMDdcdTBlMjFcdTBlMzJcdTBlMDEgXHUwZTQzXHUwZTBhXHUwZTQ5XHUwZTA0XHUwZTI3XHUwZTMyXHUwZTIxXHUwZTA0XHUwZTM0XHUwZTE0XHUwZTJhXHUwZTIzXHUwZTQ5XHUwZTMyXHUwZTA3XHUwZTJhXHUwZTIzXHUwZTIzXHUwZTA0XHUwZTRjXHUwZTQ0XHUwZTE0XHUwZTQ5XHUwZTQwXHUwZTE1XHUwZTQ3XHUwZTIxXHUwZTE3XHUwZTM1XHUwZTQ4IFx1MGUyZFx1MGUzNFx1MGUyYVx1MGUyM1x1MGUzMFx1MGU0M1x1MGUxOVx1MGUwMVx1MGUzMlx1MGUyM1x1MGU0MVx1MGUxNVx1MGU0OFx1MGUwN1x1MGUxNVx1MGUzMVx1MGUyN1x1MGUyMVx1MGUzMlx1MGUwMVx1MGUwMSBcdTBlNDBcdTBlMjNcdTBlMzJcdTBlMjFcdTBlMmRcdTBlMDdcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMTlcdTBlMzVcdTBlNDhcdTBlNDBcdTBlMWJcdTBlNDdcdTBlMTlcdTBlMWFcdTBlNDlcdTBlMzJcdTBlMTlcdTBlMmJcdTBlMjVcdTBlMzFcdTBlMDdcdTBlMTdcdTBlMzVcdTBlNDggMiBcdTBlNDRcdTBlMTRcdTBlNDlcdTBlNDBcdTBlMjVcdTBlMjJcdTBlMjIgXHUwZTJkXHUwZTIyXHUwZTMyXHUwZTAxXHUwZTQzXHUwZTJiXHUwZTQ5XHUwZTE5XHUwZTQ5XHUwZTJkXHUwZTA3XHUwZTQ2XHUwZTIxXHUwZTMyXHUwZTE3XHUwZTM1XHUwZTQ4IEJVIFx1MGUwNFx1MGUyM1x1MGUzMVx1MGUxYSBcdTBlMjFcdTBlMzJcdTBlNDBcdTBlMWJcdTBlNDdcdTBlMTkgQlVFTiBGYW1pbHkgXHUwZTIxXHUwZTMyXHUwZTAxXHUwZTQ2XHUwZTQwXHUwZTI1XHUwZTIyIiwidnNfZGVzY3JpcHRpb25fZW4iOiJcdTBlMTdcdTBlMzVcdTBlNDhcdTBlMjdcdTBlMzRcdTBlMjhcdTBlMjdcdTBlMzBcdTBlNDBcdTBlMDRcdTBlNDlcdTBlMzJcdTBlMjFcdTBlMzVcdTBlMDRcdTBlMjdcdTBlMzJcdTBlMjFcdTBlNDBcdTBlMWJcdTBlNDdcdTBlMTlcdTBlMDFcdTBlMzFcdTBlMTlcdTBlNDBcdTBlMmRcdTBlMDdcdTBlMmFcdTBlMzlcdTBlMDcgXHUwZTJkXHUwZTMyXHUwZTA4XHUwZTMyXHUwZTIzXHUwZTIyXHUwZTRjXHUwZTQwXHUwZTFiXHUwZTQ3XHUwZTE5XHUwZTA0XHUwZTE5XHUwZTQwXHUwZTFiXHUwZTM0XHUwZTE0XHUwZTAxXHUwZTI3XHUwZTQ5XHUwZTMyXHUwZTA3XHUwZTIxXHUwZTMyXHUwZTAxIFx1MGU0M1x1MGUwYVx1MGU0OVx1MGUwNFx1MGUyN1x1MGUzMlx1MGUyMVx1MGUwNFx1MGUzNFx1MGUxNFx1MGUyYVx1MGUyM1x1MGU0OVx1MGUzMlx1MGUwN1x1MGUyYVx1MGUyM1x1MGUyM1x1MGUwNFx1MGU0Y1x1MGU0NFx1MGUxNFx1MGU0OVx1MGU0MFx1MGUxNVx1MGU0N1x1MGUyMVx1MGUxN1x1MGUzNVx1MGU0OCBcdTBlMmRcdTBlMzRcdTBlMmFcdTBlMjNcdTBlMzBcdTBlNDNcdTBlMTlcdTBlMDFcdTBlMzJcdTBlMjNcdTBlNDFcdTBlMTVcdTBlNDhcdTBlMDdcdTBlMTVcdTBlMzFcdTBlMjdcdTBlMjFcdTBlMzJcdTBlMDFcdTBlMDEgXHUwZTQwXHUwZTIzXHUwZTMyXHUwZTIxXHUwZTJkXHUwZTA3XHUwZTE3XHUwZTM1XHUwZTQ4XHUwZTE5XHUwZTM1XHUwZTQ4XHUwZTQwXHUwZTFiXHUwZTQ3XHUwZTE5XHUwZTFhXHUwZTQ5XHUwZTMyXHUwZTE5XHUwZTJiXHUwZTI1XHUwZTMxXHUwZTA3XHUwZTE3XHUwZTM1XHUwZTQ4IDIgXHUwZTQ0XHUwZTE0XHUwZTQ5XHUwZTQwXHUwZTI1XHUwZTIyXHUwZTIyIFx1MGUyZFx1MGUyMlx1MGUzMlx1MGUwMVx1MGU0M1x1MGUyYlx1MGU0OVx1MGUxOVx1MGU0OVx1MGUyZFx1MGUwN1x1MGU0Nlx1MGUyMVx1MGUzMlx1MGUxN1x1MGUzNVx1MGU0OCBCVSBcdTBlMDRcdTBlMjNcdTBlMzFcdTBlMWEgXHUwZTIxXHUwZTMyXHUwZTQwXHUwZTFiXHUwZTQ3XHUwZTE5IEJVRU4gRmFtaWx5IFx1MGUyMVx1MGUzMlx1MGUwMVx1MGU0Nlx1MGU0MFx1MGUyNVx1MGUyMiIsInZzX3R5cGUiOiIyIiwidnNfYWN0aXZlIjoiMSIsInZzX2hpZ2hsaWdodCI6IjAiLCJ2c19jcmVhdGUiOiIyMDE3LTExLTE1IDE1OjUwOjMxIiwidnNfdXBkYXRlIjoiMjAxNy0xMS0xNiAxMDo0NTowNyIsImRlcHRfbmFtZV90aCI6Ilx1MGUyYVx1MGUzMlx1MGUwMlx1MGUzMlx1MGUyN1x1MGUzNFx1MGUwYVx1MGUzMlx1MGUyN1x1MGUzNFx1MGUyOFx1MGUyN1x1MGUwMVx1MGUyM1x1MGUyM1x1MGUyMVx1MGUyMVx1MGUzMVx1MGUyNVx1MGUxNVx1MGUzNFx1MGUyMVx1MGUzNVx1MGU0MFx1MGUxNFx1MGUzNVx1MGUyMlx1MGU0MVx1MGUyNVx1MGUzMFx1MGU0MFx1MGUyZFx1MGU0N1x1MGUxOVx1MGU0MFx1MGUxNVx1MGUyZFx1MGUyM1x1MGU0Y1x1MGU0MFx1MGUxN1x1MGUxOVx1MGU0MFx1MGUyMVx1MGUxOVx1MGUxNVx1MGU0YyIsImRlcHRfbmFtZV9lbiI6Ik11bHRpbWVkaWEgYW5kIEVudGVydGFpbm1lbnQgRW5naW5lZXJpbmciLCJmYWN1bHR5X25hbWVfdGgiOiJcdTBlMDRcdTBlMTNcdTBlMzBcdTBlMjdcdTBlMzRcdTBlMjhcdTBlMjdcdTBlMDFcdTBlMjNcdTBlMjNcdTBlMjFcdTBlMjhcdTBlMzJcdTBlMmFcdTBlMTVcdTBlMjNcdTBlNGMiLCJmYWN1bHR5X25hbWVfZW4iOiJTY2hvb2wgb2YgRW5naW5lZXJpbmciLCJmYWN1bHR5X3NsdWciOiJlbmdpbmVlcmluZyJ9XQ=='));
+	let testingData = '$2y$10$hMa72j9kqzGjhKGmB02ApOtxFDOZew6uc38cBhjPvCbe/L3XFAZbm';
+</script>
+            <script type="text/javascript">
+  var background_header = "./uploads/faculty/banner/20170918211908_APqK6IISNY4i3h8_sxE1xICZR2Uw5Sg.jpg";
+  var background_footer = "./uploads/faculty/contact/20170915152154_XBaRbfMmiBDKO7Y_5H41VAsL32n60Y6.jpg";
+  </script>
+  <footer>
+    <div class="footer-link">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="logo-bu-footer">
+              <img src="./assets/main/images/bu-logo-footer.png" alt="มหาวิทยาลัยกรุงเทพ">
+            </div>
+          </div>
+        </div>
+        <div class="row visible-md visible-lg">
+  <div class="col-lg-3 col-lg-offset-0 col-md-2 col-md-offset-1">
+    <h3 class="m-b-md">เกี่ยวกับมหาวิทยาลัย</h3>
+    <ul class="list-unstyled">
+      <li><a href="./th/about">เกี่ยวกับมหาวิทยาลัย</a></li>
+      <li><a href="http://katin3.bu.ac.th/" target="_blank">กฐินพระราชทาน</a></li>
+      <li><a href="http://bangkokpoll.bu.ac.th/" target="_blank">กรุงเทพโพลล์</a></li>
+      <li><a href="http://ebook.bu.ac.th/" target="_blank">E-Book@BU</a></li>
+      <li><a href="http://dspace.bu.ac.th/" target="_blank">งานวิจัย</a></li>
+    </ul>
+  </div>
+  <div class="col-lg-3 col-md-2">
+    <h3 class="m-b-md">ติดต่อเรา</h3>
+    <ul class="list-unstyled">
+      <li><a href="./th/contact">ติดต่อเรา</a></li>
+      <li><a href="./th/campus-map">แผนที่ภายในมหาวิทยาลัย</a></li>
+      <li><a href="./th/rental-space">ติดต่อเช่าสถานที่</a></li>
+      <li><a href="./th/visit-bu">ติดต่อเพื่อเยี่ยมชมมหาวิทยาลัย</a></li>
+      <li><a href=" http://hr.bu.ac.th/web/recruit/Default.aspx" target="_blank">ร่วมงานกับ BU</a></li>
+    </ul>
+  </div>
+  <div class="col-lg-3 col-md-2">
+    <h3 class="m-b-md">ลิงก์ด่วน</h3>
+    <ul class="list-unstyled">
+      <li><a href="./th/curriculum/bachelors-degree/tuition-fees">ค่าเล่าเรียน</a></li>
+      <li><a href="./th/curriculum/bachelors-degree/scholarships">ทุนการศึกษา</a></li>
+      <li><a href="./th/academic-calendar">ปฏิทินการศึกษา</a></li>
+      <li><a href="./th/who-are-you/student/std/bachelor">นักศึกษาปัจจุบัน</a></li>
+      <li><a href="./th/cookies">นโยบายเกี่ยวกับการใช้งานคุกกี้</a></li>
+      <li><a href="./th/privacypolicy">การคุ้มครองข้อมูลส่วนบุคคล</a></li>
+      <li><a href="./th/generalnotice">ประกาศแจ้งเรื่องการคุ้มครองข้อมูลส่วนบุคคลกรณีทั่วไป (General Data Privacy Notice)</a></li>
+      <!-- <li><a href="./th/curriculum">คณะ</a></li> -->
+    </ul>
+  </div>
+  <div class="col-lg-3 col-md-5" ng-controller="news-letter" ng-init="init();">
+    <h3 class="m-b-md">รับข่าวสารจากเรา</h3>
+    <!-- <form class="form-inline m-b-md" autocomplete="off" ng-submit="action_insert_newsletter();">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="อีเมลของคุณ" ng-model="f_newsletter.email">
+      </div>
+      <button type="submit" class="btn btn-gray no-rounds ladda-button btn-insert-newsletter" data-style="zoom-in">ส่งข้อมูล</button>
+    </form> -->
+    <ul class="list-inline">
+      <li><a href="https://facebook.com/bangkokuniversity" target="_blank"><img src="./assets/main/images/logo-facebook.png" alt="Facebook" class="icon-social"></a></li>
+      <li><a href="https://youtube.com/BangkokUniversity" target="_blank"><img src="./assets/main/images/logo-youtube.gif" alt="Youtube" class="icon-social"></a></li>
+      <li><a href="https://twitter.com/Bangkok_BU" target="_blank"><img src="./assets/main/images/logo-twitter.gif" alt="Twitter" class="icon-social"></a></li>
+      <li><a href="https://www.instagram.com/bangkok_bu" target="_blank"><img src="./assets/main/images/logo-instagram.gif" alt="Instagram" class="icon-social"></a></li>
+    </ul>
+  </div>
+</div>
+<div class="row visible-xs visible-sm">
+  <!-- <div class="col-xs-12 text-center" ng-controller="news-letter" ng-init="init();">
+    <form class="form-inline m-b-md" autocomplete="off" ng-submit="action_insert_newsletter();">
+      <div class="form-group">
+        <label for="" class="text-white">รับข่าวสารจากเรา</label>
+        <div class="input-group">
+          <input type="text" class="form-control text-dark" placeholder="อีเมลของคุณ" ng-model="f_newsletter.email">
+          <span class="input-group-btn">
+            <button type="submit" class="btn btn-gray no-rounds ladda-button btn-insert-newsletter" data-style="zoom-in">ส่งข้อมูล</button>
+          </span>
+        </div>
+      </div>
+    </form>
+  </div> -->
+  <div class="col-xs-12">
+    <div class="ibox ibox-transparent no-margins">
+      <div class="ibox-title no-padding">
+        <h5>เมนูลัด</h5>
+        <div class="ibox-tools">
+          <a class="collapse-link">
+            <i class="fa fa-chevron-up"></i>
+          </a>
+        </div>
+      </div>
+      <div class="ibox-content">
+        <div class="panel-group" id="menu-footer">
+          <div class="panel panel-transparent">
+            <div class="panel-heading">
+              <h5 class="panel-title">
+                <a data-toggle="collapse" data-parent="#menu-footer" href="#collapseOne" aria-expanded="false" class="">เกี่ยวกับมหาวิทยาลัย<i class="fa fa-plus pull-right"></i></a>
+              </h5>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" aria-expanded="false">
+              <div class="panel-body">
+                <ul class="list-unstyled no-margins">
+                  <li><a href="./th/about">เกี่ยวกับมหาวิทยาลัย</a></li>
+                  <li><a href="http://katin3.bu.ac.th/" target="_blank">กฐินพระราชทาน</a></li>
+                  <li><a href="http://bangkokpoll.bu.ac.th/" target="_blank">กรุงเทพโพลล์</a></li>
+                  <li><a href="http://ebook.bu.ac.th/" target="_blank">E-Book@BU</a></li>
+                  <li><a href="http://dspace.bu.ac.th/" target="_blank">งานวิจัย</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-transparent">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#menu-footer" href="#collapseTwo" class="collapsed" aria-expanded="false">ติดต่อเรา<i class="fa fa-plus pull-right"></i></a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body">
+                <ul class="list-unstyled no-margins">
+                  <li><a href="./th/contact">ติดต่อเรา</a></li>
+                  <li><a href="./th/campus-map">แผนที่ภายในมหาวิทยาลัย</a></li>
+                  <li><a href="./th/rental-space">ติดต่อเช่าสถานที่</a></li>
+                  <li><a href="./th/visit-bu">ติดต่อเพื่อเยี่ยมชมมหาวิทยาลัย</a></li>
+                  <li><a href=" http://hr.bu.ac.th/web/recruit/Default.aspx" target="_blank">ร่วมงานกับ BU</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-transparent">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#menu-footer" href="#collapseThree" class="collapsed" aria-expanded="false">ลิงก์ด่วน<i class="fa fa-plus pull-right"></i></a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body">
+                <ul class="list-unstyled no-margins">
+                  <li><a href="./th/curriculum/bachelors-degree/tuition-fees">ค่าเล่าเรียน</a></li>
+                  <li><a href="./th/curriculum/bachelors-degree/scholarships">ทุนการศึกษา</a></li>
+                  <li><a href="./th/academic-calendar">ปฏิทินการศึกษา</a></li>
+                  <li><a href="./th/who-are-you/student/std/bachelor">นักศึกษาปัจจุบัน</a></li>
+                  <li><a href="./th/cookies">นโยบายเกี่ยวกับการใช้งานคุกกี้</a></li>
+                  <li><a href="./th/privacypolicy">การคุ้มครองข้อมูลส่วนบุคคล</a></li>
+                  <li><a href="./th/generalnotice">ประกาศแจ้งเรื่องการคุ้มครองข้อมูลส่วนบุคคลกรณีทั่วไป (General Data Privacy Notice)</a></li>
+                  <!-- <li><a href="./th/curriculum">คณะ</a></li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-transparent">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#menu-footer" href="#collapseFour" class="collapsed" aria-expanded="false">ติดตามเราได้ที่<i class="fa fa-plus pull-right"></i></a>
+              </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+              <div class="panel-body">
+                <ul class="list-inline">
+                  <li><a href="https://facebook.com/bangkokuniversity" target="_blank"><img src="./assets/main/images/logo-facebook.png" alt="Facebook" class="icon-social"></a></li>
+                  <li><a href="https://youtube.com/BangkokUniversity" target="_blank"><img src="./assets/main/images/logo-youtube.gif" alt="Youtube" class="icon-social"></a></li>
+                  <li><a href="https://twitter.com/Bangkok_BU" target="_blank"><img src="./assets/main/images/logo-twitter.gif" alt="Twitter" class="icon-social"></a></li>
+                  <li><a href="https://www.instagram.com/bangkok_bu" target="_blank"><img src="./assets/main/images/logo-instagram.gif" alt="Instagram" class="icon-social"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <span>Copyright © 1962 - 2021 Bangkok University. All Rights Reserved.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<style>@media only screen and (max-width: 767px) {#menu-header{max-height: 50px; overflow-y:hidden; }}</style>
+<div id="overlay-menu">
+  <ul class="list-inline pull-right list-close-overlay-menu">
+    <li><a href="javascript:void(0);" class="close-overlay-menu"><i class="fa fa-times"></i> ปิด</a></li>
+  </ul>
+  <div class="panel-group text-center" id="menu-nav">
+    <div class="panel panel-transparent m-b-md">
+      <div class="panel-heading">
+        <h5 class="panel-title">
+          <a href="./th">หน้าหลัก</a>
+        </h5>
+      </div>
+    </div>
+    <div class="panel panel-transparent m-b-md">
+      <div class="panel-heading">
+        <h5 class="panel-title">
+          <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavOne" aria-expanded="true" class="">หลักสูตร</a>
+        </h5>
+      </div>
+      <div id="menuNavOne" class="panel-collapse collapse in" aria-expanded="true">
+        <div class="panel-body">
+                    <ul class="list-unstyled no-margins">
+            <li><a href="./th/curriculum/bachelors-degree">ปริญญาตรี</a></li>
+            <li><a href="./th/curriculum/masters-degree">ปริญญาโท</a></li>
+            <li><a href="./th/curriculum/doctoral-degree">ปริญญาเอก</a></li>
+            <li><a href="./en/curriculum/international-programs">International Programs</a></li>
+            <li><a href="./th/pre-degree">Pre-Degree</a></li>
+            <!-- <li><a href="./th/curriculum/certificate">อบรม/ประกาศนียบัตร</a></li> -->
+            <li><a href="./th/curriculum/bachelors-degree/tuition-fees">ค่าเล่าเรียน</a></li>
+            <li><a href="./th/curriculum/bachelors-degree/scholarships">ทุนการศึกษา</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Know BU -->
+    <div class="panel panel-transparent">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavKnowBu" class="collapsed" aria-expanded="false">รอบรั้วมหาวิทยาลัย</a>
+        </h4>
+      </div>
+      <div id="menuNavKnowBu" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">
+          <ul class="list-unstyled no-margins">
+            <li><a href="th/corporate-news">Corporate News</a></li>
+            <li><a href="th/bu-magazine">BU Story</a></li>
+            <!-- <li><a href="th/news-clipping">News Clippings</a></li> -->
+            <li><a href="th/accommodation">หอพักนักศึกษา</a></li>
+            <li><a href="th/activities-clubs/sports">กีฬา/สโมสร/ชมรม</a></li>
+            <li><a href="th/facilities">สิ่งอำนวยความสะดวก</a></li>
+                        <li><a href="th/service-centers">ศูนย์บริการ</a></li>
+            <li><a href="http://katin3.bu.ac.th" target="_blank">กฐินพระราชทาน</a></li>
+            <li><a href="http://museum.bu.ac.th" target="_blank">พิพิธภัณฑ์สถานเครื่องถ้วยเอเชียตะวันออกเฉียงใต้</a></li>
+            <li><a href="https://fb.com/bangkokuniversitygallery" target="_blank">หอศิลป์ มหาวิทยาลัยกรุงเทพ</a></li>
+                          <li><a href="./th/voices-from-students">เสียงจากนักศึกษา</a></li>
+              <li><a href="./th/voices-from-alumni">เสียงจากรุ่นพี่</a></li>
+                      </ul>
+        </div>
+      </div>
+    </div>
+    <!-- About Us -->
+    <div class="panel panel-transparent">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavAboutUs" class="collapsed" aria-expanded="false">เกี่ยวกับมหาวิทยาลัย</a>
+        </h4>
+      </div>
+      <div id="menuNavAboutUs" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">
+          <ul class="list-unstyled no-margins">
+            <li><a href="./th/about/history">ประวัติมหาวิทยาลัยกรุงเทพ</a></li>
+            <li><a href="./th/about/vision-mission">วิสัยทัศน์และพันธกิจ</a></li>
+            <li><a href="./th/about/videos">วิดีโอแนะนำ</a></li>
+            <li><a href="./th/council-committees">สภามหาวิทยาลัย</a></li>
+            <li><a href="./th/executives">คณะผู้บริหาร</a></li>
+            <li><a href="./th/partner-networks">พันธมิตร</a></li>
+            <li><a href="./th/alumni">ศิษย์เก่า</a></li>
+            <!-- <li><a href="./th/bu-achievements">ไฮไลท์ผลงาน</a></li> -->
+            <li><a href="./th/about/downloads">ดาวน์โหลด</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Who are you -->
+    <div class="panel panel-transparent">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavWhoAre" class="collapsed" aria-expanded="false">คุณคือใคร?</a>
+        </h4>
+      </div>
+      <div id="menuNavWhoAre" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">
+          <ul class="list-unstyled no-margins">
+            <li><a href="./th/who-are-you/student">นักศึกษา</a></li>
+            <li><a href="./th/who-are-you/parent">ผู้ปกครอง</a></li>
+            <li><a href="./th/who-are-you/alumni">ศิษย์เก่า</a></li>
+            <li><a href="http://mybu.bu.ac.th" target="_blank">บุคลากร</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div class="panel panel-transparent">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavContact" class="collapsed" aria-expanded="false">ติดต่อเรา</a>
+        </h4>
+      </div>
+      <div id="menuNavContact" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+        <div class="panel-body">
+          <ul class="list-unstyled no-margins">
+            <li><a href="./th/contact">ติดต่อเรา</a></li>
+            <li><a href="./th/campus-map">แผนที่ภายในมหาวิทยาลัย</a></li>
+            <li><a href="./th/rental-space">ติดต่อเช่าสถานที่</a></li>
+            <li><a href="./th/visit-bu">ติดต่อเพื่อเยี่ยมชมมหาวิทยาลัย</a></li>
+            <li><a href=" http://hr.bu.ac.th/web/recruit/Default.aspx" target="_blank">ร่วมงานกับ BU</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<script type="text/javascript">var language = 'th';</script>
+  <script src="./vendors/jquery/jquery-2.2.4.min.js" charset="utf-8"></script>
+  <script src="./vendors/bigbag/1.3/plugins/jquery-ui/jquery-ui.js" charset="utf-8"></script>
+  <script src="./vendors/bootstrap-3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="./vendors/angular-1.5.0/angular.min.js" charset="utf-8"></script>
+  <script src="./vendors/angular-1.5.0/angular-sanitize.min.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/ladda/spin.min.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/ladda/ladda.min.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/ladda/ladda.jquery.min.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/sweetalert/sweetalert.min.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/jasny/jasny-bootstrap.min.js" charset="utf-8"></script>
+  <script src="./vendors/backstretch/jquery.backstretch.js" charset="utf-8"></script>
+  <script src="./vendors/grid-a-licious/jquery.grid-a-licious.min.js" charset="utf-8"></script>
+  <script src="./vendors/sticky-kit/jquery.sticky-kit.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/inspinia-main.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/pace/pace.min.js" charset="utf-8"></script>
+  <script src="./vendors/hamburger-toggle/js/script.min.js" charset="utf-8"></script>
+  <script src="./vendors/owl.carousel/owl-carousel/owl.carousel.min.js" charset="utf-8"></script>
+  <script src="./assets/main/js/app.js" charset="utf-8"></script>
+  <script src="./assets/faculty/js/faculty.js" charset="utf-8"></script>
+  <script src="./vendors/pinterest-style-responsive/newWaterfall.js" charset="utf-8"></script>
+  <script src="./assets/faculty/js/voice_student/index.js" charset="utf-8"></script>
+</body>
+</html>
