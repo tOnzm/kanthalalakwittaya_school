@@ -1,7 +1,7 @@
 body {
   font-family: "karnvaylaregular", Helvetica, Arial, sans-serif;
   font-size: 13px;
-  background-image: url(/images/back/01.png);
+  background-image: url(../images/background/01.png);
   color: #494f5b;
   background-color: #ffffff;
   /* background-image: url(/images/menu/10-2.jpg); */
@@ -53,7 +53,6 @@ h6 {
 
 .menu-box {
   margin: 10px 7px;
-  background-image: url(/images/menu/wall.png);
   background-size: 40%;
 }
 .menu-box > div {
@@ -85,168 +84,168 @@ h6 {
 }
 /* ทำเนียบบุคลากร */
 .menu-box .box-1 {
-  background-image: url(/images/menu/1-1.jpg);
+  background-image: url(../images/menu/1-1.jpg);
 }
 .menu-box .box-1:hover,
 .menu-box .box-1:focus {
-  background-image: url(/images/menu/1-2.jpg);
+  background-image: url(../images/menu/1-2.jpg);
 }
 .menu-box .box-2 {
-  background-image: url(/images/menu/2-2.jpg);
+  background-image: url(../images/menu/2-2.jpg);
 }
 .menu-box .box-2:hover,
 .menu-box .box-2:focus {
-  background-image: url(/images/menu/2-1.jpg);
+  background-image: url(../images/menu/2-1.jpg);
 }
 .menu-box .box-3 {
-  background-image: url(/images/menu/3-1.jpg);
+  background-image: url(../images/menu/3-1.jpg);
 }
 .menu-box .box-3:hover,
 .menu-box .box-3:focus {
-  background-image: url(/images/menu/3-2.jpg);
+  background-image: url(../images/menu/3-2.jpg);
 }
 .menu-box .box-4 {
-  background-image: url(/images/menu/4-1.jpg);
+  background-image: url(../images/menu/4-1.jpg);
 }
 .menu-box .box-4:hover,
 .menu-box .box-4:focus {
-  background-image: url(/images/menu/4-2.jpg);
+  background-image: url(../images/menu/4-2.jpg);
 }
 .menu-box .box-5 {
-  background-image: url(/images/menu/5-1.jpg);
+  background-image: url(../images/menu/5-1.jpg);
 }
 .menu-box .box-5:hover,
 .menu-box .box-5:focus {
-  background-image: url(/images/menu/5-2.jpg);
+  background-image: url(../images/menu/5-2.jpg);
 }
 .menu-box .box-6 {
-  background-image: url(/images/menu/6-1.jpg);
+  background-image: url(../images/menu/6-1.jpg);
 }
 .menu-box .box-6:hover,
 .menu-box .box-6:focus {
-  background-image: url(/images/menu/6-2.jpg);
+  background-image: url(../images/menu/6-2.jpg);
 }
 .menu-box .box-7 {
-  background-image: url(/images/menu/7-1.jpg);
+  background-image: url(../images/menu/7-1.jpg);
 }
 .menu-box .box-7:hover,
 .menu-box .box-7:focus {
-  background-image: url(/images/menu/7-2.jpg);
+  background-image: url(../images/menu/7-2.jpg);
 }
 .menu-box .box-8 {
-  background-image: url(/images/menu/8-1.jpg);
+  background-image: url(../images/menu/8-1.jpg);
 }
 .menu-box .box-8:hover,
 .menu-box .box-8:focus {
-  background-image: url(/images/menu/8-2.jpg);
+  background-image: url(../images/menu/8-2.jpg);
 }
 .menu-box .box-9 {
-  background-image: url(/images/menu/9-1.jpg);
+  background-image: url(../images/menu/9-1.jpg);
 }
 .menu-box .box-9:hover,
 .menu-box .box-9:focus {
-  background-image: url(/images/menu/9-2.jpg);
+  background-image: url(../images/menu/9-2.jpg);
 }
 .menu-box .box-10 {
-  background-image: url(/images/menu/10-1.jpg);
+  background-image: url(../images/menu/10-1.jpg);
 }
 .menu-box .box-10:hover,
 .menu-box .box-10:focus {
-  background-image: url(/images/menu/10-2.jpg);
+  background-image: url(../images/menu/10-2.jpg);
 }
 .menu-box .box-11 {
-  background-image: url(/images/menu/11-1.jpg);
+  background-image: url(../images/menu/11-1.jpg);
 }
 .menu-box .box-11:hover,
 .menu-box .box-11:focus {
-  background-image: url(/images/menu/11-2.jpg);
+  background-image: url(../images/menu/11-2.jpg);
 }
 .menu-box .box-12 {
-  background-image: url(/images/menu/12-2.jpg);
+  background-image: url(../images/menu/12-2.jpg);
 }
 .menu-box .box-12:hover,
 .menu-box .box-12:focus {
-  background-image: url(/images/menu/12-1.jpg);
+  background-image: url(../images/menu/12-1.jpg);
 }
 .menu-box .box-13 {
-  background-image: url(/images/menu/13-1.jpg);
+  background-image: url(../images/menu/13-1.jpg);
 }
 .menu-box .box-13:hover,
 .menu-box .box-13:focus {
-  background-image: url(/images/menu/13-2.jpg);
+  background-image: url(../images/menu/13-2.jpg);
 }
 .menu-box .box-14 {
-  background-image: url(/images/menu/14-1.jpg);
+  background-image: url(../images/menu/14-1.jpg);
 }
 .menu-box .box-14:hover,
 .menu-box .box-14:focus {
-  background-image: url(/images/menu/14-2.jpg);
+  background-image: url(../images/menu/14-2.jpg);
 }
 /* เกี่ยวกับโรงเรียน */
 .menu-box .box-15 {
-  background-image: url(/images/menu/15-1.jpg);
+  background-image: url(../images/menu/15-1.jpg);
 }
 .menu-box .box-15:hover,
 .menu-box .box-15:focus {
-  background-image: url(/images/menu/15-2.jpg);
+  background-image: url(../images/menu/15-2.jpg);
 }
 .menu-box .box-16 {
-  background-image: url(/images/menu/16-1.jpg);
+  background-image: url(../images/menu/16-1.jpg);
 }
 .menu-box .box-16:hover,
 .menu-box .box-16:focus {
-  background-image: url(/images/menu/16-2.jpg);
+  background-image: url(../images/menu/16-2.jpg);
 }
 /* สำหรับนักเรียน */
 .menu-box .box-17 {
-  background-image: url(/images/menu/15-1.jpg);
+  background-image: url(../images/menu/15-1.jpg);
 }
 .menu-box .box-17:hover,
 .menu-box .box-17:focus {
-  background-image: url(/images/menu/15-2.jpg);
+  background-image: url(../images/menu/15-2.jpg);
 }
 .menu-box .box-18 {
-  background-image: url(/images/menu/15-1.jpg);
+  background-image: url(../images/menu/15-1.jpg);
 }
 .menu-box .box-18:hover,
 .menu-box .box-18:focus {
-  background-image: url(/images/menu/15-2.jpg);
+  background-image: url(../images/menu/15-2.jpg);
 }
 .menu-box .box-19 {
-  background-image: url(/images/menu/15-1.jpg);
+  background-image: url(../images/menu/15-1.jpg);
 }
 .menu-box .box-19:hover,
 .menu-box .box-19:focus {
-  background-image: url(/images/menu/15-2.jpg);
+  background-image: url(../images/menu/15-2.jpg);
 }
 /* ห้องเรียนพิเศษ */
 .menu-box .box-20 {
-  background-image: url(/images/menu/15-1.jpg);
+  background-image: url(../images/menu/15-1.jpg);
 }
 .menu-box .box-20:hover,
 .menu-box .box-20:focus {
-  background-image: url(/images/menu/15-2.jpg);
+  background-image: url(../images/menu/15-2.jpg);
 }
 .menu-box .box-21 {
-  background-image: url(/images/menu/15-1.jpg);
+  background-image: url(../images/menu/15-1.jpg);
 }
 .menu-box .box-21:hover,
 .menu-box .box-21:focus {
-  background-image: url(/images/menu/15-2.jpg);
+  background-image: url(../images/menu/15-2.jpg);
 }
 .menu-box .box-22 {
-  background-image: url(/images/menu/15-1.jpg);
+  background-image: url(../images/menu/15-1.jpg);
 }
 .menu-box .box-22:hover,
 .menu-box .box-22:focus {
-  background-image: url(/images/menu/15-2.jpg);
+  background-image: url(../images/menu/15-2.jpg);
 }
 .menu-box .box-23 {
-  background-image: url(/images/menu/15-1.jpg);
+  background-image: url(../images/menu/15-1.jpg);
 }
 .menu-box .box-23:hover,
 .menu-box .box-23:focus {
-  background-image: url(/images/menu/15-2.jpg);
+  background-image: url(../images/menu/15-2.jpg);
 }
 
 /* .menu-box .box-5 > .text,
@@ -262,7 +261,7 @@ h6 {
   color: #ffffff;
 }  */
 #main-header {
-  background-image: url(/assets/main/images/resize-bg-header3.png);
+  background-image: url(../images/resize-bg-header3.png);
   background-size: cover;
   /*background-color: #676e77;*/
   padding: 20px 0px;
@@ -295,11 +294,10 @@ h6 {
 }
 #menu-header {
   position: relative;
-  background-image: url(/images/back/02.png);
+  background-image: url(../images/background/02.png);
   background-color: #000000;
   z-index: 10000;
 }
-
 
 #body {
   min-height: 700px;
@@ -1306,8 +1304,7 @@ select > option {
   }
 }
 .login .box-yellow-big {
-  background-image: url(/images/back/03.png);
-  
+  background-image: url(../images/background/03.png);
 }
 /* ภาพพื้นหลัง */
 
