@@ -539,7 +539,9 @@ h6 {
 /* Footer */
 /* Footer Link */
 .footer-link {
-  background: #4dc4f4;
+  background: url(../images/background/04.png);
+  background-size: cover;
+  background-color: #4dc4f4;
   padding: 30px 0px;
   padding-bottom: 7px;
 }
@@ -643,7 +645,8 @@ h6 {
   padding: 15px 0px;
   color: #d6d7d8;
   font-size: 12px;
-  background: #000000;
+  background-image: url(../images/background/02.png);
+  background-color: #000;
   text-align: right;
 }
 .footer-copyright a {
@@ -827,8 +830,9 @@ fieldset[disabled] .btn-gray-fee.active {
 .breadcrumb > li + li:before {
   padding: 0 5px;
   color: #ccc;
-  font-family: "FontAwesome";
-  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f054";
 }
 .no-shadows {
   box-shadow: 0;
@@ -1250,7 +1254,9 @@ select > option {
 }
 /* สไลด์ */
 .carousel-inner {
-  padding-bottom: 10px;
+  background-image: url(../images/background/01.png);
+  border: 5px solid #4dc4f4;
+  border-radius: 15px;
 }
 .carousel-control {
   position: absolute;

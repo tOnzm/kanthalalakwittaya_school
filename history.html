@@ -42,13 +42,14 @@
     <div class="wrapper container">
       <div class="row">
         <div class="col-sm-6 col-xs-12" id="logo-bu-horizontal">
-          <a href="./">
-            <img src="./assets/images/resize-logoKLW-horizontal.png" alt="มหาวิทยาลัยกรุงเทพ">
+          <a href="#">
+            <img src="./assets/main/images/logo/klw-top.png" alt="โรงเรียนกันทรลักษ์วิทยา">
           </a>
         </div>
       </div>
     </div>
   </div>
+
 
   <!-- เมนู -->
   <div id="menu-header">
@@ -57,19 +58,40 @@
         <div class="col-xs-12">
           <nav class="navbar navbar-default no-margins" id="bu-bootstrap-menu">
             <div class="wrapper container">
+
               <!-- ปุ่ม home -->
               <div class="navbar-header">
                 <a class="btn-navbar visible-xs" id="nav-icon"><i class="fa fa-bars"></i></a>
-                <a class="navbar-brand hidden-xs" href="./"><i class="fa fa-home"></i></a>
+                <a class="navbar-brand hidden-xs" href="./index.html"><i class="fa fa-home"></i></a>
               </div>
               <!-- สมัครเรียน -->
-              <a href="http://admissiononline.bu.ac.th/" class="btn btn-apply-now btn-rounds visible-xs"
-                target="_blank">สมัครเรียน</a>
+              <a href="#" class="btn btn-apply-now btn-rounds visible-xs" target="_blank">สมัครเรียน</a>
               <!-- จบสมัครเรียน -->
               <!-- เมนู -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav border-after">
-                  <!-- เมนูช่อง1 -->
+
+                  <!-- เกี่ยวกับโรงเรียน -->
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                      aria-expanded="false">เกี่ยวกับโรงเรียน</a>
+                    <div class="dropdown-menu full-width">
+                      <!-- บรรทัดที่ 1 -->
+                      <div class="row menu-box">
+                        <div class="col-md-6 col-sm-6">
+                          <a href="./th/curriculum/bachelors-degree" class="box box-15">
+                            <div class="text">โครงสร้างการบริหาร</div>
+                          </a>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                          <a href="./history.html" class="box box-16">
+                            <div class="text">วิสัยทัศน์และพันธกิจ</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- ทำเนียบบุคลากร -->
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                       aria-expanded="false">ทำเนียบบุคลากร</a>
@@ -77,7 +99,7 @@
                       <!-- บรรทัดที่ 1 -->
                       <div class="row menu-box">
                         <div class="col-md-3 col-sm-3">
-                          <a href="./th/curriculum/bachelors-degree" class="box box-1">
+                          <a href="/council-committees.html" class="box box-1">
                             <div class="text">ฝ่ายบริหาร</div>
                           </a>
                         </div>
@@ -145,12 +167,12 @@
                       </div>
                       <!-- บรรทัดที่4 -->
                       <div class="row menu-box">
-                        <div class="col-sm-3">
+                        <div class="col-sm-6">
                           <a href="./th/curriculum/masters-degree" class="box box-13">
                             <div class="text">เจ้าหน้าที่สำนักงาน</div>
                           </a>
                         </div>
-                        <div class="col-sm-3">
+                        <div class="col-sm-6">
                           <a href="./th/curriculum/doctoral-degree" class="box box-14">
                             <div class="text">ลูกจ้างชั่วคราว</div>
                           </a>
@@ -158,22 +180,57 @@
                       </div>
                     </div>
                   </li>
-
-                  <!-- เมนูช่อง2 -->
+                  <!-- สำหรับนักเรียน -->
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                      aria-expanded="false">เกี่ยวกับโรงเรียน</a>
+                      aria-expanded="false">สำหรับนักเรียน</a>
                     <div class="dropdown-menu full-width">
                       <!-- บรรทัดที่ 1 -->
                       <div class="row menu-box">
-                        <div class="col-md-6 col-sm-6">
-                          <a href="./th/curriculum/bachelors-degree" class="box box-15">
+                        <div class="col-md-4 col-sm-4">
+                          <a href="./th/curriculum/bachelors-degree" class="box box-17">
                             <div class="text">ข้อมูลทั่วไป</div>
                           </a>
                         </div>
-                        <div class="col-md-6 col-sm-6">
-                          <a href="/history.html" class="box box-16">
-                            <div class="text">วิสัยทัศน์และพันธกิจ</div>
+                        <div class="col-md-4 col-sm-4">
+                          <a href="./en/curriculum/international-programs" class="box box-18">
+                            <div class="text">ตรวจสอบเกรด</div>
+                          </a>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                          <a href="./th/curriculum/bachelors-degree" class="box box-19">
+                            <div class="text">ตารางเรียน</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- หลักสูตร -->
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                      aria-expanded="false">หลักสูตร</a>
+                    <div class="dropdown-menu full-width">
+                      <!-- บรรทัดที่ 1 -->
+                      <div class="row menu-box">
+                        <div class="col-md-3 col-sm-3">
+                          <a href="./images/room/003.jpg" class="box box-20">
+                            <div class="text">ห้องเรียน SMART</div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                          <a href="./images/room/004.jpg" class="box box-21">
+                            <div class="text">ห้องเรียน MST</div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                          <a href="./images/room/005.jpg" class="box box-22">
+                            <div class="text">ห้องเรียนนิติศาสตร์-รัฐศาสตร์</div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                          <a href="./images/room/006.jpg" class="box box-23">
+                            <div class="text">ห้องเรียนกีฬาและวิทยาศาสตร์การกีฬา</div>
                           </a>
                         </div>
                       </div>
@@ -194,18 +251,20 @@
     </div>
   </div>
 
+  <!-- ประวัติ-->
   <section id="body" style="display:none" ng-controller="history" ng-init="init();">
     <div class="container" id="index">
+      <!-- ย่อเล็กๆ -->
       <div class="row">
         <div class="col-xs-12">
           <ol class="breadcrumb">
-            <li><a href="./th"><i class="fa fa-home"></i> หน้าหลัก</a></li>
-            <li>รอบรั้วมหาวิทยาลัย</li>
-            <li><a href="./th/about">เกี่ยวกับมหาวิทยาลัย</a></li>
-            <li class="active">ประวัติมหาวิทยาลัยกรุงเทพ</li>
+            <li><a href="./index.html"><i class="fa fa-home"></i> หน้าหลัก</a></li>
+            <li>เกี่ยวกับโรงเรียน</li>
+            <li class="active">วิสัยทัศน์และพันธกิจ</li>
           </ol>
           <div class="page-header no-bottom">
-            <h1>ประวัติมหาวิทยาลัยกรุงเทพ</h1>
+            <!-- หัวข้อ -->
+            <h1>โรงเรียนกันทรลักษ์วิทยา</h1>
           </div>
         </div>
       </div>
@@ -221,12 +280,12 @@
             <blockquote>
               <p>
                 <meta charset="utf-8" /><span style="font-size:18px;"><b
-                    id="docs-internal-guid-17e09384-7fff-d823-1672-cc13f204b844">&ldquo;คิดแบบสร้างสรรค์ คิดแบบเจ้าของ
-                    ผสานเทคโนโลยี อนาคตแบบไหนก็ไร้ขีดจำกัด&rdquo;</b></span>
+                    id="docs-internal-guid-17e09384-7fff-d823-1672-cc13f204b844">&ldquo;กันทรลักษ์วิทยา
+                    เป็นโรงเรียนมาตรฐานสากล จัดการศึกษาตามศาสตร์พระราชา&rdquo;</b></span>
               </p>
             </blockquote>
 
-            <p>
+            <!-- <p>
               <meta charset="utf-8" /><span style="font-size:16px;"><b
                   id="docs-internal-guid-b0ad819b-7fff-aec9-85a9-2cfe8a6ce598">ตลอดระยะเวลากว่าครึ่งศตวรรษ
                   มหาวิทยาลัยกรุงเทพเป็นผู้นำสถานศึกษาเอกชนชั้นนำของประเทศ ที่ผลิตบัณฑิตที่มีคุณภาพ มีความคิดสร้างสรรค์
@@ -235,7 +294,7 @@
                   มีสิ่งแวดล้อมที่สร้างสรรค์ทั้งอาคารเรียนที่โดดเด่นด้านสถาปัตยกรรม ศูนย์การเรียนรู้
                   ควบคู่กับห้องปฏิบัติการและอุปกรณ์ที่ทันสมัย เพื่อเสริมทักษะการเรียนรู้ของนักศึกษาอย่างเต็มศักยภาพ
                   ซึ่งเราพร้อมมุ่งมั่นพัฒนาอย่างต่อเนื่องเพื่อเป็นผู้นำที่ก้าวไกลกว่าเดิม</b></span>
-            </p>
+            </p> -->
 
             <p>
               <meta charset="utf-8" />
@@ -248,982 +307,180 @@
             </p>
 
             <p dir="ltr"><span style="font-size:12px;"><b
-                  id="docs-internal-guid-f6c64642-7fff-418a-2e7c-e66cf6f27340">มหาวิทยาลัยกรุงเทพ
-                  เป็นมหาวิทยาลัยเอกชนแห่งแรกที่มีขนาดใหญที่สุดใประเทศไทย ก่อตั้งเมื่อวันที่ 25 ธันวาคม 2505
-                  โดยมีอาจารย์สุรัตน์ และอาจารย์ปองทิพย์ โอสถานุเคราะห์ เป็นผู้ก่อตั้ง เดิมชื่อว่า
-                  &ldquo;โรงเรียนไทยเทคนิค&rdquo; ต่อมาเปลี่ยนชื่อเป็น &ldquo;วิทยาลัยไทยเทคนิค&rdquo;
-                  และเพื่อความเหมาะสมที่จะเป็นสถาบันอุดมศึกษาเอกชนที่เปิดสอนระดับปริญญาตรี จึงเปลี่ยนชื่อเป็น
-                  &ldquo;วิทยาลัยกรุงเทพ&rdquo; (Bangkok College) ในปี พ.ศ. 2508 ต่อมาเมื่อวันที่ 24 ตุลาคม 2527
-                  ทบวงมหาวิทยาลัยได้อนุมัติให้เปลี่ยนสถานภาพเป็น &ldquo;มหาวิทยาลัยกรุงเทพ&rdquo; (Bangkok University)
-                  &nbsp;นอกจากนี้ ยังมีคณะผู้ร่วมก่อตั้งซึ่งทำให้มหาวิทยาลัยเติบโตอย่างมั่นคงมาจนถึงทุกวันนี้</b></span>
+                  id="docs-internal-guid-f6c64642-7fff-418a-2e7c-e66cf6f27340">วันที่ 17 พฤษภาคม พุทธศักราช 2514
+                  ประกาศจัดตั้งและเปิดสอนเป็นปีแรกโดยเปิดสอนเฉพาะระดับชั้บมัธยมศึกษาตอนต้นเท่านั้น ปีพุทธศักราช 2521
+                  เป็นต้นมาเปิดสอนในระดับชั้นมัธยมศึกษาตอนปลาย
+                  ปีพุธศักราช 2531 - 2536 จำนวนนักเรียนเพิ่มขึ้นเรื่อย ๆ ได้พัฒนาอาคารเรียน
+                  สถานที่ เพื่อให้เพียงพอกับจำนวนนักเรียน ปรับปรุงสถานที่ให้ร่มรื่น สวยงาม เพื่อ
+                  สร้างบรรยากาศในการเรียนรู้ควบคู่ไปกับการพัฒนาด้านวิชาการ
+                  ปีพุทธศักราช 2534 ได้รับการคัดเลือกเป็นโรงเรียนพระราชทาน โรงเรียนมัธยมศึกษาขนาดใหญ่ ของเขตการศึกษา 11
+                  โดยมีนายเกษม คำทวี เป็นผู้อำนวยการ
+                  ปีพุทธศักราช 2535 - 2540</b></span>
             </p>
 
             <p>&nbsp;</p>
 
-            <h3><strong>ปรัชญา</strong></h3>
+            <h3><strong>คำขวัญ</strong></h3>
 
-            <p>บัณฑิตต้องมีความรู้คู่ความดี มีความคิดสร้างสรรค์
-              และมีจิตวิญญาณผู้ประกอบการที่สามารถก้าวทันการเปลี่ยนแปลงของโลก และดำรงชีวิตอย่างมีความสุข</p>
+            <p>เรียนดี ประพฤติดี กีฬาเด่น จึงจะเป็นศิษย์ ก.ล.ว.</p>
 
-            <h3><strong>ปณิธาน</strong></h3>
+            <h3><strong>พันธกิจ (Mission)</strong></h3>
 
-            <p>มหาวิทยาลัยกรุงเทพมุ่งพัฒนาบัณฑิตที่มีคุณภาพ มีคุณธรรม จริยธรรม มีความเป็นผู้นำเชิงสร้างสรรค์
-              มีจิตวิญญาณของการเป็นผู้ประกอบการที่เป็นมืออาชีพด้านวิชาการ และทักษะในทางปฏิบัติด้วยความรับผิดชอบต่อสังคม
-              รวมทั้งเป็นสถาบันในระดับสากลที่เป็นศูนย์รวมการวิจัย
-              ซึ่งมุ่งสร้างความร่วมมือกับสถาบันการศึกษาและองค์กรทั้งในประเทศและต่างประเทศ
-              เพื่อประโยชน์ในการพัฒนาคุณภาพการเรียนการสอนและการให้บริการทางวิชาการแก่สังคม</p>
+            <p> 1. พัฒนาคุณภาพผู้เรียนให้เป็นบุคคลแห่งศตวรรษที่ 21 ตามศาสตรพระราชา <br>2.
+              ส่งเสริมและพัฒนาหลักสูตรสถานศึกษารองรับกลุ่มศักยภาพผู้เรียนสู่ศตวรรษที่ 21 <br>3.
+              พัฒนาครูและบุคลากรทางการศึกษาให้มีสมรรถนะการจัดการศึกษาในศตวรรษที่ 21 เน้นกระบวนการเรียนรู้แบบ Active
+              Learning <br>4. ส่งเสริม สนับสนุนการบริหารจัดการด้วยระบบคุณภาพ จัดทำสื่อ อุปกรณ์ คุรุภัณฑ์ ระบบเชื่อมต่อ
+              internet ความเร็วสูงในการเข้าถึงความรู้และจัดรองรับห้อง Smart classroom <br>5. ส่งเสริม
+              ประสานให้เกิดเครือข่ายความร่วมมือ ระหว่างภาคประชาชน หน่วยงานเพื่อจัดการศึกษาตามศาสตร์พระราชา
+            </p>
 
-            <h3><strong>ค่านิยม (BU Core Values)</strong></h3>
+            <h3><strong>ค่านิยม (KLW Core Values)</strong></h3>
 
-            <p>ค่านิยมของมหาวิทยาลัยกรุงเทพ (Embed a &lsquo;CREATIVE&rsquo; Culture) ประกอบด้วย</p>
+            <p>ค่านิยมของโรงเรียนกันทรลักษ์วิทยา ประกอบด้วย</p>
 
-            <table border="0">
+            <table>
               <tbody>
                 <tr>
-                  <td>C</td>
+                  <td>KLW</td>
                   <td>=</td>
-                  <td>Creativity (ความคิดสร้างสรรค์)</td>
+                  <td>น้ำใจเด่น เป็นผู้นำ เลิศล้ำภูมิปัญญา</td>
                 </tr>
                 <tr>
-                  <td>R</td>
+                  <td>K</td>
                   <td>=</td>
-                  <td>Responsibility (ความรับผิดชอบต่อสังคม)</td>
+                  <td>Kindness (การมีน้ำใจ มีเมตตา)
+                    น้ำใจเด่น คือ ความร่วมมือในการทำงานต่างๆ ความสามัคคี การทำงานเป็นทีม เอื้อเฟื้อเผื่อแผ่ซึ่งกันและกัน
+                  </td>
                 </tr>
                 <tr>
-                  <td>E</td>
+                  <td>L</td>
                   <td>=</td>
-                  <td>Excellence (คุณภาพและความเป็นมืออาชีพ)</td>
+                  <td> L : Leadership (ความเป็นผู้นำ)
+                    เป็นผู้นำ คือ มีความเป็นผู้นำในด้านต่างๆ เช่น ด้านวิชาการ ด้านกีฬา ด้านคุณธรรมจริยธรรม</td>
                 </tr>
                 <tr>
-                  <td>A</td>
+                  <td>W</td>
                   <td>=</td>
-                  <td>Agility (ความพร้อมในการปรับตัวตามสถานการณ์)</td>
+                  <td> W : Wisdom (ภูมิปัญญา ความฉลาด)
+                    ล้ำเลิศภูมิปัญญา คือ การใช้ความรู้ความสามารถที่มีอยู่ ควบคู่กับความรู้ใหม่
+                    สร้างองค์ความรู้ที่สามารถนำไปใช้ได้ในชีวิตจริง เกิดคุณค่าต่อสังคม
+
+                  </td>
                 </tr>
-                <tr>
-                  <td>T</td>
-                  <td>=</td>
-                  <td>Trust (การยึดมั่นในความซื่อตรง)</td>
-                </tr>
-                <tr>
-                  <td>I</td>
-                  <td>=</td>
-                  <td>Internationalization (ความเป็นสากล)</td>
-                </tr>
-                <tr>
-                  <td>V</td>
-                  <td>=</td>
-                  <td>Vision (การมองการณ์ไกล)</td>
-                </tr>
-                <tr>
-                  <td>E</td>
-                  <td>=</td>
-                  <td>Entrepreneurial Spirit (การมีจิตวิญญาณผู้ประกอบการ)</td>
-                </tr>
+
               </tbody>
             </table>
 
             <h3><strong>วัตถุประสงค์</strong></h3>
 
             <ol>
-              <li>เพื่อเป็นสถาบันอุดมศึกษาชั้นนำของประเทศที่สรรค์สร้างและพัฒนาทรัพยากรมนุษย์ที่มีคุณภาพและคุณธรรม</li>
-              <li>เพื่อเป็นสถาบันอุดมศึกษาที่สร้างบัณฑิตให้มีความรู้ความสามารถในการประกอบอาชีพ
-                มีความพร้อมที่จะพัฒนาตนเองให้สอดคล้องกับกระแสการเปลี่ยนแปลงของสังคมได้อย่างเหมาะสม
-                และมีความสามารถแข่งขันในระดับสากล</li>
-              <li>
-                เพื่อเป็นสถาบันค้นคว้าวิจัยสรรพวิทยาการอันจะนำไปสู่ความก้าวหน้าทางวิชาการทั้งในระดับประเทศและระดับนานาชาติ
+              <li> นักเรียนมีเป้าหมายชีวิตและทักษะสมรรถนะในศตวรรษที่ 21</li>
+              <li> โรงเรียนมีแผนการเรียนรองรับเป้าหมายชีวิตของผู้เรียนและป้อนสาขาความถนัดการศึกษาต่อระดับอุดมศึกษา
+                และป้อนตรงตามสาขาความถนัด</li>
+              <li> ครูมีสมรรถนะการจัดการศึกษาในศตวรรษที่ 21 มีทักษะการจัดกระบวนการ Active Learning
               </li>
-              <li>เพื่อเป็นแหล่งรวมนักวิชาการและผู้เชี่ยวชาญในสาขาวิชาต่างๆ
-                อันจะก่อให้เกิดการแลกเปลี่ยนและพัฒนาองค์ความรู้ที่จะยังประโยชน์แก่สังคม</li>
-              <li>เพื่อเป็นสถาบันที่ปลูกฝังความรักชาติ ความเป็นประชาธิปไตย และสำนึกในความเป็นไทย</li>
+              <li>โรงเรียนมีมาตรฐานการบริหารจัดการด้วยระบบคุณภาพ มีห้องเรียน ห้องสืบค้น
+                ห้องปฏิบัติการและศูนย์การเรียนรู้ที่มีอุปกรณ์ ครุภัณฑ์ และระบบการต่อเชื่อมรองรับ Internet ความเร็วสูง
+              </li>
+              <li>โรงเรียนมีภาคีเครือข่าย ความร่วมมือของสถาบันการศึกษาระดับอุดมศึกษา สถานศึกษา อาชีวศึกษา
+                สถานประกอบการณ์ และหน่วยงานที่เกี่ยวข้องทั้งรัฐและเอกชนร่วมมือกันจัดการศึกษาตามศาสตร์พระราชา</li>
             </ol>
 
             <h3><strong>อัตลักษณ์</strong></h3>
 
-            <p>มีความคิดสร้างสรรค์ มีจิตวิญญาณผู้ประกอบการ มีความเป็นสากล</p>
+            <p>ไหว้สวย ยิ้มใส ใส่ใจกินกรรม</p>
 
-            <h3><strong>เอกลักษณ์</strong></h3>
-
-            <p>สภาพแวดล้อมการจัดการศึกษาที่สร้างสรรค์</p>
           </div>
-
+          <!-- ที่อยู่ -->
           <div class="tabs-container m-b-lg">
             <ul class="nav nav-tabs">
-              <li class="active"><a data-toggle="tab" href="#tab-1"><i class="fa fa-map-marker"></i> City Campus</a>
+              <li class="active"><a data-toggle="tab" href="#tab-1"><i class="fa fa-map-marker"></i>ที่อยู่</a>
               </li>
-              <li class=""><a data-toggle="tab" href="#tab-2"><i class="fa fa-map-marker"></i> Main Campus</a></li>
             </ul>
+
             <div class="tab-content">
               <div id="tab-1" class="tab-pane active">
                 <div class="panel-body">
                   <div class="box-detail-history">
-                    <p>ตั้งอยู่ ณ เลขที่ 119 ซอยสุขุมวิท 40 (บ้านกล้วยน้ำไท) ถนนพระราม 4 แขวงพระโขนง เขตคลองเตย
-                      กรุงเทพมหานคร มีเนื้อที่ 26 ไร่ 3 งาน 89 ตารางวา มีพื้นที่ใช้สอยอาคารรวม 67,035 ตารางเมตร
-                      ประกอบด้วยอาคาร 7 อาคาร โรงอาหารและห้องสมุด 1 อาคาร อาคารอื่นๆ จำนวน 9 อาคาร&nbsp; มีพื้นที่ใช้สอย
-                      สำนักหอสมุดและศูนย์การเรียนรู้ หอประชุม ศูนย์อเนกประสงค์
-                      สถาบันพัฒนาผู้ประกอบการเชิงสร้างสรรค์&nbsp; สมาคมศิษย์เก่ามหาวิทยาลัยกรุงเทพ เป็นต้น&nbsp;</p>
-
-                    <p>&nbsp;</p>
-
-                    <p>&nbsp;</p>
-                  </div>
-                </div>
-              </div>
-              <div id="tab-2" class="tab-pane ">
-                <div class="panel-body">
-                  <div class="box-detail-history">
-                    <p>ตั้งอยู่ ณ เลขที่ 9/1 หมู่ที่ 5 ถนนพหลโยธิน ตำบลคลองหนึ่ง อำเภอคลองหลวง จังหวัดปทุมธานี มีพื้นที่
-                      441 ไร่ 1 งาน 67 ตารางวา เป็นสถานที่ดำเนินการเรียนการสอนของนักศึกษาทุกคณะ แบ่งพื้นที่เป็นโซน A-D
-                      ประกอบด้วยอาคาร 47 หลัง มีพื้นที่ใช้สอยอาคารรวม 150,625 ตารางเมตร ประกอบด้วย อาคารเรียน 11 อาคาร
-                      อาคารปฏิบัติการ 6 อาคาร โรงอาหาร 4 อาคาร และอาคารอื่นๆ 26 อาคาร แบ่งเป็นห้องบรรยาย 137 ห้อง
-                      มีพื้นที่ใช้สอย 17,313 ตารางเมตร ห้องปฏิบัติการ 220 ห้อง มีพื้นที่ใช้สอย 22,892 ตารางเมตร เช่น โซน
-                      A มีอาคาร BU Diamond อาคาร Tourism Tower อาคารเรียน อาคาร Imagine Village อาคารบริการ
-                      และศูนย์กิจกรรมนักศึกษา (SAC) โซน B มีอาคารเรียนและอาคารฝึกงานของคณะศิลปกรรมศาสตร์
-                      อาคารฝึกงานของคณะสถาปัตยกรรมศาสตร์ อาคารคณะวิศวกรรมศาสตร์&nbsp;</p>
-
-                    <p>พิพิธภัณฑ์สถานเครื่องถ้วยเอเชียตะวันออกเฉียงใต้ อาคารหอสมุดสุรัตน์ โอสถานุเคราะห์
-                      อาคารนิเทศศาสตร์คอมเพล็กซ์ Center for Cinematic and Digital Arts และสำนักพิมพ์มหาวิทยาลัยกรุงเทพ
-                      และโซน D อาคารรับรองและอัฒจันทร์สนามเทนนิส ห้องประชุมและห้องสัมมนา 41 ห้อง มีพื้นที่ใช้สอย 5,107
-                      ตารางเมตร ห้องฝ่ายบริหารและห้องทำงานผู้สอน จำนวน 77 ห้องมีพื้นที่ใช้สอย 11,299 ตารางเมตร
-                      ห้องพักผ่อนนักศึกษา และห้องอื่นๆ จำนวน 121 ห้อง มีพื้นที่ใช้สอย 9,573 ตารางเมตร และโครงการ Imagine
-                      Village มีพื้นที่ใช้สอยประมาณ 13,671 ตารางเมตร ได้รับการรับรองมาตรฐาน ISO14001
-                      ทั้งระบบจากสถาบันสิ่งแวดล้อมไทย
-                      ซึ่งเป็นมหาวิทยาลัยเอกชนแห่งแรกในประเทศไทยที่ได้รับการรับรองมาตรฐานทั้งระบบ</p>
-
-                    <p>นอกจากนี้ มหาวิทยาลัยมีสนามฟุตบอล สนามกีฬากลางแจ้ง ศาลาที่พักรอบมหาวิทยาลัย ร้านค้าย่อย
-                      สวนวรรณคดี สวนพันธุ์ไม้ประจำสถาบันฯ สวนสุขภาพ ลานจอดรถ 1-7 ความจุ 1,048 คัน เป็นต้น</p>
+                    <p>ตั้งอยู่ ณ เลขที่ 443 หมู่ 5 ถนนดำรงสถิต ตำบลน้ำอ้อม
+                      อำเภอกันทรลักษ์ จังหวัดศรีสะเกษ 33110 มีเนื้อที่ 31 ไร่ 3 งาน 15.3 ตารางวา
+                      ประกอบด้วยอาคารเรียน 11 อาคาร โรงอาหารและห้องสมุด 1 อาคาร หอประชุม 2 อาคาร และอาคารเอกประสงค์ 1
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="timeline-bu-section">
-      <div class="container">
-        <h1 class="timeline-title">
-          BU Timeline <span></span>
-        </h1>
-      </div>
-      <div class="bu-timeline-body row content-xs">
-        <div class="col-xs-4 " style="padding:0px;background:black;">
-          <div id="timelineUp" class="tab-scroll-arrow-up">
-            <a href="javascript:void(0);" ng-click="timeline_up();"><i class="fa fa-angle-up fa-3"></i></a>
-          </div>
-
-          <div id="history-nav-section" class="history-nav-section">
-            <ul class="nav nav-tabs nav-stacked history-nav">
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-25" role="tab">
-                  <div>2555</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-24" role="tab">
-                  <div>2554</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-23" role="tab">
-                  <div>2553</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-22" role="tab">
-                  <div>2552</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-21" role="tab">
-                  <div>2551</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-20" role="tab">
-                  <div>2550</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-19" role="tab">
-                  <div>2549</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-18" role="tab">
-                  <div>2548</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-17" role="tab">
-                  <div>2547</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-16" role="tab">
-                  <div>2546</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-15" role="tab">
-                  <div>2545</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-14" role="tab">
-                  <div>2542</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-13" role="tab">
-                  <div>2539</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-12" role="tab">
-                  <div>2538</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-1" role="tab">
-                  <div>2536</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-2" role="tab">
-                  <div>2531</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-3" role="tab">
-                  <div>2530</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-4" role="tab">
-                  <div>2529</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-5" role="tab">
-                  <div>2528</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-6" role="tab">
-                  <div>2527</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-7" role="tab">
-                  <div>2526</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-8" role="tab">
-                  <div>2524</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-9" role="tab">
-                  <div>2514</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-10" role="tab">
-                  <div>2508</div>
-                </a></li>
-              <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#tab-timeline-11" role="tab">
-                  <div>2505</div>
-                </a></li>
-            </ul>
-          </div>
-
-          <div id="timelineDown" class="tab-scroll-arrow-down">
-            <a href="javascript:void(0);" ng-click="timeline_up();"><i class="fa fa-angle-down fa-3"></i></a>
-          </div>
-        </div>
-        <div class="col-xs-8" style="padding:0px;">
-          <div class="tab-content">
-            <div class="tab-pane active" id="tab-timeline-25" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208162400_XQVFAIHCMQVB3Q6_HZCTZAPY1JAO8LD.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208162400_XQVFAIHCMQVB3Q6_HZCTZAPY1JAO8LD.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>บัณฑิตวิทยาลัย เปิดสาขา MBA-SMEs Beauty and Fashion แห่งแรกของประเทศและแห่งเดียวในเอเชีย<br />
-                    <br />
-                    ก่อตั้งคณะสถาปัตยกรรมศาสตร์ ด้วยหลักสูตรแนวคิดใหม่ Bi-ligual เพื่อผลิตสถาปนิกระดับชาติ<br />
-                    <br />
-                    เปิด Imagine Lounge พื้นที่สร้างสรรค์ทางความคิดสำหรับนักศึกษา
-                    เพื่อกระตุ้นแรงบันดาลใจอย่างไม่สิ้นสุด<br />
-                    <br />
-                    เปิด Center for Cinematic and Digital Arts ศูนย์ปฏิบัติการทางภาพยนตร์และดิจิตอลอาร์ต ทันสมัย
-                    สมบูรณ์แบบ และครบวงจรที่สุด ในวงการศึกษาของประเทศ<br />
-                    <br />
-                    เปิด Tourism Tower สุดยอดศูนย์ปฏิบัติการด้านการบริการการท่องเที่ยว การโรงแรม ภัตตาคาร
-                    และการจัดการธุรกิจสายการบิน ที่ครบครันแห่งเดียว อาทิ เครื่องบินจำลอง Boeing 787 Dreamliner
-                    สุดยอดอากาศยานแห่งอนาคต ห้องปฏิบัติการภาคพื้นดิน สร้างมืออาชีพพร้อมสถานการณ์จริง Spa Room
-                    เรียนรู้ในบรรยากาศจริง ฯลฯ<br />
-                    <br />
-                    FOR A COMPANY LIMITED (Japan) ประกาศเกียรติคุณยกย่อง อ.อัฏฐ์ กู้พงษ์ศักดิ์ และอ.ณัฐวัฒน์
-                    วงศ์วิลาสนุรักษ์ คณะนิเทศศาสตร์ เป็น Specialist in Television Production for VR CAM Virtual Studio
-                    Systems in Education Areas in Thailand<br />
-                    <br />
-                    FOR A COMPANY LIMITED (Japan) ประกาศเกียรติคุณให้ภาควิชาวิทยุกระจายเสียง และวิทยุโทรทัศน์ เป็น Best
-                    Reference Site in Education Area on Television Production for Virtual Studio System
-                    สถาบันอุดมศึกษาเอกชนแห่งแรกของไทยที่นำ VR CAM VIRTUAL STUDIO มาใช้ในการเรียนการสอน<br />
-                    <br />
-                    บ้านกล้วย หนังสือพิมพ์ของภาควิชาวารสารศาสตร์ คณะนิเทศศาสตร์ ได้รับรางวัลบทบรรณาธิการ (บทนำ) ดีเด่น
-                    จากสภาการหนังสือพิมพ์แห่งชาติ<br />
-                    <br />
-                    อ.อุฬารพัชร นิธิอุทัย คณะศิลปกรรมศาสตร์ ได้รับเชิญไปแสดงผลงานใน &quot;The 13th International
-                    Architecture Exhibition at Venice&quot;
-                  </p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208162349_1JMPSXDZWYQBZ6G_T5UIKPDQ61XKO9U.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-24" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208162319_YJUHOLXANGUJ4ZC_UDP1GMPQ8PTJJ64.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208162319_YJUHOLXANGUJ4ZC_UDP1GMPQ8PTJJ64.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>ได้รับรางวัล Trusted Brand Award 2011 ในกลุ่ม Trusted Private University จาก Reader&#39;s Digest
-                    Magazine ให้เป็นมหาวิทยาลัยเอกชนที่มีชื่อเสียงและน่าเชื่อถือที่สุด<br />
-                    <br />
-                    กลุ่มอาคาร BU Diamond &quot;ตึกเพชร&quot; ได้รับรางวัล The Arcasia Awards 2011 ประเภท Public
-                    Amenity: Institutional Building พลังงานแห่งสถาปัตยกรรมมหัศจรรย์โดยสมาคมสถาปนิกเอเชีย<br />
-                    <br />
-                    BU CHEERLEADING TEAM คว้าแชมป์โลกเชียร์ลีดดิ้ง 2011 จากประเทศสหรัฐอเมริกา<br />
-                    <br />
-                    ทีมนศ.คณะมนุษยศาสตร์ ชนะเลิศการประกวดบายศรีระดับชาติ ในงาน &quot;เย็บร้อย ค่อยจีบ
-                    ประดิษฐ์ใบตอง&quot; ระดับชาติ ครั้งที่ 2 (สมภพ ศรานุรักษ์, นิพนธ์ โฉมนิ, กัมพล เหรียญกมล, ศิรินทร
-                    เมืองโต, สุชาดา รัตนวาร, กนกวรรณ สมสะอาด และนวพรรณ แช่อั้ง)
-                  </p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208162306_KONWIB4R96ZYVRW_C73TVU4NFJT6JOB.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-23" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208162232_3DTXB9IOE0MOTCS_FQYMKUPPMX16PMH.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208162232_3DTXB9IOE0MOTCS_FQYMKUPPMX16PMH.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>ก่อตั้งสถาบันนานาชาติเพื่อเอเชีย-แปซิฟิกศึกษา (International Institute for Asia-Paciﬁc
-                    Student-INSAPS)
-                    ศูนย์องค์ความรู้ที่เกี่ยวกับการรวมตัวทางเศรษฐกิจและเปิดเสรีทางการค้าภายในภูมิภาคและระหว่างภูมิภาค<br />
-                    <br />
-                    ก่อตั้งศูนย์สร้างสรรค์มหาวิทยาลัยกรุงเทพ (Bangkok University Creative Center-BUCC)
-                    ส่งเสริมและสนับสนุนการดำเนินงานด้านความคิดสร้างสรรค์ที่สามารถเกิดขึ้นจริงทุกรูปแบบ<br />
-                    <br />
-                    คณะนิเทศศาสตร์ ริเริ่มโครงการ Bangkok International Student Film Festival: BISFF
-                    หนึ่งในเวทีระดับนานาชาติและเป็นศูนย์กลางการเผลแพร่ผลงานภาพยนตร์ที่ผลิตโดยนักเรียนและนักศึกษาจากทั่วโลก<br />
-                    <br />
-                    บัณฑิตวิทยาลัย เปิดสาขาวิชา Content Management and Value Creation ที่แรกและหนึ่งเดียวในเอเชีย<br />
-                    <br />
-                    เปิดตัวโครงการ &ldquo;ไอเดียแลกล้าน&rdquo;
-                    สนับสนุนผลงานสร้างสรรค์ของนักศึกษาที่โดดเด่นโดยมหาวิทยาลัยสนับสนุนงบประมาณและจัดที่ปรึกษาให้เพื่อพัฒนาผลงานให้เกิดขึ้นจริง<br />
-                    <br />
-                    เปิดตัวโครงการ &ldquo;Creative Entrepreneurial Marketing Project-CEMP&quot; นักศึกษาสร้างทีมธุรกิจ
-                    ร่วมพัฒนา project โดยนักศึกษาจากหลากหลายสาขาวิชา<br />
-                    <br />
-                    ทีมนักศึกษา คณะวิศวกรรมศาสตร์ ชนะเลิศการแข่งขันหุ่นยนต์ สสท. ชิงแชมป์ประเทศไทย (ศุภชัย พลับชิด,
-                    ธงชัย ประไพพงษ์, ภมร แย้มทรัพย์, นิรันต์ กล่ำเดช, มศวร์ อุบลหอม, รัณย์ มอญพูด, สุทธิพงษ์
-                    ขวัญชัยเจริญ, ชัยวิรัช พลูศรี, อุดมศักดิ์ กลิ่นพุดซ้อน, รุ่งคุณ รุ่นเรืองบูรณะกุล)<br />
-                    <br />
-                    ดร.สุธา เจียรนัยกุลวาณิช คณบดีคณะบัญชี ได้รับรางวัลอาจารย์ต้นแบบ ด้านการสอดแทรกคุณธรรม จัดโดย
-                    เครืองข่ายสถาบันอุดมศึกษาภาคกลาง และ สกอ.<br />
-                    <br />
-                    BU Theatre Company หนึ่งเดียวในเอเชีย ได้รับเชิญไปแสดงเทศกาลละครระดับโลก เรื่อง&quot; Kafka and
-                    I&quot; แสดงใน The APOSTROF ณ กรุงปราก สาธารณรัฐเช็ค<br />
-                    <br />
-                    เตชิต พลายงาม นศ.คณะศิลปกรรมศาสตร์ ชนะเลิศการประกวดออกแบบแฟชั่นและสิ่งทอ ในโครงการ Singha Life Award
-                    2010<br />
-                    <br />
-                    วรรณกรรมสั้น เรื่อง &quot;ครอบครัวของผม (ในสังคมสองสี)&quot; ผลงานโดย อ.รัชศักดิ์ จิรวัฒน์
-                    คณะมนุษยศาสตร์ ชนะเลิศการประกวดวรรณกรรมการเมือง รางวัลแว่นฟ้า ประจำปี 2553 ประเภทเรื่องสั้น
-                  </p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208162206_ROBXCVKK2XK3A4J_E55LPZGLAKZO8PZ.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-22" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208162142_QTF9SY3MRH8KYYI_UUKLA3YZO0BYZCO.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208162142_QTF9SY3MRH8KYYI_UUKLA3YZO0BYZCO.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>สถาบันพัฒนาผู้ประกอบการเชิงสร้างสรรค์ (Creative Entrepreneurship Development Institute-CEDI)
-                    เซ็นสัญญา MOU สถาบันเดียวในประเทศไทยที่ร่วมกับ Babson College ซึ่งเป็นสถาบันอันดับ 1
-                    ของโลกทางด้านผู้ประกอบการ&nbsp;<br />
-                    <br />
-                    ริเริ่มทุนการศึกษา BU Creative ให้แก่นักศึกษาที่มีความคิดสร้างสรรค์โดดเด่น<br />
-                    <br />
-                    เปิดตัวนิตยสารและเว็บไซต์ Imagine
-                    แหล่งกระตุ้นและบ่มเพาะให้นักศึกษาเป็นนักคิดและนักสร้างสรรค์ในแบบฉบับของตัวเอง<br />
-                    &nbsp;
-                  </p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208162131_IWOEM69XHBS8T5Z_WBK97NKGXOM3PKZ.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-21" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208162102_Y9ABHY1URYFV9PG_ZQSJ9LFHGQKIRYZ.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208162102_Y9ABHY1URYFV9PG_ZQSJ9LFHGQKIRYZ.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>คณะวิศวกรรมศาสตร์ ร่วมมือกับ บริษัท เอ็มเค เรสโตรองต์ จำกัด
-                    พัฒนาหุ่นยนต์รับสั่งอาหารต้นแบบตัวแรกของประเทศไทย ปัจจุบันคณะได้ผลิตหุ่นยนตร์บริการไปแล้ว 5 ตัว
-                    ให้กับ MK<br />
-                    <br />
-                    อาคารของมหาวิทยาลัย 3 อาคาร ได้รับรางวัล สถาปัตยกรรมดีเด่น จากสมาคมสถาปนิกสยาม ในพระบรมราชูปถัมภ์
-                    อาคาร Admission &amp; Information Center - เหรียญทองสถาปัตยกรรมประเภทอาคารพาณิชย์ /
-                    อาคารพิพิธภัณฑสถานเครื่องถ้วยเอชียตะวันออกเฉียงใต้ -
-                    เหรียญทองสถาปัตยกรรมประเภทสถาบันหรืออาคารทางศาสนา / อาคารวิทยาลัยนานาชาติและหอศิลปมหาวิยาลัยกรุงเทพ
-                    - เหรียญเงินสถาปัตยกรรมประเภทสถาบันหรืออาคารทางศาสนา<br />
-                    <br />
-                    ก่อตั้ง สถาบันพัฒนาผู้ประกอบการเชิงสร้างสรรค์ (Creative Entrepreneurship Development
-                    Institute-CEDI)<br />
-                    <br />
-                    ก่อตั้ง Institute for Knowledge &amp; Innovation South-East Asia-IKI-SEA ศูนย์เอเชียตะวันออกเฉียงใต้
-                    ร่วมกับ George Washington University, USA<br />
-                    <br />
-                    ผศ.ดร.อรรยา สิงห์สงบ คณบดีคณะนิติศาสตร์ เป็นนักวิจัยจากมหาวิทยาลัยเอกชนคนเดียวที่ได้รับรางวัล
-                    นักวิจัยรุ่นใหม่ดีเด่น จากสำนักงานกองทุนสนับสนุนการวิจัย และสำนักงานคณะกรรมการการอุดมศึกษา<br />
-                    <br />
-                    อ.อรภาวดี เสรีวิวัฒนา คณะศิลปกรรมศาสตร์ ได้รับเชิญจาก LOUIS VUITTON ไปโชว์งานศิลปะการพับกระดาษ
-                    Origami<br />
-                    <br />
-                    รัชนี เลิศเดชาขัย นศ.ปริญญาเอก สาขานิเทศศาสตร์ ได้รับรางวัลวิจัยดีเด่น ประเภทมนุษยศาสตร์และสังคม
-                    ในการประชมเสนอผลงานวิจัยระดับบัณฑิตศึกษาแห่งชาติ ครั้งที่ 22<br />
-                    <br />
-                    ภาพยนตร์สั้น &quot;เวลา..รัก&quot; ผลงานขนิษฐา ขวัญอยู่ นักศึกษา คณะนิเทศศาสตร์ ได้รับรางวัล Popular
-                    Vote เทศกาลภาพยนตร์สั้น ครั้งที่ 12 ได้รับเลือกเข้าฉายในเทศกาล International ward Winning Thai Film
-                    ต่อมาค่าย GTH
-                    นำบทภาพยนตร์ไปต่อยอดเป็นภาพยนตร์ฟอร์มใหญ่เรื่อง&quot;ความจำสั้นแต่รักชั้นยาว&quot;<br />
-                    <br />
-                    ผลงาน Own Blood โดย พีรกานต์ ศานติวรพงษ์ นักศึกษา BUIC ชนะเลิศการประกวดสิ่งมีชีวิต (Spore Creature
-                    Creator) ระดับเอเชียแปซิฟิค<br />
-                    <br />
-                    วิวัฒน์ สรรพคุณ นักศึกษา คณะนิติศาสตร์
-                    บัณฑิตจากมหาวิทยาลัยเอกชนคนแรกที่สอบได้อันดับหนึ่งในการสอบความรู้ชั้นเนติบัณทิต<br />
-                    <br />
-                    วิไลพร คงเกิด นักศึกษา คณะมนุษยศาสตร์ ชนะเลิศการประกวดเรียงความภาษาอังกฤษ &quot;175 ปี
-                    ความสัมพันธ์ไทย-อเมริกา&quot; เข้าร่วมสังเกตุการณ์การเลือกตั้งประธานาธิบดี ณ ประเทศสหรัฐอเมริกา
-                  </p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208162051_EES8YNG9EDAUNGX_SQIZG8WIBPYSKDK.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-20" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208162020_07IJVJBKAJ2ZD35_5WTKAQVISPDYXPV.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208162020_07IJVJBKAJ2ZD35_5WTKAQVISPDYXPV.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>ดร.มัทนา สานติวัตร ดำรงตำแหน่งอธิการบดี<br />
-                    <br />
-                    บัณฑิตวิทยาลัย เปิดสาขาวิชา การบริหารธุรกิจบันเทิงและการผลิต แห่งแรกและแห่งเดียวในเอเชีย<br />
-                    <br />
-                    อ.กรัณฑรัตน์ บุญญวัฒน์ คณะบัญชี ได้รับรางวัล Best Academic Performance Award in Accounting and
-                    Finance 2007/08 และรางวัล Award for Dissertation จาก Durham University<br />
-                    <br />
-                    อ.นิพันธ์ โอฬารนิเวศน์ คณะศิลปกรรมศาสตร์ ได้รับเชิญไปแสดงผลงานใน &quot;13th International Festival
-                    of Independent and Amateur Theatres&quot; ณ สาธารณรัฐอิตาลี<br />
-                    <br />
-                    BU Theatre Company หนึ่งเดียวในเอเชีย ได้รับเชิญแสดงเทศกาลละครระดับโลก เรื่อง &quot;Dancing to
-                    Nirvana&quot; ณ กรุงปราก สาธารณรัฐเช็ค เขียนบทและกำกับ โดย ผศ. พรรณศักดิ์ สุขี<br />
-                    <br />
-                    ภาพยนตร์สั้น &quot;Love You If Me Dare&quot; ได้รับรางวัลภาพยนตร์สั้นดีเด่น
-                    การประกวดภาพยนตร์แห่งชาติ ครั้งที่ 16 โดยนายยศกร สงวนทรัพยากร และนายพิชญะ ไชยดี นักศึกษา
-                    คณะนิเทศศาสตร์&nbsp;<br />
-                    <br />
-                    ณัชพล ผดุงเกียรติกมล นศ.คณะบริหารธุรกิจ คว้าแชมป์การแข่งขันเจ็ตสกีระดับโลก ณ
-                    ประเทศสหรัฐอเมริกา<br />
-                    <br />
-                    ณกุล พรพิริยะกุล นศ.BUIC ได้รับรางวัลนักข่าวแห่งอนาคตดีเลิศ การแข่งขัน TrueVisions-BBC World News
-                    Future Journalist Award 2006-2007
-                  </p>
-
-                  <p>&nbsp;</p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208161959_KZMKQ2PUUXBOQG0_AUJZYRXDHTNLMQR.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-19" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208161935_BNMH4PNFVXYBEPQ_ERQUH7MFB4VX09E.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208161935_BNMH4PNFVXYBEPQ_ERQUH7MFB4VX09E.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>คณะมนุษยศาสตร์ เปิดสอนสาขาภาษาจีน เพื่อการท่องเที่ยวและโรงแรม เป็นแห่งแรกในประเทศไทย โดยเซ็นสัญญา
-                    MOU ร่วมกับ Guangdong University of Foreign Studies สาธารณรัฐประชาชนจีน<br />
-                    <br />
-                    คณะวิทยาศาสตร์และเทคโนโลยี เปิดศูนย์บ่มเพาะนักพัฒนาซอฟต์แวร์ (Software Developer Incubation
-                    Center)&nbsp;<br />
-                    <br />
-                    คณะนิเทศศาสตร์ ริเริ่มจัดการประกวด ผลงานโฆษณาระดับอุดมศึกษาทั่วประเทศ (Manifestation of Advertising
-                    Department Awards-MADD Awards)<br />
-                    &nbsp;
-                  </p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208161905_8LDKYPEGVOPOD5X_528Q641MDKCDCQ0.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-18" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208161841_BCBBZEQO8LSWL88_1N4PG3NIE36LOKO.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208161841_BCBBZEQO8LSWL88_1N4PG3NIE36LOKO.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>ได้รับเชิญเข้าร่วมประชุม Global Colloquium of University Presidents กับองค์การสหประชาชาติ
-                    (ต่อมาเข้าร่วมในปีพ.ศ. 2549, 2550, 2555)
-                    เป็นมหาวิทยาลัยเดียวในภูมิภาคเอเซียตะวันออกเฉียงใต้ที่เข้าร่วมประชุมกับมหาวิทยาลัยชั้นนำของโลก อาทิ
-                    Columbia University, New York University, London School of Economics, Yale University เป็นต้น<br />
-                    <br />
-                    ก่อตั้งพิพิธภัณฑสถานเครื่องถ้วยเอเชียตะวันออกเฉียงใต้ (Southeast Asian Ceramics Museum)
-                    แหล่งเรียนรู้ศิลปโบราณวัตถุและศูนย์ศึกษาการวิจัยเครื่องถ้วยที่สำคัญและสมบูรณ๋ที่สุดในภูมิภาคเอเชียตะวันออกเฉียงใต้<br />
-                    &nbsp;
-                  </p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208161820_6MB5AUFT4NBQRCF_KKDDX6MXUK0BR5G.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-17" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208161749_VC4FCLFPDUEMKTQ_PJH9WTCGVXK3XX3.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208161749_VC4FCLFPDUEMKTQ_PJH9WTCGVXK3XX3.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>คณะวิศวกรรมศาสตร์ เปิดสอนสาขาวิศวกรรมมัลติมีเดีย และระบบอินเทอร์เน็ต เป็นแห่งแรกในประเทศไทย<br />
-                    <br />
-                    หอสมุดสุรัตน์ โอสถานุเคราะห์ ได้รับรางวัลสถาปัตยกรรมดีเด่น จากสมาคมสถาปนิกสยาม
-                    ในพระบรมราชูปถัมภ์<br />
-                    <br />
-                    คณะนิเทศศาสตร์ เปิดโรงละคร Black Box Theatre ที่ทันสมัยที่สุดของสถานศึกษาในประเทศไทย<br />
-                    <br />
-                    เมทยา สุวรรณปากแพรก นักศึกษา คณะนิเทศศาสตร์ ได้รับรางวัลภาพยนตร์นักศึกษาสารคดียอดเยี่ยม เรื่อง
-                    &quot;ทายาทหุ่นละครเล็ก&quot; การประกวดภาพยนตร์แห่งชาติ สุพรรณหงษ์ ครั้งที่ 14
-                  </p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208161722_AV7XAHAJ3TH0XY8_IALPYGCXNPJHFNK.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-16" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208161655_FKRU9LIRF7Y6FEZ_SI9GTADYNWNU0MN.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208161655_FKRU9LIRF7Y6FEZ_SI9GTADYNWNU0MN.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>คณะวิศวกรรมศาสตร์ เปิดห้องปฎิบัติการหุ่นยนต์ (Robotics Laboratory) โดยร่วมมือด้านการวิจัยกับ
-                    Nagaoka University of Technology ประเทศญี่ปุ่น</p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208161642_IEFSCDFT0GNJ32N_HYK733JKB8BLFPV.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-15" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208161612_LUPBJBFDNE5U4HG_ZAUHTDZ8BFZOW9L.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208161612_LUPBJBFDNE5U4HG_ZAUHTDZ8BFZOW9L.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>ก่อตั้งหอสมุดสุรัตน์ โอสถานุเคราะห์ (Surat Osathanugrah Library)
-                    หอสมุดขนาดใหญ่แห่งอนาคตที่บรรจุความรู้และความทันสมัย<br />
-                    <br />
-                    ได้รับการรับรองระบบการจัดการ สิ่งแวดล้อมมาตรฐาน ISO 14001 เป็นแห่งแรกของสถาบันอุดมศึกษาเอกชน
-                  </p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208161601_IOVLORISUMD03RQ_0R87F0RRBAD4LI1.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-14" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208161525_4YV8N0JGWGBJH4C_1EJFK5QXGB6IC4W.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208161525_4YV8N0JGWGBJH4C_1EJFK5QXGB6IC4W.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>ทีมนักศึกษา คณะวิศวกรรมศาสตร์ ได้รับรางวัลชนะเลิศและ รางวัล Best Performance การแข่งขันหุ่นยนต์
-                    ระดับนานาชาติ Robocon&#39;99 ประเทศญี่ปุ่น นับเป็นชัยชนะครั้งแรกของประเทศไทย (วรยศ สายบัวตรง,
-                    โกญจนาท ศรีรัตนกุล, เบน หาญคิมหันต์, จีระพงษ์ จิรมหาสุวรรณ, ณัฐพงษ์ ธารมรรค และพีระพงษ์ ปรีชาญวินิจ)
-                  </p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208161511_1PYBBMNIIQFYCMB_9MPE73GMVVHAWZS.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-13" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208161443_6LDQO0SAHR0JIZN_BJ1XUZ6KE3QNXCC.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208161443_6LDQO0SAHR0JIZN_BJ1XUZ6KE3QNXCC.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>ก่อตั้งอาคารวิทยาลัยนานาชาติ หอศิลปมหาวิทยาลัยกรุงเทพ (Bangkok University Gallery-BUG)</p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208161433_9O3NHSAVMQOPDYC_2EZ5Y2QOYSPOSPH.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-12" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208161300_SUL13R6AXPU2CGK_QSRDCE1QKFM7CK9.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208161300_SUL13R6AXPU2CGK_QSRDCE1QKFM7CK9.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>จัดตั้ง BU Cheerleading Team</p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208161247_S7RZGCS9TN3LQJB_TAZBSUDNWO64WRF.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-1" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208155459_2FPIYS30QWLXIDV_ZCX59XOGOHKD7CL.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208155459_2FPIYS30QWLXIDV_ZCX59XOGOHKD7CL.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>จัดตั้งคณะวิศวกรรมศาสตร์</p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208155447_8F5X2BIPNKLZLNU_NDVCKHHGBLLD4RG.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-2" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208155420_NJJGUGFUXVX6ZP2_AZEG6DXLNV4L96Q.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208155420_NJJGUGFUXVX6ZP2_AZEG6DXLNV4L96Q.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>ดร.ธนู กุลชล ดำรงตำแหน่งอธิการบดี&nbsp;<br />
-                    <br />
-                    จัดตั้งคณะศิลปกรรมศาสตร์<br />
-                    <br />
-                    คณะนิเทศศาสตร์ เปิดคณะละครมหาวิทยาลัยกรุงเทพ (Bangkok University Theatre Company)
-                    คณะละครของสถาบันการศึกษาแห่งแรก และแห่งเดียวของประเทศที่แสดงผลงานสู่ระดับนานาชาติ
-                  </p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208155410_0L8M0LMYWR9YZ6J_ZNVEGLEQHZXZF1Q.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-3" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208155347_SZLHVFVQSHCJNEL_XJHUNCKHLXUNRI5.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208155347_SZLHVFVQSHCJNEL_XJHUNCKHLXUNRI5.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>จัดตั้งคณะวิทยาศาสตร์ (ต่อมาเปลี่ยนชื่อเป็นคณะวิทยาศาสตร์และเทคโนโลยี)</p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208155338_DPGICPAIO5HLAGK_BZN1YPBKDCFBHAG.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-4" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208155313_GBCLO3TNPGEP8MX_MXAYEWRGIV2JKCS.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208155313_GBCLO3TNPGEP8MX_MXAYEWRGIV2JKCS.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>จัดตั้งคณะเศรษฐศาสตร์<br />
-                    <br />
-                    เปิด วิทยาเขตรังสิต
-                  </p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208155304_CATQWCM3NTX8V3H_ZVM8BJ61HU1W5DC.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-5" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208155242_ZTFTTSYWPPADCEU_SICK1DSDEBSFTGH.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208155242_ZTFTTSYWPPADCEU_SICK1DSDEBSFTGH.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>จัดตั้งบัณฑิตวิทยาลัย</p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208155233_UENLZ4K537PVURA_B1FRF5OCENZQDHG.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-6" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208155207_7OG7EJ5KAR8OOQZ_39SXZCRKRH0OUYJ.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208155207_7OG7EJ5KAR8OOQZ_39SXZCRKRH0OUYJ.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>เปลี่ยนสถานภาพเป็น มหาวิทยาลัยกรุงเทพ (Bangkok University) และจัดตั้ง International Program
-                    (ต่อมาเป็น Bangkok University International College)</p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208155157_W7EUINRTBWEQOOP_FKH9STTYU8623EY.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-7" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208155134_XEPWIU1NE0L6NAH_R8HCSVDYR51SJGD.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208155134_XEPWIU1NE0L6NAH_R8HCSVDYR51SJGD.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>จัดตั้งคณะนิติศาสตร์</p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208155125_5INFWQ6D8CXS0LD_NLJYBPIY8O7AHNK.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-8" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208155105_THIBNND3QEVHISX_1OJHRYYSWRW5QT6.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208155105_THIBNND3QEVHISX_1OJHRYYSWRW5QT6.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>จัดตั้งคณะมนุษยศาสตร์</p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208155051_AGTMFFUDXW4OFR7_SQ6SDQDLGZXQITA.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-9" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208155028_JKX2IOSRJNHMK8M_CAHOIVYTW1DQN56.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208155028_JKX2IOSRJNHMK8M_CAHOIVYTW1DQN56.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>จัดตั้งแผนกวิชาสื่อสารมวลชน (ต่อมาเป็นคณะนิเทศศาสตร์) เป็นสถาบันอุดมศึกษาแห่งแรกที่เปิดสอน
-                    นิเทศศาสตร์</p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208155019_HAPHKH5Q4TTIOR8_Q7Y7NEGLI0YUCBJ.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-10" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208154936_5ITWPONVMQNP7UC_5JZFOQISNL5JRZ2.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208154936_5ITWPONVMQNP7UC_5JZFOQISNL5JRZ2.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p>จัดตั้งสภามหาวิทยาลัย โดยฯพณฯ พลตรี เจ้าวรวงศ์เธอ กรมหมื่นนราธิปพงศ์ประพันธ์
-                    เป็นนายกสภามหาวิทยาลัยพระองค์แรก<br />
-                    <br />
-                    เปลี่ยนสถานภาพ เป็นวิทยาลัยกรุงเทพ (Bangkok College)
-                  </p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208154926_UWAHKR7PBAFHGPI_MFE2DV5W0LVY7LB.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-            <div class="tab-pane " id="tab-timeline-11" role="tabpanel">
-              <div class="timelineImg"
-                style="background-image: url('./uploads/about/history/timeline/20171208154839_HAJ8MS7JW07HF9I_SPBZYPICKGZGZVZ.jpg'); background-size: cover; background-position: center center;">
-                <img class="imgBox"
-                  src="./uploads/about/history/timeline/20171208154839_HAJ8MS7JW07HF9I_SPBZYPICKGZGZVZ.jpg" width="100%"
-                  alt="" style="display:none" />
-              </div>
-              <div class="history-body">
-                <div class="history-content-text">
-                  <p><br />
-                    ก่อตั้งโดย อาจารย์สุรัตน์ โอสถานุเคราะห์ และอาจารย์ปองทิพย์ โอสถานุเคราะห์ ใช้ชื่อว่า
-                    วิทยาลัยไทยเทคนิค<br />
-                    <br />
-                    ดร.เจริญ คันธวงศ์ ดำรงตำแหน่งอธิการบดีคนแรก<br />
-                    <br />
-                    สาขาวิชาแรก: สาขาวิชาบริหารธุรกิจ สาขาวิชาการบริหารโรงแรม สาขาวิชาบัญชี<br />
-                    <br />
-                    เป็นสถาบันอุดมศึกษาแห่งแรก ที่เปิดสอนสาขาวิชาบริหารธุรกิจและสาขาวิชาบริหารโรงแรม
-                  </p>
-                </div>
-                <div class="historyImg"><img class="imgBox"
-                    src="./uploads/about/history/timeline/thumb/20171208150208_JH7BYK9CY80US6F_GAAP3BB5EP8H8AB.jpg"
-                    width="100%" /></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-  <section class="footer-four-box">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-6 col-sm-3 ">
-          <div class="item">
-            <a href="./th/visit-bu" target="_blank">
-              <div class="box-dark">เยี่ยมชมมหาวิทยาลัย</div>
-              <img src="./assets/main/images/footer-four-box/footer-four-box-01.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="col-xs-6 col-sm-3">
-          <div class="item">
-            <a href="./th/who-are-you/parent">
-              <div class="box-dark">สำหรับผู้ปกครอง</div>
-              <img src="./assets/main/images/footer-four-box/footer-four-box-02.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="col-xs-6 col-sm-3">
-          <div class="item">
-            <a href="./th/bu-magazine">
-              <div class="box-dark">BU Story</div>
-              <img src="./assets/main/images/footer-four-box/footer-four-box-03.jpg" />
-            </a>
-          </div>
-        </div>
-        <div class="col-xs-6 col-sm-3">
-          <div class="item">
-            <a href="http://admissiononline.bu.ac.th/" target="_blank">
-              <div class="box-dark">สมัครเรียน</div>
-              <img src="./assets/main/images/footer-four-box/footer-four-box-04.jpg" />
-            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- ส่วนล่าง -->
   <footer>
     <div class="footer-link">
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
-            <div class="logo-bu-footer">
-              <img src="./assets/main/images/bu-logo-footer.png" alt="มหาวิทยาลัยกรุงเทพ">
+            <div class="logo-klw-footer">
+              <img src="./assets/main/images/logo/klw-botton.png" alt="โรงเรียนกันทรลักษ์วิทยา">
             </div>
           </div>
         </div>
         <div class="row visible-md visible-lg">
+          <!-- เกี่ยวกับโรงเรียน -->
           <div class="col-lg-3 col-lg-offset-0 col-md-2 col-md-offset-1">
-            <h3 class="m-b-md">เกี่ยวกับมหาวิทยาลัย</h3>
+            <h3 class="m-b-md">เกี่ยวกับโรงเรียน</h3>
             <ul class="list-unstyled">
-              <li><a href="./th/about">เกี่ยวกับมหาวิทยาลัย</a></li>
-              <li><a href="http://katin3.bu.ac.th/" target="_blank">กฐินพระราชทาน</a></li>
-              <li><a href="http://bangkokpoll.bu.ac.th/" target="_blank">กรุงเทพโพลล์</a></li>
-              <li><a href="http://ebook.bu.ac.th/" target="_blank">E-Book@BU</a></li>
-              <li><a href="http://dspace.bu.ac.th/" target="_blank">งานวิจัย</a></li>
+              <li><a href="#" target="_blank">โครงสร้างการบริหาร</a></li>
+              <li><a href="#" target="_blank">วิสัยทัศน์และพันธกิจ</a></li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-2">
-            <h3 class="m-b-md">ติดต่อเรา</h3>
-            <ul class="list-unstyled">
-              <li><a href="./th/contact">ติดต่อเรา</a></li>
-              <li><a href="./th/campus-map">แผนที่ภายในมหาวิทยาลัย</a></li>
-              <li><a href="./th/rental-space">ติดต่อเช่าสถานที่</a></li>
-              <li><a href="./th/visit-bu">ติดต่อเพื่อเยี่ยมชมมหาวิทยาลัย</a></li>
-              <li><a href=" http://hr.bu.ac.th/web/recruit/Default.aspx" target="_blank">ร่วมงานกับ BU</a></li>
-            </ul>
-          </div>
+          <!-- ลิงก์ด่วน -->
           <div class="col-lg-3 col-md-2">
             <h3 class="m-b-md">ลิงก์ด่วน</h3>
             <ul class="list-unstyled">
-              <li><a href="./th/curriculum/bachelors-degree/tuition-fees">ค่าเล่าเรียน</a></li>
-              <li><a href="./th/curriculum/bachelors-degree/scholarships">ทุนการศึกษา</a></li>
-              <li><a href="./th/academic-calendar">ปฏิทินการศึกษา</a></li>
-              <li><a href="./th/who-are-you/student/std/bachelor">นักศึกษาปัจจุบัน</a></li>
-              <li><a href="./th/cookies">นโยบายเกี่ยวกับการใช้งานคุกกี้</a></li>
-              <li><a href="./th/privacypolicy">การคุ้มครองข้อมูลส่วนบุคคล</a></li>
-              <li><a href="./th/generalnotice">ประกาศแจ้งเรื่องการคุ้มครองข้อมูลส่วนบุคคลกรณีทั่วไป (General Data
-                  Privacy Notice)</a></li>
-              <!-- <li><a href="./th/curriculum">คณะ</a></li> -->
+              <li><a href="#">ค่าเล่าเรียน</a></li>
+              <li><a href="#">ทุนการศึกษา</a></li>
+              <li><a href="#">ปฏิทินการศึกษา</a></li>
+              <li><a href="#">สมัครเรียน</a></li>
+              <li><a href="#">ตรวจสอบเกรด</a></li>
             </ul>
           </div>
+          <!-- ติดตอ่เรา -->
+          <div class="col-lg-3 col-md-2">
+            <h3 class="m-b-md">ติดต่อเรา</h3>
+            <ul class="list-unstyled" style="color: #FFF;">
+              <li>
+                <p>045-661-617</p>
+              </li>
+              <li>
+                <p>045-661-618</p>
+              </li>
+              <li>
+                <p>045-661-420</p>
+              </li>
+            </ul>
+          </div>
+          <!-- โซเชียลมีเดีย -->
           <div class="col-lg-3 col-md-5" ng-controller="news-letter" ng-init="init();">
-            <h3 class="m-b-md">รับข่าวสารจากเรา</h3>
-            <!-- <form class="form-inline m-b-md" autocomplete="off" ng-submit="action_insert_newsletter();">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="อีเมลของคุณ" ng-model="f_newsletter.email">
-      </div>
-      <button type="submit" class="btn btn-gray no-rounds ladda-button btn-insert-newsletter" data-style="zoom-in">ส่งข้อมูล</button>
-    </form> -->
+            <h3 class="m-b-md">โซเชียลมีเดีย</h3>
             <ul class="list-inline">
-              <li><a href="https://facebook.com/bangkokuniversity" target="_blank"><img
-                    src="./assets/main/images/logo-facebook.png" alt="Facebook" class="icon-social"></a></li>
-              <li><a href="https://youtube.com/BangkokUniversity" target="_blank"><img
-                    src="./assets/main/images/logo-youtube.gif" alt="Youtube" class="icon-social"></a></li>
-              <li><a href="https://twitter.com/Bangkok_BU" target="_blank"><img
-                    src="./assets/main/images/logo-twitter.gif" alt="Twitter" class="icon-social"></a></li>
-              <li><a href="https://www.instagram.com/bangkok_bu" target="_blank"><img
-                    src="./assets/main/images/logo-instagram.gif" alt="Instagram" class="icon-social"></a></li>
+              <li><a href="https://www.facebook.com/klwsthadsun" target="_blank"><img
+                    src="./assets/main/images/social/logo-facebook.png" alt="Facebook" class="icon-social"></a>
+              </li>
+              <li><a href="#" target="_blank"><img src="./assets/main/images/social/logo-youtube.gif" alt="Youtube"
+                    class="icon-social"></a></li>
+              <li><a href="#" target="_blank"><img src="./assets/main/images/social/logo-twitter.gif" alt="Twitter"
+                    class="icon-social"></a></li>
+              <li><a href="#" target="_blank"><img src="./assets/main/images/social/logo-instagram.gif" alt="Instagram"
+                    class="icon-social"></a></li>
             </ul>
           </div>
         </div>
+
+        <!-- เมนูย่อ -->
         <div class="row visible-xs visible-sm">
-          <!-- <div class="col-xs-12 text-center" ng-controller="news-letter" ng-init="init();">
-    <form class="form-inline m-b-md" autocomplete="off" ng-submit="action_insert_newsletter();">
-      <div class="form-group">
-        <label for="" class="text-white">รับข่าวสารจากเรา</label>
-        <div class="input-group">
-          <input type="text" class="form-control text-dark" placeholder="อีเมลของคุณ" ng-model="f_newsletter.email">
-          <span class="input-group-btn">
-            <button type="submit" class="btn btn-gray no-rounds ladda-button btn-insert-newsletter" data-style="zoom-in">ส่งข้อมูล</button>
-          </span>
-        </div>
-      </div>
-    </form>
-  </div> -->
           <div class="col-xs-12">
             <div class="ibox ibox-transparent no-margins">
               <div class="ibox-title no-padding">
@@ -1236,25 +493,24 @@
               </div>
               <div class="ibox-content">
                 <div class="panel-group" id="menu-footer">
+                  <!-- เกี่ยวกับโรงเรียน -->
                   <div class="panel panel-transparent">
                     <div class="panel-heading">
                       <h5 class="panel-title">
                         <a data-toggle="collapse" data-parent="#menu-footer" href="#collapseOne" aria-expanded="false"
-                          class="">เกี่ยวกับมหาวิทยาลัย<i class="fa fa-plus pull-right"></i></a>
+                          class="">เกี่ยวกับโรงเรียน<i class="fa fa-plus pull-right"></i></a>
                       </h5>
                     </div>
                     <div id="collapseOne" class="panel-collapse collapse" aria-expanded="false">
                       <div class="panel-body">
                         <ul class="list-unstyled no-margins">
-                          <li><a href="./th/about">เกี่ยวกับมหาวิทยาลัย</a></li>
-                          <li><a href="http://katin3.bu.ac.th/" target="_blank">กฐินพระราชทาน</a></li>
-                          <li><a href="http://bangkokpoll.bu.ac.th/" target="_blank">กรุงเทพโพลล์</a></li>
-                          <li><a href="http://ebook.bu.ac.th/" target="_blank">E-Book@BU</a></li>
-                          <li><a href="http://dspace.bu.ac.th/" target="_blank">งานวิจัย</a></li>
+                          <li><a href="http://katin3.bu.ac.th/" target="_blank">โครงสร้างการบริหาร</a></li>
+                          <li><a href="http://bangkokpoll.bu.ac.th/" target="_blank">วิสัยทัศน์และพันธกิจ</a></li>
                         </ul>
                       </div>
                     </div>
                   </div>
+                  <!-- ติดต่อเรา -->
                   <div class="panel panel-transparent">
                     <div class="panel-heading">
                       <h4 class="panel-title">
@@ -1265,16 +521,14 @@
                     <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
                       <div class="panel-body">
                         <ul class="list-unstyled no-margins">
-                          <li><a href="./th/contact">ติดต่อเรา</a></li>
-                          <li><a href="./th/campus-map">แผนที่ภายในมหาวิทยาลัย</a></li>
-                          <li><a href="./th/rental-space">ติดต่อเช่าสถานที่</a></li>
-                          <li><a href="./th/visit-bu">ติดต่อเพื่อเยี่ยมชมมหาวิทยาลัย</a></li>
-                          <li><a href=" http://hr.bu.ac.th/web/recruit/Default.aspx" target="_blank">ร่วมงานกับ BU</a>
-                          </li>
+                          <li><a>045-661-617</a></li>
+                          <li><a>045-661-618</a></li>
+                          <li><a>045-661-420</a></li>
                         </ul>
                       </div>
                     </div>
                   </div>
+                  <!-- ลิงก์ด่วน -->
                   <div class="panel panel-transparent">
                     <div class="panel-heading">
                       <h4 class="panel-title">
@@ -1285,39 +539,36 @@
                     <div id="collapseThree" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
                       <div class="panel-body">
                         <ul class="list-unstyled no-margins">
-                          <li><a href="./th/curriculum/bachelors-degree/tuition-fees">ค่าเล่าเรียน</a></li>
-                          <li><a href="./th/curriculum/bachelors-degree/scholarships">ทุนการศึกษา</a></li>
-                          <li><a href="./th/academic-calendar">ปฏิทินการศึกษา</a></li>
-                          <li><a href="./th/who-are-you/student/std/bachelor">นักศึกษาปัจจุบัน</a></li>
-                          <li><a href="./th/cookies">นโยบายเกี่ยวกับการใช้งานคุกกี้</a></li>
-                          <li><a href="./th/privacypolicy">การคุ้มครองข้อมูลส่วนบุคคล</a></li>
-                          <li><a href="./th/generalnotice">ประกาศแจ้งเรื่องการคุ้มครองข้อมูลส่วนบุคคลกรณีทั่วไป (General
-                              Data Privacy Notice)</a></li>
-                          <!-- <li><a href="./th/curriculum">คณะ</a></li> -->
+                          <li><a href="#">ค่าเล่าเรียน</a></li>
+                          <li><a href="#">ทุนการศึกษา</a></li>
+                          <li><a href="#">ปฏิทินการศึกษา</a></li>
+                          <li><a href="#">สมัครเรียน</a></li>
+                          <li><a href="#">ตรวจสอบเกรด</a></li>
                         </ul>
                       </div>
                     </div>
                   </div>
+                  <!-- โซเชียลมีเดีย -->
                   <div class="panel panel-transparent">
                     <div class="panel-heading">
                       <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#menu-footer" href="#collapseFour" class="collapsed"
-                          aria-expanded="false">ติดตามเราได้ที่<i class="fa fa-plus pull-right"></i></a>
+                          aria-expanded="false">โซเชียลมีเดีย<i class="fa fa-plus pull-right"></i></a>
                       </h4>
                     </div>
                     <div id="collapseFour" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
                       <div class="panel-body">
                         <ul class="list-inline">
-                          <li><a href="https://facebook.com/bangkokuniversity" target="_blank"><img
-                                src="./assets/main/images/logo-facebook.png" alt="Facebook" class="icon-social"></a>
+                          <li><a href="https://www.facebook.com/klwsthadsun" target="_blank"><img
+                                src="./assets/main/images/social/logo-facebook.png" alt="Facebook"
+                                class="icon-social"></a>
                           </li>
-                          <li><a href="https://youtube.com/BangkokUniversity" target="_blank"><img
-                                src="./assets/main/images/logo-youtube.gif" alt="Youtube" class="icon-social"></a></li>
-                          <li><a href="https://twitter.com/Bangkok_BU" target="_blank"><img
-                                src="./assets/main/images/logo-twitter.gif" alt="Twitter" class="icon-social"></a></li>
-                          <li><a href="https://www.instagram.com/bangkok_bu" target="_blank"><img
-                                src="./assets/main/images/logo-instagram.gif" alt="Instagram" class="icon-social"></a>
-                          </li>
+                          <li><a href="#" target="_blank"><img src="./assets/main/images/social/logo-youtube.gif"
+                                alt="Youtube" class="icon-social"></a></li>
+                          <li><a href="#" target="_blank"><img src="./assets/main/images/social/logo-twitter.gif"
+                                alt="Twitter" class="icon-social"></a></li>
+                          <li><a href="#" target="_blank"><img src="./assets/main/images/social/logo-instagram.gif"
+                                alt="Instagram" class="icon-social"></a></li>
                         </ul>
                       </div>
                     </div>
@@ -1329,17 +580,20 @@
         </div>
       </div>
     </div>
+    <!-- จบล่างสุด footer end -->
+    <!-- copyright -->
     <div class="footer-copyright">
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
-            <span>Copyright © 1962 - 2021 Bangkok University. All Rights Reserved.</span>
+            <span>Thammarat Noongoen</span>
           </div>
         </div>
       </div>
     </div>
   </footer>
-  </div>
+
+  <!-- เมนูหน้าจอเล็ก -->
   <div id="overlay-menu">
     <ul class="list-inline pull-right list-close-overlay-menu">
       <li><a href="javascript:void(0);" class="close-overlay-menu"><i class="fa fa-times"></i> ปิด</a></li>
@@ -1356,97 +610,85 @@
         <div class="panel-heading">
           <h5 class="panel-title">
             <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavOne" aria-expanded="true"
-              class="">หลักสูตร</a>
+              class="">เกี่ยวกับโรงเรียน</a>
           </h5>
         </div>
         <div id="menuNavOne" class="panel-collapse collapse in" aria-expanded="true">
           <div class="panel-body">
             <ul class="list-unstyled no-margins">
-              <li><a href="./th/curriculum/bachelors-degree">ปริญญาตรี</a></li>
-              <li><a href="./th/curriculum/masters-degree">ปริญญาโท</a></li>
-              <li><a href="./th/curriculum/doctoral-degree">ปริญญาเอก</a></li>
-              <li><a href="./en/curriculum/international-programs">International Programs</a></li>
-              <li><a href="./th/pre-degree">Pre-Degree</a></li>
-              <!-- <li><a href="./th/curriculum/certificate">อบรม/ประกาศนียบัตร</a></li> -->
-              <li><a href="./th/curriculum/bachelors-degree/tuition-fees">ค่าเล่าเรียน</a></li>
-              <li><a href="./th/curriculum/bachelors-degree/scholarships">ทุนการศึกษา</a></li>
-              <li><a href="https://www.bu.ac.th/th/short-courses">อบรม/ประกาศนียบัตร</a></li>
+              <li><a href="#">โครงสร้างการบริหาร</a></li>
+              <li><a href="#">วิสัยทัศน์และพันธกิจ</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <!-- Know BU -->
+      <!-- ทำเนียบบุคลากร -->
       <div class="panel panel-transparent">
         <div class="panel-heading">
           <h4 class="panel-title">
             <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavKnowBu" class="collapsed"
-              aria-expanded="false">รอบรั้วมหาวิทยาลัย</a>
+              aria-expanded="false">ทำเนียบบุคลากร</a>
           </h4>
         </div>
         <div id="menuNavKnowBu" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
           <div class="panel-body">
             <ul class="list-unstyled no-margins">
-              <li><a href="th/corporate-news">Corporate News</a></li>
-              <li><a href="th/bu-magazine">BU Story</a></li>
-              <!-- <li><a href="th/news-clipping">News Clippings</a></li> -->
-              <li><a href="th/accommodation">หอพักนักศึกษา</a></li>
-              <li><a href="th/activities-clubs/sports">กีฬา/สโมสร/ชมรม</a></li>
-              <li><a href="th/facilities">สิ่งอำนวยความสะดวก</a></li>
-              <li><a href="th/service-centers">ศูนย์บริการ</a></li>
-              <li><a href="http://katin3.bu.ac.th" target="_blank">กฐินพระราชทาน</a></li>
-              <li><a href="http://museum.bu.ac.th" target="_blank">พิพิธภัณฑ์สถานเครื่องถ้วยเอเชียตะวันออกเฉียงใต้</a>
-              </li>
-              <li><a href="https://fb.com/bangkokuniversitygallery" target="_blank">หอศิลป์ มหาวิทยาลัยกรุงเทพ</a></li>
-              <li><a href="./th/voices-from-students">เสียงจากนักศึกษา</a></li>
-              <li><a href="./th/voices-from-alumni">เสียงจากรุ่นพี่</a></li>
+              <li><a href="#">ฝ่ายบริหาร</a></li>
+              <li><a href="#">กลุ่มสาระการงานอาชีพ</a></li>
+              <li><a href="#">กลุ่มสาระคณิตศาสตร์</a></li>
+              <li><a href="#">กลุ่มสาระภาษาต่างประเทศ</a></li>
+              <li><a href="#">กลุ่มสาระภาษาไทย</a></li>
+              <li><a href="#">กลุ่มสาระวิทยาศาสตร์</a></li>
+              <li><a href="#">กลุ่มสาระศิลปะ</a></li>
+              <li><a href="#">กลุ่มสาระสังคมศึกษา</a></li>
+              <li><a href="#">กลุ่มสาระสุขศึกษาและพลศึกษา</a></li>
+              <li><a href="#">กลุ่มสาระเทคโนโลยี</a></li>
+              <li><a href="#">งานแนะแนว</a></li>
+              <li><a href="#">เจ้าหน้าที่สำนักงาน</a></li>
+              <li><a href="#">ลูกจ้างชั่วคราว</a></li>
+              <li><a href="#">ลูกจ้างประจำ</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <!-- About Us -->
+      <!-- สำหรับนักเรียน -->
       <div class="panel panel-transparent">
         <div class="panel-heading">
           <h4 class="panel-title">
             <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavAboutUs" class="collapsed"
-              aria-expanded="false">เกี่ยวกับมหาวิทยาลัย</a>
+              aria-expanded="false">สำหรับนักเรียน</a>
           </h4>
         </div>
         <div id="menuNavAboutUs" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
           <div class="panel-body">
             <ul class="list-unstyled no-margins">
-              <li><a href="./th/about/history">ประวัติมหาวิทยาลัยกรุงเทพ</a></li>
-              <li><a href="./th/about/vision-mission">วิสัยทัศน์และพันธกิจ</a></li>
-              <li><a href="./th/about/videos">วิดีโอแนะนำ</a></li>
-              <li><a href="./th/council-committees">สภามหาวิทยาลัย</a></li>
-              <li><a href="./th/executives">คณะผู้บริหาร</a></li>
-              <li><a href="./th/partner-networks">พันธมิตร</a></li>
-              <li><a href="./th/alumni">ศิษย์เก่า</a></li>
-              <!-- <li><a href="./th/bu-achievements">ไฮไลท์ผลงาน</a></li> -->
-              <li><a href="./th/about/downloads">ดาวน์โหลด</a></li>
+              <li><a href="#">ข้อมูลทั่วไป</a></li>
+              <li><a href="#">ตรวจสอบเกรด</a></li>
+              <li><a href="#">ตารางเรียน</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <!-- Who are you -->
+      <!--หลักสูตร -->
       <div class="panel panel-transparent">
         <div class="panel-heading">
           <h4 class="panel-title">
             <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavWhoAre" class="collapsed"
-              aria-expanded="false">คุณคือใคร?</a>
+              aria-expanded="false">หลักสูตร</a>
           </h4>
         </div>
         <div id="menuNavWhoAre" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
           <div class="panel-body">
             <ul class="list-unstyled no-margins">
-              <li><a href="./th/who-are-you/student">นักศึกษา</a></li>
-              <li><a href="./th/who-are-you/parent">ผู้ปกครอง</a></li>
-              <li><a href="./th/who-are-you/alumni">ศิษย์เก่า</a></li>
-              <li><a href="http://mybu.bu.ac.th" target="_blank">บุคลากร</a></li>
+              <li><a href="#">ห้องเรียน SMART</a></li>
+              <li><a href="#">ห้องเรียน SMT</a></li>
+              <li><a href="#">ห้องเรียนนิติศาสตร์-รัฐศาสตร์</a></li>
+              <li><a href="#" target="_blank">ห้องเรียนกีฬาและวิทยาศาสตร์การกีฬา</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <!-- Contact -->
+      <!-- ติดต่อเรา -->
       <div class="panel panel-transparent">
         <div class="panel-heading">
           <h4 class="panel-title">
@@ -1457,25 +699,17 @@
         <div id="menuNavContact" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
           <div class="panel-body">
             <ul class="list-unstyled no-margins">
-              <li><a href="./th/contact">ติดต่อเรา</a></li>
-              <li><a href="./th/campus-map">แผนที่ภายในมหาวิทยาลัย</a></li>
-              <li><a href="./th/rental-space">ติดต่อเช่าสถานที่</a></li>
-              <li><a href="./th/visit-bu">ติดต่อเพื่อเยี่ยมชมมหาวิทยาลัย</a></li>
-              <li><a href=" http://hr.bu.ac.th/web/recruit/Default.aspx" target="_blank">ร่วมงานกับ BU</a></li>
+              <li><a href="#">ติดต่อเรา</a></li>
+              <li><a href="#">แผนที่โรงเรียน</a></li>
             </ul>
           </div>
         </div>
       </div>
-
-    </div>
-
-    <div class="text-center">
-      <ul class="list-inline">
-        <li><a href="./en/about/history">EN</a></li>
-        <li><a href="http://www.buchina.net.cn/" target="_blank">CN</a></li>
-      </ul>
     </div>
   </div>
+  <!-- จบเมนูเล็ก -->
+
+
   <style>
     @media only screen and (max-width: 767px) {
       #menu-header {
