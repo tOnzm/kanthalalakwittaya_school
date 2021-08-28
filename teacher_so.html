@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="th">
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
+  <meta name='author' content='Kanthalalakwittaya School'>
+
+  <title>โรงเรียนกันทรลักษ์วิทยา</title>
+
+  <!-- CSS Link -->
+  <link rel="stylesheet" href="./vendors/bootstrap-3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./vendors/animate/css/animate.css">
+  <link rel="stylesheet" href="./vendors/fonts/Karnvayla/stylesheet.css">
+  <link rel="stylesheet" href="./vendors/inspinia_admin-v2.7/css/plugins/ladda/ladda-themeless.min.css">
+  <link rel="stylesheet" href="./vendors/inspinia_admin-v2.7/css/plugins/sweetalert/sweetalert.css">
+  <link rel="stylesheet" href="./vendors/inspinia_admin-v2.7/css/style-main.css">
+  <link rel="stylesheet" href="./vendors/hamburger-toggle/css/style.css">
+  <link rel="stylesheet" href="./vendors/owl.carousel/owl-carousel/owl.theme.css">
+  <link rel="stylesheet" href="./vendors/owl.carousel/owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="./vendors/ionicons-2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="./assets/main/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/main/css/executives.css">
+
+  <!-- <link rel="stylesheet" href="./vendors/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+  <!-- CSS Link end -->
+  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+  <!-- โลโก้บนแถบบาร์ -->
+  <link rel="shortcut icon" href="favicon.ico" />
+  <!-- โลโก้บนแถบบาร์จบ -->
+
+  <!-- สไลด์ -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+</head>
+
+
+<body class="white-bg">
+  <!-- โลโก้บน -->
+  <div id="main-header">
+    <div class="wrapper container">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12" id="logo-bu-horizontal">
+          <a href="#">
+            <img src="./assets/main/images/logo/klw-top.png" alt="โรงเรียนกันทรลักษ์วิทยา">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- เมนู -->
+  <div id="menu-header">
+    <div class=" wrapper container">
+      <div class="row">
+        <div class="col-xs-12">
+          <nav class="navbar navbar-default no-margins" id="bu-bootstrap-menu">
+            <div class="wrapper container">
+
+              <!-- ปุ่ม home -->
+              <div class="navbar-header">
+                <a class="btn-navbar visible-xs" id="nav-icon"><i class="fa fa-bars"></i></a>
+                <a class="navbar-brand hidden-xs" href="./index.html"><i class="fa fa-home"></i></a>
+              </div>
+              <!-- สมัครเรียน -->
+              <a href="#" class="btn btn-apply-now btn-rounds visible-xs" target="_blank">สมัครเรียน</a>
+              <!-- จบสมัครเรียน -->
+              <!-- เมนู -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav border-after">
+
+                  <!-- เกี่ยวกับโรงเรียน -->
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                      aria-expanded="false">เกี่ยวกับโรงเรียน</a>
+                    <div class="dropdown-menu full-width">
+                      <!-- บรรทัดที่ 1 -->
+                      <div class="row menu-box">
+                        <div class="col-md-6 col-sm-6">
+                          <a href="./assets/main/images/about/StructureMN.jpg" class="box box-15">
+                            <div class="text">โครงสร้างการบริหาร</div>
+                          </a>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                          <a href="./history.html" class="box box-16">
+                            <div class="text">วิสัยทัศน์และพันธกิจ</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- ทำเนียบบุคลากร -->
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                      aria-expanded="false">ทำเนียบบุคลากร</a>
+                    <div class="dropdown-menu full-width">
+                      <!-- บรรทัดที่ 1 -->
+                      <div class="row menu-box">
+                        <div class="col-md-3 col-sm-3">
+                          <a href="./executive.html" class="box box-1">
+                            <div class="text">ฝ่ายบริหาร</div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                          <a href="./teacher_th.html" class="box box-2">
+                            <div class="text">กลุ่มสาระภาษาไทย</div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                          <a href="./teacher_math.html" class="box box-3">
+                            <div class="text">กลุ่มสาระคณิตศาสตร์</div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                          <a href="./teacher_sci.html" class="box box-4">
+                            <div class="text">กลุ่มสาระวิทยาศาสตร์</div>
+                          </a>
+                        </div>
+                      </div>
+                      <!-- บรรทัดที่2 -->
+                      <div class="row menu-box">
+                        <div class="col-sm-3">
+                          <a href="./teacher_ict.html" class="box box-5">
+                            <div class="text">กลุ่มสาระเทคโนโลยี</div>
+                          </a>
+                        </div>
+                        <div class="col-sm-3">
+                          <a href="./teacher_so.html" class="box box-6">
+                            <div class="text">กลุ่มสาระสังคมศึกษา</div>
+                          </a>
+                        </div>
+                        <div class="col-sm-3">
+                          <a href="./teacher_gym.html" class="box box-7">
+                            <div class="text">กลุ่มสาระสุขศึกษาและพลศึกษา</div>
+                          </a>
+                        </div>
+                        <div class="col-sm-3">
+                          <a href="./teacher_art.html" class="box box-8">
+                            <div class="text">กลุ่มสาระศิลปะ</div>
+                          </a>
+                        </div>
+                      </div>
+                      <!-- บรรทัดที่3 -->
+                      <div class="row menu-box">
+                        <div class="col-sm-3">
+                          <a href="./teacher_career.html" class="box box-9">
+                            <div class="text">กลุ่มสาระการงานอาชีพ</div>
+                          </a>
+                        </div>
+                        <div class="col-sm-3">
+                          <a href="./teacher_langue.html" class="box box-10">
+                            <div class="text">กลุ่มสาระภาษาต่างประเทศ</div>
+                          </a>
+                        </div>
+                        <div class="col-sm-3">
+                          <a href="./teacher_guid.html" class="box box-11">
+                            <div class="text">งานแนะแนว</div>
+                          </a>
+                        </div>
+                        <div class="col-sm-3">
+                          <a href="./employee_full.html" class="box box-12">
+                            <div class="text">ลูกจ้างประจำ </div>
+                          </a>
+                        </div>
+                      </div>
+                      <!-- บรรทัดที่4 -->
+                      <div class="row menu-box">
+                        <div class="col-sm-6">
+                          <a href="./employee_office.html" class="box box-13">
+                            <div class="text">เจ้าหน้าที่สำนักงาน</div>
+                          </a>
+                        </div>
+                        <div class="col-sm-6">
+                          <a href="./employee_part.html" class="box box-14">
+                            <div class="text">ลูกจ้างชั่วคราว</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- สำหรับนักเรียน -->
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                      aria-expanded="false">สำหรับนักเรียน</a>
+                    <div class="dropdown-menu full-width">
+                      <!-- บรรทัดที่ 1 -->
+                      <div class="row menu-box">
+                        <div class="col-md-4 col-sm-4">
+                          <a href="./th/curriculum/bachelors-degree" class="box box-17">
+                            <div class="text">ข้อมูลทั่วไป</div>
+                          </a>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                          <a href="http://gpa.klws.ac.th/" class="box box-18">
+                            <div class="text">ตรวจสอบเกรด</div>
+                          </a>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                          <a href="./th/curriculum/bachelors-degree" class="box box-19">
+                            <div class="text">ตารางเรียน</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- หลักสูตร -->
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                      aria-expanded="false">หลักสูตร</a>
+                    <div class="dropdown-menu full-width">
+                      <!-- บรรทัดที่ 1 -->
+                      <div class="row menu-box">
+                        <div class="col-md-3 col-sm-3">
+                          <a href="./assets/main/images/course/003.jpg" class="box box-20">
+                            <div class="text">ห้องเรียน SMART</div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                          <a href="./assets/main/images/course/004.jpg" class="box box-21">
+                            <div class="text">ห้องเรียน MST</div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                          <a href="./assets/main/images/course/005.jpg" class="box box-22">
+                            <div class="text">ห้องเรียนนิติศาสตร์-รัฐศาสตร์</div>
+                          </a>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                          <a href="./assets/main/images/course/006.jpg" class="box box-23">
+                            <div class="text">ห้องเรียนกีฬาและวิทยาศาสตร์การกีฬา</div>
+                          </a>
+                        </div>
+                      </div>
+
+                    </div>
+                  </li>
+                </ul>
+                <!-- สมัครเรียน -->
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#" class="btn btn-apply-now btn-rounds" target="_blank">สมัครเรียน</a></li>
+                </ul>
+                <!-- จบสมัครเรียน -->
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="body">
+    <div class="container" id="council" ng-controller="council" ng-init="init();">
+      <!-- ตัวย่อเล็กๆ -->
+      <div class="row">
+        <div class="col-xs-12">
+          <ol class="breadcrumb">
+            <li><a href="./th"><i class="fa fa-home"></i> หน้าหลัก</a></li>
+            <li>ทำเนียบบุคลากร</li>
+            <li class="active">กลุ่มสาระสังคมศึกษา</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="row m-b-sm">
+        <div class="col-xs-12">
+          <ul class="executives-menu">
+
+          </ul>
+          <div class="pre-content">
+            <div class="col-xs-12 text-center">
+              <h1 style="box-sizing: inherit; line-height: 1.4; color: rgb(255, 255, 255); margin-top: 10px;">
+                บุคลากร <br> กลุ่มสาระสังคมศึกษา</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="row m-b-sm">
+        <div class="col-xs-12 text-center">
+          <div class="page-header">
+            <h1>ทำเนียบครู <br> กลุ่มสาระภาษาไทย</h1>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- รูปบริหาร-->
+      <div class="container">
+        <!-- แถว1 -->
+        <div class="row el-element-overlay ">
+          <div class="col-md-4 col-md-offset-4 ">
+            <div class="card">
+              <div class="el-card-item">
+                <div class="el-card-avatar el-overlay-1 "> <img src="./assets/main/images/executive/avatar.jpg"
+                    alt="user">
+                </div>
+                <div class="el-card-content">
+                  <h4 class="text-dark" style="font-size: 18px;">นายคณิตพันธ์ จามรธัญญวาท</h4>
+                  <span class="text-white">ผู้อำนวยการชำนาญการพิเศษ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- แถว2 -->
+        <div class="row el-element-overlay">
+          <!-- รูป2 -->
+          <div class="col-sm-4 col-lg-3 col-md-3">
+            <div class="card">
+              <div class="el-card-item">
+                <div class="el-card-avatar el-overlay-1"> <img src="./assets/main/images/executive/avatar.jpg"
+                    alt="user">
+                </div>
+                <div class="el-card-content">
+                  <h4 class="text-dark" style="font-size: 18px;">นายเอกธนัช เหลาสิงห์</h4>
+                  <span class="text-white">รองผู้อำนวยการชำนาญการพิเศษ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- รูป3 -->
+          <div class="col-sm-4 col-lg-3 col-md-3">
+            <div class="card">
+              <div class="el-card-item">
+                <div class="el-card-avatar el-overlay-1"> <img src="./assets/main/images/executive/avatar.jpg"
+                    alt="user">
+                </div>
+                <div class="el-card-content">
+                  <h4 class="text-dark" style="font-size: 18px;">นายอาคม วงศ์บา</h4>
+                  <span class="text-white">รองผู้อำนวยการชำนาญการพิเศษ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- รูป4 -->
+          <div class="col-sm-4 col-lg-3 col-md-3">
+            <div class="card">
+              <div class="el-card-item">
+                <div class="el-card-avatar el-overlay-1"> <img src="./assets/main/images/executive/avatar.jpg"
+                    alt="user">
+                </div>
+                <div class="el-card-content">
+                  <h4 class="text-dark" style="font-size: 18px;">นายอนุศิษฎ์ โกศล</h4>
+                  <span class="text-white">รองผู้อำนวยการชำนาญการพิเศษ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- รูป5 -->
+          <div class="col-sm-4 col-lg-3 col-md-3">
+            <div class="card">
+              <div class="el-card-item">
+                <div class="el-card-avatar el-overlay-1"> <img src="./assets/main/images/executive/avatar.jpg"
+                    alt="user">
+                </div>
+                <div class="el-card-content">
+                  <h4 class="text-dark" style="font-size: 18px;">นายพิทักษ์พงษ์ นามวงษ์</h4>
+                  <span class="text-white">รองผู้อำนวยการชำนาญการพิเศษ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- จบรูป5 -->
+        </div>
+      </div>
+      <!-- จบรูป -->
+
+
+      <div id="box-load-more" style="margin-bottom:10px;display:none;">
+        <button type="button" class="btn btn-gray block full-width no-rounds ladda-button btn-load-more"
+          data-style="zoom-in" ng-click="page_council(cur_page.council+1);">โหลดเพิ่ม <i
+            class="fa fa-angle-down"></i></button>
+      </div>
+    </div>
+  </section>
+  <!-- ส่วนล่าง -->
+  <footer>
+    <div class="footer-link">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="logo-klw-footer">
+              <img src="./assets/main/images/logo/klw-botton.png" alt="โรงเรียนกันทรลักษ์วิทยา">
+            </div>
+          </div>
+        </div>
+        <div class="row visible-md visible-lg">
+          <!-- เกี่ยวกับโรงเรียน -->
+          <div class="col-lg-3 col-lg-offset-0 col-md-2 col-md-offset-1">
+            <h3 class="m-b-md">เกี่ยวกับโรงเรียน</h3>
+            <ul class="list-unstyled">
+              <li><a href="#" target="_blank">โครงสร้างการบริหาร</a></li>
+              <li><a href="#" target="_blank">วิสัยทัศน์และพันธกิจ</a></li>
+            </ul>
+          </div>
+          <!-- ลิงก์ด่วน -->
+          <div class="col-lg-3 col-md-2">
+            <h3 class="m-b-md">ลิงก์ด่วน</h3>
+            <ul class="list-unstyled">
+              <li><a href="#">ค่าเล่าเรียน</a></li>
+              <li><a href="#">ทุนการศึกษา</a></li>
+              <li><a href="#">ปฏิทินการศึกษา</a></li>
+              <li><a href="#">สมัครเรียน</a></li>
+              <li><a href="#">ตรวจสอบเกรด</a></li>
+            </ul>
+          </div>
+          <!-- ติดตอ่เรา -->
+          <div class="col-lg-3 col-md-2">
+            <h3 class="m-b-md">ติดต่อเรา</h3>
+            <ul class="list-unstyled" style="color: #FFF;">
+              <li>
+                <p>045-661-617</p>
+              </li>
+              <li>
+                <p>045-661-618</p>
+              </li>
+              <li>
+                <p>045-661-420</p>
+              </li>
+            </ul>
+          </div>
+          <!-- โซเชียลมีเดีย -->
+          <div class="col-lg-3 col-md-5" ng-controller="news-letter" ng-init="init();">
+            <h3 class="m-b-md">โซเชียลมีเดีย</h3>
+            <ul class="list-inline">
+              <li><a href="https://www.facebook.com/klwsthadsun" target="_blank"><img
+                    src="./assets/main/images/social/logo-facebook.png" alt="Facebook" class="icon-social"></a>
+              </li>
+              <li><a href="#" target="_blank"><img src="./assets/main/images/social/logo-youtube.gif" alt="Youtube"
+                    class="icon-social"></a></li>
+              <li><a href="#" target="_blank"><img src="./assets/main/images/social/logo-twitter.gif" alt="Twitter"
+                    class="icon-social"></a></li>
+              <li><a href="#" target="_blank"><img src="./assets/main/images/social/logo-instagram.gif" alt="Instagram"
+                    class="icon-social"></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- เมนูย่อ -->
+        <div class="row visible-xs visible-sm">
+          <div class="col-xs-12">
+            <div class="ibox ibox-transparent no-margins">
+              <div class="ibox-title no-padding">
+                <h5>เมนูลัด</h5>
+                <div class="ibox-tools">
+                  <a class="collapse-link">
+                    <i class="fa fa-chevron-up"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="ibox-content">
+                <div class="panel-group" id="menu-footer">
+                  <!-- เกี่ยวกับโรงเรียน -->
+                  <div class="panel panel-transparent">
+                    <div class="panel-heading">
+                      <h5 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#menu-footer" href="#collapseOne" aria-expanded="false"
+                          class="">เกี่ยวกับโรงเรียน<i class="fa fa-plus pull-right"></i></a>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse" aria-expanded="false">
+                      <div class="panel-body">
+                        <ul class="list-unstyled no-margins">
+                          <li><a href="http://katin3.bu.ac.th/" target="_blank">โครงสร้างการบริหาร</a></li>
+                          <li><a href="http://bangkokpoll.bu.ac.th/" target="_blank">วิสัยทัศน์และพันธกิจ</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ติดต่อเรา -->
+                  <div class="panel panel-transparent">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#menu-footer" href="#collapseTwo" class="collapsed"
+                          aria-expanded="false">ติดต่อเรา<i class="fa fa-plus pull-right"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                      <div class="panel-body">
+                        <ul class="list-unstyled no-margins">
+                          <li><a>045-661-617</a></li>
+                          <li><a>045-661-618</a></li>
+                          <li><a>045-661-420</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ลิงก์ด่วน -->
+                  <div class="panel panel-transparent">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#menu-footer" href="#collapseThree" class="collapsed"
+                          aria-expanded="false">ลิงก์ด่วน<i class="fa fa-plus pull-right"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                      <div class="panel-body">
+                        <ul class="list-unstyled no-margins">
+                          <li><a href="#">ค่าเล่าเรียน</a></li>
+                          <li><a href="#">ทุนการศึกษา</a></li>
+                          <li><a href="#">ปฏิทินการศึกษา</a></li>
+                          <li><a href="#">สมัครเรียน</a></li>
+                          <li><a href="#">ตรวจสอบเกรด</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- โซเชียลมีเดีย -->
+                  <div class="panel panel-transparent">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#menu-footer" href="#collapseFour" class="collapsed"
+                          aria-expanded="false">โซเชียลมีเดีย<i class="fa fa-plus pull-right"></i></a>
+                      </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                      <div class="panel-body">
+                        <ul class="list-inline">
+                          <li><a href="https://www.facebook.com/klwsthadsun" target="_blank"><img
+                                src="./assets/main/images/social/logo-facebook.png" alt="Facebook"
+                                class="icon-social"></a>
+                          </li>
+                          <li><a href="#" target="_blank"><img src="./assets/main/images/social/logo-youtube.gif"
+                                alt="Youtube" class="icon-social"></a></li>
+                          <li><a href="#" target="_blank"><img src="./assets/main/images/social/logo-twitter.gif"
+                                alt="Twitter" class="icon-social"></a></li>
+                          <li><a href="#" target="_blank"><img src="./assets/main/images/social/logo-instagram.gif"
+                                alt="Instagram" class="icon-social"></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- จบล่างสุด footer end -->
+    <!-- copyright -->
+    <div class="footer-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <span>Thammarat Noongoen</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- เมนูหน้าจอเล็ก -->
+  <div id="overlay-menu">
+    <ul class="list-inline pull-right list-close-overlay-menu">
+      <li><a href="javascript:void(0);" class="close-overlay-menu"><i class="fa fa-times"></i> ปิด</a></li>
+    </ul>
+    <div class="panel-group text-center" id="menu-nav">
+      <div class="panel panel-transparent m-b-md">
+        <div class="panel-heading">
+          <h5 class="panel-title">
+            <a href="./th">หน้าหลัก</a>
+          </h5>
+        </div>
+      </div>
+      <div class="panel panel-transparent m-b-md">
+        <div class="panel-heading">
+          <h5 class="panel-title">
+            <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavOne" aria-expanded="true"
+              class="">เกี่ยวกับโรงเรียน</a>
+          </h5>
+        </div>
+        <div id="menuNavOne" class="panel-collapse collapse in" aria-expanded="true">
+          <div class="panel-body">
+            <ul class="list-unstyled no-margins">
+              <li><a href="#">โครงสร้างการบริหาร</a></li>
+              <li><a href="#">วิสัยทัศน์และพันธกิจ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- ทำเนียบบุคลากร -->
+      <div class="panel panel-transparent">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavKnowBu" class="collapsed"
+              aria-expanded="false">ทำเนียบบุคลากร</a>
+          </h4>
+        </div>
+        <div id="menuNavKnowBu" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+          <div class="panel-body">
+            <ul class="list-unstyled no-margins">
+              <li><a href="#">ฝ่ายบริหาร</a></li>
+              <li><a href="#">กลุ่มสาระการงานอาชีพ</a></li>
+              <li><a href="#">กลุ่มสาระคณิตศาสตร์</a></li>
+              <li><a href="#">กลุ่มสาระภาษาต่างประเทศ</a></li>
+              <li><a href="#">กลุ่มสาระภาษาไทย</a></li>
+              <li><a href="#">กลุ่มสาระวิทยาศาสตร์</a></li>
+              <li><a href="#">กลุ่มสาระศิลปะ</a></li>
+              <li><a href="#">กลุ่มสาระสังคมศึกษา</a></li>
+              <li><a href="#">กลุ่มสาระสุขศึกษาและพลศึกษา</a></li>
+              <li><a href="#">กลุ่มสาระเทคโนโลยี</a></li>
+              <li><a href="#">งานแนะแนว</a></li>
+              <li><a href="#">เจ้าหน้าที่สำนักงาน</a></li>
+              <li><a href="#">ลูกจ้างชั่วคราว</a></li>
+              <li><a href="#">ลูกจ้างประจำ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- สำหรับนักเรียน -->
+      <div class="panel panel-transparent">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavAboutUs" class="collapsed"
+              aria-expanded="false">สำหรับนักเรียน</a>
+          </h4>
+        </div>
+        <div id="menuNavAboutUs" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+          <div class="panel-body">
+            <ul class="list-unstyled no-margins">
+              <li><a href="#">ข้อมูลทั่วไป</a></li>
+              <li><a href="#">ตรวจสอบเกรด</a></li>
+              <li><a href="#">ตารางเรียน</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--หลักสูตร -->
+      <div class="panel panel-transparent">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavWhoAre" class="collapsed"
+              aria-expanded="false">หลักสูตร</a>
+          </h4>
+        </div>
+        <div id="menuNavWhoAre" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+          <div class="panel-body">
+            <ul class="list-unstyled no-margins">
+              <li><a href="#">ห้องเรียน SMART</a></li>
+              <li><a href="#">ห้องเรียน SMT</a></li>
+              <li><a href="#">ห้องเรียนนิติศาสตร์-รัฐศาสตร์</a></li>
+              <li><a href="#" target="_blank">ห้องเรียนกีฬาและวิทยาศาสตร์การกีฬา</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- ติดต่อเรา -->
+      <div class="panel panel-transparent">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#menu-nav" href="#menuNavContact" class="collapsed"
+              aria-expanded="false">ติดต่อเรา</a>
+          </h4>
+        </div>
+        <div id="menuNavContact" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+          <div class="panel-body">
+            <ul class="list-unstyled no-margins">
+              <li><a href="#">ติดต่อเรา</a></li>
+              <li><a href="#">แผนที่โรงเรียน</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- จบเมนูเล็ก -->
+
+
+  <style>
+    @media only screen and (max-width: 767px) {
+      #menu-header {
+        max-height: 50px;
+        overflow-y: hidden;
+      }
+    }
+  </style>
+  <script type="text/javascript">var language = 'th';</script>
+  <script src="./vendors/jquery/jquery-2.2.4.min.js" charset="utf-8"></script>
+  <script src="./vendors/bigbag/1.3/plugins/jquery-ui/jquery-ui.js" charset="utf-8"></script>
+  <script src="./vendors/bootstrap-3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="./vendors/angular-1.5.0/angular.min.js" charset="utf-8"></script>
+  <script src="./vendors/angular-1.5.0/angular-sanitize.min.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/ladda/spin.min.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/ladda/ladda.min.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/ladda/ladda.jquery.min.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/sweetalert/sweetalert.min.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/jasny/jasny-bootstrap.min.js" charset="utf-8"></script>
+  <script src="./vendors/backstretch/jquery.backstretch.js" charset="utf-8"></script>
+  <script src="./vendors/grid-a-licious/jquery.grid-a-licious.min.js" charset="utf-8"></script>
+  <script src="./vendors/sticky-kit/jquery.sticky-kit.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/inspinia-main.js" charset="utf-8"></script>
+  <script src="./vendors/inspinia_admin-v2.7/js/plugins/pace/pace.min.js" charset="utf-8"></script>
+  <script src="./vendors/hamburger-toggle/js/script.min.js" charset="utf-8"></script>
+  <script src="./vendors/owl.carousel/owl-carousel/owl.carousel.min.js" charset="utf-8"></script>
+  <script src="./assets/main/js/app.js" charset="utf-8"></script>
+  <script src="./vendors/scrollreveal/scrollreveal.min.js" charset="utf-8"></script>
+  <script src="./assets/main/js/about/council_committees.js" charset="utf-8"></script>
+  <script src="./assets/main/js/executives.js" charset="utf-8"></script>
+
+  <!-- <script src="?v=" charset="utf-8"></script> -->
+  <script>
+    (function (d, s, id) {
+      let js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v3.3&autoLogAppEvents=1&appId=1120425418117270";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+</body>
+
+</html>
