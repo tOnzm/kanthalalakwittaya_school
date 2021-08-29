@@ -20,10 +20,10 @@
   <link rel="stylesheet" href="./vendors/owl.carousel/owl-carousel/owl.carousel.css">
   <link rel="stylesheet" href="./vendors/ionicons-2.0.1/css/ionicons.min.css">
   <link rel="stylesheet" href="./assets/main/css/style.css">
+  <link rel="stylesheet" href="./assets/main/css/home.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/main/css/executives.css">
-
+  <link rel="stylesheet" href="./assets/main/css/profile.css">
   <!-- <link rel="stylesheet" href="./vendors/font-awesome-4.7.0/css/font-awesome.min.css"> -->
   <!-- CSS Link end -->
   <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
@@ -36,8 +36,8 @@
   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 </head>
 
+<body>
 
-<body class="white-bg">
   <!-- โลโก้บน -->
   <div id="main-header">
     <div class="wrapper container">
@@ -50,6 +50,7 @@
       </div>
     </div>
   </div>
+
 
   <!-- เมนู -->
   <div id="menu-header">
@@ -188,7 +189,7 @@
                       <!-- บรรทัดที่ 1 -->
                       <div class="row menu-box">
                         <div class="col-md-4 col-sm-4">
-                          <a href="#" class="box box-17">
+                          <a href="./profile.html" class="box box-17">
                             <div class="text">ข้อมูลทั่วไป</div>
                           </a>
                         </div>
@@ -198,7 +199,7 @@
                           </a>
                         </div>
                         <div class="col-md-4 col-sm-4">
-                          <a href="./table_1.html" class="box box-19">
+                          <a href="table_1.html" class="box box-19">
                             <div class="text">ตารางเรียน</div>
                           </a>
                         </div>
@@ -250,186 +251,89 @@
       </div>
     </div>
   </div>
-  <section id="body">
-    <div class="container" id="council" ng-controller="council" ng-init="init();">
-      <!-- ตัวย่อเล็กๆ -->
-      <div class="row">
-        <div class="col-xs-12">
-          <ol class="breadcrumb">
-            <li><a href="./th"><i class="fa fa-home"></i> หน้าหลัก</a></li>
-            <li>ทำเนียบบุคลากร</li>
-            <li class="active">กลุ่มสาระภาษาไทย</li>
-          </ol>
-        </div>
-      </div>
 
-      <div class="row m-b-sm">
-        <div class="col-xs-12">
-          <ul class="executives-menu">
+  <!-- profile -->
+  <div class="container bootstrap snippets bootdey">
+    <div class="row">
+      <div class="profile-nav col-md-3">
+        <div class="panel">
+          <div class="user-heading round">
+            <a href="#">
+              <img src="./assets/main/images/profile/06.png" alt="">
+            </a>
+            <h1>นายธรรมรัตน์ หนูเงิน</h1>
+          </div>
 
+          <ul class="nav nav-pills nav-stacked">
+            <li><a href="#"> <i class="fa fa-user"></i> ข้อมูลทั่วไป</a></li>
+            <!-- <li><a href="#"> <i class="fa fa-edit"></i> แก้ไขข้อมูล</a></li> -->
           </ul>
-          <div class="pre-content">
-            <div class="col-xs-12 text-center">
-              <h1 style="box-sizing: inherit; line-height: 1.4; color: rgb(255, 255, 255); margin-top: 10px;">
-                บุคลากร <br> กลุ่มสาระภาษาไทย</h1>
-            </div>
-          </div>
         </div>
       </div>
+      <div class="profile-info col-md-9">
 
-      <!-- <div class="row m-b-sm">
-        <div class="col-xs-12 text-center">
-          <div class="page-header">
-            <h1>ทำเนียบครู <br> กลุ่มสาระภาษาไทย</h1>
+        <div class="panel">
+          <div class="bio-graph-heading">
+
+          </div>
+          <div class="panel-body bio-graph-info">
+            <h1><i class="fa fa-address-card"></i> ข้อมูลทั่วไป</h1>
+            <div class="row">
+              <div class="bio-row">
+                <p><span><i class="fa fa-user"></i> รหัสนักเรียน </span>:123456</p>
+              </div>
+              <div class="bio-row">
+                <p><span><i class="fa fa-graduation-cap"></i> ระดับชั้น </span>: มัธยมศึกษาปัที่ 6</p>
+              </div>
+              <div class="bio-row">
+                <p><span><i class="fa fa-calendar"></i> เข้าศึกษาเมื่อ</span>: วว /ดด/ ปปปป</p>
+              </div>
+              <div class="bio-row">
+                <p><span><i class="fa fa-balance-scale"></i> เกรดสะสม</span>: 4.00</p>
+              </div>
+              <div class="bio-row">
+                <p><span><i class="fa fa-football-ball"></i> สถานะภาพ </span>: ปกติ</p>
+              </div>
+              <div class="bio-row">
+                <p><span><i class="fa fa-envelope"></i> อีเมล </span>: thammarat@klw.ac.th</p>
+              </div>
+
+            </div>
           </div>
         </div>
-      </div> -->
-
-      <!-- รูปบริหาร-->
-      <div class="container">
-        <!-- แถว1 -->
-        <div class="row el-element-overlay ">
-          <div class="col-md-4 col-md-offset-4 ">
-            <div class="card">
-              <div class="el-card-item">
-                <div class="el-card-avatar el-overlay-1 "> <img src="./assets/main/images/executive/avatar.jpg"
-                    alt="user">
-                </div>
-                <div class="el-card-content">
-                  <h4 class="text-dark" style="font-size: 18px;">นายคณิตพันธ์ จามรธัญญวาท</h4>
-                  <span class="text-white">ผู้อำนวยการชำนาญการพิเศษ</span>
+        <div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <div class="bio-desk">
+                    <h4 class="red"><i class="fa fa-book"></i> ผลงานด้านวิชาการ</h4>
+                    <p>ERROR</p>
+                    <p>ERROR</p>
+                  </div>
                 </div>
               </div>
             </div>
+
+            <div class="col-md-6">
+              <div class="panel">
+                <div class="panel-body">
+                  <div class="bio-desk">
+                    <h4 class="terques"><i class="fa fa-football-ball"></i> ผลงานด้านกีฬา</h4>
+                    <p>ERROR</p>
+                    <p>ERROR</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
-        <!-- แถว2 -->
-        <div class="row el-element-overlay">
-          <!-- รูป2 -->
-          <div class="col-sm-4 col-lg-3 col-md-3">
-            <div class="card">
-              <div class="el-card-item">
-                <div class="el-card-avatar el-overlay-1"> <img src="./assets/main/images/executive/avatar.jpg"
-                    alt="user">
-                </div>
-                <div class="el-card-content">
-                  <h4 class="text-dark" style="font-size: 18px;">นายเอกธนัช เหลาสิงห์</h4>
-                  <span class="text-white">รองผู้อำนวยการชำนาญการพิเศษ</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- รูป3 -->
-          <div class="col-sm-4 col-lg-3 col-md-3">
-            <div class="card">
-              <div class="el-card-item">
-                <div class="el-card-avatar el-overlay-1"> <img src="./assets/main/images/executive/avatar.jpg"
-                    alt="user">
-                </div>
-                <div class="el-card-content">
-                  <h4 class="text-dark" style="font-size: 18px;">นายอาคม วงศ์บา</h4>
-                  <span class="text-white">รองผู้อำนวยการชำนาญการพิเศษ</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- รูป4 -->
-          <div class="col-sm-4 col-lg-3 col-md-3">
-            <div class="card">
-              <div class="el-card-item">
-                <div class="el-card-avatar el-overlay-1"> <img src="./assets/main/images/executive/avatar.jpg"
-                    alt="user">
-                </div>
-                <div class="el-card-content">
-                  <h4 class="text-dark" style="font-size: 18px;">นายอนุศิษฎ์ โกศล</h4>
-                  <span class="text-white">รองผู้อำนวยการชำนาญการพิเศษ</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- รูป5 -->
-          <div class="col-sm-4 col-lg-3 col-md-3">
-            <div class="card">
-              <div class="el-card-item">
-                <div class="el-card-avatar el-overlay-1"> <img src="./assets/main/images/executive/avatar.jpg"
-                    alt="user">
-                </div>
-                <div class="el-card-content">
-                  <h4 class="text-dark" style="font-size: 18px;">นายพิทักษ์พงษ์ นามวงษ์</h4>
-                  <span class="text-white">รองผู้อำนวยการชำนาญการพิเศษ</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- รูป2 -->
-          <div class="col-sm-4 col-lg-3 col-md-3">
-            <div class="card">
-              <div class="el-card-item">
-                <div class="el-card-avatar el-overlay-1"> <img src="./assets/main/images/executive/avatar.jpg"
-                    alt="user">
-                </div>
-                <div class="el-card-content">
-                  <h4 class="text-dark" style="font-size: 18px;">นายเอกธนัช เหลาสิงห์</h4>
-                  <span class="text-white">รองผู้อำนวยการชำนาญการพิเศษ</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- รูป3 -->
-          <div class="col-sm-4 col-lg-3 col-md-3">
-            <div class="card">
-              <div class="el-card-item">
-                <div class="el-card-avatar el-overlay-1"> <img src="./assets/main/images/executive/avatar.jpg"
-                    alt="user">
-                </div>
-                <div class="el-card-content">
-                  <h4 class="text-dark" style="font-size: 18px;">นายอาคม วงศ์บา</h4>
-                  <span class="text-white">รองผู้อำนวยการชำนาญการพิเศษ</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- รูป4 -->
-          <div class="col-sm-4 col-lg-3 col-md-3">
-            <div class="card">
-              <div class="el-card-item">
-                <div class="el-card-avatar el-overlay-1"> <img src="./assets/main/images/executive/avatar.jpg"
-                    alt="user">
-                </div>
-                <div class="el-card-content">
-                  <h4 class="text-dark" style="font-size: 18px;">นายอนุศิษฎ์ โกศล</h4>
-                  <span class="text-white">รองผู้อำนวยการชำนาญการพิเศษ</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- รูป5 -->
-          <div class="col-sm-4 col-lg-3 col-md-3">
-            <div class="card">
-              <div class="el-card-item">
-                <div class="el-card-avatar el-overlay-1"> <img src="./assets/main/images/executive/avatar.jpg"
-                    alt="user">
-                </div>
-                <div class="el-card-content">
-                  <h4 class="text-dark" style="font-size: 18px;">นายพิทักษ์พงษ์ นามวงษ์</h4>
-                  <span class="text-white">รองผู้อำนวยการชำนาญการพิเศษ</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- จบรูป5 -->
-        </div>
-      </div>
-      <!-- จบรูป -->
-
-
-      <div id="box-load-more" style="margin-bottom:10px;display:none;">
-        <button type="button" class="btn btn-gray block full-width no-rounds ladda-button btn-load-more"
-          data-style="zoom-in" ng-click="page_council(cur_page.council+1);">โหลดเพิ่ม <i
-            class="fa fa-angle-down"></i></button>
       </div>
     </div>
-  </section>
+  </div>
+
   <!-- ส่วนล่าง -->
   <footer>
     <div class="footer-link">
@@ -724,6 +628,8 @@
   <!-- จบเมนูเล็ก -->
 
 
+
+  <!-- script -->
   <style>
     @media only screen and (max-width: 767px) {
       #menu-header {
@@ -751,9 +657,11 @@
   <script src="./vendors/hamburger-toggle/js/script.min.js" charset="utf-8"></script>
   <script src="./vendors/owl.carousel/owl-carousel/owl.carousel.min.js" charset="utf-8"></script>
   <script src="./assets/main/js/app.js" charset="utf-8"></script>
-  <script src="./vendors/scrollreveal/scrollreveal.min.js" charset="utf-8"></script>
-  <script src="./assets/main/js/about/council_committees.js" charset="utf-8"></script>
-  <script src="./assets/main/js/executives.js" charset="utf-8"></script>
+  <script src="./assets/main/js/home/index.js" charset="utf-8"></script>
+
+  <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+
+
 
   <!-- <script src="?v=" charset="utf-8"></script> -->
   <script>
@@ -765,6 +673,8 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
+
+
 </body>
 
 </html>
