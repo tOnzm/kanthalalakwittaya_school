@@ -11,7 +11,7 @@ This project, Kanthalalak Wittaya School, is a school website designed for educa
 ## User Interface
 
 ### Example
-![School Website UI](klw.png)
+![School Website UI](kwl.png)
 
 ## Demo
 
